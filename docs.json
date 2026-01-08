@@ -1,0 +1,119 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "aspen",
+  "name": "Hazel Documentation",
+  "colors": {
+    "primary": "#5767ff",
+    "light": "#8cc2e7",
+    "dark": "#000000"
+  },
+  "favicon": "/favicon.png",
+  "appearance": {
+    "default": "dark"
+  },
+  "fonts": {
+    "heading": {
+      "family": "KMR Waldenburg",
+      "source": "https://hazel.ai/fonts/woff2/KMR-Waldenburg-Bold.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "KMR Waldenburg",
+      "source": "https://hazel.ai/fonts/woff2/KMR-Waldenburg-Regular.woff2",
+      "format": "woff2"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Home",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "tab": "Guides",
+        "pages": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "Overview-2620935ca9a98054b1d8e4aa028e9a9f",
+              "Onboarding-2620935ca9a9801b97bcc7d73f6dd19b",
+              "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d"
+            ]
+          },
+          {
+            "group": "Ask Hazel (Chat)",
+            "pages": [
+              "Ask-Hazel-2620935ca9a9809d9646dc89ec4fbf09"
+            ]
+          },
+          {
+            "group": "Email Assistant",
+            "pages":[
+              "Email-Overview-2620935ca9a9801b9bbdf055bb0d0699",
+              "Setting-Up-your-Email-2630935ca9a980579640f0eebcfc0e39"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Settings",
+        "pages": [
+          "Settings-2630935ca9a9805d9ae7f7cc26bd2b53",
+          "Account-2620935ca9a980df993ed3d1a8c437aa",
+          "Members-2620935ca9a98049b59dc2d930bf408f"
+        ]
+      },
+      {
+        "tab": "FAQ",
+        "pages":[
+          "Ask-Hazel-FAQ-2850935ca9a98023860fdf1ac24fd6a3",
+          "Email-FAQ-2aa0935ca9a9806a86e0cdf9c946814e"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://hazel.ai"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@hazel.ai"
+      },
+      {
+        "label": "Sign up",
+        "href": "https://auth.hazel.altruist.com/"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Try Hazel",
+      "href": "https://auth.hazel.altruist.com/"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/altruist",
+      "youtube": "https://www.youtube.com/altruist",
+      "instagram": "https://www.instagram.com/altruistcorp/",
+      "linkedin": "https://www.linkedin.com/company/altruistcorp/posts/?feedView=all"
+    }
+  }
+}

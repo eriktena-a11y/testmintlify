@@ -1,0 +1,302 @@
+---
+title: "Welcome to Hazel Documentation"
+mode: "custom"
+---
+
+{/* Hero Section */}
+<div 
+  className="relative overflow-hidden"
+style={{
+    backgroundImage: `url("/images/ALTRUIST_CLOUDS_FLOOR.webp")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center 20%",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/50" />
+  <div className="relative max-w-5xl mx-auto px-6 pt-32 pb-16">
+    <div className="text-center">
+      <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
+        Hazel Help Center
+      </h1>
+      <p className="text-xl text-white max-w-2xl mx-auto">
+        Everything you need to get started, master features, and get the most out of your AI assistant for wealth advisors.
+      </p>
+      
+      {/* Search Bar */}
+      <div className="flex items-center justify-center w-full">
+        <button
+          type="button"
+          className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full mt-8 max-w-[36rem] bg-white shadow-[0px_1px_4px_0px_rgba(8,9,10,0.25),0px_0px_0px_4px_rgba(255,255,255,0.20)] cursor-pointer text-left"
+          id="home-search-entry"
+          onClick={()=> document.getElementById('search-bar-entry-mobile').click()}
+        >
+          <svg
+            className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70 mr-2"
+            style={{
+            maskImage:
+              'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+            maskRepeat: 'no-repeat',
+            maskPosition: 'center center',
+            }}
+          />
+          Search or ask...
+        </button>
+      </div>
+      
+      {/* Webinar Banner */}
+      <div className="flex items-center justify-center w-full mt-6">
+        <div className="flex items-center gap-3 bg-white/90 backdrop-blur-sm text-gray-800 px-5 py-3 rounded-full max-w-[36rem]">
+          <div className="flex-shrink-0 w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center">
+            <Icon icon="play" className="text-white" size={14} />
+          </div>
+          <div className="text-sm">
+            <span className="font-semibold">Webinar:</span>{" "}
+            <a href="https://altruist.com/events/transformative-ai-built-for-wealth-advisors/" className="text-amber-700 underline underline-offset-2 hover:text-amber-800">
+              Watch the Hazel demo
+            </a>
+            <span className="text-gray-500 ml-1">(2:30-14:30)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Quick Start Section */}
+<div className="max-w-5xl mx-auto px-6 pt-16 mb-16">
+  <div className="flex items-center gap-3 mb-6">
+    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Quick Start</h2>
+  </div>
+
+  <CardGroup cols={4}>
+    <Card title="Overview" icon="book-open" href="/Overview-2620935ca9a98054b1d8e4aa028e9a9f">
+      Learn what Hazel can do
+    </Card>
+    <Card title="Onboarding" icon="flag" href="/Onboarding-2620935ca9a9801b97bcc7d73f6dd19b">
+      Get set up in minutes
+    </Card>
+    <Card title="Team Setup" icon="users" href="/Members-2620935ca9a98049b59dc2d930bf408f#inviting-team-members">
+      Invite your team members
+    </Card>
+    <Card title="Security" icon="shield-check" href="/Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d">
+      Privacy and data protection
+    </Card>
+  </CardGroup>
+</div>
+
+{/* Core Features Section */}
+<div className="max-w-5xl mx-auto px-6 mb-16">
+  <div className="flex items-center gap-3 mb-6">
+    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Core Features</h2>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {/* Ask Hazel */}
+    <div className="bg-white dark:bg-transparent rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70 rounded-xl flex items-center justify-center">
+          <Icon icon="message" className="text-white" size={20} />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Ask Hazel (Chat)</h3>
+      </div>
+      <div className="space-y-2">
+        <a href="/Ask-Hazel-2620935ca9a9809d9646dc89ec4fbf09" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">How Hazel can help you</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-violet-500 transition-colors" size={14} />
+        </a>
+        <a href="/Ask-Hazel-2620935ca9a9809d9646dc89ec4fbf09" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Prompts to get started</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-violet-500 transition-colors" size={14} />
+        </a>
+        <a href="/Ask-Hazel-2620935ca9a9809d9646dc89ec4fbf09" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Best practices</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-violet-500 transition-colors" size={14} />
+        </a>
+        <a href="/Ask-Hazel-FAQ-2850935ca9a98023860fdf1ac24fd6a3" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Ask Hazel FAQ</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-violet-500 transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+    
+    {/* Email Assistant */}
+    <div className="bg-white dark:bg-transparent rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70 rounded-xl flex items-center justify-center">
+          <Icon icon="envelope" className="text-white" size={20} />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email Assistant</h3>
+      </div>
+      <div className="space-y-2">
+        <a href="/Email-Overview-2620935ca9a9801b9bbdf055bb0d0699" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Overview</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-rose-500 transition-colors" size={14} />
+        </a>
+        <a href="/Setting-Up-your-Email-2630935ca9a980579640f0eebcfc0e39" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Setting up your Email</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-rose-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2630935ca9a980bc8c73de7ca3461677?pvs=25" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Troubleshooting</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-rose-500 transition-colors" size={14} />
+        </a>
+        <a href="/Email-FAQ-2aa0935ca9a9806a86e0cdf9c946814e" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Email FAQ</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-rose-500 transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+    
+    {/* Meeting Assistant */}
+    <div className="bg-white dark:bg-transparent rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70 rounded-xl flex items-center justify-center">
+          <Icon icon="video" className="text-white" size={20} />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Meeting Assistant</h3>
+      </div>
+      <div className="space-y-2">
+        <a href="https://hazelai.notion.site/2620935ca9a980fda8b8c63a9f3d7704?pvs=25#2620935ca9a98065bbfee44bba930dc8" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Meetings Overview</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-sky-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2630935ca9a9801c9b45cb1f79969f13?pvs=25#2620935ca9a98016bd3acccae665aa3e" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Preparing for a Meeting</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-sky-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2630935ca9a9801c9b45cb1f79969f13?pvs=25#2620935ca9a9805fb71ef438d66c5fb8" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Debriefing a Meeting</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-sky-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2630935ca9a980ee9355f695e2474f4d?pvs=25" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Troubleshooting</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-sky-500 transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+    
+    {/* Integrations */}
+    <div className="bg-white dark:bg-transparent rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70 rounded-xl flex items-center justify-center">
+          <Icon icon="code-merge" className="text-white" size={20} />
+        </div>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Integrations</h3>
+      </div>
+      <div className="space-y-2">
+        <a href="https://hazelai.notion.site/2620935ca9a980b9ad62fda8b4c06028?pvs=25#2620935ca9a9806ebb98df6f8d11ebcb" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Hazel's Integrations</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-teal-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2b00935ca9a980a2a858ec6bcba1f16c?pvs=25" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Altruist Custodial Integration</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-teal-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980b9ad62fda8b4c06028?pvs=25#2620935ca9a980a3a960d4147ed71f6f" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Calendar and Emails</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-teal-500 transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980b9ad62fda8b4c06028?pvs=25#2620935ca9a980148124c6f7088908eb" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">CRM Integrations</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-teal-500 transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Resources Section */}
+<div className="max-w-5xl mx-auto px-6 mb-16">
+  <div className="flex items-center gap-3 mb-6">
+    <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Resources & Customization</h2>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Prompt Guide */}
+    <div className="rounded-2xl border border-[#8cc2e7]/30 dark:border-[#8cc2e7]/20 p-6">
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70">
+        <Icon icon="book" className="text-white" size={20} />
+      </div>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Prompt Guide</h3>
+      <div className="space-y-2">
+        <a href="https://hazelai.notion.site/2620935ca9a980adb4dbc5db1ab648d7?pvs=25#2620935ca9a981918120d927b991b395" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">The Basics</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980adb4dbc5db1ab648d7?pvs=25#2620935ca9a981e9812effe0674a60b8" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Tips and Tricks</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980adb4dbc5db1ab648d7?pvs=25#28c0935ca9a98030a7d4d8c9e2776a71" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Default Meeting Types</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980adb4dbc5db1ab648d7?pvs=25#2620935ca9a981538567e562f951b97d" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Email Templates</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+    
+    {/* Customizing Hazel */}
+    <div className="rounded-2xl border border-[#8cc2e7]/30 dark:border-[#8cc2e7]/20 p-6">
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70">
+        <Icon icon="wrench" className="text-white" size={20} />
+      </div>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Customizing Hazel</h3>
+      <div className="space-y-2">
+        <a href="https://hazelai.notion.site/2620935ca9a980adb4dbc5db1ab648d7?pvs=25#2620935ca9a981918120d927b991b395" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Custom prompts</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2630935ca9a980579640f0eebcfc0e39?pvs=25#2630935ca9a980f2810cf473f803824a" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Email signature</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980fda8b8c63a9f3d7704?pvs=25#2620935ca9a980e79122fd5d791dc6d1" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Meeting Types</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+    
+    {/* Support */}
+    <div className="rounded-2xl border border-[#8cc2e7]/30 dark:border-[#8cc2e7]/20 p-6">
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4 bg-[#8cc2e7]/70 dark:bg-[#8cc2e7]/70">
+        <Icon icon="headset" className="text-white" size={20} />
+      </div>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Support</h3>
+      <div className="space-y-2">
+        <a href="/Settings-2630935ca9a9805d9ae7f7cc26bd2b53" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Settings</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980c099ccc46e0b4abba4?pvs=25" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Feedback and Ideas</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+        <a href="https://hazelai.notion.site/2620935ca9a980c1a6d0c6e28fe2ef72?pvs=25" className="flex items-center justify-between py-2 px-3 rounded-lg hover:bg-white/50 dark:hover:bg-gray-700/50 transition-colors group">
+          <span className="text-gray-700 dark:text-gray-300">Subscriptions & Pricing</span>
+          <Icon icon="arrow-right" className="text-gray-400 group-hover:text-[#8cc2e7] dark:group-hover:text-[#8cc2e7] transition-colors" size={14} />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Footer CTA */}
+<div className="max-w-5xl mx-auto px-6 pb-20">
+  <div className="text-center py-10 px-6 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50 rounded-2xl border border-gray-200 dark:border-gray-700">
+    <Icon icon="circle-question" className="text-gray-400 mb-4" size={32} />
+    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Can't find what you're looking for?</h3>
+    <p className="text-gray-600 dark:text-gray-400 mb-4">Our support team is here to help.</p>
+    <a 
+      href="mailto:support@hazel.ai" 
+      className="inline-flex items-center gap-2 px-6 py-3 text-white font-medium rounded-xl hover:opacity-90 transition-opacity bg-[#8cc2e7] dark:bg-[#8cc2e7]"
+    >
+      <Icon icon="envelope" size={16} color="white" />
+      Contact Support
+    </a>
+  </div>
+</div>
