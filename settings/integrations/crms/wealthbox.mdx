@@ -1,0 +1,19 @@
+---
+title: "Wealthbox"
+---
+
+Connect your Wealthbox account to give Hazel access to your contacts, households, tasks, and notes. With a bidirectional sync, updates made in Hazel appear in your CRM, and changes in your CRM are reflected back in Hazel, keeping your data consistent and up to date across both platforms.
+
+<Note>
+  Hazel does not import existing roles and permissions from your CRM. It is up to the Owner to edit household permissions for the organization. Learn more about editing household permissions.
+</Note>
+
+---
+
+| **Integration** | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                                                                                       | **Can Resync?** |
+| :-------------- | :------------------------------- | :------------------------------- | :-------------------------------------------------------------------------------------------------------- | :-------------- |
+| **Wealthbox**   | Full history                     | Every hour (incremental updates) | Must have: Type = **Person** or **Household,Active = true**, andContact Type = **Prospect** or **Client** | ✅ Yes           |
+
+The Wealthbox integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Wealthbox, and Wealthbox syncs data every 60 minutes to Hazel. Upon the initial sync, Hazel aims to provide a complete backfill of historical data based on Wealtbox sync guidelines and imports all contacts based on the following filters: Type = **Person** or **Household,Active = true**, andContact Type = **Prospect** or **Client.**
+
+Have questions about the Wealthbox integration? Reach out to [support@hazel.ai](mailto:support@hazel.ai) for more information.
