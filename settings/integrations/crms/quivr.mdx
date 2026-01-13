@@ -1,0 +1,19 @@
+---
+title: "Quivr"
+---
+
+Connect your Quivr account to give Hazel access to your contacts, households, tasks, and notes. With a bidirectional sync, updates made in Hazel appear in your CRM, and changes in your CRM are reflected back in Hazel, keeping your data consistent and up to date across both platforms.
+
+<Note>
+  Hazel does not import existing roles and permissions from your CRM. It is up to the Owner to edit household permissions for the organization. Learn more about editing household permissions.
+</Note>
+
+---
+
+| **Integration** | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                                                                                                               | **Can Resync?** |
+| :-------------- | :------------------------------- | :------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- | :-------------- |
+| **Quivr**       | Full history                     | Every hour (incremental updates) | Must have: Client Type = **Household**, and Record Type = **Client Household**, **On-Boarding Client Household**, or **Prospect** | ✅ Yes           |
+
+The Quivr integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Quivr, and Quivr syncs data every 60 minutes to Hazel. Upon the initial sync, Hazel aims to provide a complete backfill of historical data based on Quivr sync guidelines and imports all contacts based on the following filters: Client Type = **Household**, and Record Type = **Client Household**, **On-Boarding Client Household**, or **Prospect.**
+
+Have questions about the Quivr integration? Reach out to [support@hazel.ai](mailto:support@hazel.ai) for more information.
