@@ -104,6 +104,18 @@
         "tab": "Settings",
         "groups": [
           {
+            "group": "Account",
+            "pages": [
+              "Account-2620935ca9a980df993ed3d1a8c437aa"
+            ]
+          },
+          {
+            "group": "Meeting",
+            "pages": [
+              "settings/meeting/untitled-page"
+            ]
+          },
+          {
             "group": "Integrations",
             "pages": [
               "settings/integrations/integrations-overview",
@@ -132,15 +144,10 @@
             ]
           },
           {
-            "group": "Account",
+            "group": "Members",
             "pages": [
-              "Account-2620935ca9a980df993ed3d1a8c437aa"
-            ]
-          },
-          {
-            "group": "Meeting",
-            "pages": [
-              "settings/meeting/untitled-page"
+              "Members-2620935ca9a98049b59dc2d930bf408f",
+              "Members-2620935ca9a98049b59dc2d930bf408f-copied-1"
             ]
           },
           {
@@ -148,31 +155,24 @@
             "pages": [
               "settings/billing"
             ]
-          },
-          {
-            "group": "Members",
-            "pages": [
-              "Members-2620935ca9a98049b59dc2d930bf408f",
-              "Members-2620935ca9a98049b59dc2d930bf408f-copied-1"
-            ]
           }
         ]
       },
       {
         "tab": "FAQ",
         "pages": [
-          "faq/billing-faq",
-          "faq/meetings-faq",
           "Ask-Hazel-FAQ-2850935ca9a98023860fdf1ac24fd6a3",
-          "Email-FAQ-2aa0935ca9a9806a86e0cdf9c946814e"
+          "faq/meetings-faq",
+          "Email-FAQ-2aa0935ca9a9806a86e0cdf9c946814e",
+          "faq/billing-faq"
         ]
       },
       {
         "tab": "Troubleshooting",
         "pages": [
           "troubleshooting/ask-anything-chat",
-          "troubleshooting/email-assistant",
-          "troubleshooting/meeting-assistant"
+          "troubleshooting/meeting-assistant",
+          "troubleshooting/email-assistant"
         ]
       }
     ]
