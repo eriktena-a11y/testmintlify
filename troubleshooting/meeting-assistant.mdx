@@ -11,11 +11,11 @@ title: "Meetings Troubleshooting"
 
   **How to Reset Hazel from Overview page: C**lick on the menu icon for the meeting and click ‘Reset Notetaker.’ This will clear out any previous data and treat the meeting as if it were brand new.
 
-  [img]
+  ![Troubleshootresetnotetaker1](/images/troubleshootresetnotetaker1.png)
 
   **How to Reset Hazel from Meeting page: C**lick on the menu icon and click **Reset Notetaker**. This will clear out any previous data and treat the meeting as if it were brand new.
 
-  [img]
+  ![Troubleshootresetnotetaker2](/images/troubleshootresetnotetaker2.png)
 </Accordion>
 
 <AccordionGroup>
@@ -25,15 +25,21 @@ title: "Meetings Troubleshooting"
     **How to fix:** Host should review and enable the following Zoom settings:
 
     1. In Recording tab, verify that `Internal meeting participants` and `External meeting participants` are checked.
-    2. In Recording tab, verify that Record to computer files is toggled on. 
+
+       ![Troubleshootzoom2](/images/troubleshootzoom2.png)
+    2. In Recording tab, verify that Record to computer files is toggled on.
+
+       ![Troubleshootzoom1](/images/troubleshootzoom1.png)
     3. While in a Zoom Meeting, verify that `Request Local Recording` Permission is turned on. 
 
-       [img]
+    ![Troubleshootzoom3](/images/troubleshootzoom3.png)
   </Accordion>
   <Accordion title="How did not join my Zoom call, nor was she in the waiting room, why?">
     If Hazel did not join my Zoom call, nor was she in the waiting room, it is likely that the host has their **global** permissions set to not allow anonymous users, or users not invited to the meeting, to join the meeting. This is needed for a bot to record.
 
     **How to fix:** Host should enable this setting by allowing Anonymous users to join.
+
+    ![Troubleshootzoom2](/images/troubleshootzoom2.png)
   </Accordion>
 </AccordionGroup>
 
@@ -44,13 +50,13 @@ title: "Meetings Troubleshooting"
 
   1. Under **Meeting Access \> Meeting Access type**: verify that the `Anyone with the meeting link can ask to join` checkbox is checked.
 
-  [img]
+  ![Troubleshootgoogle1](/images/troubleshootgoogle1.png)
 
   If this box is unchecked, then **all anonymous participants and participants not on the calendar invite** will be automatically declined when attempting to join the meeting.
 
   This will appear as the "You can't join this meeting" screen from the bot's perspective:
 
-  [img]
+  ![Troubleshootgoogle2](/images/troubleshootgoogle2.png)
 
   <Info>
     To manage meeting access permissions for your entire organization, the host (admin) follow these steps:
@@ -59,7 +65,7 @@ title: "Meetings Troubleshooting"
     2. Expand **Host Controls \> Meeting Access**.
     3. Under **Who needs to ask to join**, select **Open**.
 
-    [img]
+    ![Troubleshootgoogle3](/images/troubleshootgoogle3.png)
   </Info>
 </Accordion>
 
@@ -70,57 +76,57 @@ title: "Meetings Troubleshooting"
 
   1. Go to the Teams admin center.
   2. Expand **Meetings** \> **Meeting settings**.
-  3. Under **Meeting Join and Lobby: **verify that the `Anonymous users can join a meeting` setting is toggled to On.
+  3. Under \*\*Meeting Join and Lobby: \*\*verify that the `Anonymous users can join a meeting` setting is toggled to On.
   4. Save your updates.
 
-  [img]
+  ![Troubleshootoutlook](/images/troubleshootoutlook.png)
 </Accordion>
 
 <Accordion title="I accidentally synced the meeting notes to the wrong Household/Contact. What should I do?">
   If you accidentally synced notes to the wrong Household/Contact, here's what you need to do:
 
-  1. Within the Meetings page, remove the incorrect profile from the attendees and then add the correct profile.\
-     [img]
+  1. Within the Meetings page, remove the incorrect profile from the attendees and then add the correct profile.
+
+     ![Troubleshootsynctowrong HH1](/images/troubleshootsynctowrongHH1.png)
   2. Once the correct profile is selected, click on 'Sync to CRM' and re-sync the notes to the correct profile. Be sure to review the title, household/contact/tags section before you sync to CRM.
 
-     \
-     [img]
+     ![Troubleshootsynctowrong HH2](/images/troubleshootsynctowrongHH2.png)
   3. You'll need to delete the notes from the incorrect profile within your CRM so the incorrect meeting data is not associate the the incorrect household. Head to the Household, then within the Activity section, find the note, and click Delete.
 
-     \
-     [img]
+     ![Troubleshootsynctowrong HH3](/images/troubleshootsynctowrongHH3.png)
 </Accordion>
 
-<Accordion title="How do I upload a meeting that failed to upload?">
-  To upload a meeting that failed to upload, navigate to the meeting in Hazel, click `Record` and select `Upload Saved Recording`. If we have any reording data on file, we will upload it.  
+<AccordionGroup>
+  <Accordion title="How do I upload a meeting that failed to upload?">
+    To upload a meeting that failed to upload, navigate to the meeting in Hazel, click `Record` and select `Upload Saved Recording`. If we have any reording data on file, we will upload it.
 
-  [img]
+    ![Troubleshootbrowserfailedtoprocess](/images/troubleshootbrowserfailedtoprocess.png)
 
-  If you do not see an `Upload Saved Recording`, then we do not have any meeting data on file and the recording was lost. _Reach out to support@hazel.ai for further support._
+    If you do not see an `Upload Saved Recording`, then we do not have any meeting data on file and the recording was lost. [_Reach out to support@hazel.ai for further support._](mailto:support@hazel.ai)
 
-  <Note>
-    Our visibility into browser recorded meetings is minimal due to browser related issues (different browsers, version updates, popup blocker settings, mic settings, etc). If there's a failure with the browser, the internet, or unforseen events, then there's a high chance of loss. The best option for in person meetings is to use our iOS app for recording.
-  </Note>
-</Accordion>
+    <Note>
+      Our visibility into browser recorded meetings is minimal due to browser related issues (different browsers, version updates, popup blocker settings, mic settings, etc). If there's a failure with the browser, the internet, or unforseen events, then there's a high chance of loss. The best option for in person meetings is to use our iOS app for recording.
+    </Note>
+  </Accordion>
+  <Accordion title="How do I prevent meetings recorded via Browser from failing to process?">
+    Our visibility into browser recorded meetings is minimal due to browser related issues (different browsers, version updates, popup blocker settings, mic settings, etc). If there's a failure with the browser, the internet, or unforseen events, then there's a high chance of loss.
 
-<Accordion title="I recorded a meeting via Browser and the recording failed to process. ">
-  Our visibility into browser recorded meetings is minimal due to browser related issues (different browsers, version updates, popup blocker settings, mic settings, etc). If there's a failure with the browser, the internet, or unforseen events, then there's a high chance of loss. 
+    [_Reach out to support@hazel.ai for further support._](mailto:support@hazel.ai)
 
-  _Reach out to support@hazel.ai for further support._
+    <Note>
+      **One very important thing to keep in mind if you use browser recording:**
 
-  <Note>
-    **One very important thing to keep in mind if you use browser recording:**
+      Do not switch tabs while the browser is processing. If you do, your browser may fail to fully cache the recording due to their handling/refreshing/throttling on 'inactive tabs', which may corrupt the file and make it unprocessable.
 
-    Do not switch tabs while the browser is processing. If you do, your browser may fail to fully cache the recording due to their handling/refreshing/throttling on 'inactive tabs', which may corrupt the file and make it unprocessable.
+      Best thing to do would be to stay on the Hazel screen for a few seconds until the recording finishes processing and moves to the uploading screen before switching tabs. It's this processing period that is key for the browser to cache your recording.
 
-    Best thing to do would be to stay on the Hazel screen for a few seconds until the recording finishes processing and moves to the uploading screen before switching tabs. It's this processing period that is key for the browser to cache your recording.
+      ![Troubleshootbrowsertip1](/images/troubleshootbrowsertip1.png)
 
-    [img]
+      Once the browser has processed the recording, it still needs to upload the recording to Hazel. Do not close the tab until the recording has finished uploading. You may switch tabs at this stage. Once the file has finished uploading to Hazel, then we have a file on record to process, reprocess, and download as needed.
 
-    Once the browser has processed the recording, it still needs to upload the recording to Hazel. Do not close the tab until the recording has finished uploading. You may switch tabs at this stage. Once the file has finished uploading to Hazel, then we have a file on record to process, reprocess, and download as needed.
+      ![Troubleshootbrowsertip2](/images/troubleshootbrowsertip2.png)
 
-    [img]
-
-    The best option for recording in person meetings is to use the iOS app for recording.
-  </Note>
-</Accordion>
+      The best option for recording in person meetings is to use the iOS app for recording.
+    </Note>
+  </Accordion>
+</AccordionGroup>
