@@ -2,14 +2,295 @@
 title: "Default Meeting Types"
 ---
 
-Hazel is preloaded with five meeting types to help you get started. Each meeting type has its own unique prompts which capture your notes from different perspectives. Here are the templates that are loaded in for the default meeting types:
+Hazel is preloaded with five meeting types to help you get started. Each meeting type has its own unique prompts which capture your notes from different perspectives. 
 
-The default “catch-all” option for any type of discussion.
+Expand the following default Meeting Types to view and copy the templates:
 
-Intended for the initial conversation with prospective clients.
+<Accordion title="General Meeting" description="The default “catch-all” option for any type of discussion.">
+  **Pre-meeting Notes/Agenda Prompt**
 
-A discovery and goals-oriented call, used for early conversations with new clients
+  > Generate pre-meeting notes for a meeting between a financial advisor and one or more clients. Include any relevant information that may be helpful to the advisor, and a brief summary of the previous meeting, if applicable. Include any potential conversation starters.
 
-Designed for annual review meetings with existing clients.
+  **Pre-meeting Email Prompt**
 
-Intended for meetings with team members.
+  > Using the meeting agenda and any context provided, generate a professional email to send to meeting participants. The email should:
+  >
+  > 1. Begin with a warm, friendly comment based on previous meetings context. It should be informal though personal and friendly.
+  > 2. Briefly state the purpose of the meeting
+  > 3. List the key topics to be discussed (in bullet points) by stating "Here's what we'll be covering"
+  > 4. Include any specific preparation required from participants
+  > 5. Mention any relevant documents or materials that will be reviewed
+  >
+  > Write in a professional but warm tone, and keep the email concise yet informative.
+
+  **Meeting Notes Prompt**
+
+  > Generate a detailed summary of the meeting using sections & bullet points covering all topics discussed. Use a narrative style, be detailed, and include any outcomes or conclusions made. Be thorough, but consolidate notes under a few major topics.
+  >
+  > ---
+  >
+  > Add a Q&A section which covers the most important questions asked in the meeting, and the corresponding responses. If the same question is asked multiple times, only include it once. Format the Q&A section using bold text for the question, and regular text for the answer.
+  >
+  > [EXAMPLE FORMAT]
+  >
+  > **Q: What is the current interest rate on my savings account?**
+  >
+  > A: The current interest rate on your savings account is 0.25%.
+  >
+  > **Q: What is the current interest rate on my checking account?**
+  >
+  > A: The current interest rate on your savings account is 0.25%.
+  >
+  > ---
+  >
+  > Add an html table that includes any numeric financial data discussed
+
+  **Follow-up Email Prompt**
+
+  > This is a meeting in between an advisor, and one or more of their clients. Using the transcript, generate a follow up email for the client with the important topics discussed. Pay particular attention to the action items, ensuring they are included in the follow up. And pay also particular attention to numerical figures and percentages, bolding these in the email. Omit the subject, and just write the body of the email. Use a write tone that's formal, but human.
+</Accordion>
+
+<Accordion title="Prospect Meeting" description="Intended for the initial conversation with prospective clients.">
+  **Pre-meeting Notes/Agenda Prompt**
+
+  > Generate pre-meeting notes for a meeting between a financial advisor and one or more clients. Include any relevant information that may be helpful to the advisor, and a brief summary of the previous meeting, if applicable. Include any potential conversation starters.
+
+  **Pre-meeting Email Prompt**
+
+  > The meeting is a prospective client meeting, and is intended to give the financial advisor and a prospect space to understand if it's a mutually beneficial relationship. Using the meeting agenda and any context provided, generate a professional email to send to meeting participants. The email should:
+  >
+  > 1. Open with a warm, personable greeting and a quick reminder about the upcoming meeting (include date, time, and method of meeting).
+  > 2. Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 50-100 words.
+  > 3. Briefly state the purpose of the meeting and what the prospect can expect.
+  > 4. Highlight the key topics we'll cover in simple bullet points (so the client sees structure and clarity).
+  > 5. Note any specific preparation the client should do beforehand (if applicable).
+  > 6. Mention any relevant documents or materials that will be reviewed.
+  > 7. Close with a friendly, welcoming tone that conveys excitement and professionalism (e.g., "looking forward to our conversation").
+  >
+  > Write in a professional but friendly and warm tone. Keep the email concise yet engaging.
+
+  **Meeting Notes Prompt**
+
+  > This is a prospective conversation between a financial advisor and a prospect, intended to provide a space for them to get to know each other on a high level. Generate a detailed summary of the meeting using sections & bullet points covering all topics discussed. Use a narrative style, be detailed, and include any outcomes or conclusions made. Be thorough, but consolidate notes under a few major topics.
+  >
+  > ---
+  >
+  > From the transcript, extract both quantitative and qualitative information. Highlight prospect insights that reveal motivation, values, or decision drivers. Note specific language or cues that show:
+  >
+  > **1. Key Data Points**
+  >
+  > - Client/prospect names and ages
+  > - Names of family members (spouse and children)
+  > - Important dates or timelines mentioned
+  > - Financial figures (account balances, income, expenses, assets, liabilities, etc.)
+  > - Any other quantifiable details shared
+  >
+  > **2. Client Goals & Context**
+  >
+  > - Summarize client goals, values, and concerns.
+  > - Capture relevant background or personal context that shapes their financial priorities
+  >
+  > **3. Motivations & Decision Drivers**
+  >
+  > - Highlight what matters most to them financially (e.g., family, retirement, growth, security, legacy)
+  > - Note decision-making style (analytical, emotional, relationship-driven, cautious, etc.)
+  > - Identify language or cues that reveal motivation, priorities, or hesitations
+  >
+  > ---
+  >
+  > Add an html table that includes any numeric financial data discussed
+  >
+  > ---
+  >
+  > Add any objections posed by the client and analyze how the advisor responded to overcome the objection. For each objection, provide a thorough response with all relevant context to the objection. Be sure to provide context on both the objection made by the client, and how the advisor responded to the objection. Provide a list based on the example format below, only provide objections and responses, no need for titles.
+  >
+  > [EXAMPLE FORMAT]
+  >
+  > **Objection: {objection made by client}**
+  >
+  > Response: {response by advisor}
+
+  **Follow-up Email Prompt**
+
+  > This is a meeting between an advisor and a prospective client. Using the transcript of the meeting and the distilled notes, generate a follow-up email to the prospect. The email should:
+  >
+  > - Open with a warm thank-you and genuine appreciation for their time.
+  > - Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 100-250 words.
+  > - Reference specific goals, motivations, or values the prospect mentioned (e.g., family security, retirement lifestyle, growth aspirations) to show understanding.
+  > - Address any objections, concerns, or hesitations raised in the meeting in a thoughtful and empathetic way (not defensive, but reassuring).
+  > - Reconnect those motivations and concerns to how we can help — highlighting solutions or next steps that align directly with their needs.
+  > - End with a compelling call-to-action that encourages response (e.g., scheduling the next conversation, providing documents, simply sharing their thoughts, or a reminder of the next meeting time if discussed on the call).
+  > - Keep the tone professional yet personable, confident yet approachable. Make it clear we're looking to build a mutually beneficial relationship.
+</Accordion>
+
+<Accordion title="Intro Meeting" description="A discovery and goals-oriented call, used for early conversations with new clients.">
+  **_Pre-meeting Notes/Agenda Prompt_**
+
+  > Generate pre-meeting notes for a meeting between a financial advisor and one or more clients. Include any relevant information that may be helpful to the advisor, and a brief summary of the previous meeting, if applicable. Include any potential conversation starters. Include age as of meeting and age as of end of year for the attendees listed.
+
+  **Pre-meeting Email Prompt**
+
+  > The meeting is an discovery call, and is intended to give the client space to share their personal and financial short, medium, and long term goals. Using the meeting agenda and any context provided, generate a professional, but friendly email to send to meeting participants. The email should:
+  >
+  > 1. Briefly state the purpose of the meeting
+  > 2. Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 50-75 words.
+  > 3. List the key topics to be discussed. (in bullet points)
+  > 4. Include any specific preparation required from participants
+  > 5. Mention any relevant documents or materials that will be reviewed
+  >
+  > Write in a professional but friendly and warm tone. Keep the email concise yet engaging.
+
+  **Meeting Notes Prompt**
+
+  > This is an exploratory conversation between a financial advisor and their client, intended to provide a space for them to get to know each other on a deeper level. Generate a detailed summary of the meeting using sections & bullet points covering all topics discussed. Use a narrative style, be detailed, and include any outcomes or conclusions made. Be thorough, but consolidate notes under a few major topics.
+  >
+  > ---
+  >
+  > Extract specific data points, including client names, dates, financial figures (account balances, income, expenses), ages, and any other quantifiable information. Summarize qualitative information, such as client goals, values, concerns, and any relevant context. Use direct quotes where appropriate to capture the client's voice.
+  >
+  > ---
+  >
+  > Add an html table that includes the clients short, medium, and long term goals
+  >
+  > ---
+  >
+  > Add an html table that includes any numeric financial data discussed
+
+  **Follow-up Email Prompt**
+
+  > This is a meeting between an advisor and a new client. Using the transcript of the meeting and the distilled notes, generate a follow-up email to the client. The email should:
+  >
+  > - Open with a warm thank-you and genuine appreciation for their time.
+  > - Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 50-100 words.
+  > - Reference specific goals, motivations, or values the prospect mentioned (e.g., family security, retirement lifestyle, growth aspirations) to show understanding.
+  > - Address any objections, concerns, or hesitations raised in the meeting in a thoughtful and empathetic way (not defensive, but reassuring).
+  > - Reconnect those motivations and concerns to how we can help — highlighting solutions or next steps that align directly with their needs.
+  > - End with a compelling call-to-action that encourages response (e.g., scheduling the next conversation, providing documents, simply sharing their thoughts, or a reminder of the next meeting time if discussed on the call).
+  > - Keep the tone professional yet personable, confident yet approachable. Make it clear we're looking to build a mutually beneficial relationship.
+</Accordion>
+
+<Accordion title="Annual Review" description="  Designed for annual review meetings with existing clients.">
+  **Pre-meeting Notes/Agenda Prompt**
+
+  > Generate pre-meeting notes for a meeting between a financial advisor and one or more clients. Include any relevant information that may be helpful to the advisor, and a brief summary of the previous meeting, if applicable. Include any potential conversation starters.
+
+  **Pre-meeting Email Prompt**
+
+  > The meeting is an annual review meeting, and is intended to give the financial advisor and their client the opportunity to review the clients financial plan. Using the meeting agenda and any context provided, generate a professional email to send to meeting participants. The email should:
+  >
+  > 1. Open with a warm, personable greeting and a quick reminder about the upcoming meeting (include date, time, and method of meeting).
+  > 2. Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 50-100 words.
+  > 3. Briefly state the purpose of the meeting and what the prospect can expect.
+  > 4. Highlight the key topics we'll cover in simple bullet points (so the client sees structure and clarity).
+  > 5. Note any specific preparation the client should do beforehand (if applicable).
+  > 6. Mention any relevant documents or materials that will be reviewed.
+  > 7. Close with a friendly, welcoming tone that conveys excitement and professionalism.
+  >
+  > Write in a professional but friendly and warm tone. Keep the email concise yet engaging.
+
+  **Meeting Notes Prompt**
+
+  > Generate a detailed summary of the meeting using sections & bullet points covering all topics discussed. Use a narrative style, be detailed, and include any outcomes or conclusions made. Be thorough, but consolidate notes under a few major topics.
+  >
+  > Exclude any financial advisor's personal updates or unrelated small talk from advisors.
+  >
+  > ---
+  >
+  > For each topic **that was discussed**, write a **couple short, but detailed paragraphs**. Organize by key financial areas (examples: Retirement Planning, Investments, Pension & Social Security, Cash Flow, Estate Planning, Tax Planning, Risk Management). **Only include** sections if they were discussed. Here's what you should and should not include:
+  >
+  > - **Include** what the client shared (concerns, goals, data)
+  > - **Include** what the advisor explained or suggested
+  > - **Include** any tentative or final conclusions
+  > - **Do not include** sections if they weren't discussed.
+  >
+  > ---
+  >
+  > Add an html table that includes any numeric financial data discussed. The table should have the following columns: Financial Data (e.g. label), Category (e.g. Income, Account, Expense), Data from Meeting (e.g. number). Include values like account balances, income, contribution %, retirement income needs.
+  >
+  > ---
+  >
+  > Add an html table that includes any Fiduciary / Suitability Impacting Data discussed. The table is for compliance and should have all of the relevant suitability and compliance worthy information discussed in the meeting. The table columns should be: As of {Today's Date}, Comment.
+  >
+  > - Populate if any of the following were **explicitly discussed**:
+  >   - Demographics (age, marital status, family structure)
+  >   - Occupation / employment status
+  >   - Net Worth / Liquid Net Worth
+  >   - Annual Income
+  >   - Liquidity Needs
+  >   - Investment Objective
+  >   - Risk Tolerance
+  >   - Time Horizon
+  >   - Material changes in financial situation
+  > - If not mentioned, leave blank.
+  >
+  > ---
+  >
+  > Please review the meeting transcript and evaluate the following areas to help the advisor improve future meetings:
+  >
+  > - Provide one piece of feedback on how the advisor could have deepened rapport or shown more understanding. If not mentioned, leave blank.
+  > - Highlight any key quotes or moments where the client expressed hesitancy that the advisor disregarded. If not mentioned, leave blank.
+  > - Highlight one area after the client expressed positive praise that could have been a natural opening to ask for a referral. If not mentioned, leave blank.
+
+  ### Follow-up Email Prompt
+
+  > This is a meeting between an advisor and their existing client. Using the transcript of the meeting and the distilled notes, generate a follow-up email to the prospect. The email should:
+  >
+  > - Open with a warm thank-you and genuine appreciation for their time and trust.
+  > - Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 100-250 words.
+  > - Reference specific goals, motivations, or values the client mentioned (e.g., family security, retirement lifestyle, growth aspirations) to show understanding.
+  > - Summarizes key observations from the review (progress since last year, wins, challenges).
+  > - Reiterates recommendations made during the call, in clear and simple language.
+  > - Closes on a relational note using a comment the client mentioned in the transcript. End the email on a light, friendly note
+  > - End with a compelling call-to-action that encourages response (e.g., scheduling the next conversation, providing documents, or simply sharing their thoughts).
+  > - Keep the tone professional yet personable, confident yet approachable. Make it clear we're looking to build a mutually beneficial relationship.
+</Accordion>
+
+<Accordion title="Internal Meeting" description="Intended for meetings with team members.">
+  **Pre-meeting Notes/Agenda Prompt**
+
+  > Generate pre-meeting notes for a meeting between a financial advisor and one or more clients. Include any relevant information that may be helpful to the advisor, and a brief summary of the previous meeting, if applicable. Include any potential conversation starters.
+
+  **Pre-meeting Email Prompt**
+
+  > Using the meeting agenda and any context provided, generate a professional email to send to meeting participants. The email should:
+  >
+  > 1. Briefly state the purpose of the meeting
+  > 2. List the key topics to be discussed (in bullet points)
+  > 3. Include any specific preparation required from participants
+  > 4. Mention any relevant documents or materials that will be reviewed
+  >
+  > Write in a professional but warm tone, and keep the email concise yet informative.
+
+  **Meeting Notes Prompt**
+
+  > Generate a detailed summary of the meeting using sections & bullet points covering all topics discussed. Use a narrative style, be detailed, and include any outcomes or conclusions made. Be thorough, but consolidate notes under a few major topics.
+  >
+  > ---
+  >
+  > Summarize this meeting in a structured format using the EOS/Level 10 style. Include the following sections:
+  >
+  > 1. **Attendees & Roles**
+  >    - List each participant, their role, and any relevant context.
+  > 2. **Team Objectives**
+  >    - Capture the team's top priorities, quarterly objectives, or 'Rocks' mentioned.
+  > 3. **Metrics**
+  >    - List key metrics, KPIs, or numbers reviewed (e.g., new accounts, AUM changes, client touchpoints, pipeline updates).
+  > 4. **To-Dos & Assignments**
+  >    - Document all action items, who is responsible, and deadlines.
+  > 5. **Issues / IDS (Identify, Discuss, Solve)**
+  >    - Record issues raised, discussion points, and agreed-upon solutions.
+  > 6. **Decisions Made**
+  >    - Capture final decisions, commitments, or strategic shifts.
+  > 7. **Notes & Other Important Details**
+  >    - Any additional context, client insights, compliance reminders, or operational updates.
+
+  **Follow-up Email Prompt**
+
+  > This is a meeting between an advisor and their team members. Using the transcript of the meeting and the distilled notes, generate a follow-up email to the prospect. The email should:
+  >
+  > - Use a mix of bullet points where it's more beneficial to summarize, and a couple sentence paragraphs where emphasis needs to be made. Keep the overall email concise, between 100-200 words.
+  > - Reference the most important KPIs, performance numbers, trends, or topics discussed.
+  > - Summarizes key observations and strategic decisions agreed upon.
+  > - Reiterates commitments made during the call, in clear and simple language.
+  > - Capture major takeaways or important context relevant to the team's objectives.
+</Accordion>
