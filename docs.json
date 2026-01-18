@@ -159,15 +159,6 @@
         ]
       },
       {
-        "tab": "Security",
-        "pages": [
-          "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d1",
-          "security/zero-data-retention",
-          "security/hazelsecuritypage",
-          "security/download-hazels-security-document"
-        ]
-      },
-      {
         "tab": "FAQ",
         "pages": [
           "Ask-Hazel-FAQ-2850935ca9a98023860fdf1ac24fd6a3",
@@ -185,8 +176,22 @@
         ]
       },
       {
-        "tab": "Supplemental Information",
-        "hidden": true
+        "tab": "Security",
+        "pages": [
+          "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d1",
+          "security/zero-data-retention",
+          {
+            "group": "Links",
+            "pages": [
+              "security/hazelsecuritypage",
+              "security/download-hazels-security-document"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Pricing",
+        "href": "https://hazel.ai/pricing"
       },
       {
         "tab": "Webinars & Podcasts",
@@ -204,6 +209,10 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Supplemental Information",
+        "hidden": true
       }
     ]
   },
