@@ -1,0 +1,23 @@
+---
+title: "Privacy & Security"
+---
+
+Hazel AI’s backend is built on distributed microservices running in Amazon EKS (Kubernetes), orchestrating workflow, AI reasoning, and data services. When user data is processed:
+
+- Only authorized, permissioned data is included, leveraging role-based access controls and pre-processing filters that validate and sanitize all inputs.
+- Retrieval-augmented generation (RAG) ensures only permissible information enters analytic processes, with post-processing checks ensuring security protocols are respected so AI responses adhere to user roles and organizational security policies.
+
+Data Storage Architecture
+
+- **Databases**: Data is stored in PostgreSQL databases with forced SSL connections, restricted to private subnets and accessed via secure VPCs. All connections require TLS and access is managed through granular security groups and a proxy layer that enforces encryption and limits exposure.
+- **AI Knowledge Base**: Hazel uses AWS Bedrock with OpenSearch Serverless for vector-based search and knowledge management. Data in OpenSearch and S3 is encrypted at rest using AWS KMS keys and protected with IAM-integrated permissions.
+- **Cache Layer**: Redis cache is encrypted both at rest and in transit.
+- **Backup & Edge Services**: Backups reside in encrypted S3 buckets, and edge services (via Fastly) enforce non-caching for APIs to guarantee data freshness.
+
+Security Practices
+
+- **Encryption**: Hazel enforces encryption at rest for all services, uses TLS 1.2+ for transit, and manages secrets via Vault and AWS Secrets Manager.
+- **Access Controls:** VPC-only admin access, RBAC for Kubernetes, granular security groups, VPN access for administration, and strict workload identity management.
+- **Monitoring & Logging:** Constant monitoring with Datadog and AWS CloudWatch ensures visibility for threat detection, operational health, and compliance.
+- **Network Security:** Protection with network segmentation, web application firewalls (WAF), and private subnets limits external exposure.
+- **Application Security:** Kubernetes pod security contexts and service accounts restrict and audit workloads.
