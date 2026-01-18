@@ -97,65 +97,74 @@
               "Email-Overview-2620935ca9a9801b9bbdf055bb0d0699",
               "Setting-Up-your-Email-2630935ca9a980579640f0eebcfc0e39"
             ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              {
+                "group": "Account",
+                "pages": [
+                  "Account-2620935ca9a980df993ed3d1a8c437aa"
+                ]
+              },
+              {
+                "group": "Meeting",
+                "pages": [
+                  "settings/meeting/untitled-page"
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "settings/integrations/integrations-overview",
+                  {
+                    "group": "Custodians",
+                    "pages": [
+                      "settings/integrations/custodians/altruist"
+                    ]
+                  },
+                  {
+                    "group": "Calendar & Emails",
+                    "pages": [
+                      "settings/integrations/calendar-and-emails/google",
+                      "settings/integrations/calendar-and-emails/google-copied-1"
+                    ]
+                  },
+                  {
+                    "group": "CRMs",
+                    "pages": [
+                      "settings/integrations/crms/wealthbox",
+                      "settings/integrations/crms/redtail",
+                      "settings/integrations/crms/salesforce",
+                      "settings/integrations/crms/quivr"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Billing",
+                "pages": [
+                  "settings/billing"
+                ]
+              },
+              {
+                "group": "Members",
+                "pages": [
+                  "Members-2620935ca9a98049b59dc2d930bf408f",
+                  "Members-2620935ca9a98049b59dc2d930bf408f-copied-1"
+                ]
+              }
+            ]
           }
         ]
       },
       {
-        "tab": "Settings",
-        "groups": [
-          {
-            "group": "Account",
-            "pages": [
-              "Account-2620935ca9a980df993ed3d1a8c437aa"
-            ]
-          },
-          {
-            "group": "Meeting",
-            "pages": [
-              "settings/meeting/untitled-page"
-            ]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              "settings/integrations/integrations-overview",
-              {
-                "group": "Custodians",
-                "pages": [
-                  "settings/integrations/custodians/altruist"
-                ]
-              },
-              {
-                "group": "Calendar & Emails",
-                "pages": [
-                  "settings/integrations/calendar-and-emails/google",
-                  "settings/integrations/calendar-and-emails/google-copied-1"
-                ]
-              },
-              {
-                "group": "CRMs",
-                "pages": [
-                  "settings/integrations/crms/wealthbox",
-                  "settings/integrations/crms/redtail",
-                  "settings/integrations/crms/salesforce",
-                  "settings/integrations/crms/quivr"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Members",
-            "pages": [
-              "Members-2620935ca9a98049b59dc2d930bf408f",
-              "Members-2620935ca9a98049b59dc2d930bf408f-copied-1"
-            ]
-          },
-          {
-            "group": "Billing",
-            "pages": [
-              "settings/billing"
-            ]
-          }
+        "tab": "Security",
+        "pages": [
+          "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d1",
+          "security/zero-data-retention",
+          "security/hazelsecuritypage",
+          "security/download-hazels-security-document"
         ]
       },
       {
