@@ -32,11 +32,18 @@
         ]
       },
       {
+        "tab": "Home2",
+        "pages": [
+          "index-copied-1"
+        ]
+      },
+      {
         "tab": "Guides",
         "pages": [
           {
             "group": "Getting Started",
             "pages": [
+              "guides/getting-started/introduction",
               "Overview-2620935ca9a98054b1d8e4aa028e9a9f",
               "Onboarding-2620935ca9a9801b97bcc7d73f6dd19b",
               "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d"
