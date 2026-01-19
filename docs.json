@@ -140,9 +140,9 @@
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "troubleshooting/ask-hazel-troubleshooting",
-                  "troubleshooting/email-assistant-troubleshooting",
-                  "troubleshooting/meeting-assistant-troubleshooting"
+                  "troubleshooting/ask-anything-chat",
+                  "troubleshooting/email-assistant",
+                  "troubleshooting/meeting-assistant"
                 ]
               },
               {
@@ -196,19 +196,10 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://hazel.ai"
+    "href": "/index"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@hazel.ai"
-      },
-      {
-        "label": "Sign up",
-        "href": "https://auth.hazel.altruist.com/"
-      }
-    ],
+    "links": [],
     "primary": {
       "type": "button",
       "label": "Try Hazel",
