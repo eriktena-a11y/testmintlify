@@ -63,7 +63,15 @@
               "guides/meeting-assistant/meetings-overview/getting-started/preparing-for-a-meeting",
               "guides/meeting-assistant/meetings-overview/recording-a-meeting",
               "guides/meeting-assistant/meetings-overview/getting-started/debriefing-a-meeeting",
-              "guides/meeting-assistant/meetings-overview/ignoring-meetings"
+              "guides/meeting-assistant/meetings-overview/ignoring-meetings",
+              {
+                "group": "Meeting Types",
+                "pages": [
+                  "guides/meeting-assistant/meeting-details/meeting-types/default-meeting-types",
+                  "guides/meeting-assistant/meetings-overview/adding-meeting-types",
+                  "guides/meeting-assistant/meeting-details/meeting-types/customizing-meeting-types"
+                ]
+              }
             ]
           },
           {
@@ -154,30 +162,16 @@
         "tab": "Resources",
         "groups": [
           {
-            "group": "Webinars",
+            "group": "Webinars & Podcasts",
             "pages": [
-              "webinar-replay/webinar-replay"
-            ]
-          },
-          {
-            "group": "Podcasts",
-            "pages": [
+              "webinar-replay/webinar-replay",
               "webinars-and-podcasts/podcasts/podcasts"
             ]
           },
           {
             "group": "Prompting",
             "pages": [
-              "guides/meeting-assistant/meeting-details/prompting/prompting-tips-and-tricks",
-              "guides/meeting-assistant/meeting-details/prompting/intro-to-prompting"
-            ]
-          },
-          {
-            "group": "Meeting Types",
-            "pages": [
-              "guides/meeting-assistant/meeting-details/meeting-types/default-meeting-types",
-              "guides/meeting-assistant/meetings-overview/adding-meeting-types",
-              "guides/meeting-assistant/meeting-details/meeting-types/customizing-meeting-types"
+              "guides/meeting-assistant/meeting-details/prompting/prompting-tips-and-tricks"
             ]
           }
         ]
