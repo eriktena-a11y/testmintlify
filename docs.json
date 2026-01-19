@@ -32,12 +32,6 @@
         ]
       },
       {
-        "tab": "Home2",
-        "pages": [
-          "index-copied-1"
-        ]
-      },
-      {
         "tab": "Guides",
         "pages": [
           {
@@ -45,8 +39,7 @@
             "pages": [
               "guides/getting-started/introduction",
               "Overview-2620935ca9a98054b1d8e4aa028e9a9f",
-              "Onboarding-2620935ca9a9801b97bcc7d73f6dd19b",
-              "Privacy-and-Security-2690935ca9a980b890f9ea491180cc3d"
+              "Onboarding-2620935ca9a9801b97bcc7d73f6dd19b"
             ]
           },
           {
@@ -134,8 +127,9 @@
           {
             "group": "Help",
             "pages": [
+              "guides/help/faq",
               {
-                "group": "FAQ",
+                "group": "FAQ1",
                 "pages": [
                   "faq/ask-hazel-faq",
                   "faq/meetings-faq",
@@ -176,9 +170,19 @@
             ]
           },
           {
-            "group": "Prompting",
+            "group": "Prompt Library",
             "pages": [
-              "guides/meeting-assistant/meeting-details/prompting/prompting-tips-and-tricks"
+              "resources/prompt-library/prompting-tips-and-tricks",
+              {
+                "group": "Meeting Types",
+                "pages": [
+                  "resources/prompt-library/meeting-types/agenda",
+                  "resources/prompt-library/meeting-types/reminder-email",
+                  "resources/prompt-library/meeting-types/meeting-notes",
+                  "resources/prompt-library/meeting-types/follow-up-email"
+                ]
+              },
+              "resources/prompt-library/ask-hazel"
             ]
           }
         ]
