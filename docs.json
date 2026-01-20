@@ -82,6 +82,13 @@
             ]
           },
           {
+            "group": "Modes",
+            "pages": [
+              "guides/modes/modes-overview",
+              "guides/modes/tax-mode"
+            ]
+          },
+          {
             "group": "Settings",
             "pages": [
               "Account-2620935ca9a980df993ed3d1a8c437aa",
@@ -100,6 +107,7 @@
           {
             "group": "Integrations",
             "pages": [
+              "guides/integrations/integrations-overview",
               {
                 "group": "Custodians",
                 "pages": [
@@ -128,23 +136,7 @@
             "group": "Help",
             "pages": [
               "guides/help/faq",
-              {
-                "group": "FAQ1",
-                "pages": [
-                  "faq/ask-hazel-faq",
-                  "faq/meetings-faq",
-                  "faq/email-faq",
-                  "faq/billing-faq"
-                ]
-              },
-              {
-                "group": "Troubleshooting",
-                "pages": [
-                  "troubleshooting/ask-anything-chat",
-                  "troubleshooting/email-assistant",
-                  "troubleshooting/meeting-assistant"
-                ]
-              },
+              "guides/help/troubleshooting",
               {
                 "group": "Privacy & Security",
                 "pages": [
