@@ -148,36 +148,120 @@ title: "Troubleshooting"
       The best option for recording in person meetings is to use the iOS app for recording.
     </Note>
   </Accordion>
+  <Accordion title="I can’t see my team members' meetings, even though their calendar is connected and they can see their meetings. Why?">
+  The most common reason is that the meeting isn’t linked to a Household/Contact (or it has no attendees listed). If a meeting has no attendees, it will only be visible to users who are directly on the calendar event invite.
+
+  **How to fix it**
+
+  1. Ask the meeting owner to open the meeting in Hazel and review **Meeting Details → Attendees**.
+  2. Confirm there’s at least one attendee listed and that the meeting is associated with the correct Household/Contact.
+     - This links the meeting so other team members can view it, and allows Ask Hazel to reference it.
+
+  <Info>
+    If there _is_ an attendee listed: have the meeting owner check the Household/Contact permissions. If you don’t have permission to view the Household/Contact, you won’t be able to view meetings associated with it.
+  </Info>
+  Still not working? Email [support@hazel.ai](mailto:support@hazel.ai) with the meeting title and meeting date/time so we can investigate.
+</Accordion>
 </AccordionGroup>
 
 ### Email Troubleshooting
+
 <AccordionGroup>
-<Accordion title="My signature is not HTML.">
-  ![ET.signaturenothtml](/images/image\(8\)-1.png)
+  <Accordion title="My signature is not HTML.">
+    ![ET.signaturenothtml](/images/image\(8\)-1.png)
 
-  Leverage Hazel’s chat to turn your non-HTML signature into HTML text by:
+    Leverage Hazel’s chat to turn your non-HTML signature into HTML text by:
 
-  1. Copying your email signature into a word document
-  2. Attach the document + the following prompt into Ask Hazel `Hazel, turn the email signature in the document attached into HTML text`
-  3. Copy the HTML text into Settings → HTML Email Signature
+    1. Copying your email signature into a word document
+    2. Attach the document + the following prompt into Ask Hazel `Hazel, turn the email signature in the document attached into HTML text`
+    3. Copy the HTML text into Settings → HTML Email Signature
+  </Accordion>
+  <Accordion title="My logo is not loading in the signature.">
+    ![Image (10)](/images/image\(10\).png)
+
+    It’s most likely that your HTML email signature includes an image that is not public. Images in your HTML email signature need to be on a publicly accessible url link that points to an image source.
+
+    Within your HTML email signature, verify by:
+
+    1. CTRL+F `img` and find the `img src` section of text
+    2. Replace everything in “`double quotes`” with a publicly stored image
+
+       <Info>
+         Ex. img src="/41235/file_attachments/5952192” → img src="https://hazel.ai/images/logo-footer.svg"
+       </Info>
+
+    ![Image (9)](/images/image\(9\).png)
+
+    If you don't have a publicly stored email, you can upload a logo in Settings → Account → Firm Information, right click on the logo once its loaded, and ‘Copy Image Address’.
+  </Accordion>
+  <Accordion title="Hazel did not sync historical emails. Why?">
+    Historical email backfill depends on having contacts/households in Hazel (typically from a connected CRM). Hazel uses those contacts to match and sync past email history.
+
+    **If you have NOT connected a CRM (or you have no contacts in Hazel)**
+
+    - Hazel can’t backfill historical emails because there are no contacts/households to match emails to.
+    - You _should_ still see new inbound screened emails going forward in the Inbox (left sidebar).
+      - If you’re not seeing new emails either, check **Settings → Account → Email Preferences**. Emails that aren’t associated with a contact/household may be filtered out based on your screening preferences.
+
+    <Tip>
+      Connecting your CRM or adding contacts to Hazel will maximize Hazel's functionality, especially with the Email Assistant.
+    </Tip>
+    **If you HAVE connected a CRM (and contacts exist in Hazel)**
+
+    Try re-triggering the email sync:
+
+    1. Go to **Settings → Integrations**
+    2. Disconnect your Email integration
+    3. Refresh the page
+    4. Reconnect your Email integration to trigger a resync
+
+    <Info>
+      Email resyncs typically take 5–15 minutes to ingest emails.
+    </Info>
+    Still not working? Email [support@hazel.ai](mailto:support@hazel.ai) so we can investigate.
+  </Accordion>
+  <Accordion title="My email sync is broken and I am no longer receiving emails in Hazel.">
+    Try re-triggering the email sync:
+
+    1. Go to **Settings → Integrations**
+    2. Disconnect your Email integration
+    3. Refresh the page
+    4. Reconnect your Email integration to trigger a resync
+
+    <Info>
+      Email resyncs typically take 5–15 minutes to ingest emails.
+    </Info>
+    Still not working? Email [support@hazel.ai](mailto:support@hazel.ai) so we can investigate.
+  </Accordion>
+</AccordionGroup>
+
+
+
+
+
+### Account Troubleshooting
+
+
+
+<AccordionGroup>
+<Accordion title="My account is still suspended after updating my credit card details.">
+  Email [support@hazel.ai](mailto:support@hazel.ai) so we can investigate.
 </Accordion>
+  <Accordion title="My team member and I are on different firm accounts. How do we get on the same account?">
+  If you and a team member are in _two different firm accounts_, you won’t be able to collaborate or see each other’s meetings. Hazel can’t “merge” two firm accounts. To get you on the same firm, Support must deactivate one user’s account, then the remaining firm owner/admin invites that user into the correct firm.
 
-<Accordion title="My logo is not loading in the signature.">
-  ![Image (10)](/images/image\(10\).png)
+  **Example**\
+  John and Henry are on separate firm accounts. If Henry’s firm is the one you’re keeping, Hazel Support deactivates John. John won’t be able to log in again until Henry invites him (Settings → Members) and John accepts the invite email.
 
-  It’s most likely that your HTML email signature includes an image that is not public. Images in your HTML email signature need to be on a publicly accessible url link that points to an image source.
+  **How to fix it**
 
-  Within your HTML email signature, verify by:
+  1. Decide which firm account you want to keep.
+  2. Hazel Support deactivates the user who will be moving.
+  3. The admin of the firm you’re keeping goes to Settings → Members and sends an invite.
+  4. The deactivated user must accept the invite from the email to regain access.
 
-  1. CTRL+F `img` and find the `img src` section of text
-  2. Replace everything in “`double quotes`” with a publicly stored image
-
-     <Info>
-       Ex. img src="/41235/file_attachments/5952192” → img src="https://hazel.ai/images/logo-footer.svg"
-     </Info>
-
-  ![Image (9)](/images/image\(9\).png)
-
-  If you don't have a publicly stored email, you can upload a logo in Settings → Account → Firm Information, right click on the logo once its loaded, and ‘Copy Image Address’.
+  <Info>
+    **IMPORTANT:** Once deactivated, the user can’t log in until the invite is accepted. If the user signs up again before being invited, they may end up back in a separate firm and the process may need to be repeated.
+  </Info>
 </Accordion>
 </AccordionGroup>
