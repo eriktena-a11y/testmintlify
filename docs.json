@@ -46,8 +46,7 @@
             "group": "Ask Hazel (Chat)",
             "pages": [
               "Ask-Hazel-2620935ca9a9809d9646dc89ec4fbf09",
-              "guides/ask-hazel-chat/best-practices",
-              "guides/ask-hazel-chat/prompts-to-help-you-get-started"
+              "guides/ask-hazel-chat/best-practices"
             ]
           },
           {
