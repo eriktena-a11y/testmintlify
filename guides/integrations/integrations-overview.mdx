@@ -1,0 +1,15 @@
+---
+title: "Overview"
+---
+
+## Integration Sync Summary
+
+| **Integration** | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                                                                                                                    | **Can Resync?** |
+| :-------------- | :------------------------------- | :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------- | :-------------- |
+| **Gmail**       | 3 years of past emails           | Near-instant (event-driven)      | Only emails linked to CRM contacts                                                                                                     | ❌ No            |
+| **Outlook**     | 3 years of past emails           | Near-instant (event-driven)      | Only emails linked to CRM contacts                                                                                                     | ❌ No            |
+| **Redtail**     | Partial (not full history)       | Every 24 hours                   | None (all contact data comes through)                                                                                                  | ✅ Yes           |
+| **Wealthbox**   | Full history                     | Every hour (incremental updates) | Must have:<br />Type = **Person** or \*\*Household, Active = true\*\*, and Contact Type = **Prospect** or **Client**                   | ✅ Yes           |
+| **Salesforce**  | Full history                     | Every hour (incremental updates) | None (all contact data comes through)                                                                                                  | ✅ Yes           |
+| **Quivr**       | Full history                     | Every hour (incremental updates) | Must have:<br />Client Type = **Household**, and Record Type = **Client Household**, **On-Boarding Client Household**, or **Prospect** | ✅ Yes           |
+| **Altruist**    | No history (live feed)           | Near-instant (event-driven)      | Access:<br />Accounts, balances, transactions, and beneficiary information.                                                            | ❌ No            |
