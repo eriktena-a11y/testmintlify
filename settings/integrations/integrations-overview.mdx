@@ -2,22 +2,6 @@
 title: "Integrations"
 ---
 
-## Integration Sync Summary
-
-| **Integration**                                                                           | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                   | **Can Resync?** |
-| :---------------------------------------------------------------------------------------- | :------------------------------- | :------------------------------- | :------------------------------------ | :-------------- |
-| **Gmail**                                                                                 | 3 years of past emails           | Near-instant (event-driven)      | Only emails linked to CRM contacts    | ❌ No            |
-| **Outlook**                                                                               | 3 years of past emails           | Near-instant (event-driven)      | Only emails linked to CRM contacts    | ❌ No            |
-| **Redtail**                                                                               | Partial (not full history)       | Every 24 hours                   | None (all contact data comes through) | ✅ Yes           |
-| **Wealthbox**                                                                             | Full history                     | Every hour (incremental updates) | Must have:                            |                 |
-| Type = **Person** or \*\*Household,                                                       |                                  |                                  |                                       |                 |
-| Active = true\*\*, and                                                                    |                                  |                                  |                                       |                 |
-| Contact Type = **Prospect** or **Client**                                                 | ✅ Yes                            |                                  |                                       |                 |
-| **Salesforce**                                                                            | Full history                     | Every hour (incremental updates) | None (all contact data comes through) | ✅ Yes           |
-| **Quivr**                                                                                 | Full history                     | Every hour (incremental updates) | Must have:                            |                 |
-| Client Type = **Household**,                                                              |                                  |                                  |                                       |                 |
-| and Record Type = **Client Household**, **On-Boarding Client Household**, or **Prospect** | ✅ Yes                            |                                  |                                       |                 |
-
 ## Managing Integrations
 
 Connect Hazel with your CRM, email, calendar and more. If you didn’t connect during the onboarding flow or would like to check on your connections, simply head to **Settings → Integrations** to manage your integrations.
