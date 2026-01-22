@@ -2,15 +2,17 @@
 title: "Customizing Meeting Types"
 ---
 
-Meeting type prompts let you customize what output to capture and how to present it for each meeting. When you edit a meeting type prompt, you’re defining the instructions Hazel will follow to generate the agenda, reminder email, meeting notes, and follow-up email for that meeting type.
+### Prompting for Meeting Types
 
-You can keep it simple by using a single prompt to create an all-in-one summary, or get more specific by adding multiple prompts separated by three dashes (`---`). Each prompt runs independently against the meeting transcript, allowing you to control _exactly_ what Hazel returns—such as a narrative recap, a Q&A section, action items, or a financial data table.
+Meeting Type prompts let you define the instructions Hazel will follow to generate the agenda, reminder email, meeting notes, and follow-up email for that meeting type.
+
+You can keep it simple by using a **single prompt** to create an all-in-one summary, or get more specific by adding **multiple prompts** separated by three dashes (`---`). Each prompt section runs as its **own separate query** on the transcript, allowing you to control _exactly_ what Hazel returns—such as a narrative recap, a Q&A section, action items, or a financial data table.
+
+In general, prompts work best when they’re focused on one job—one prompt for decisions, one for next steps, one for client updates—rather than asking for everything at once. Using multiple prompts keeps each request clear and targeted, which helps Hazel return more complete, organized, and accurate results.
 
 Think of prompts the same way you’d train a paraplanner: by telling them what details matter and how you want notes structured. Editing meeting note templates or creating new meeting types isn’t required, but it helps align Hazel with your firm’s processes and ensures your notes consistently reflect what’s most important to you.
 
-<Accordion title="Intro to Prompting for Meeting Types">
-  ## Single Prompts
-
+<Accordion title="Single Prompts" description="One set of instructions that runs as one query on the transcript. It’s best when your request is simple and you want Hazel to follow one clear direction without splitting the work into separate sections.">
   For single prompts, only one prompt is run to generate the meeting notes.
 
   ### Example Single Prompts
@@ -25,8 +27,9 @@ Think of prompts the same way you’d train a paraplanner: by telling them what 
   <Info>
     Generate detailed notes of the meeting using paragraphs and a narrative style. Be detailed, and include any outcomes or conclusions made.
   </Info>
-  ## Multi Prompts
+</Accordion>
 
+<Accordion title="Multi Prompts (---)" description="Let you break your template into multiple sets of instructions using ---, and each one runs as its own query on the transcript. This is ideal when you want more precision on different sets of instructions.">
   To run multiple prompts for detailed summaries, in the editor, simply add three dashes (`-` `-` `-`) and a divider should appear. Below it, you can add a new prompt.
 
   Each prompt will run independently, and be added to the end of the notes generated before it. Think of each prompt as an separate instruction for Hazel.
@@ -56,9 +59,10 @@ Think of prompts the same way you’d train a paraplanner: by telling them what 
 
     Add an html table that includes any numeric financial data discussed
   </Info>
-  ## Template Based Prompts
+</Accordion>
 
-  Using a template in prompts can help standardize the output, while allowing AI to insert relevant context.
+<Accordion title="Template Based Prompts" description="Use Template-based Prompts when you want Hazel to capture specific information in a prescribed format (Ex. onboarding data collection, financial figures, etc)">
+  Using a template in prompts can help standardize the output, while allowing AI to insert relevant context. Template-based prompts are great anytime you want **repeatable, structured output** from meetings. You define the exact sections, fields, and structure you need, and Hazel pulls the right details from the transcript to populate each part consistently, meeting after meeting.
 
   **Example Template-based Prompt**
 
@@ -110,29 +114,4 @@ Think of prompts the same way you’d train a paraplanner: by telling them what 
 
     - [Summary of what happens next, and when]
   </Info>
-</Accordion>
-
-<Accordion title="Customizing Prompts at Meeting Level">
-  1. Head to any meeting that is ‘Ready for Review’
-  2. At the top of the meeting notes, click the button that says ‘Customize Prompt’
-  3. Edit the prompt
-  4. Click ‘Save and Regenerate’
-
-  ![Trainhazelmeetingtype](/images/trainhazelmeetingtype.gif)
-</Accordion>
-
-<Accordion title="Customizing Prompts within Meeting Settings">
-  1. Head to Settings / Meeting Settings
-  2. You can either add a new Meeting Type or edit existing Meeting Types.
-
-  ![Addmeetingtype](/images/addmeetingtype.gif)
-
-  4. Select the Meeting Type you would like to edit, or click ‘Add Meeting Type’ to create a new meeting type.
-  4. Click ‘Save and Regenerate’
-
-  <Tip>
-    If you don’t want to start from scratch, you can duplicate the ‘General Meeting’ type prompts by creating a new meeting type and only filling in the Name, then clicking save.
-
-    ![Duplicatemeetingtype](/images/duplicatemeetingtype.gif)
-  </Tip>
 </Accordion>
