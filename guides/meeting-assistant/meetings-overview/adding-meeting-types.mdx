@@ -2,7 +2,9 @@
 title: "Adding Meeting Types"
 ---
 
-![Addmeetingtype](/images/addmeetingtype.gif)
+<Frame>
+  ![Addmeetingtype](/images/addmeetingtype.gif)
+</Frame>
 
 1. **Navigate to Settings → Meeting Settings**
    - From your Hazel dashboard, click on **Settings** and then select **Meeting Settings**.
@@ -12,11 +14,7 @@ title: "Adding Meeting Types"
    - This is where you can name your new meeting type and begin customizing it to fit your workflow.
 
    <Tip>
-     If you don’t want to start from scratch, you can duplicate the ‘General Meeting’ type prompts by:
-
-     [img]
-
-     Clicking on the Add Meeting Type button, naming it, then clicking Save. Find the newly created meeting type, click ‘Edit’, and it’ll have default prompts ready for editing.
+     If you don’t want to start from scratch, you can duplicate the ‘General Meeting’ type prompts by clicking on the Add Meeting Type button, naming it, then clicking Save. Find the newly created meeting type, click ‘Edit’, and it’ll have default prompts ready for editing.
    </Tip>
 3. **Customize Your Prompts**
    - Each meeting type can be tailored by editing its prompts. Hazel uses these prompts to generate structured outputs. You can set up prompts for:
@@ -25,10 +23,41 @@ title: "Adding Meeting Types"
      - **Meeting Notes** – Guide Hazel on what information to capture during the meeting (e.g., goals, action items, key decisions).
      - **Follow-Up Email** – Personalize the post-meeting summary email that Hazel generates for clients or team members.
 
-   <Tip>
-     1. **Need help with prompting?** Visit our [Meeting Prompts](https://www.notion.so/Meeting-Prompts-2620935ca9a980adb4dbc5db1ab648d7?pvs=21) page for tips, tricks, and templates to help you get started!
-   </Tip>
-1. **Match on Key Phrases**
+<Accordion title="Edit Prompts at Meeting Level">
+  1. Head to any meeting that is ‘Ready for Review’
+  2. At the top of the meeting notes, click the button that says ‘Customize Prompt’
+  3. Edit the prompt
+  4. Click ‘Save and Regenerate’
+
+  <Frame>
+    ![Customizemeetinglevel](/images/customizemeetinglevel.gif)
+  </Frame>
+</Accordion>
+
+<Accordion title="Edit Prompts within Meeting Settings">
+  1. Head to Settings / Meeting Settings
+  2. You can either add a new Meeting Type or edit existing Meeting Types.
+
+  <Frame>
+    ![Addmeetingtype](/images/addmeetingtype.gif)
+  </Frame>
+  4. Select the Meeting Type you would like to edit, or click ‘Add Meeting Type’ to create a new meeting type.
+  4. Click ‘Save and Regenerate’
+
+  <Tip>
+    If you don’t want to start from scratch, you can duplicate the ‘General Meeting’ type prompts by creating a new meeting type and only filling in the Name, then clicking save.
+
+    <Frame>
+      ![Duplicatemeetingtype](/images/duplicatemeetingtype.gif)
+    </Frame>
+  </Tip>
+</Accordion>
+
+<Tip>
+  Need help with prompting? Visit [Customizing Meeting Types](/guides/meeting-assistant/meeting-details/meeting-types/customizing-meeting-types) to get started, or the [Prompt Library](/resources/prompt-library/prompting-tips-and-tricks) for pre-built templates!
+</Tip>
+
+4. **Match on Key Phrases**
 
    ![Matchkeyphrase](/images/matchkeyphrase.png)
    - You can include keywords or phrases that Hazel will use to automatically identify and match the correct meeting type.
