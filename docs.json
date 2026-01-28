@@ -81,9 +81,9 @@
           {
             "group": "Settings",
             "pages": [
+              "guides/settings/billing",
               "guides/settings/integration-settings",
               "guides/settings/meeting-settings",
-              "settings/billing",
               {
                 "group": "Members",
                 "pages": [
