@@ -21,12 +21,24 @@ Everything you need to get started, master features, and get the most out of you
 {/* Search Bar */}
 
 <div className="flex items-center justify-center w-full">
-<button type="button" className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full mt-8 max-w-[36rem] bg-white shadow-[0px_1px_4px_0px_rgba(8,9,10,0.25),0px_0px_0px_4px_rgba(255,255,255,0.20)] cursor-pointer text-left" id="home-search-entry">
-<svg className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70 mr-2" style={{ maskImage:"url(\"https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg\")",maskRepeat:"no-repeat",maskPosition:"center center" }} />
+<button
+type="button"
+className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full mt-8 max-w-[36rem] bg-white shadow-[0px_1px_4px_0px_rgba(8,9,10,0.25),0px_0px_0px_4px_rgba(255,255,255,0.20)] cursor-pointer text-left"
+id="home-search-entry"
+onClick={()=> document.getElementById('search-bar-entry-mobile').click()}
+>
+<svg
+className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70 mr-2"
+style={{
+maskImage:
+'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+maskRepeat: 'no-repeat',
+maskPosition: 'center center',
+}}
+/>
 Search or ask...
 </button>
 </div>
-
 </div>
 </div>
 </div>
