@@ -79,6 +79,12 @@
             ]
           },
           {
+            "group": "Modes",
+            "pages": [
+              "guides/modes/tax-mode"
+            ]
+          },
+          {
             "group": "Settings",
             "pages": [
               "guides/settings/billing",
