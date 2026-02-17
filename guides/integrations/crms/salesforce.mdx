@@ -10,18 +10,30 @@ Connect your Salesforce account to give Hazel access to your contacts, household
 
 ---
 
+### **Salesforce Sync Summary**
+
 | **Integration** | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                   | **Can Resync?** |
 | :-------------- | :------------------------------- | :------------------------------- | :------------------------------------ | :-------------- |
 | **Salesforce**  | Full history                     | Every hour (incremental updates) | None (all contact data comes through) | ✅ Yes           |
 
+---
+
 The Salesforce integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Salesforce, and Salesforce syncs data every 60 minutes to Hazel. Upon the initial sync, Hazel aims to provide a complete backfill of historical data based on Salesforce sync guidelines and imports all contacts with no filters applied.
 
-**Salesforce instances accepted by Hazel:**
+### **Salesforce instances accepted by Hazel:**
 
 ✅ Salesforce Classic
 
-❌ Salesforce Lightning
+✅ Salesforce Lightning
 
-❌ Salesforce FSC (Financial Services Cloud)
+✅ Salesforce FSC (Financial Services Cloud)
+
+---
+
+### **Salesforce Object Query Language**
+
+Hazel’s chat supports **Salesforce Object Query Language (SOQL)**, Salesforce’s proprietary SQL-like query language for retrieving data from Salesforce. SOQL enables precise, structured queries—filtering by field values, combining criteria, sorting results, and pulling related records—so you can quickly find exactly the Salesforce records you need (based on your organization’s configured access and permissions).
+
+---
 
 Have questions about the Salesforce integration? Reach out to [support@hazel.ai](mailto:support@hazel.ai) for more information.
