@@ -150,6 +150,12 @@
         "tab": "Resources",
         "groups": [
           {
+            "group": "Hazel Demo",
+            "pages": [
+              "demo"
+            ]
+          },
+          {
             "group": "Webinars & Podcasts",
             "pages": [
               "resources/webinars-and-podcasts/webinars",
