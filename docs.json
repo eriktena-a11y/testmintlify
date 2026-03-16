@@ -137,7 +137,7 @@
                 "pages": [
                   "guides/help/privacy-and-security/privacy-and-security",
                   "guides/help/privacy-and-security/zero-data-retention",
-                  "guides/help/privacy-and-security/download-hazels-security-document",
+                  "guides/help/privacy-and-security/go-to-trust-center",
                   "guides/help/privacy-and-security/hazel-security-page"
                 ]
               },
@@ -183,6 +183,10 @@
       {
         "tab": "Supplemental Information",
         "hidden": true
+      },
+      {
+        "tab": "Trust Center",
+        "href": "https://trust.hazel.ai/"
       }
     ]
   },
