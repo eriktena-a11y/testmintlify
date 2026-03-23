@@ -81,6 +81,7 @@
           {
             "group": "Modes",
             "pages": [
+              "guides/modes/overview",
               "guides/modes/tax-mode"
             ]
           },
