@@ -166,6 +166,7 @@
           {
             "group": "Prompt Library",
             "pages": [
+              "resources/prompt-library/ask-hazel",
               "resources/prompt-library/prompting-tips-and-tricks",
               {
                 "group": "Meeting Types",
@@ -176,7 +177,7 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/ask-hazel"
+              "resources/prompt-library/modes"
             ]
           }
         ]
