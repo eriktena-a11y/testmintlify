@@ -14,6 +14,7 @@
   "fonts": {
     "heading": {
       "family": "KMR Waldenburg",
+      "weight": 100,
       "source": "https://hazel.ai/fonts/woff2/KMR-Waldenburg-Bold.woff2",
       "format": "woff2"
     },
