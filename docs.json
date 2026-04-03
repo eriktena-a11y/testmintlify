@@ -178,8 +178,7 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/modes",
-              "resources/prompt-library/release-notes"
+              "resources/prompt-library/modes"
             ]
           },
           "release-notes"
