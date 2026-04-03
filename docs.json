@@ -178,15 +178,11 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/modes"
+              "resources/prompt-library/modes",
+              "resources/prompt-library/release-notes"
             ]
           },
-          {
-            "group": "Releases",
-            "pages": [
-              "release-notes"
-            ]
-          }
+          "release-notes"
         ]
       },
       {
