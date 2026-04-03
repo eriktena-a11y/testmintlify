@@ -150,7 +150,7 @@
       },
       {
         "tab": "Resources",
-        "groups": [
+        "pages": [
           {
             "group": "Hazel Demo",
             "pages": [
@@ -178,8 +178,13 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/modes",
-              "resources/prompt-library/release-notes"
+              "resources/prompt-library/modes"
+            ]
+          },
+          {
+            "group": "Release Notes",
+            "pages": [
+              "release-notes"
             ]
           }
         ]
