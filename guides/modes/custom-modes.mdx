@@ -1,0 +1,133 @@
+---
+title: "Custom Modes"
+---
+
+## What Are Custom Modes?
+
+Custom Modes let you package your own **instructions** and **background knowledge** into a reusable Mode that Hazel follows whenever you select it in Ask Hazel. Instead of re-explaining how you want a task done every time, you define it once—then start a focused chat in that Mode as often as you like.
+
+Custom Modes are built on the same foundation as every Mode (see the [Modes Overview](/guides/modes/overview)). What makes them _custom_ is that **you** create them: you write the instructions, attach the reference files, and decide whether the Mode stays private to you or is shared with your whole firm.
+
+<Info>
+  Anyone in your firm can create a Custom Mode. A Mode you create is **private** to you by default—it only becomes visible to teammates when you mark it **Available firm wide**.
+</Info>
+
+## Creating a Custom Mode
+
+You create Custom Modes from the **mode selector** in Ask Hazel—not from Settings (Settings is where you manage and archive existing Modes).
+
+1. **Open the mode selector**
+   On the Ask Hazel page, click on 'Modes' (it shows **Ask** by default).
+2. **Choose “New Mode”**
+   Select **New Mode** at the bottom of the dropdown. This opens the Mode setup panel.
+3. **Give it a Title**
+   Enter a clear, recognizable **Title** (up to 255 characters). This is the name teammates and you will see in the mode selector—e.g. _“Prospect Follow-Up Email”_ or _“Quarterly Review Prep.”_
+4. **Add a Short description**
+   Write a one-line **Short description** of what the Mode is for. It appears under the Mode’s name in Settings and helps your team pick the right Mode.
+5. **Write the Detailed instructions**
+   In the **Detailed instructions** editor, describe exactly how Hazel should behave in this Mode—its tone, the steps to follow, the format of the output, and anything it should always (or never) do. You can use basic formatting (bold, italic, underline, bullet lists).
+   <Tip>
+     Not sure how to phrase it? Write a rough draft and click **Improve**—Hazel will rewrite your instructions into clearer, more structured guidance. Select a portion of the text first to improve just that part, or leave nothing selected to improve the whole thing.
+   </Tip>
+6. **Add knowledge files (optional)**
+   Under **Add files**, click **Upload files** to attach reference material that gives the Mode more context—templates, checklists, firm policies, sample outputs, and the like. See [Adding Knowledge Files](#adding-knowledge-files) for supported formats and limits.
+7. **Choose who can use it**
+   Leave the **Available firm wide** toggle **off** to keep the Mode private to you, or turn it **on** to share it with everyone in your firm. See [Private vs. Firm-Wide](#private-vs-firm-wide).
+8. **Save**
+   Click **Save**. A Mode needs at least a **Title** and **Detailed instructions** before it can be saved. If you attached files, they’ll finish processing in the background—your Mode is ready to use as soon as processing completes.
+
+{/* Screenshot suggestion: the New Mode panel showing Title, Short description, Detailed instructions with the Improve button, Add files, and the Available firm wide toggle. */}
+
+## Writing Effective Instructions
+
+Custom Modes are only as good as their instructions. A few guidelines:
+
+- **Be specific about the output.** State the format you want—e.g. _“Respond with a short summary, then a bulleted list of action items.”_
+- **Describe the process, not just the goal.** Tell Hazel the steps to take and what to check.
+- **Set the tone and audience.** _“Write in a warm, plain-English tone suitable for a client.”_
+- **Call out constraints.** Note anything Hazel should avoid, omit, or always include.
+- **Iterate.** Run the Mode, see how it responds, then refine the instructions.
+
+<Tip>
+  Looking for a starting point? The [Modes prompt library](/resources/prompt-library/modes) has ready-made instruction sets you can paste into a new Custom Mode.
+</Tip>
+
+## Adding Knowledge Files
+
+Attaching files gives a Mode reference material it can draw on in every conversation—without you re-uploading it each time.
+
+- **Supported formats:** PDF, DOCX, XLSX, TXT, and CSV
+- **Limits:** up to **3 files** per Mode, **25 MB** per file
+- **Processing:** uploaded files are processed in the background. While a file is processing, the Mode shows a _processing_ state; once it’s **ready**, the knowledge is available in chat.
+
+You can download a file by clicking its name, or remove it with the **✕** next to it.
+
+<Note>
+  If a file fails to process, the Mode is flagged with a warning (“Some documents failed to process. Please review this Mode.”) and can’t be selected in chat until you remove or replace the file.
+</Note>
+
+## Private vs. Firm-Wide
+
+The **Available firm wide** toggle controls who can see and use the Mode:
+
+- **Private** (toggle off) — only you can see and use the Mode. It appears under **PRIVATE** in Settings → Modes.
+- **Firm wide** (toggle on) — everyone in your firm can select and use the Mode. It appears under **FIRM** in Settings → Modes, labeled with **“Created by: \[your name\]”** for your teammates.
+
+Only the person who created a Mode can edit, archive, or restore it. Teammates can **use** a firm-wide Mode and **view** its details, but not change it.
+
+## Using a Custom Mode in Ask Hazel
+
+1. On the Ask Hazel page, open the mode selector.
+2. Pick your Custom Mode from the list (your private Modes and any firm-wide Modes both appear here).
+3. Start chatting. The conversation stays in that Mode for its entire duration.
+
+A few things to know:
+
+- Modes are chosen **before** you start a conversation, and a chat keeps the same Mode throughout.
+- Modes **don’t remember past conversations**—each chat starts fresh, but your instructions and knowledge are always applied, so results stay consistent.
+- In any Mode, Hazel can still use **all the data you’ve connected** (CRM, email, calendar, meeting notes, custodial data).
+- If a Mode is still processing or has a failed file, it appears but can’t be selected until it’s ready.
+
+## Editing, Archiving & Restoring
+
+Manage your Modes from **Settings → Modes**, where they’re grouped under **PRIVATE** and **FIRM**.
+
+- **Edit** — for Modes you created, click **Edit** to update the title, description, instructions, files, or sharing setting. (For firm-wide Modes created by someone else, you’ll see **View** instead—details are read-only.)
+- **Archive** — toggle a Mode off to archive it. Archived Modes are removed from the mode selector but aren’t deleted: _“This Mode will be archived and no longer available in chat. You can restore it at any time from Settings.”_
+- **Restore** — toggle an archived Mode back on to make it available in chat again.
+
+You can also edit your own Modes directly from the mode selector—hover a Mode you created and click the **pencil** icon. For firm-wide Modes created by teammates, hover and click the **info** icon to view details.
+
+## Starting From a Pre-Built Mode
+
+Some Modes come pre-built as templates. When you open one, you’ll see _“This is a pre-built Mode. Duplicate it to your account to customize and use it.”_ Click **Use this Mode** to copy it into your account, then edit the instructions and files to fit your firm.
+
+## What Custom Modes Can — and Cannot — Do
+
+<Check>
+  **Custom Modes can:**
+
+  - Apply your saved instructions to every chat in that Mode
+  - Use your connected data and the knowledge files you attach
+  - Analyze and visualize data, and draft emails, documents, and summaries
+  - Produce downloadable files, including PDFs, DOCs, CSVs, XLSX
+  - Be kept private or shared across your firm
+
+  Custom Modes help you think, analyze, and create—you stay in control of what happens next.
+</Check>
+
+<Danger>
+  **Custom Modes cannot:**
+
+  - Remember previous conversations (each chat starts fresh)
+  - Take actions on your behalf or run automations
+  - Send emails or messages
+  - Schedule meetings, reminders, or tasks
+  - Write back to your CRM or other systems
+</Danger>
+
+## Related
+
+- [Modes Overview](/guides/modes/overview) — how Modes work and when to use them
+- [Tax Planning](/guides/modes/tax-mode) — Hazel’s specialized, built-in tax Mode
+- [Modes prompt library](/resources/prompt-library/modes) — ready-made instructions to paste into a Custom Mode

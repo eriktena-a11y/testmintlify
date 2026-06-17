@@ -2,14 +2,15 @@
 title: "Roles and Permissions"
 ---
 
-Hazel supports three distinct roles within a firm: **Owner, Advisor, and Assistant.** Each role determines what level of access a team member has to Hazel’s features and firm settings.
+Hazel supports three distinct roles within a firm: **Owner, Admin, Advisor.** Each role determines which firm-admin controls and features a member can use. Access to specific client records (Households & Contacts) is controlled separately, per record, by sharing — not by role — except Owners see every record." Add to the Advisor (and new Assistant) sections that they only see records shared with them.
 
 ## Role Comparison
 
-| Role | Admin Access (Firm Settings) | Record Meetings | Full Feature Access | Chat Access | Use Case |
-| :-- | :-- | :-- | :-- | :-- | :-- |
-| **Owner** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | Manage firm \+ full Hazel access |
-| **Advisor** | ❌ No | ✅ Yes | ✅ Yes | ✅ Yes | Use Hazel for advising \+ client management |
+| Role | Admin Access (Firm Settings) | Access to All Members Meetings | Record Meetings | Full Feature Access | Chat Access | Use Case |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| **Owner** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | Manage firm \+ full Hazel access |
+| **Admin** | ✅ Yes | ❌ No - based on permissions | ✅ Yes | ✅ Yes | ✅ Yes | Manage firm \+ advisor level access |
+| **Advisor** | ❌ No | ❌ No - based on permissions | ✅ Yes | ✅ Yes | ✅ Yes | Use Hazel for client management |
 
 ## Owner
 
@@ -17,11 +18,19 @@ Hazel supports three distinct roles within a firm: **Owner, Advisor, and Assista
   Hazel does not import existing roles and permissions from external data sources. It is up to the Owner to edit household permissions for the organization. [Learn more about editing household permissions.](/guides/settings/members/owner-capabilties)
 </Info>
 
-The **Owner** seat is designed to manage the Hazel account and control firm-wide permissions.
+The **Owner** seat is designed to manage the Hazel account and control firm-wide permissions, with <u>full visibility</u>.
 
 - **Admin capabilities:** Invite and remove members, manage firm settings, and control who can see which Households and Contacts.
-- **Feature access:** Full access to all Hazel features, including meeting recording.
+- **Feature access:** Full access to all Hazel features, including meeting recording. The owner role has access to view all meetings associated to the firm account.
 - **Use case:** Owners can use Hazel’s chat to instantly access any client data, prepare and debrief meetings, record meetings, send emails, and sync notes and tasks back to the CRM — while also administering the team’s overall Hazel setup.
+
+## Admin
+
+The **Admin** seat is designed to manage the Hazel account and control firm-wide permissions, with <u>limited visibility</u>.
+
+- **Admin capabilities:** Invite and remove members, manage firm settings, and control who can see which Households and Contacts.
+- **Feature access:** Full access to all Hazel features, including meeting recording. The admin role has access to view meetings they have permission to view within the firm account.
+- **Use case:** Admins can use Hazel’s chat to instantly access any client data, prepare and debrief meetings, record meetings, send emails, and sync notes and tasks back to the CRM — while also administering the team’s overall Hazel setup.
 
 ## Advisor
 

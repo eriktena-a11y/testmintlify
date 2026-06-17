@@ -1,0 +1,188 @@
+---
+title: "Managing Teams"
+---
+
+The **Team** tab in Settings is where you manage everyone in your firm: who's on the team, what each person can do, and—most importantly—**which clients each person can see**.
+
+There are two separate ideas to keep in mind:
+
+- **Roles** decide what someone can _do_ in Hazel (and whether they can manage firm settings). More on [Roles and Permissions](/guides/settings/members/roles-and-permissions).
+- **Access** decides which **Households** and **Contacts** someone can _see_. Access is controlled per client—by sharing records with a person directly, or with a **Group** they belong to.
+
+<Info>
+  **Who can manage the Team tab?** Only **Owners** and **Firm Admins** see the Team tab. A few actions—assigning the Owner role and creating automatic rules—are limited to **Owners**.
+</Info>
+
+## How the Team tab is organized
+
+Open **Settings → Team**. Across the top you'll find four views:
+
+- **Members** — everyone in your firm (and anyone you've invited)
+- **Groups** — reusable sets of people you can share clients with all at once
+- **Households** — browse every household and manage who can see each one
+- **Standalone contacts** — same, for contacts who aren't part of a household
+
+## Roles
+
+Every member has one role:
+
+| Role | What it's for |
+| :-- | :-- |
+| **Owner** | Runs the firm in Hazel. Can see **every** household and contact, manage all settings, and manage the team. Owners are always Firm Admins. |
+| **Advisor** | The standard seat. Works with the clients shared with them and uses Hazel's full feature set. |
+
+**Firm Admin** is a separate permission you can give an Advisor or Assistant so they can manage the team and billing—_without_ giving them access to any additional client data. Owners are always Firm Admins.
+
+<Info>
+  Giving someone access to settings (Firm Admin) and giving them access to clients are two different things. Making someone a Firm Admin never changes which clients they can see.
+</Info>
+
+## Managing members
+
+### Invite a teammate
+
+1. Go to **Settings → Team → Members**.
+2. Click **Invite** (top-right).
+3. Enter their **Email address**—or pick someone under **Suggested from your CRM** to fill it in.
+4. Choose a **Role**: **Advisor** (default) or **Owner**.
+5. Click **Send invite**.
+
+The person appears in the list as **Invited** until they accept.
+
+<Note>
+  You can invite people as **Advisor** or **Owner**. Invited members get access to all CRM-imported data (contacts, notes, tasks), so set their client access after they join.
+</Note>
+
+### Change a member's role or settings
+
+1. On the **Members** view, click a person's row to open their panel.
+2. Under **Member settings**, change their **Role**, toggle **Tax Planning**, or toggle **Firm Admin**.
+3. Click **Save**, then confirm in **Apply changes?**.
+
+If a role needs a paid seat and none is free, you'll see a note that a paid seat will be billed before you confirm.
+
+### Disable a member
+
+To offboard someone, open their panel and, under **Account**, click **Disable account**, then **Save** and confirm.
+
+<Warning>
+  Disabling a member is **permanent and cannot be undone.** It turns off their access and disconnects their integrations. To bring someone back, you'd have to invite them again. You can't disable your own account.
+</Warning>
+
+## Controlling who can see which clients
+
+Access is set **per client**. Each time you share a household or contact, you choose a level:
+
+| Level | What it allows |
+| :-- | :-- |
+| **Read** | Can view the client's details only. |
+| **Write** | Can view and edit details. |
+| **Manage** | Can view, edit, **and** control who else can see this client. |
+
+There are three ways to share a client:
+
+- **Directly with a person** — from a member's panel, or from the client's own **Who has access** section.
+- **With a Group** — share once with a Group, and everyone in it gets access (see [Groups](#groups)).
+- **When you create the client** — choose who can see it right in the new-household or new-contact form.
+
+<Info>
+  **Owners always see everything.** You never need to share a client with an Owner.
+</Info>
+
+### Share clients with one member
+
+1. **Settings → Team → Members**, click the person's row.
+2. In the **Permissions** section, open **Households** or **Standalone contacts**.
+3. Click **Add households** / **Add contacts**, search, and check the clients to share. Set the **Access level for new grants** (defaults to **Read**).
+4. To change an existing share, use the level dropdown on a row (**Read**, **Write**, **Manage**, or **Remove access**).
+5. Click **Review & apply**, then **Apply** to save.
+
+<Tip>
+  Nothing is saved as you click—every change is staged until you press **Review & apply**. If you close the panel with unsaved changes, Hazel asks before discarding them.
+</Tip>
+
+### Set access when creating a client
+
+When you create a household or contact, use the **Who can access this household? / Who can access this contact?** section to add the people and groups who should see it. Owners are always included automatically. You can fine-tune levels afterward.
+
+## Groups
+
+A **Group** is a named set of people. Share a household or contact with a Group, and **everyone in that Group** can see it—so you set up access once instead of person-by-person. Groups are perfect for service teams, pods, or "everyone who works with retirement clients."
+
+### Create a group
+
+1. **Settings → Team → Groups**.
+2. Click **New Group**, enter a **Group name**, and click **Create**.
+
+### Add people to a group
+
+1. On the **Groups** view, click the **\+** in the group's **Members** column.
+2. In **Manage members**, search for people and click **Add**.
+3. Remove someone with the **✕** next to their name, then click **Done**.
+
+Everyone you add immediately gains access to whatever the Group can see.
+
+### Share clients with a group
+
+1. On the **Groups** view, click the **\+** in the group's **Household** or **Contact** column.
+2. In the **Household access** / **Contact access** window, on the **Add households** / **Add contacts** tab, search and check the clients to share (use **Select all shown** to add a whole list).
+3. Click **Review & apply**, then **Apply**.
+
+<Note>
+  In a Group's **Contact access** window you can only add **standalone contacts**. Contacts who belong to a household automatically follow that household's access.
+</Note>
+
+### Rename or delete a group
+
+Use the **⋯** menu on a group's row to **Rename** or **Delete** it.
+
+<Warning>
+  Deleting a group removes the access its members got **through that group**. People keep anything that was shared with them directly or through another group.
+</Warning>
+
+## Automatic rules
+
+Instead of adding clients to a Group one by one, you can set up an **automatic rule** that shares matching clients with the Group for you—both clients that match today **and** any that match in the future.
+
+A rule matches on:
+
+- **Owner** — the advisor a client is assigned to, and/or
+- **Tag** — clients carrying a tag you choose.
+
+### Create a rule
+
+1. Open a group's **Household access** or **Contact access** window.
+2. Go to the **Automatic rules** tab and click **Create rule**.
+3. Under **Where**, add a condition: choose an **Owner** and/or one or more **Tags**.
+4. Check the live preview—e.g. _"24 contacts match today · future contacts that match will be added automatically."_
+5. Click **Add rule**, then **Review & apply** and **Apply**.
+
+**How rules combine:**
+
+- Within a single rule, a client must match **every** condition (for example, owned by _Jane_ **and** tagged _Tax_).
+- Across rules, a client that matches **any** rule gets access.
+- Leaving a rule with no conditions shares **all** clients of that type.
+
+### See who a group can reach
+
+Open the **Has access** tab in any access window to review everyone the Group can currently see, split into **Added manually** and **Via rule:** sections—a quick way to audit access.
+
+<Warning>
+  A few things to know about rules:
+
+  - If you remove a client by hand but a rule still matches them, they **keep** access through the rule. To stop sharing, edit or delete the rule.
+  - Clients shared by a rule can't be removed one at a time on the **Has access** tab—change the rule instead.
+  - Deleting a rule removes the access that rule granted.
+</Warning>
+
+## Tips
+
+- **Start with Groups.** For anything more than one or two people, share with a Group instead of individuals—it's far easier to maintain.
+- **Use rules for "always" sharing.** If a whole category of clients should always be visible to a team (by owner or tag), a rule keeps it current automatically as clients are added.
+- **Remember the two axes.** Role = what someone can do; access = which clients they can see. Promoting someone to Firm Admin doesn't reveal any new clients.
+- **Owners see everything**—you don't need to share clients with them.
+
+## Related
+
+- [Roles and Permissions](/guides/settings/members/roles-and-permissions) — a closer look at what each role can do
+- [Owner / Admin Capabilities](/guides/settings/members/owner-capabilties) — managing the team and firm settings

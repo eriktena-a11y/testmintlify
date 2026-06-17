@@ -77,12 +77,14 @@
             "pages": [
               "guides/email-assistant/overview",
               "guides/email-assistant/setting-up-your-email"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Modes",
             "pages": [
               "guides/modes/overview",
+              "guides/modes/custom-modes",
               "guides/modes/tax-mode"
             ]
           },
@@ -96,7 +98,8 @@
                 "group": "Members",
                 "pages": [
                   "guides/settings/members/roles-and-permissions",
-                  "guides/settings/members/owner-capabilties"
+                  "guides/settings/members/owner-capabilties",
+                  "guides/settings/members/managing-teams"
                 ]
               }
             ]
@@ -124,7 +127,8 @@
                   "guides/integrations/crms/wealthbox",
                   "guides/integrations/crms/redtail",
                   "guides/integrations/crms/salesforce",
-                  "guides/integrations/crms/quivr"
+                  "guides/integrations/crms/quivr",
+                  "guides/integrations/crms/hub-spot"
                 ]
               }
             ]
