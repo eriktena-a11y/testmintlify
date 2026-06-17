@@ -2,49 +2,74 @@
 title: "Release Notes"
 ---
 
-## June 17, 2026
-
-### New features
-
-#### Performance Dashboard for firm owners
-
-Firm owners get a new **Performance Dashboard** in the Meeting Assistant that rolls up meeting metrics across the firm. Filter by meeting type, timeframe, and advisor to see firm-wide averages, per-advisor breakdowns, trends over time, and an advisor × meeting type matrix—then drill into any cell to see the underlying meetings. A new **Edit speakers** dialog on each meeting lets you rename or merge speakers and mark advisor vs. client sides; metrics recompute automatically after saving. See [Performance Dashboard](/guides/meeting-assistant/meeting-details/performance-dashboard).
-
-#### Tax Mode dashboard PDF export
-
-Export the Tax Mode dashboard to a print-grade PDF in one click. Pick portrait or landscape, and Hazel paginates each section automatically and skips views that aren't relevant for print. See [Tax Mode](/guides/modes/tax-mode).
-
-### Updates
-
-- **Edit Tax Mode instructions inline.** A new pencil icon in the Ask Hazel landing footer opens a drawer for editing your Tax Mode custom instructions—no more bouncing to the settings page. See [Tax Mode](/guides/modes/tax-mode).
-- **Source attribution on the tax dashboard.** Hover any figure on the tax dashboard to see where Hazel sourced it. Use the quote icon in the dashboard header to show or hide attribution for the session. See [Tax Mode](/guides/modes/tax-mode).
-- **Redesigned team member access panel.** The member panel in **Settings → Team** now opens to a hub with summary rows for Households, Standalone contacts, and Groups. Filter by source (All / Manual / CRM-synced / Via group) to see exactly where a member's access came from. Member settings save immediately, while permissions changes stage until **Review & apply**. See [Managing Teams](/guides/settings/members/managing-teams).
-- **Bulk access actions for Owners.** Owners can now **Grant all access**, **Copy access from…** another teammate, or **Revoke all access** when adding access for a member, scoped per resource type and staged into the same pending set for review. See [Managing Teams](/guides/settings/members/managing-teams).
-- **Refreshed contact and household access modals.** The group access modal now has three tabs (Add, Automatic rules, Has access) sharing one pending set, with a projected-roster preview ("current → projected") so you can see the effect before applying. Automatic rules include a **View list** preview of matched clients, and the Has access tab shows pending **Will add** / **Will remove** badges. See [Managing Teams](/guides/settings/members/managing-teams).
-- **Read-only access controls for non-managers.** On a household or contact detail page, access controls are read-only when you don't manage the record—edits go through the owning group or member instead.
-
 ## June 2026
 
 ### New features
 
-#### Custom Modes
+#### Team management: Groups and automatic rules
 
-Build your own Modes in Ask Hazel. Package your instructions, tone, and reference files (PDF, DOCX, XLSX, TXT, CSV) into a reusable Mode, then start a focused chat in one click. Keep a Mode private or share it firm-wide so the whole team works from the same playbook. See [Custom Modes](/guides/modes/custom-modes) or browse the [Modes prompt library](/resources/prompt-library/modes) for ready-made instructions.
+Manage who on your team can see which clients without sharing one record at a time. Create **Groups** and share households or contacts with the whole Group at once, then add **automatic rules** to share clients that match by **Owner** or **Tag**—including any future clients that match. See [Managing Teams](/guides/settings/members/managing-teams).
+
+#### Performance Dashboard for firm owners
+
+Firm owners get a new **Performance Dashboard** that rolls up meeting metrics across the firm. Filter by meeting type, timeframe, and advisor to see firm-wide averages, per-advisor breakdowns, and trends—then drill into any cell to the underlying meetings. See [Performance Dashboard](/guides/meeting-assistant/meeting-details/performance-dashboard).
+
+## May 2026
+
+### New features
+
+#### Improvements to in-person meetings
+
+Improvements to how the audio is captured, separated by speaker, and flows into the same notes, tasks, and analysis as your virtual meetings. See [Recording a meeting](/guides/meeting-assistant/recording-a-meeting).
+
+#### Improvements to meeting agendas and pre-meeting prep
+
+Hazel's meeting agendas are now more powerful—pulling in relevant context about the household, including account details from your custodian—and you can run pre-meeting prep with one click. See [Preparing for a meeting](/guides/meeting-assistant/preparing-for-a-meeting).
+
+#### File generation and polished reports available in chat
+
+We added file generation to Modes and Ask Hazel, so Hazel can produce downloadable files—like PDF reports—right from a Mode or a chat. See [Custom Modes](/guides/modes/custom-modes). Ask Hazel for a report—a tax analysis, a plan summary—and get back a clean, consistently formatted PDF with a uniform layout, charts, and disclaimers, ready to download right from the chat. See [Ask Hazel](/guides/ask-hazel-chat/overview).
+
+#### See where every tax number comes from
+
+Tax Mode dashboard cards now have a toggle that reveals the source and derivation of each figure—brackets, deductions, MAGI, Medicare, and more—so you can show clients exactly how a value was calculated. See [Tax Planning](/guides/modes/tax-mode).
+
+### Minor improvements
+
+- **iPhone photos accepted.** HEIC and HEIF images convert automatically on upload, so you can attach iPhone photos without a format error.
+- **Tasks filters that stick.** The Tasks view now remembers your filters between visits and lets you apply several at once.
+- **More reliable meeting recording.** Fewer duplicate or missed notetaker bots, and steadier post-meeting processing.
+
+## April 2026
+
+### New features
 
 #### HubSpot integration
 
 Connect HubSpot to Hazel for a bidirectional sync of contacts, households, tasks, and notes. Updates flow instantly from Hazel to HubSpot, and HubSpot syncs back every 60 minutes—including a full historical backfill on first connect. See [HubSpot](/guides/integrations/crms/hub-spot).
 
-#### Team management: Groups and automatic rules
+#### Redesigned Meeting Details
 
-Manage who on your team can see which clients without sharing one record at a time. Create **Groups** (service teams, pods, etc.) and share households or contacts with the whole Group at once. Add **automatic rules** to share clients that match by **Owner** or **Tag**—including any future clients that match. See [Managing Teams](/guides/settings/members/managing-teams).
+A reworked meeting page brings the summary, agenda, and full transcript into one feed, with attendees up top, a cleaner tasks panel, and a one-click button to sync notes to your CRM. See [Recording a meeting](/guides/meeting-assistant/recording-a-meeting).
 
-### Updates
+#### Rich, interactive answers in chat
 
-- **Firm Admin permission.** Firm Admin is now a separate permission you can grant an Advisor so they can manage the team and billing without changing which clients they can see. See [Roles and Permissions](/guides/settings/members/roles-and-permissions).
-- **Per-client access levels.** When sharing a household or contact, choose **Read**, **Write**, or **Manage** to control how teammates can interact with it.
-- **Outlook support clarified.** The Outlook integration supports Microsoft Office 365 and Microsoft Enterprise. Microsoft Exchange on-premise is not supported. See [Outlook](/guides/integrations/calendar-and-emails/outlook).
-- **Billing for Admin AI + Tax Planning.** Admin AI is now the base seat, with Tax Planning billed per seat as an add-on. Owners and Admins can manage subscriptions in **Settings → Billing**. See [Billing](/guides/settings/billing).
+Hazel can now answer with formatted, interactive components—tables, bar/line/pie charts, metric cards, and callouts—so the numbers and comparisons you ask for come back ready to read at a glance. See [Ask Hazel](/guides/ask-hazel-chat/overview).
+
+#### Sync a tax analysis to Salesforce
+
+When Hazel produces a tax analysis, push it into Salesforce with a single button—Hazel adds a note on the household and attaches the analysis PDF under the household's Files. Requires a connected Salesforce CRM. See [Tax Planning](/guides/modes/tax-mode).
+
+#### Compliance archiving with Hadrius
+
+Connect Hadrius from Settings to automatically archive your recorded meetings and transcripts for compliance, delivered after each meeting is analyzed. See [Integration settings](/guides/settings/integration-settings).
+
+### Minor improvements
+
+- **Sharper meeting notes and transcripts.** Upgraded language and speech models make summaries read more naturally and in-person transcripts more accurate.
+- **Image documents supported in Tax Mode.** Drop in a photo or scan of a tax document and Hazel reads its figures into your analysis.
+- **Filter meetings by household.** The meetings list now has a household filter and shows participants as a column.
+- **Faster email lists.** Email views load noticeably faster and flag which messages have attachments.
 
 ## March 2026
 
