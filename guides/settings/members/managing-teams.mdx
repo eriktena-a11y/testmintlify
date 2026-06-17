@@ -56,10 +56,15 @@ The person appears in the list as **Invited** until they accept.
 ### Change a member's role or settings
 
 1. On the **Members** view, click a person's row to open their panel.
-2. Under **Member settings**, change their **Role**, toggle **Tax Planning**, or toggle **Firm Admin**.
-3. Click **Save**, then confirm in **Apply changes?**.
+2. The panel opens on a hub showing the member's avatar, role, status, **Member settings**, and a **Permissions** summary.
+3. Under **Member settings**, change their **Role**, toggle **Tax Planning**, or toggle **Firm Admin**.
+4. Click **Save**, then confirm in **Apply changes?**.
 
 If a role needs a paid seat and none is free, you'll see a note that a paid seat will be billed before you confirm.
+
+<Note>
+  **Member settings save immediately.** Permissions changes are different — they're staged and don't apply until you press **Review & apply** (see [Share clients with one member](#share-clients-with-one-member)).
+</Note>
 
 ### Disable a member
 
@@ -89,17 +94,39 @@ There are three ways to share a client:
   **Owners always see everything.** You never need to share a client with an Owner.
 </Info>
 
+<Note>
+  When you open the **Who has access** panel from a household or contact's detail page, the controls only let you make changes if you have **Manage** on that record. If you can see the client but don't manage it, the panel is read-only — you can review who has access without risk of changing it.
+</Note>
+
 ### Share clients with one member
 
+The member panel opens on a **hub** with three rows under **Permissions**: **Households**, **Standalone contacts**, and **Groups**. Each row summarizes how much the member can reach today—e.g. _"42 total · 30 direct, 12 via groups"_ for a resource type, or _"3 groups · 18 contacts, 27 households"_ for groups. Click a row to drill in.
+
 1. **Settings → Team → Members**, click the person's row.
-2. In the **Permissions** section, open **Households** or **Standalone contacts**.
-3. Click **Add households** / **Add contacts**, search, and check the clients to share. Set the **Access level for new grants** (defaults to **Read**).
-4. To change an existing share, use the level dropdown on a row (**Read**, **Write**, **Manage**, or **Remove access**).
-5. Click **Review & apply**, then **Apply** to save.
+2. Under **Permissions**, open **Households** or **Standalone contacts**.
+3. Use the **filter chips** above the list to focus by source: **All**, **Manual** (added by hand), **CRM-synced** (granted by your CRM), or **Via group** (inherited from a group). Each chip shows its count.
+4. To **add** clients, click **Add households** / **Add contacts**, search, and check the clients to share. Set the **Access level for new grants** (defaults to **Read**) — changing it after you've checked rows updates everything you've selected so far.
+5. To change an existing share, use the level dropdown on a row (**Read**, **Write**, **Manage**, or **Remove access**).
+6. Click **← Back** to return to the hub. Repeat for the other resource type or for **Groups** if needed.
+7. When you're done, click **Review & apply** in the footer to see every staged change in one list, then **Apply**.
+
+<Info>
+  Rows granted **via group** are read-only here — they show the group name and aren't editable from the member's panel. Edit the group's access instead (see [Share clients with a group](#share-clients-with-a-group)).
+</Info>
 
 <Tip>
-  Nothing is saved as you click—every change is staged until you press **Review & apply**. If you close the panel with unsaved changes, Hazel asks before discarding them.
+  Nothing is saved as you click—every change you make across Households, Standalone contacts, and Groups is staged into one set until you press **Review & apply**. The footer shows the running count (e.g. _"5 pending changes"_). If you close the panel with unsaved changes, Hazel asks before discarding them.
 </Tip>
+
+#### Bulk actions (Owners only)
+
+Inside **Add households** or **Add contacts**, Owners see three bulk actions at the top of the flow. They're scoped to the resource type you're in (households _or_ standalone contacts), and like everything else they stage into the pending set — nothing applies until **Review & apply**.
+
+| Action | What it does |
+| :-- | :-- |
+| **Grant all access** | Stages a grant for **every** household (or contact) in the firm at the current **Access level for new grants**. |
+| **Copy access from…** | Pick another member; stages grants for everything they can access of this resource type. The member's existing access is kept; only additions are staged. |
+| **Revoke all access** | Stages removal of every direct grant the member has for this resource type. Group-granted access isn't touched. |
 
 ### Set access when creating a client
 
@@ -124,9 +151,18 @@ Everyone you add immediately gains access to whatever the Group can see.
 
 ### Share clients with a group
 
+The **Household access** and **Contact access** windows are split into three tabs that share a single pending set:
+
+- **Add households** / **Add contacts** — pick clients by hand.
+- **Automatic rules** — set rules that share matching clients (and future ones) for you. See [Automatic rules](#automatic-rules).
+- **Has access** — review who the group can currently see, with a preview of what changes after you apply.
+
+The **Has access** tab shows a count badge that previews the projected roster when you have pending changes — e.g. _"42 → 47"_ means the group reaches 42 clients today and will reach 47 after you apply.
+
 1. On the **Groups** view, click the **\+** in the group's **Household** or **Contact** column.
-2. In the **Household access** / **Contact access** window, on the **Add households** / **Add contacts** tab, search and check the clients to share (use **Select all shown** to add a whole list).
-3. Click **Review & apply**, then **Apply**.
+2. On the **Add households** / **Add contacts** tab, search and check the clients to share (use **Select all shown** to add a whole list).
+3. Optionally switch to **Automatic rules** to add a rule, or **Has access** to preview the result. The footer shows a running tally of pending contact and rule changes.
+4. Click **Review & apply**, then **Apply**.
 
 <Note>
   In a Group's **Contact access** window you can only add **standalone contacts**. Contacts who belong to a household automatically follow that household's access.
@@ -154,8 +190,13 @@ A rule matches on:
 1. Open a group's **Household access** or **Contact access** window.
 2. Go to the **Automatic rules** tab and click **Create rule**.
 3. Under **Where**, add a condition: choose an **Owner** and/or one or more **Tags**.
-4. Check the live preview—e.g. _"24 contacts match today · future contacts that match will be added automatically."_
-5. Click **Add rule**, then **Review & apply** and **Apply**.
+4. Check the live preview—e.g. _"24 contacts match today · future contacts that match will be added automatically."_ Click **View list** on the preview to see the exact clients that will be matched before you stage the rule.
+5. Click **Add rule**. The rule appears in the list with a **Pending** badge until you apply.
+6. Click **Review & apply**, then **Apply**.
+
+<Tip>
+  You can edit a pending or active rule from the **Automatic rules** tab — pencil icon to re-open the builder, trash icon to stage a deletion (the deletion's impact count is shown alongside it).
+</Tip>
 
 **How rules combine:**
 
@@ -165,7 +206,9 @@ A rule matches on:
 
 ### See who a group can reach
 
-Open the **Has access** tab in any access window to review everyone the Group can currently see, split into **Added manually** and **Via rule:** sections—a quick way to audit access.
+Open the **Has access** tab in any access window to review everyone the Group can currently see, split into **Added manually** and **Via rule:** sections (one section per rule, headed by the rule's sentence)—a quick way to audit access.
+
+When you have pending changes, the tab previews the post-apply state: rows you've added show a **Will add** badge, rows you've removed show **Will remove**, and pending rules show _"N will gain access"_ for the contacts they'll match. Use the `×` on a manual row to stage a removal; rule rows are display-only (the rule would re-add them on apply — edit or delete the rule instead).
 
 <Warning>
   A few things to know about rules:
