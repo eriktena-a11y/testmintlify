@@ -10,10 +10,31 @@ Connect your Redtail account to give Hazel access to your contacts, households, 
 
 ---
 
-| **Integration** | **Backfill (History Pulled In)** | **Sync Speed** | **Filters Applied**                   | **Can Resync?** |
-| :-------------- | :------------------------------- | :------------- | :------------------------------------ | :-------------- |
-| **Redtail**     | Partial (not full history)       | Every 24 hours | None (all contact data comes through) | ✅ Yes           |
+| **Integration** | **Backfill (History Pulled In)** | **Sync Speed** | **Filters Applied** | **Can Resync?** |
+| :-- | :-- | :-- | :-- | :-- |
+| **Redtail** | Partial (not full history) | Every 24 hours | None (all contact data comes through) | ✅ Yes |
 
 The Redtail integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Redtail, and Redtail syncs data every 24 hours to Hazel. Upon the initial sync, Hazel partially backfills historical data based on Redtail’s sync guidelines and imports all contacts with no filters applied.
+
+---
+
+### Ask Hazel about Redtail Activities
+
+In addition to the synced data above, Hazel can read your Redtail **Activities** directly when you ask in chat. Activities are the structured workflow records behind your client onboarding pipeline, service tickets, follow-ups, and any other categorized work — so they’re the right source for workflow-status questions (use Activities, not notes, for these).
+
+You can ask by category, status, assignee, and date range. For example:
+
+- _“Who is currently in Client Onboarding?”_
+- _“List my open Service activities.”_
+- _“Show activities assigned to me starting in the next 30 days.”_
+- _“List completed activities between 2026-01-01 and 2026-03-31.”_
+
+Activity lookups are available to firms whose CRM is Redtail. If your firm uses a different CRM, Hazel will let you know and fall back to notes, tasks, or meetings as appropriate.
+
+### Scope chat questions by advisor role
+
+Hazel can also filter households by the advisor roles assigned in Redtail (Lead Advisor, Senior Advisor, Paraplanner, CSA, etc.) so you can scope chat questions to your own book or to a colleague’s. See [Best Practices](/guides/ask-hazel-chat/best-practices) for examples.
+
+---
 
 Have questions about the Redtail integration? Reach out to [support@hazel.ai](mailto:support@hazel.ai) for more information.
