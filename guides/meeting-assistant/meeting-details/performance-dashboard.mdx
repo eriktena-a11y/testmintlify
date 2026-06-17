@@ -1,0 +1,76 @@
+---
+title: "Performance Dashboard"
+---
+
+The Performance dashboard gives firm owners a single view of how their advisors run client meetings. It surfaces the same per-meeting analytics shown on each meeting page — talk/listen ratio, longest monologue, longest client story, interactivity, patience, and advisor and client question rates — rolled up across every meeting in the firm.
+
+<Info>
+  The Performance tab is only visible to **Owners**. Advisors continue to see their own meeting analytics on each meeting page, but do not see firm-wide rollups.
+</Info>
+
+### Opening the dashboard
+
+Sign in as an Owner and select **Performance** in the left sidebar. The page loads at `/advisor/performance` and shows an empty state if your firm has no completed meetings with computed metrics yet.
+
+### Filtering the dashboard
+
+Two filters scope every chart and table on the page:
+
+- **Meeting type** – Restrict to a single meeting type (for example, _Discovery_ or _Annual Review_) or leave on **All meeting types**.
+- **Timeframe** – **All time**, **Last 90 days**, or **Last 30 days**.
+
+Charts and tables that compare advisors also have an **Advisors** multi-select. Open the picker, search by name, and check the advisors you want included. Clearing the selection (or leaving it empty) shows every advisor.
+
+### What the dashboard shows
+
+<Accordion title="Firm-wide averages by meeting type">
+  A baseline row per meeting type, showing the firm’s average for each metric across every advisor. This is the benchmark every other view is measured against.
+</Accordion>
+
+<Accordion title="By advisor">
+  One row per advisor with their averages across the selected scope. Use this to spot advisors whose numbers stand apart from the firm — flagged cells (●) deviate from the firm’s typical range for that meeting type by more than 30%. Hover any cell to see the firm benchmark and the percent delta.
+</Accordion>
+
+<Accordion title="Trend over time">
+  A monthly line chart of a single metric, with one line for the firm and one per selected advisor. Use the metric selector above the chart to switch between talk/listen, longest monologue, interactivity, patience, question rates, and longest client story. The trend is bounded to the most recent 24 months.
+</Accordion>
+
+<Accordion title="Advisor × meeting type table">
+  The primary table: every (advisor, meeting type) combination with all seven metrics side by side, ordered to make outliers easy to scan. Cells outside the firm’s typical range for that meeting type are flagged.
+</Accordion>
+
+<Accordion title="Advisor drill-down">
+  Pick an advisor to load their most recent meetings (newest first) with the per-meeting metric values. Use this to jump from a flagged cell straight to the meeting that drove it.
+</Accordion>
+
+### Correcting speakers to fix metrics
+
+Performance metrics are only useful when the transcript correctly identifies who is the advisor and who is the client. If diarization labelled a speaker incorrectly — or split one person across multiple labels — an Owner or the meeting’s advisor can fix it from the meeting detail page.
+
+<Steps>
+  <Step>
+    Open the meeting from the **Meetings** page and switch to the **Transcript** tab.
+  </Step>
+  <Step>
+    Click **Edit speakers** above the transcript. The dialog lists every speaker the recording detected, with their talk time, utterance count, and a snippet of their first line.
+  </Step>
+  <Step>
+    Rename any speakers that need correcting. Giving two rows the same name **merges** those speakers into one — useful when a single person was split across multiple labels.
+  </Step>
+  <Step>
+    For each speaker, mark them as **Advisor** or **Client**. Speakers without a side (for example, a one-time interruption) are excluded from advisor- and client-specific metrics.
+  </Step>
+  <Step>
+    Click **Save**. Hazel updates the transcript and recomputes that meeting’s performance metrics in the background. The new values flow into the firm Performance dashboard the next time you load it.
+  </Step>
+</Steps>
+
+<Info>
+  Merged speakers must agree on side — you can’t merge an Advisor row with a Client row. Resolve the conflict before saving.
+</Info>
+
+### Tips for accurate analytics
+
+- Set advisor/client sides on every meaningful speaker. Metrics like **talk/listen ratio** and **longest advisor monologue** depend on the side assignment.
+- Re-check **Edit speakers** the first time you review a new client — fixing it once is enough; the meeting’s metrics update automatically.
+- If a chart or row looks empty, widen the **Timeframe** or remove the **Meeting type** filter. Metrics only appear once a meeting has been processed and has a non-zero number of utterances on each side.

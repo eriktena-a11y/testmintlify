@@ -62,6 +62,7 @@
               "guides/meeting-assistant/preparing-for-a-meeting",
               "guides/meeting-assistant/recording-a-meeting",
               "guides/meeting-assistant/debriefing-a-meeting",
+              "guides/meeting-assistant/meeting-details/performance-dashboard",
               {
                 "group": "Meeting Types",
                 "pages": [
