@@ -29,6 +29,14 @@ title: "Recording a Meeting"
   - If it’s a **Virtual Meeting**, enter your meeting url link and Hazel will join your call in less than a minute.
   - If it’s an **Manual Recording**, proceed and start recording directly from your computer, or upload a media file (audio and video are both accepted).
 
+  Before creating the meeting, you can also fill in a few optional fields directly in the New Meeting drawer:
+
+  - **Meeting type** — pick a type from the combobox so Hazel uses the right prompts and template when generating notes.
+  - **Add participant** — link a household contact from the Contact combobox so the meeting is associated with the correct household for CRM sync and shows up in Ask Hazel results for that household.
+  - **Upload Video/Audio File** — when the meeting type is set to Manual Recording, you can attach an audio or video file up front. If a file is provided, meeting analysis will start automatically after the meeting is created, so you don’t need to open the meeting and click Record → Upload afterward.
+
+  These fields are optional but recommended: setting the meeting type ensures Hazel uses the right prompts, and adding a participant keeps the meeting linked to the correct household for downstream CRM sync and Ask Hazel visibility.
+
   To record manually, click ‘Start Recording.’ This will open a new tab and an indicator that recording is in progress:
 
   Once done recording, click ‘Stop Recording’. The tab should close, and upon refreshing the meeting page, you’ll see a processing indicator. Once the notes are ready, the page will refresh with the notes of the meeting.
@@ -60,11 +68,25 @@ title: "Recording a Meeting"
 </Accordion>
 
 <Accordion title="Uploading Audio or Video Files">
-  Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer, or upload a media file (audio and video are both accepted). Click on `Upload Audio/Video File`
+  There are two ways to upload a recording:
+
+  **From an existing meeting**
+
+  Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer, or upload a media file (audio and video are both accepted). Click on `Upload Audio/Video File`.
 
   <Frame>
     ![Recordinperson1](/images/recordinperson1.gif)
   </Frame>
+
+  **When creating a new meeting**
+
+  From the **Meetings page**, click ‘New’ and choose **Manual Recording** as the meeting type. In the New Meeting drawer, use `Choose File` under **Upload Video/Audio File** to attach an audio or video file (audio, video, and Ogg formats are accepted).
+
+  When you attach a file at creation time, meeting analysis kicks off automatically as soon as the meeting is created — you don’t need to open the meeting and click Record → Upload separately.
+
+  While the upload is in progress, an ‘Uploading…’ indicator appears next to the Add Event button. Once processing completes, the notes will appear on the meeting page.
+
+  We recommend also setting the **Meeting type** and adding a **participant** in the same drawer so Hazel uses the right prompts and the meeting is linked to the correct household.
 </Accordion>
 
 <Accordion title="Recording a Phone Call">
