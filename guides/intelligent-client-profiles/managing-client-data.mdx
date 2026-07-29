@@ -1,0 +1,128 @@
+---
+title: "Managing Client Data"
+---
+
+## Where facts come from
+
+An Intelligent Client Profile learns from five places:
+
+1. **Recorded meetings.** When the Hazel notetaker records a client meeting, Hazel reviews the conversation shortly after your meeting notes are ready and captures any lasting facts, each backed by a verbatim quote.
+2. **Emails from your clients.** With email connected, Hazel captures facts from emails your clients send you. Only substantive messages count; scheduling back-and-forth and confirmations are ignored. Hazel matches emails by the address they're sent from, so it needs to match the email on the client's contact record. (Emails _you_ send aren't captured.)
+3. **Documents you upload.** Statements, tax returns, and account documents added to the **Documents** tab are read page by page and filed into the profile. Because a document is hard evidence, facts from documents arrive already **verified**.
+4. **Notes you write in Hazel.** A quick note after a phone call ("they closed on the lake house, \$1.1M") is captured like a meeting would be, so nothing waits for the next recorded conversation.
+5. **You, directly.** Correct any value on the Data tab, or tell Hazel what changed in chat and confirm the updates. Either way, your entries become part of the profile immediately, marked as yours and verified.
+
+A few guardrails keep the profile honest:
+
+- **No math, no guesses.** Hazel never sums balances, projects growth, or infers a tax bracket. A stated age becomes an approximate birth year (marked "~"), never a computed age that drifts out of date. Hypotheticals ("clients like you typically save…") aren't recorded.
+- **Ownership comes from what was said.** "_His_ 401(k)" and "_our_ joint account" file correctly; who happened to be speaking is never used. When ownership isn't clear, Hazel asks you instead of guessing.
+- **Your CRM stays in charge of contact basics.** For clients synced from your CRM, identity and profile fields (names, birth dates, addresses, risk tolerance, and so on) are managed in the CRM. Hazel won't change them, even when the CRM field is empty. For clients that live only in Hazel, it's the reverse: the profile keeps the contact record up to date automatically.
+- **"No" is an answer.** If a client confirms they don't have something (no will, no umbrella policy), the profile records "None — confirmed with client," which is often as valuable as the facts themselves.
+
+<Note>
+  Documents uploaded in an Ask Hazel **chat** help Hazel answer in that conversation, but only documents added to a client's **Documents** tab become part of the profile.
+</Note>
+
+## Uploading documents
+
+Open the client's **Documents** tab ("Statements, tax returns, and account documents Hazel has read into this profile.") and drop files anywhere on the tab, or click the dashed **"Upload your client documents here"** strip.
+
+- **Accepted:** PDF, Word (DOCX), Excel (XLSX), and images, up to **10 MB** each. (Legacy .doc/.xls files need to be re-saved as .docx/.xlsx first.)
+- **Password-protected PDFs** prompt you for the password; it's used on your device to unlock the file and never leaves your browser.
+- **Uploading to a household** shares the document (and its facts) across all members; uploading on a person's page links it just to them.
+
+Each document shows its progress: **Queued → Reading → Adding to profile → In profile**. When it reads **In profile** (green), click it to jump to the Data tab and see what Hazel learned. Documents are added one at a time per household to keep the profile consistent, so a busy household may briefly show **"Waiting for profile"**. A **Failed** pill means Hazel couldn't process the file; upload a fresh copy or a clearer version.
+
+Two details worth knowing:
+
+- **Dates matter.** Facts from a document carry the document's own date when Hazel can find one; otherwise they're dated to the upload day. The date on the document row shows which was used, and you can set it yourself. That's worth doing for older statements whose date Hazel couldn't read, because newer information wins in the profile and the date decides what counts as newer. See [How updates work](#how-updates-and-corrections-work).
+- **Deleting a document removes what Hazel learned from it.** The delete confirmation says it plainly: "Deleting this document will also remove the information Hazel extracted from it." Values it had replaced come back.
+
+## Updating the profile from chat
+
+The fastest way to keep a profile current is to tell Hazel directly. In Ask Hazel, including the chat rail on the household page, describe what changed in plain English:
+
+> "Update Bob's 401(k) balance to \$612,000 as of yesterday."
+
+> "The Hendersons paid off the HELOC and opened a 529 for Maya at Fidelity: \$500 a month."
+
+Hazel works out what that means for the profile and shows you the exact updates planned, down to which records and which values. Confirm, and they're applied. Three things to know:
+
+- **Nothing changes without your confirmation.** Hazel proposes; you approve. Decline and the profile is untouched.
+- **Chat updates are your entries.** They land verified and marked as entered by you, exactly like an **Edit** on the Data tab, and they appear in each value's History like any other change.
+- **You can add brand-new records this way.** An account the client mentioned on a phone call, a new goal, a policy: describe it, confirm it, and it takes its place in the right section. Chat is the way to hand-add facts that no meeting or document has captured yet.
+
+<Tip>
+  This works for cleanup, too: "archive the old Vanguard IRA, it was rolled over," "the mortgage rate is 5.875, not 5.375," or "fix the owner on the term policy, it's Sarah's" are often quicker in chat than clicking through the Data tab.
+</Tip>
+
+## The Data tab: the full profile
+
+The **Data** tab holds every fact with its source. On the left you'll see **Review**, six sections, and **Archive**; the orange badge next to a section counts its unverified facts.
+
+| Section | What's inside |
+| --- | --- |
+| **People** | The household's members, plus income, expenses, goals, concerns, preferences, life events, charitable giving, and other professionals like the client's CPA |
+| **Financial Accounts** | Investment accounts and cash, the holdings inside them, and equity compensation |
+| **Property & Other Assets** | Real estate, private and alternative investments, and other assets |
+| **Liabilities** | Mortgages, consumer debt, and other obligations |
+| **Insurance** | Life, disability, long-term care, property, and health coverage, plus annuities |
+| **Estate & Entities** | Businesses, trusts and legal entities, wills, directives, and beneficiary designations |
+
+Inside a section, each row is one record: an account, a property, a goal, a policy. Click a row to expand it. Every value has a small toolbar:
+
+- **Source** shows where the value came from: a **Meeting**, **Email**, **Document**, or **Manual** badge and the date. Meeting and email facts include the client's words, with a **Show context** option that opens the surrounding conversation; meeting sources link to the meeting, and document sources link to the file itself.
+- **History** shows every value this fact has ever had, with dates and sources, and a **Restore** option for earlier values.
+- **Edit** corrects the value in place. "Saving marks this value verified."
+- **Verify** / **Unverify** is your trust mark; more below.
+
+Use the **Household / member** switch at the top right to view one person's slice of the profile; a joint fact appears under each owner. Balances and amounts show an "as of" date so you always know how fresh a number is. Values with a dotted underline aren't ordinary captured facts; hover one to see why. Some are implied from other facts (like an account's tax treatment implied by the account type), and some come straight from the contact record.
+
+## Reviewing new information
+
+The Data tab opens on **Review** ("Review new information before adding it to the client profile."). It collects two kinds of items:
+
+- **Needs owner**: facts Hazel captured but couldn't attribute, e.g. "3 facts need an owner assigned so they're filed under the right person." Click **Assign owner**, pick the member(s), done. Assigning is about filing the fact under the right person; the fact is part of the profile either way.
+- **Unverified facts**, grouped by section. Each card shows the new values, the quote they came from, and the source. Click **Verify all** to confirm a record's new values (holdings inside an account are verified on their own rows), or expand to edit individual values first.
+
+When the queue is empty you'll see **"All caught up"**. A quick pass after each meeting keeps the profile trustworthy, and because the profile is shared, one person's review covers the whole team.
+
+## What verifying means
+
+Every value is either **Verified** or **Unverified** (captured from conversation, not yet confirmed). Records with a mix show "2 / 5 verified."
+
+Hazel uses both, but differently. When Hazel draws on the profile in chat or planning, verified facts are presented as confirmed, while unverified facts are explicitly flagged as unverified so you never mistake a half-heard number for a checked one. Verifying is how you (and Hazel) tell them apart.
+
+Some facts arrive already verified: goals, concerns, preferences, life events, and identity details (the client's own words about themselves), facts from documents, and anything you enter yourself. Financial details heard in conversation start unverified until someone confirms them.
+
+Made a mistake? **Unverify** puts a value back in the unverified pool, **Edit** replaces it with the correct one, and **History → Restore** brings back an earlier value (it returns with the verification status it had at the time).
+
+## How updates and corrections work
+
+Clients update things, and the profile keeps up: **the most recent statement of a fact wins, by source date.** If a client gives a new 401(k) balance in July, it replaces the March number, and the March value moves into History, never thrown away. This applies to values you've verified too: verification marks trust, it doesn't freeze the value. Meanwhile, out-of-date sources can't do damage. A January statement uploaded in August won't overwrite anything fresher, and re-statements of what's already known don't churn the profile.
+
+If Hazel filed something under the wrong person, expand the record's **Owner** row and click **Fix owner**. Ownership always goes through this chooser, and a fact always keeps at least one owner.
+
+## Archiving: when something ends
+
+Accounts close, goals get reached, policies lapse. Hover a record and click the archive icon: **Archive** works on any record ("Mark completed" appears on goals). Archived records move to the **Archive** view ("Archived data does not populate your client's profile."), grouped by when they were archived, still fully readable with their sources and history. **Unarchive** brings one back. Hazel can archive too, when a client says something ended; click the badge on an archived record to see why. The reverse also happens: if a later meeting or document shows something is active again, Hazel brings the record back. Archives follow the most recent statement, just like values.
+
+If a record was never true at all (misheard, or a hypothetical that slipped through), **remove** it instead of archiving. Removal is for things that never existed: Hazel asks you to confirm, and unlike archiving it's permanent. The record disappears entirely rather than moving to the Archive. When in doubt, archive; you can always remove later, but not the reverse.
+
+## Rebuilding a profile
+
+If a profile has gone wrong in a way that spot-fixes can't repair, **Rebuild profile** (at the bottom of the Data tab's left rail) erases everything Hazel currently knows and relearns it from the client's meetings and uploaded documents, oldest to newest. Because the replay runs in order, each pass builds on the last, the same way the profile would have grown originally.
+
+<Warning>
+  Rebuilding is a hard reset: it erases your manual edits and verifications, empties the Archive, and facts that came only from **emails or notes** are not relearned. The confirmation asks you to acknowledge this before it starts. Use it as a last resort; for one wrong value, **Edit** is the right tool.
+</Warning>
+
+## What it can and can't do
+
+- **It records; it doesn't calculate.** No net worth totals, projections, or tax estimates. Every number was stated by someone, so every number is auditable.
+- **One current value per fact**, with prior values in History. It's not a time-series or performance tool, and it doesn't pull live balances from custodians.
+- **The Data tab has no create-a-record form.** You can correct any value there, but adding something brand new happens through conversation: tell Hazel in chat, write a note, upload a document that shows it, or bring it up in a recorded meeting.
+- **The profile builds from what Hazel can see.** A meeting without the notetaker, or a conversation that never makes it into a note, email, or document, leaves no trace to capture. For a client's pre-Hazel history, documents are the fastest way in.
+- **Dollar amounts are recorded in USD.**
+- **The structure is fixed.** No custom sections or fields, so every client's profile is organized the same way.
+- **It never writes to your CRM.** CRM-synced contacts keep their CRM as the source of truth for identity fields; only Hazel-native contacts get their contact record updated from the profile.
