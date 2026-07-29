@@ -50,6 +50,21 @@
             ]
           },
           {
+            "group": "Intelligent Client Profiles",
+            "pages": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "guides/intelligent-client-profiles/Overview/getting-started",
+                  "guides/intelligent-client-profiles/Overview/Introduction"
+                ]
+              },
+              "guides/intelligent-client-profiles/managing-client-data",
+              "guides/intelligent-client-profiles/best-practices",
+              "guides/intelligent-client-profiles/troubleshooting-and-faq"
+            ]
+          },
+          {
             "group": "Meeting Assistant",
             "pages": [
               {
