@@ -62,7 +62,15 @@
                   "guides/intelligent-client-profiles/Overview/Introduction"
                 ]
               },
-              "guides/intelligent-client-profiles/managing-client-data",
+              {
+                "group": "Managing Client Data",
+                "pages": [
+                  "guides/intelligent-client-profiles/managing-client-data/adding-client-data",
+                  "guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying",
+                  "guides/intelligent-client-profiles/managing-client-data/archiving-and-rebuilding",
+                  "guides/intelligent-client-profiles/managing-client-data/what-icp-can-and-cant-do"
+                ]
+              },
               "guides/intelligent-client-profiles/best-practices",
               "guides/intelligent-client-profiles/troubleshooting-and-faq"
             ]

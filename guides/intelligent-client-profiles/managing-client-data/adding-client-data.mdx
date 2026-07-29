@@ -1,0 +1,59 @@
+---
+title: "Adding Client Data"
+---
+
+## Where facts come from
+
+An Intelligent Client Profile learns from five places:
+
+1. **Recorded meetings.** When the Hazel notetaker records a client meeting, Hazel reviews the conversation shortly after your meeting notes are ready and captures any lasting facts, each backed by a verbatim quote.
+2. **Emails from your clients.** With email connected, Hazel captures facts from emails your clients send you. Only substantive messages count; scheduling back-and-forth and confirmations are ignored. Hazel matches emails by the address they're sent from, so it needs to match the email on the client's contact record. (Emails _you_ send aren't captured.)
+3. **CRM notes and data fields.** With CRM connected, Hazel captures facts from notes and data fields you store in your CRM. A quick note added in your CRM ("they closed on the lake house, \$1.1M") is captured like a meeting would be.
+4. **Documents you upload.** Statements, tax returns, and account documents added to the **Documents** tab are read page by page and filed into the profile. Because a document is hard evidence, facts from documents arrive already **verified**.
+5. **You, directly.** Correct any value on the Data tab, or tell Hazel what changed in chat and confirm the updates. Either way, your entries become part of the profile immediately, marked as yours and verified.
+
+A few guardrails keep the profile honest:
+
+- **No math, no guesses.** Hazel never sums balances, projects growth, or infers a tax bracket. A stated age becomes an approximate birth year (marked "~"), never a computed age that drifts out of date. Hypotheticals ("clients like you typically save…") aren't recorded.
+- **Ownership comes from what was said.** "_His_ 401(k)" and "_our_ joint account" file correctly; who happened to be speaking is never used. When ownership isn't clear, Hazel asks you instead of guessing.
+- **Your CRM stays in charge of contact basics.** For clients synced from your CRM, identity and profile fields (names, birth dates, addresses, risk tolerance, and so on) are managed in the CRM. Hazel won't change them, even when the CRM field is empty. For clients that live only in Hazel, it's the reverse: the profile keeps the contact record up to date automatically.
+- **"No" is an answer.** If a client confirms they don't have something (no will, no umbrella policy), the profile records "None — confirmed with client," which is often as valuable as the facts themselves.
+
+<Note>
+  Documents uploaded in an Ask Hazel **chat** help Hazel answer in that conversation, but only documents added to a client's **Documents** tab become part of the profile.
+</Note>
+
+## Uploading documents
+
+Open the client's **Documents** tab ("Statements, tax returns, and account documents Hazel has read into this profile.") and drop files anywhere on the tab, or click the dashed **"Upload your client documents here"** strip.
+
+- **Accepted:** PDF, Word (DOCX), Excel (XLSX), and images, up to **10 MB** each. (Legacy .doc/.xls files need to be re-saved as .docx/.xlsx first.)
+- **Password-protected PDFs** prompt you for the password; it's used on your device to unlock the file and never leaves your browser.
+- **Uploading to a household** shares the document (and its facts) across all members; uploading on a person's page links it just to them.
+
+Each document shows its progress: **Queued → Reading → Adding to profile → In profile**. When it reads **In profile** (green), click it to jump to the Data tab and see what Hazel learned. Documents are added one at a time per household to keep the profile consistent, so a busy household may briefly show **"Waiting for profile"**. A **Failed** pill means Hazel couldn't process the file; upload a fresh copy or a clearer version.
+
+Two details worth knowing:
+
+- **Dates matter.** Facts from a document carry the document's own date when Hazel can find one; otherwise they're dated to the upload day. The date on the document row shows which was used, and you can set it yourself. That's worth doing for older statements whose date Hazel couldn't read, because newer information wins in the profile and the date decides what counts as newer. See [how updates work](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying#how-updates-and-corrections-work).
+- **Deleting a document removes what Hazel learned from it.** The delete confirmation says it plainly: "Deleting this document will also remove the information Hazel extracted from it." Values it had replaced come back.
+
+## Updating the profile from chat
+
+The fastest way to keep a profile current is to tell Hazel directly. In Ask Hazel, including the chat rail on the household page, describe what changed in plain English:
+
+> "Update Bob's 401(k) balance to \$612,000 as of yesterday."
+
+> "The Hendersons paid off the HELOC and opened a 529 for Maya at Fidelity: \$500 a month."
+
+Hazel works out what that means for the profile and shows you the exact updates planned, down to which records and which values. Confirm, and they're applied. Three things to know:
+
+- **Nothing changes without your confirmation.** Hazel proposes; you approve. Decline and the profile is untouched.
+- **Chat updates are your entries.** They land verified and marked as entered by you, exactly like an **Edit** on the Data tab, and they appear in each value's History like any other change.
+- **You can add brand-new records this way.** An account the client mentioned on a phone call, a new goal, a policy: describe it, confirm it, and it takes its place in the right section. Chat is the way to hand-add facts that no meeting or document has captured yet.
+
+<Tip>
+  This works for cleanup, too: "archive the old Vanguard IRA, it was rolled over," "the mortgage rate is 5.875, not 5.375," or "fix the owner on the term policy, it's Sarah's" are often quicker in chat than clicking through the Data tab.
+</Tip>
+
+Once data is flowing in, the next step is checking it. See [Reviewing & Verifying](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying).
