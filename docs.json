@@ -58,8 +58,8 @@
               {
                 "group": "Overview",
                 "pages": [
-                  "guides/intelligent-client-profiles/Overview/getting-started",
-                  "guides/intelligent-client-profiles/Overview/Introduction"
+                  "guides/intelligent-client-profiles/Overview/Introduction",
+                  "guides/intelligent-client-profiles/Overview/getting-started"
                 ]
               },
               {
