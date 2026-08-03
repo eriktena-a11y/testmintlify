@@ -2,7 +2,9 @@
 title: "Recording a Meeting"
 ---
 
-### Hazel can record via the following methods
+## Hazel can record via the following methods
+
+#### Video Meetings
 
 <Accordion title="Recording Online Meetings">
   Once you connect your Calendar, Hazel will be automatically scheduled to join calendar events with meeting links available. At the time of the event, Hazel will be in the waiting room waiting for you to admit it.
@@ -26,6 +28,7 @@ title: "Recording a Meeting"
   <Frame>
     ![Recordnotoncal1](/images/recordnotoncal1.gif)
   </Frame>
+
   - If it’s a **Virtual Meeting**, enter your meeting url link and Hazel will join your call in less than a minute.
   - If it’s an **Manual Recording**, proceed and start recording directly from your computer, or upload a media file (audio and video are both accepted).
 
@@ -38,12 +41,23 @@ title: "Recording a Meeting"
   </Frame>
 </Accordion>
 
-<Accordion title="Recording an In Person Meeting on your Browser">
+<Accordion title="Uploading Audio or Video Files">
+  Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer, or upload a media file (audio and video are both accepted). Click on `Upload Audio/Video File`
+
+  <Frame>
+    ![Recordinperson1](/images/recordinperson1.gif)
+  </Frame>
+</Accordion>
+
+#### In Person Meetings
+
+<Accordion title="Recording an In Person Meeting on Your Browser">
   Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer, or upload a media file (audio and video are both accepted)
 
   <Frame>
     ![Recordinperson1](/images/recordinperson1.gif)
   </Frame>
+
   To record manually, click ‘Start Recording.’ This will open a new tab and an indicator that recording is in progress:
 
   Once done recording, click ‘Stop Recording’. The tab should close, and upon refreshing the meeting page, you’ll see a processing indicator. Once the notes are ready, the page will refresh with the notes of the meeting.
@@ -53,28 +67,61 @@ title: "Recording a Meeting"
   </Frame>
 </Accordion>
 
-<Accordion title="Recording In Person Meeting on your iOS Device">
+<Accordion title="Recording In Person Meeting on Your iOS Device">
   1. Download the [hazel.ai](https://apps.apple.com/us/app/hazel-ai/id6752910685) app from the App Store.
   2. Sign in to your Hazel account
   3. Select the meeting you would like to start recording or create a new meeting
 </Accordion>
 
-<Accordion title="Uploading Audio or Video Files">
-  Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer, or upload a media file (audio and video are both accepted). Click on `Upload Audio/Video File`
+#### Phone Calls
 
-  <Frame>
-    ![Recordinperson1](/images/recordinperson1.gif)
-  </Frame>
+<Accordion title="Recording on Your Hazel Line">
+  Hazel gives you a personal phone number. Call it, merge your client in, and Hazel records both sides. No calendar event needed.
+
+  <Tip>
+    **One-time setup**
+
+    1. **Turn on Record Phone Calls.** Go to **Settings → Meeting Settings** and turn on **Record Phone Calls**. Your personal Hazel number appears under the toggle after a few<br /> seconds, with a copy button. Save it to your phone's contacts as "Hazel."
+    2. **Add the numbers you'll call from.** Under **Allowed callers**, add every phone you might dial Hazel from: your cell, your desk phone. Up to 5.
+       > Add the numbers **you** call from, not your client's. Until you add at least one number,<br />calls to your Hazel line won't record. Hazel only records calls placed from a number on this list.
+  </Tip>
+
+  **Recording a call**
+
+  1. **Dial your Hazel number.** From one of your allowed numbers, call your Hazel line. Hazel answers and plays a short announcement that the call is being recorded.
+  2. **Merge your client into the call.** Use your phone's **Add Call** and **Merge Calls **controls to dial your client and merge them in. Both sides are now captured. If you're already on with your client, add Hazel to that call instead and merge.
+     <Warning>
+       Your client does not hear Hazel's announcement when they're merged in afterward. It plays only to the phone that dialed Hazel. Tell them the call is being recorded yourself.
+     </Warning>
+  3. **Hang up when you're done.** Hazel stops recording when the call ends, so there's no button to press. A new meeting appears on your **Meetings** page named for the number you called from and the time, for example "Phone call: (415) 555-0123 on Aug 3, 2026 2:15 PM". Notes and tasks are generated the same way as any other Hazel recording.
+
+  <Note>
+    **Tip:** Phone-call meetings start with no client attached. Open the meeting and use **Add Participants** to link the client so the meeting is tied to the right household and your notes sync to your CRM.
+  </Note>
 </Accordion>
 
-<Accordion title="Recording a Phone Call">
-  You can record phone calls today by recording from your computer and having your phone on speaker so both voices are captured by Hazel. To do so:
+<Accordion title="Recording a Phone Call with Join My Call">
+  Use this when the meeting already exists in Hazel and you want the recording attached to it.<br />Hazel calls your phone and you merge it into the call you're already on.
+
+  1. **Open the meeting and choose Join my call.** On the meeting page, click **Record** in the top right, then choose **Join my call**.
+  2. **Enter the number for Hazel to call.** Usually your own cell, the phone you're on the call with. Include the country code, for example `+14155550123`.
+  3. **Answer, then merge.** Hazel calls you within a few seconds and rings for about 30 seconds. Answer it and tap **Merge Calls** on your phone. The dialog reads "Recording" once Hazel is capturing the conversation.
+  4. **Hang up when you're done.** The recording attaches to this meeting, and notes appear on it shortly after.
+
+  <Warning>
+    Hazel plays no announcement on these calls. Nobody on the line is told a recording has started unless you tell them.
+  </Warning>
+</Accordion>
+
+<Accordion title="Recording from Your Browser on Speakerphone">
+  You can record phone calls by recording from your computer and having your phone on speaker so both voices are captured by Hazel. To do so:
 
   Navigate to the upcoming meeting, and select ‘Record’ on the top right. Upon clicking it, you’ll have the option to start recording directly from your computer.
 
   <Frame>
     ![Recordphonecall](/images/recordphonecall.gif)
   </Frame>
+
   To record manually, click ‘Start Recording.’ This will open a new tab and an indicator that recording is in progress.
 
   You can then initiate your phone call and put your phone on speaker so both voices are captured by Hazel.
@@ -82,7 +129,7 @@ title: "Recording a Meeting"
   Once done recording, click ‘Stop Recording’. The tab should close, and upon refreshing the meeting page, you’ll see a processing indicator. Once the notes are ready, the page will refresh with the notes of the meeting.
 </Accordion>
 
-### Disabling / Enabling Auto-scheduled Notetakers
+## Disabling / Enabling Auto-scheduled Notetakers
 
 <Accordion title="Option 1: Disable Notetaker On All Calendar Events">
   Hazel automatically adds notetakers to new calendar events by default. If you would like to disable this option, you can do so within Settings → Meeting Settings. Be aware that disabling will cancel all your existing auto-scheduled notetakers for future meetings.
@@ -96,7 +143,7 @@ title: "Recording a Meeting"
   ![Disablenotetakerindividualevent](/images/disablenotetakerindividualevent.png)
 </Accordion>
 
-### Downloading a Video Recording
+## Downloading a Video Recording
 
 <Accordion title="Downloading a Video Recording">
   You can download a Video Recording within the Transcript section of a call if you have ‘Save Video’ turned on in Settings. If you would like to disable this option, you can do so within Settings → Meeting Settings. To download the Video Recording, go to the Meeting you would like to download, and select the Download icon. This will open the video in a new tab. In the new tab, select Download and wait for the video to download on to your device.

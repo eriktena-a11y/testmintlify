@@ -176,6 +176,30 @@ title: "Troubleshooting"
   </Accordion>
 </AccordionGroup>
 
+### Phone Call Recording Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="I called my Hazel line but no meeting appeared">
+    The most common cause is calling from a number that isn't on your **Allowed callers** list. Check **Settings → Meeting Settings**. Also check that **Record Phone Calls** is still on, that your caller ID isn't blocked or withheld, and that the call lasted more than about 15 seconds. Very short calls are discarded rather than turned into meetings.
+  </Accordion>
+
+  <Accordion title="Only my voice is in the transcript">
+    The client was never merged into the call. Hazel records the merged conference, so both parties have to be on it. Check that your phone shows a single merged call, not two separate ones, before you start talking.
+  </Accordion>
+
+  <Accordion title="My Hazel number changed">
+    Turning **Record Phone Calls** off pauses recording but keeps your number. Turn it back on and you get the same number. If it stays off for an extended period, Hazel releases the number, and turning the setting back on issues a new one. Update your saved contact if that happens.
+  </Accordion>
+
+  <Accordion title="Hazel couldn't reach my number with Join My Call">
+    Check the number, including the country code (`+1` for US numbers), and try again. If your phone declined the call or it went to voicemail, Hazel reports that and you can retry.
+  </Accordion>
+
+  <Accordion title="I don't see Record Phone Calls in my settings">
+    Phone call recording isn't turned on for every account yet. Reach out to your Hazel contact if you'd like access.
+  </Accordion>
+</AccordionGroup>
+
 ### Email Troubleshooting
 
 <AccordionGroup>
