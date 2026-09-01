@@ -4,76 +4,49 @@ sidebarTitle: "Access & Availability"
 description: "Where planning opens, who can open a plan, and what a firm owner sets for everyone."
 ---
 
-Financial planning shows up in three places: the **Financial Planning** tab on every household, the **Financial Planning** page in the left nav, and **Ask Hazel** when the chat is set to **Financial Planning** mode. A request in plain Ask mode will not start a plan.
+You are about to build a plan for a client. Financial planning opens in three places: the **Financial Planning** tab on every household, the **Financial Planning** page in the left nav, and **Ask Hazel** with the chat set to **Financial Planning** mode. A request in plain Ask mode will not start a plan.
 
 ## Who can build a plan
 
-Anyone at your firm who has Financial Planning Add-on enabled can see a household can build a plan for it. There is nothing planning-specific to switch on for an individual advisor, and a household can hold as many plans as you need. Each plan keeps its own version history, so two advisors working the same client are not writing over each other.
+Anyone at your firm who can see a household can build a plan for it, with nothing planning-specific to switch on per advisor. A household holds as many plans as you need, each with its own version history.
 
 ## Who can open a plan you built
 
-A plan opens for someone only when both of these are true: they have access to the household, and the plan is one they built themselves.
+Plans are personal for now, so a colleague with full access still sees the household's **Financial Planning** tab as a household with no plan yet. No permission setting changes this, and shared financial-plan chats are a fast follow. A colleague can build their own plan for the household, leaving yours untouched, and **Export PDF** in the plan's top bar produces the finished document to send to anyone once your changes are saved.
 
-Plans are personal for now. A colleague with full access to the same household still cannot open your plan, and you cannot open theirs. On their screen, the household's **Financial Planning** tab looks like a household with no plan yet and offers to build one. No permission setting changes this, so it is not worth auditing access when you see it. Shared financial-plan chats are coming soon.
-
-There are two good ways round it in the meantime:
-
-- A colleague can build their own plan for the same household, and yours stays untouched.
-- **Export PDF** in the plan's top bar produces the finished document, which you can send to anyone. It is available once your changes are saved.
-
-If a colleague cannot see the household at all, that part is ordinary household access, and adding them to the household fixes it. See [Roles and permissions](/guides/settings/members/roles-and-permissions).
+If a colleague cannot see the household at all, that is ordinary household access. See [Roles and permissions](/guides/settings/members/roles-and-permissions).
 
 ## What a firm owner sets for everyone
 
-**Settings → Planning** belongs to the firm owner. Everything set there applies to every plan the firm builds, by anyone. The separate Firm Admin role does not include it, so if you hold Firm Admin and cannot find the Planning tab, that is why, and your firm owner can make the change for you.
-
-The sidebar has three groups: **Plan templates**, **Client persona**, and **Assumptions**.
+**Settings → Planning** belongs to the firm owner, and everything set there applies to every plan the firm builds. Firm Admin is a separate role that does not include it, so a Firm Admin who cannot find the Planning tab should ask the firm owner to make the change. The sidebar has three groups: **Plan templates**, **Client persona**, and **Assumptions**.
 
 | Setting | Effect |
 | --- | --- |
-| **Base template** | The house blueprint every plan starts from |
-| **Plan design** | Which sections, tabs, and blocks a plan contains, and in what order |
-| **Hazel instructions** | Voice, emphasis, and content guidance, written in your words |
-| **Planning assumptions** | Named figures Hazel plans against, as a label and a value |
-| **Guardrails** | Your never-do rules. Hazel will not cross them, and a persona can add to the list but never remove from it |
-| **Client disclaimer** | The footer that renders under every plan and in the PDF |
-| **Client persona** | How the shape and the assumptions change by client type |
+| **Base template** | The blueprint every plan starts from |
+| **Plan design** | Which sections, tabs, and blocks a plan has, in what order |
+| **Hazel instructions** | Voice, emphasis, and content guidance in your words |
+| **Planning assumptions** | Named figures Hazel plans against |
+| **Guardrails** | Your never-do rules. Hazel will not cross them, and a persona can add but never remove |
+| **Client disclaimer** | The footer under every plan and in the PDF |
+| **Client persona** | How the shape and assumptions change by client type |
 | **Solver assumptions** | How a projection is run and judged: success threshold, fees, taxes, drawdown |
-| **Market assumptions** | The return, volatility, inflation, and tax figures plans are built against |
+| **Market assumptions** | Return, volatility, inflation, and tax figures |
 
-Selecting **Base template** in the sidebar opens the first six. **Hazel instructions**, **Planning assumptions**, and **Guardrails** are blocks inside the **Base template** card itself. **Plan design** and **Client disclaimer** are cards of their own below it, next to a **Used by** card naming the personas that follow the base template. Each persona gets its own row under **Client persona**, and the two assumption editors live under **Assumptions**. Everything saves as you go, so there is no Save button to hunt for.
+**Hazel instructions**, **Planning assumptions**, and **Guardrails** are blocks inside the **Base template** card; **Plan design** and **Client disclaimer** are cards of their own below it. Everything saves as you go.
 
 <Warning>
-  The **Client disclaimer** box shows wording Hazel has drafted for you, but that wording is not applied until you edit the box yourself. A firm that has never opened it publishes plans with no footer at all, so set yours before the first client-facing export. Hazel reads the disclaimer fresh each time a plan is opened, which means an edit also reaches plans you published earlier.
+  The **Client disclaimer** box shows wording Hazel has drafted for you, but it is not applied until you edit the box yourself, so a firm that never opens it publishes plans with no footer. Set yours before the first client-facing export. Hazel reads the disclaimer fresh each time a plan opens, so an edit reaches earlier plans too.
 </Warning>
 
-Advisors who are not firm owners never see these panels, and every plan they build follows them anyway. There is no way in for them to find: the Planning tab and every shortcut to it are absent, which is the design rather than a fault. A bookmarked or pasted link to the plan design editor does open, then reports that they cannot reach it. On the plan itself, the **Applied settings** block in the **Appendix** lists every planning setting the plan was built on, with a **Set by** column tagging each one **Firm**, **This plan**, or **Persona** followed by the persona's name. Those tags sit on the settings, not on the figures in the plan.
+Advisors who are not firm owners never see these panels, though every plan they build follows them. A bookmarked link to the plan design editor opens, then reports that they cannot reach it. They can still read the [Applied settings block](/guides/financial-planning/your-data/where-numbers-come-from) in the plan's **Appendix**, which tags each setting with the layer that set it.
 
 <Note>
-  An advisor can still tune a single plan. Open the plan in **Ask Hazel** and the top bar carries a sliders icon whose tooltip reads **Plan settings**; from a household's **Financial Planning** tab, **Open chat** takes you there first, since that panel is a chat-view control. It holds two groups, **Solver assumptions** and **Market assumptions**, and every value it lets you move stays inside a fixed range. Nothing takes effect until you choose **Apply and replan**, which asks Hazel to recalculate and arrives as a new version, with the request visible in the plan's conversation as the record of what changed. An override belongs to that one plan, so another plan for the same household keeps inheriting the firm and persona values. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
-</Note>
-
-## Start with the sample plan
-
-Hazel ships one finished plan for a made-up family, so you can read a real plan before building your own. On the **Financial Planning** page, the intro card has a preview panel beside it with **See financial plan example**. A short tour opens over the plan the first time you visit, and **Take the tour** at the top reopens it whenever you like.
-
-If you have closed that preview panel, or you already have plans of your own so the intro card is gone, open the **New financial plan** flow and choose **Sample household data**. That opens the same finished plan straight away rather than building anything.
-
-Almost everything you would do on a real plan works here. Click through the sections and the tabs inside **Getting there**, move a lever to watch the numbers respond, and open the **Appendix** to see what the plan was built on. Selecting a figure opens the panel behind it, headed **How this was calculated** where there is arithmetic to show, so you can read the sources under a number.
-
-Use it to:
-
-- See what a finished plan looks like before you build one for a client.
-- Train a new team member without touching client data.
-- Show a client or a colleague the format you will be walking them through.
-
-<Note>
-  The example is read-only, so there is no editing, no version history, and no PDF download on it. It is also a fixed document, which means it never reflects changes you make in Planning settings. To watch a template or an assumption change land, save it and then build a plan for a real household.
+  An advisor can still tune a single plan. **Plan settings** is a chat-view control, so from a household's **Financial Planning** tab, **Open chat** takes you there first. The override belongs to that one plan, and other plans for the household still inherit the firm and persona values. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
 </Note>
 
 ## Where to go next
 
-- [Getting started](/guides/financial-planning/overview/getting-started): build your first plan, step by step.
-- [Planning settings](/guides/financial-planning/settings/overview): the firm owner's tour of everything above.
-- [Anatomy of a plan](/guides/financial-planning/the-plan/anatomy-of-a-plan): what you are looking at when a plan opens.
+- [Getting started](/guides/financial-planning/overview/getting-started): build your first plan, and read the finished example first.
+- [Planning settings](/guides/financial-planning/settings/overview): the firm owner's full tour.
+- [Anatomy of a plan](/guides/financial-planning/the-plan/anatomy-of-a-plan): what a plan contains.
 - [Roles and permissions](/guides/settings/members/roles-and-permissions): how household access works.
