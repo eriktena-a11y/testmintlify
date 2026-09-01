@@ -1,85 +1,87 @@
 ---
 title: "The base template"
 sidebarTitle: "Base Template"
-description: "Your firm's default plan: the shape a plan takes in Plan design, your house instructions, firm-specific planning assumptions, and the guardrails no plan may cross."
+description: "Your firm's default plan: your plan shape, house instructions, firm-specific planning assumptions, and the guardrails no plan may cross."
 ---
 
-The **Base template** is your firm's default plan: what a household's plan looks like when all you know about them is that they are your client.
+Set the base template once, so every plan Hazel builds already carries your firm's shape, voice, numbers and rules. The **Base template** is your firm's default plan: what a household's plan looks like when all you know is that they are your client.
 
-It lives in **Settings**, under **Planning**, as the first entry under **Plan templates**. Everything set here applies firm-wide, and every Client persona is built on it, so a persona only has to carry the handful of things that differ.
+It lives in **Settings**, under **Planning**, first under **Plan templates**. Everything here applies firm-wide, and every Client persona is built on it, so a persona carries only what differs.
 
 ## What the base template holds
 
 <CardGroup cols="2">
   <Card title="Plan design" icon="table-columns" href="/guides/financial-planning/plan-design/overview">
-    The blueprint: which sections and tabs a plan has, which of Hazel's planning modules are in it, and what each block is told to do. Select **Design layout** to open the layout designer.
+    The blueprint: sections, tabs, modules, and what each block is told to do.
   </Card>
 
   <Card title="Hazel instructions" icon="list" href="/guides/financial-planning/settings/personas/instructions">
-    Your house guidance in plain English, as a numbered list. Voice, emphasis, what to lead with, what to always call out. This list ships empty. Select **Add instruction** to write the first one.
+    Your house guidance in plain English, as a numbered list. It ships empty. Select **Add instruction** to start.
   </Card>
 
   <Card title="Planning assumptions" icon="hashtag">
-    Label and value rows for figures specific to your firm that the Solver and Market panels do not model. Add as many as you need.
+    Label and value rows for firm-specific figures the Solver and Market panels do not model.
   </Card>
 
   <Card title="Guardrails" icon="shield" href="/guides/financial-planning/assumptions/guardrails">
-    The never-do rules. Set here, they apply firm-wide. A persona can add rules of its own, and no persona, plan, or request can remove one.
+    The never-do rules, firm-wide. A persona can add its own, and no persona, plan, or request can remove one.
   </Card>
 </CardGroup>
 
-Two more boxes sit below those four on the same screen. **Client disclaimer** is the footer text your clients read under a plan and in the exported PDF, covered in [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering). It opens showing Hazel's plain default wording as a starting point, and nothing reaches a plan until you edit the box, so what you see there is a suggestion rather than what your clients get. **Used by** names the personas still following this design, which is the quickest way to see who a change here reaches. A persona that has its own plan design drops off that list and stops taking base design changes.
+Two more boxes sit below those four:
 
-There is no Save button on this screen. Every edit saves itself, and a quiet "Saving…" then "Saved" beside the heading is the confirmation. What you change shapes the plans Hazel builds from now on. Plans you have already delivered stay as they are until you rebuild them.
+- **Client disclaimer**: the footer clients read under a plan and in the exported PDF ([Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering)). It opens on Hazel's plain default wording, and nothing reaches a plan until you edit the box.
+- **Used by**: the personas still following this design, so a change here reaches all of them. A persona with its own plan design drops off it.
+
+Every edit saves itself, with "Saving…" then "Saved" beside the heading. Changes shape the plans Hazel builds from now on; plans you have already delivered stay as they are.
 
 <Note>
-  Instructions are the one part of the base a persona does not add to. When Hazel matches a household to one of your personas, Hazel follows that persona's instruction list and not the base list. Creating a persona from the base template starts it with a copy of your base instructions, which you then edit. Plan design, planning assumptions and the assumption numbers all carry through to every persona until that persona changes them. Guardrails carry through and stay: a persona can add its own, never drop one of yours. [Inheritance](/guides/financial-planning/settings/personas/inheritance) has the full picture.
+  Instructions are the one part a persona does not add to: once Hazel matches a household to a persona, Hazel follows that persona's list, not the base list. Plan design, planning assumptions and the assumption numbers carry through until a persona changes them; guardrails carry through and stay. See [Inheritance](/guides/financial-planning/settings/personas/inheritance).
 </Note>
 
 ## Plan design
 
-Two cards make up this surface. The upper one carries the **Strictness** dial, plus a **Hazel default** badge while you are still on the shipped design. The second, **Plan layout**, draws your blueprint: sections as bands, tabs as indented sub-bands, and blocks as labeled chips. A line under the blueprint counts your sections, how many of Hazel's nineteen planning modules are in play, and how many blocks always appear, and ends in a **See what's left out** link that opens the layout designer with its **Modules** panel showing. That panel lists all nineteen, grouped by planning area, so switch on its **Not in plan** filter to see only the ones your design leaves out.
+The upper card carries the **Strictness** dial, plus a **Hazel default** badge while you are still on the shipped design, which places eight of Hazel's nineteen planning modules with strictness **Flexible**. See [Strictness](/guides/financial-planning/settings/personas/strictness).
+
+**Plan layout** below it draws your blueprint: sections as bands, tabs as indented sub-bands, blocks as labeled chips. A line under it counts your sections, the modules in play and the always-on blocks, then ends in a **See what's left out** link into the layout designer's **Modules** panel.
 
 Two ways to work with it:
 
-- **Select any chip** to edit it in place. Three fields: **When it appears**, **Instructions to Hazel**, and **Leave out when**. Select **Done** when you are finished. You do not need to open the layout designer for this.
-- **Select Design layout** to open the layout designer, where you add, remove, and reorder modules and blocks. See [Using the editor](/guides/financial-planning/plan-design/using-the-editor).
-
-The shipped design already has eight of Hazel's nineteen modules placed, and strictness set to **Flexible**, which treats your design as a starting point rather than a rule. [Strictness](/guides/financial-planning/settings/personas/strictness) covers the other two settings.
+- **Select any chip** to edit it in place: **When it appears**, **Instructions to Hazel**, **Leave out when**, then **Done**. No layout designer needed.
+- **Select Design layout** for the layout designer, where you add, remove, and reorder modules and blocks. See [Using the editor](/guides/financial-planning/plan-design/using-the-editor).
 
 ## Planning assumptions
 
-These rows are for figures your firm has settled on that the Solver and Market panels do not cover. Examples:
+For example:
 
 | Label | Value |
 | --- | --- |
 | Longevity age | 95 |
 | Healthcare inflation | 5.5% |
-| Home appreciation | 3% |
 | Education inflation | 5% |
 
-Select **Add planning assumption**, give the row a **Label** and a **Value**, and it becomes part of every plan built on this template. The value is free text, so a number, a percentage, or a short phrase such as "Stop under the first IRMAA tier" all work.
+Select **Add planning assumption**, give the row a **Label** and a **Value**, and it joins every plan built on this template. The value is free text: a number, a percentage, or a phrase such as "Stop under the first IRMAA tier".
 
-Planning assumptions are firm-wide. A persona has no per-row override for them. If one kind of client needs a different figure, write it as an instruction on that persona using the same label and value shape, for example "Education inflation: 6%", and Hazel takes that over the firm row for that persona. For a single plan, ask Hazel in that plan's chat. The **Applied settings** block in the plan's Appendix shows which layer each value came from: your firm, a persona, or that one plan.
+These rows are firm-wide, with no per-row override on a persona. When one kind of client needs a different figure, write it as an instruction on that persona in the same label and value shape, for example "Education inflation: 6%". For a single plan, ask Hazel in that plan's chat.
 
 <Note>
-  An assumption is a value you want fixed and named. An instruction is guidance on how a plan is written. "Longevity age: 95" belongs in assumptions. "Frame longevity as a spending question, not a portfolio question." belongs in instructions. Where an ordinary instruction disagrees with a number set in assumptions, the assumption wins. The one exception is the label-and-value line above: written that way on a persona, Hazel reads it as a value rather than as prose.
+  "Longevity age: 95" belongs in assumptions; "Frame longevity as a spending question, not a portfolio question." belongs in instructions. Where the two disagree on a number the assumption wins, unless the instruction uses the label-and-value shape above.
 </Note>
 
 ## The order to set it up
 
 <Steps>
   <Step title="Build a plan on the shipped default">
-    Your base template arrives with a plan design already built and with the firm-wide solver and market numbers set. What it does not arrive with is your instructions list. Before you write anything, build a plan for a household you know well and read it as if a client sent it to you. Start one from that household's **Financial Planning** tab, or from the **Financial Planning** page. [Getting started](/guides/financial-planning/overview/getting-started) walks through the build.
+    Your base template arrives with a plan design and the firm-wide solver and market numbers set, but no instructions. Build a plan for a household you know well, from that household's **Financial Planning** tab or the **Financial Planning** page, and read it as a client would. See [Getting started](/guides/financial-planning/overview/getting-started).
   </Step>
   <Step title="Check which template the plan came from">
-    Your firm already has Hazel's three Client personas installed, and Hazel matches each household to the closest one. Open the plan's **Appendix** and read the **Applied settings** block: it names the persona the plan was built from, or records none if the base template alone was used. Fix the screen that actually shaped the plan you just read.
+    Hazel matches each household to the closest of the three Client personas your firm already has. The plan's **Appendix**, under **Applied settings**, names the persona it was built from, or none if the base template alone was used, so you edit the screen that shaped what you read.
   </Step>
   <Step title="Fix the shape first">
-    Anything structurally missing or unwanted goes in Plan design. A missing section is harder to notice later than a sentence you would have phrased differently.
+    Anything structurally missing or unwanted goes in Plan design.
   </Step>
   <Step title="Then the voice">
-    Add instructions for what you noticed you would have written differently. A few specific instructions beat twenty vague ones, and [Instructions](/guides/financial-planning/settings/personas/instructions) covers how to write them.
+    Add instructions for what you would have written differently. See [Instructions](/guides/financial-planning/settings/personas/instructions).
   </Step>
   <Step title="Then the numbers">
     Set [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions) and [Market assumptions](/guides/financial-planning/assumptions/market-assumptions), then add any firm-specific planning assumptions the panels do not model.
@@ -88,16 +90,16 @@ Planning assumptions are firm-wide. A persona has no per-row override for them. 
     Write down the rules your firm would never break, however a request is phrased.
   </Step>
   <Step title="Only then build personas">
-    With the base right, create a persona only where a kind of client genuinely needs a different shape or different numbers. [Creating a persona](/guides/financial-planning/settings/personas/creating-a-persona) covers the rest.
+    Create a persona only where a kind of client needs a different shape or different numbers. See [Creating a persona](/guides/financial-planning/settings/personas/creating-a-persona).
   </Step>
 </Steps>
 
 <Tip>
-  Test a change by building a plan, not by opening the sample plan. The sample plan is a fixed example, so it reads the same whatever you change here. Pick a household you know inside out and read the finished plan end to end, which tells you far more than the settings screen does. If that household already has a plan, **Regenerate** in the top bar of its **Financial Planning** tab rebuilds it on your current settings.
+  Test a change by building a plan. The sample plan reads the same whatever you change here. If the household already has a plan, **Regenerate** in the top bar of its **Financial Planning** tab rebuilds it on your current settings.
 </Tip>
 
 ## Where to go next
 
-- [Plan design](/guides/financial-planning/plan-design/overview): the layout in full.
-- [Client personas](/guides/financial-planning/settings/personas/overview): differentiating by client type.
-- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): the planning inputs behind every projection.
+- [Plan design](/guides/financial-planning/plan-design/overview)
+- [Client personas](/guides/financial-planning/settings/personas/overview)
+- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions)

@@ -1,165 +1,146 @@
 ---
 title: "Troubleshooting and FAQ"
 sidebarTitle: "Troubleshooting & FAQ"
+description: "Match what you are seeing to the symptom, and get the answers advisors and firm owners ask most."
 ---
+
+You need to know whether what you are seeing is a problem before this plan goes in front of a client.
 
 ## Troubleshooting
 
-Find the symptom that matches your screen and open it. Several of these turn out to be the plan reporting something true about what reached it, and each entry says how to check.
-
 <AccordionGroup>
   <Accordion title="The build stopped and says Waiting for answer">
-    Nothing is broken. A build runs in three steps, and step two exists so Hazel can ask you the handful of things that would change the plan.
+    Nothing is broken. Step two of three, badged **STEP 2 / 3**, is where Hazel asks the handful of things that would change the plan, one at a time and numbered. Answer them and the build carries on.
 
-    You will see **STEP 2 / 3**, a heading about a few questions before drafting, and **Waiting for answer** in the progress badge. Questions come one at a time and are numbered, so you can see how many are left. Answer them and the build carries on; the finished step confirms that your answers carried through.
-
-    If you would rather not decide, the card offers **Make reasonable assumption** for the question in front of you, and a second option that skips the rest and lets Hazel assume all of them. On the household's **Financial Planning** tab, a question you leave untouched takes the reasonable assumption on its own after about half a minute, so a build you walked away from still finishes. Hovering over the card or typing in it pauses that timer. In a chat, the question waits for you as long as it takes.
+    Rather not decide? **Make reasonable assumption** settles the one in front of you, and a second option covers the rest. On the household's **Financial Planning** tab an untouched question takes that assumption itself after about half a minute; hovering or typing pauses the timer. In a chat it waits as long as you need.
   </Accordion>
 
   <Accordion title="Build didn't finish">
-    That is the message on the household's **Financial Planning** tab when a build stops short, and it comes with two buttons.
-
-    **Try again** continues from the documents Hazel already read and the answers you already gave, so it is faster and it is the right first move. **Start over** clears the attempt and puts you back on the readiness view, which is what you want if the household's data was the real problem.
-
-    Nothing you uploaded is lost either way. If a build fails twice in a row, contact support and name the household.
+    The household's **Financial Planning** tab says this when a build stops short. Nothing you uploaded is lost: **Try again** picks up from the documents Hazel already read and the answers you gave. **Start over** clears the attempt and returns you to the readiness view, for when the data was the real problem. If a build fails twice, contact support and name the household.
   </Accordion>
 
   <Accordion title="The build is taking a while, or I navigated away">
-    The card that starts a build estimates 5-15 min, and the reading step says it usually takes 5-12 minutes, so most builds land inside a quarter of an hour. A household with a lot of paperwork can run longer.
+    The card that starts a build estimates 5-15 min, and the reading step says 5-12 minutes; a household with a lot of paperwork runs longer. Hazel keeps working whether or not you watch, and chimes when the draft is ready; the speaker button beside the progress badge mutes the chime.
 
-    Hazel keeps working whether or not you are watching, and the banner says so: leave the page, and Hazel chimes when the draft is ready. On the household's **Financial Planning** tab the progress badge shows an estimate of the time left plus counts that are always real, such as how many pages of how many have been read. Once a build passes its usual time the badge stops estimating and says **Taking longer than usual** rather than a number it no longer believes.
-
-    The chime plays by default, and the speaker button next to that progress badge mutes it, which is what you want before you walk into a client meeting. While a build is running, resist starting a second one for the same household. Wait for the plan, then ask for changes, which is quicker than building again.
+    On the household's **Financial Planning** tab the badge estimates the time left, counts the pages read, and past its usual time reads **Taking longer than usual**. Do not start a second build; wait for the plan, then ask for changes.
   </Accordion>
 
   <Accordion title="The plan says it couldn't find a figure I know we have">
-    Hazel states what it cannot evidence instead of guessing, so start by assuming the message is right about what actually reached it. Then check, in this order.
+    Hazel states what it cannot evidence instead of guessing, so check in order:
 
-    1. **Could Hazel read the file?** During a build on the household's **Financial Planning** tab, the file list marks every document as waiting, reading or read, and flags any Hazel could not read and carried on without. Ask the client for a clean copy from their custodian or provider, or attach a different one in the plan's chat.
-    2. **Is the document somewhere the plan can see?** Two places work: attached to the plan's own chat, or held on the household. **Prepare data** on the household's **Financial Planning** tab does both jobs, uploading files onto the household's **Documents** tab and drafting a request email for whatever is still missing.
-    3. **Is the fact in the profile but not confirmed?** Hazel uses unconfirmed facts and labels them Unverified where a figure's sources are listed. Open the household's **Data** tab, choose **Review**, and use **Verify**. Facts that arrive from a trusted source such as a document count as verified when they land, so the review list is usually shorter than you expect. See [Reviewing and verifying](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying).
-    4. **Are you expecting it from an account sync?** A synced balance does not become a planning figure by itself. Numbers reach a plan through documents, meetings, emails and notes, so a household you have never met with and hold no paperwork for has nothing for the plan to work from yet. Upload the statement.
+    1. **Could Hazel read the file?** During a build, the file list on the household's **Financial Planning** tab marks each document waiting, reading or read, and flags any Hazel could not read. Ask the client for a clean copy, or attach another in the plan's chat.
+    2. **Can the plan see it?** A document has to be attached to the plan's own chat or held on the household; **Prepare data** on that tab does both, uploading to the household's **Documents** tab.
+    3. **Is the fact unconfirmed?** Hazel uses unconfirmed facts and labels them Unverified in a figure's sources. On the household's **Data** tab, choose **Review** and use **Verify**. See [Reviewing and verifying](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying).
+    4. **Waiting on an account sync?** A sync never delivers planning figures: those come from documents, meetings, emails and notes, so upload the statement.
 
-    Then bring the plan onto the new data with **Regenerate**, in the top bar of the household's **Financial Planning** tab. See [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm).
+    Then use **Regenerate**, in the top bar of the household's **Financial Planning** tab. See [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm).
   </Accordion>
 
   <Accordion title="A figure looks wrong">
-    Select it before you conclude the math is wrong. A figure with something recorded behind it carries a faint dotted underline. Select it and a detail panel opens, with the answer almost always in one of three parts:
+    A figure with something recorded behind it carries a faint dotted underline. Select it to open a detail panel:
 
-    - **Sources.** Which document, meeting, email or note the number came from, each row with a confidence chip and the value that source gave. There is no date in this table, so if you suspect an old statement, go and look at the document itself.
-    - **Methodology.** The calculation, step by step, with each input tied back to its source.
-    - **Assumptions.** The numbered assumptions the figure rests on. Where one is yours to change you get **Edit**, then **Queue change**, and the figure updates when you press **Recalculate** in the bar at the bottom of the plan.
+    - **Sources.** Which document, meeting, email or note it came from, each row carrying the value that source gave and a confidence chip: **Verified** where a document or a correction of your own settled it, **Unverified** where nobody has confirmed what was said, **Modeled** where nobody stated the figure and the plan worked it out. No dates here, so open the document itself if you suspect an old statement.
+    - **Methodology.** The calculation, step by step, each input tied to its source.
+    - **Assumptions.** Where one is yours to change you get **Edit**, then **Queue change**; the figure updates when you press **Recalculate** in the bar at the bottom of the plan.
 
-    A figure with nothing recorded against it renders as plain text and will not open. Two fallbacks when that happens: open **Appendix**, the last entry in the plan's left navigation, which gathers every source, calculation and assumption in the plan in one place, or ask in the plan's chat where the figure came from. A question is only a question, so asking does not produce a new version.
-
-    Most reports of a wrong number come down to a persona overriding a firm value on purpose, or an old document. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+    A figure with nothing recorded renders as plain text and will not open. Try the plan's **Appendix**, the last entry in its left navigation, which gathers all three for the whole plan, or ask in the plan's chat, which produces no new version. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
   </Accordion>
 
   <Accordion title="I can't save my edits and the bar only offers Discard">
-    A new version landed while your edits were staged. The bar at the bottom of the plan says that Hazel published a version while you were editing, and **Discard my changes** is the only button, because folding your edits onto a version they were not written against could quietly throw one of the two sets of changes away.
-
-    Copy anything you want to keep out of the plan first, because discarding does not keep a copy. Then discard, read the version Hazel published, and redo the edit on top of it. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+    A new version landed while your edits were staged, so **Discard my changes** is the only button in the bar at the bottom of the plan. Discarding keeps no copy, so copy anything you want out of the plan first, then read the new version and redo the edit. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
   </Accordion>
 
   <Accordion title="The export won't produce a PDF">
-    Look at the **Export PDF** button first. Grayed out means you have changes staged, and its tooltip asks you to save or discard them before exporting. Settle them in the bar at the bottom of the plan and the button comes back. The PDF always renders the last saved version, never unsaved work on screen.
-
-    If you got a message instead, match it here:
+    A grayed-out **Export PDF** means changes are staged: save or discard them in the bar at the bottom of the plan. Moving a lever stages nothing, so where you only moved dials, look for a goal card you dragged into a new order, which does. The PDF renders the last saved version. If you got a message instead:
 
     | Message | What to do |
     | --- | --- |
     | PDF generation is busy | Wait the few seconds it names, then try again |
     | PDF export is temporarily unavailable | Try again in a few minutes |
     | The PDF download was invalid | Nothing reached your machine, so run the export again |
-    | This plan isn't ready to export | Open the plan, use **Ask Hazel to repair plan**, wait for the new version, then export |
-    | Couldn't export PDF | Try again. If it happens twice, open the plan's own conversation and use the thumbs-down there, so the team gets the version you were looking at |
+    | This plan isn't ready to export | Open the plan in its chat, use **Ask Hazel to repair plan**, wait for the new version, then export. From the household's **Financial Planning** tab, press **Open chat** first |
+    | Couldn't export PDF | Try again, and if it happens twice use the thumbs-down in the plan's own conversation |
   </Accordion>
 
   <Accordion title="Hazel declined my request">
-    The reply names the reason, and the reason tells you where the decision actually lives.
+    The reply names the reason.
 
-    - **A guardrail forbids it.** Guardrails are your firm's absolute rules, and nothing overrides them, Hazel included. Only a firm owner can change one, in **Settings → Planning**. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
-    - **A number your firm set says otherwise.** Hazel plans inside your firm's settings, so where a firm figure and your request disagree, Hazel names the firm's figure rather than quietly overriding it. A firm number is not the wall a guardrail is, though, so it is worth saying why you want the change and asking again. To move it on the plan in front of you, open that plan in its own conversation and use **Plan settings**. To move it for every plan, a firm owner changes it in Planning settings.
-    - **Nothing in the household's data supports the figure.** Add the document that carries it, or let the plan say the figure is unavailable and name the labeled assumption it used instead.
+    - **A guardrail forbids it.** Nothing overrides your firm's absolute rules, Hazel included, and only a firm owner can change one, in **Settings → Planning**. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
+    - **A number your firm set says otherwise.** These bend: say why you want the change and ask again. For this plan, use **Plan settings** in the plan's own conversation; for every plan, a firm owner changes it in Planning settings.
+    - **Nothing in the household's data supports the figure.** Add the document that carries it, or let the plan name the labeled assumption it used instead.
   </Accordion>
 
   <Accordion title="A section our template requires is missing from the plan">
-    Ask in the plan's chat, naming the section: "Why is there no estate section in this plan?" Hazel answers from the plan itself without building a new version, and the answer usually settles whether leaving it out was deliberate.
+    Ask in the plan's chat, naming the section: "Why is there no estate section in this plan?" Hazel answers from the plan itself, with no new version.
 
-    Under **Guided** strictness Hazel is allowed to leave a block out when the household's facts do not support it. Under **Flexible**, which is where a firm that has not configured anything starts, your design is a starting point and Hazel composes each plan freely. So the durable fix belongs to a firm owner, in **Settings → Planning**:
+    Under **Guided** strictness Hazel may leave a block out when the household's facts do not support it. Under **Flexible**, where an unconfigured firm starts, Hazel composes each plan freely from your design. The durable fix belongs to a firm owner, in **Settings → Planning**:
 
-    - Open the **Plan design** card, use **Design layout**, select the block, and read the panel on the right. **When it shows up** decides whether the block is **Always** in a plan or only there **When it applies**, and a **Leave out when** condition may be broader than you meant it to be.
-    - If a section has to appear in every plan, set strictness to **Exact**, which tells Hazel to match your layout instead of composing around it. Know the trade: a household whose facts do not really support a section still gets one, so it can read thin.
+    - In the **Plan design** card, use **Design layout** and select the block. **When it shows up** decides between **Always** and **When it applies**, and a **Leave out when** condition may be broader than you meant.
+    - For a section that has to appear every time, set strictness to **Exact**. Hazel then holds each finished plan against your design and sends one that misses a block back to be fixed, though now and then a plan still publishes with something not matching, so read the next one or two. A household whose facts do not support a section still gets one, so it can read thin.
 
     See [Strictness](/guides/financial-planning/settings/personas/strictness).
   </Accordion>
 
   <Accordion title="The plan used the wrong Client persona">
-    Open **Appendix**, the last entry in the plan's navigation, and read **Applied settings**. Its first row names the persona this version was built from, or reads None.
+    Open the plan's **Appendix**: the first row of **Applied settings** names the persona this version was built from, or reads None.
 
-    To fix this plan, open its chat and name the persona you want: "Rebuild this against our Pre-Retiree persona." It comes back as a new version. A rebuild writes fresh content, so wording you edited by hand does not come along.
+    For this plan, open its chat and name the one you want: "Rebuild this against our Pre-Retiree persona." A rebuild writes fresh content, so hand-edited wording does not come along.
 
-    To fix it for every plan after this one, rewrite the persona's **description**. That is the strongest matching signal, with the age band read as a hint rather than a rule, so a vague description keeps matching households you did not have in mind. See [Client personas](/guides/financial-planning/settings/personas/overview).
+    For every plan after this one, rewrite the persona's **description**, the strongest matching signal; the age band is only a hint, so a vague description keeps matching households you did not mean. See [Client personas](/guides/financial-planning/settings/personas/overview).
   </Accordion>
 
   <Accordion title="I changed a setting and the plan didn't change">
-    Planning settings apply to the next plan, or to the next change to an existing one. A published plan stays exactly as it was built, which is deliberate: a plan you presented last week should not quietly rewrite itself.
+    Planning settings apply to the next plan, or to the next change to an existing one; a published plan stays as it was built, and its **Appendix** records the settings behind it.
 
-    Bring a household onto the new settings with **Regenerate**, in the top bar of the household's **Financial Planning** tab. If it is grayed out and reads that a plan update is in progress, Hazel is still working in that plan's chat, so give it a minute. If you changed a persona, also check in the plan's **Appendix** that this household matched the persona you edited.
+    Bring a household onto the new settings with **Regenerate** in the top bar of the household's **Financial Planning** tab. Grayed out and reading that a plan update is in progress means Hazel is still working in that plan's chat, so give it a minute. After a persona change, check the **Appendix** for the persona this household matched.
   </Accordion>
 
   <Accordion title="Our persona stopped picking up base template changes">
-    If it is one of the three personas Hazel installs for you, nobody edited anything. HENRY, Pre-Retiree and Retiree / Decumulator each arrive carrying their own plan design, so all three read **Customized** from the first time you open Planning settings, and base-template changes have never reached them. Worth knowing before you go looking for the colleague who changed something.
+    If it is one of the three Hazel installs, nobody edited anything: HENRY, Pre-Retiree and Retiree / Decumulator each arrive carrying their own plan design, so all three read **Customized** from the first time you open Planning settings, and base-template changes have never reached them.
 
-    For a persona your firm created, it works the way you would expect: it follows the base template live until someone edits that persona's own design, and from then on it keeps its copy. The **Plan design** card says which state it is in, either that the persona follows the base template, or **Customized**.
+    A persona your firm created follows the base template live until someone edits that persona's own design, then keeps its copy; the **Plan design** card says which state it is in.
 
-    **Re-sync from base** puts a persona onto the base layout and discards the design it has now. It is a discard, not a merge, and Hazel asks you to confirm before doing it, so copy anything you want to keep. See [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance).
+    **Re-sync from base** moves a persona onto the base layout and discards the design it has now, so copy anything you want to keep first. Hazel asks you to confirm. See [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance).
   </Accordion>
 
   <Accordion title="I moved a lever but the words around it still say the old thing">
-    Expected. A lever recalculates the figures wired to it, in your browser, as you move it. It does not rewrite the narrative, which was written for the plan as published, and moving a lever changes nothing saved. Think of it as a way to explore in front of a client rather than a way to edit.
+    A lever recalculates the figures wired to it, in your browser, and leaves the narrative alone. Moving one saves nothing.
 
-    Not every change comes as a knob. Where a change needs Hazel to rework the plan there is no control to move, so ask for it in the plan's chat instead. If a lever moves the numbers far enough that the prose around it is now wrong, ask Hazel to update that section, and it comes back as a new version. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
+    If the numbers move far enough that the prose is now wrong, ask Hazel to update that section and it comes back as a new version. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
   </Accordion>
 
   <Accordion title="A colleague can't see a plan I built">
-    Today a plan belongs to the advisor who built it. Your colleague can open the household, land on its **Financial Planning** tab, and still see no plan, even with full access to the household. Sharing financial-plan chats between advisors is a fast follow, so there is nothing to configure for it yet.
-
-    What works now: export the PDF and send it to them, or have them build their own plan for the household. Household access is still worth checking, because without it they cannot open the household at all. See [Roles and permissions](/guides/settings/members/roles-and-permissions).
+    Today a plan belongs to the advisor who built it, so a colleague with full access to the household can open its **Financial Planning** tab and still see no plan. Export the PDF and send it, or have them build their own; sharing financial-plan chats is a fast follow. Check household access too, without which they cannot open the household at all. See [Roles and permissions](/guides/settings/members/roles-and-permissions).
   </Accordion>
 
   <Accordion title="Still stuck">
-    The thumbs live on the plan in its own conversation. If you are reading the plan on the household's **Financial Planning** tab, use **Open chat** in the plan's top bar to get there. Press the thumbs down, labeled Not helpful plan, and a short form opens: pick the kind of issue (UI bug, Not factually correct, Incomplete response, Didn't follow request, or Other) and add a sentence on what you expected. Your note travels with the version of the plan you were looking at, so the team sees exactly what you saw.
+    The thumbs live on the plan in its own conversation; from the household's **Financial Planning** tab, use **Open chat** in the plan's top bar. Press the thumbs down, labeled Not helpful plan, and a short form opens: pick the kind of issue (UI bug, Not factually correct, Incomplete response, Didn't follow request, or Other) and say what you expected. Your note travels with the version you were reading.
 
-    Feedback is one way and nobody replies to it, so if you need an answer back, contact support as well.
+    Feedback is one way, so contact support as well if you need an answer.
   </Accordion>
 </AccordionGroup>
 
-## Frequently asked questions
+## FAQ
 
 ### Building a plan
 
 <AccordionGroup>
   <Accordion title="How do I start a plan?">
-    Three ways: the household's **Financial Planning** tab, the **Financial Planning** page, or by asking in **Ask Hazel** with the chat set to Financial Planning mode. A plain Ask chat will not start a plan. All three routes end in the same place. See [Getting started](/guides/financial-planning/overview/getting-started).
-  </Accordion>
-
-  <Accordion title="How long does a build take?">
-    Usually inside fifteen minutes, and longer for a household with a lot of paperwork. It keeps running if you navigate away, and Hazel chimes when the plan publishes.
+    Three ways: the household's **Financial Planning** tab, the **Financial Planning** page, or **Ask Hazel** with the chat set to Financial Planning mode. A plain Ask chat will not start a plan. See [Getting started](/guides/financial-planning/overview/getting-started).
   </Accordion>
 
   <Accordion title="How much data do I need before I build?">
-    The household's **Financial Planning** tab tells you. It checks eight things: Accounts & Holdings, Calendar, Tax documents, Uploaded documents, Meetings & transcripts, CRM, Email and Business valuation. Business valuation only matters where a business does, so it can read Missing while the tab still says **Ready to build**.
+    The household's **Financial Planning** tab checks eight things: Accounts & Holdings, Calendar, Tax documents, Uploaded documents, Meetings & transcripts, CRM, Email and Business valuation. Business valuation only matters where a business does, so it can read Missing while the tab still says **Ready to build**.
 
-    If something is short, the tab names it and offers **Prepare data**, which uploads files and drafts a request email to the client. You can build from an incomplete household, and the plan will say what it could not evidence.
+    If something is short, the tab offers **Prepare data**, which uploads files and drafts a request email. Build anyway and the plan will say what it could not evidence.
   </Accordion>
 
   <Accordion title="Do I need to upload documents if my CRM is connected?">
-    Usually yes. A CRM gives you households, contacts and notes, and a custodian gives you accounts and balances, but neither becomes a planning figure on its own. A plan's numbers come from documents, meetings, emails and notes, so statements, tax returns, policies and estate documents are what let a plan talk about this household's specifics rather than generalities. Scans and photographs are fine, because Hazel reads them. See [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm).
+    Yes. Neither CRM data nor custodian balances become planning figures. Statements, tax returns, policies and estate documents give a plan this household's specifics, and scans and photographs are fine. See [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm).
   </Accordion>
 
   <Accordion title="Can I see a finished plan without using client data?">
-    Yes. Before you have any plans of your own, the **Financial Planning** page offers **See financial plan example**, a complete plan on a made-up household. It is read only, so you can click through every section and open every figure without changing anything, and **Take the tour** walks you through the surface. There is no **Edit** and no PDF export on the example, since neither belongs to a made-up plan. It is a good way to walk a new team member through the plan before they see a real one.
+    Yes. The **Financial Planning** page offers **See financial plan example**, a complete plan on a made-up household, with **Take the tour** to walk you through the surface. It is read only, and carries no **Edit** and no PDF export.
   </Accordion>
 </AccordionGroup>
 
@@ -167,39 +148,31 @@ Find the symptom that matches your screen and open it. Several of these turn out
 
 <AccordionGroup>
   <Accordion title="Can a household have more than one plan?">
-    Yes. A plan lives with the chat that built it, and the version history belongs to that plan, so starting a fresh build gives you a second plan and not a new version of the first. The household's **Financial Planning** tab shows the most recent plan you built for that household; the **Financial Planning** page lists your plans with their status.
-
-    Most of the time you want a new version instead: ask for the change on the plan you already have, or use **Regenerate** on the household's **Financial Planning** tab. For two genuinely different futures, ask for a scenario comparison inside one plan. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating).
+    Yes. A plan lives with the chat that built it, so a fresh build gives you a second plan rather than a new version of the first. Usually you want the new version: ask on the plan you have, or use **Regenerate** on the household's **Financial Planning** tab. For two different futures, ask for a scenario comparison inside one plan. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating).
   </Accordion>
 
   <Accordion title="Where do I find a plan I built last week?">
-    The **Financial Planning** page. It lists the plans you have built, most recently worked on first, with the household, the **Status** and the persona applied on each row. Selecting a row opens that household's **Financial Planning** tab, and **Open chat** there reaches the plan's own conversation.
-
-    A row reading **Draft in progress** is a build that has not published a version yet. See [Getting started](/guides/financial-planning/overview/getting-started).
+    The **Financial Planning** page lists your plans, most recently worked on first, with the household, the **Status** and the persona applied. Selecting a row opens that household's **Financial Planning** tab; **Open chat** there reaches the plan's own conversation. **Draft in progress** means no version published yet.
   </Accordion>
 
   <Accordion title="Can I edit the text myself?">
-    The prose, yes. Hover a passage and a small pencil appears at its top right. Select it, make your change, then click away to stage it or press Escape to drop it. Staged changes collect in the bar at the bottom of the plan, and **Save** commits them together as one new version.
+    The prose, yes. Hover a passage, click the small pencil at its top right, make your change, then click away to stage it or press Escape to drop it. Staged changes collect in the bar at the bottom of the plan, and **Save** commits them as one new version.
 
-    Figures work differently. A number sitting inside a sentence is a chip kept in sync with the plan, so you cannot type over it. Rewrite the sentence around it if the wording is wrong; to move the number, change the assumption behind it or the data underneath it.
+    A number inside a sentence is a chip kept in sync with the plan. Rewrite the sentence around it if the wording is wrong; to move the number, change the assumption behind it or the data underneath.
 
-    One thing to know before you go hunting: **Edit**, in the top bar of a plan you are reading in its own conversation, is not an editing mode. It opens the conversation with Hazel about the plan, which is the other way to get a change made. The household's **Financial Planning** tab carries no **Edit** button at all; **Open chat** there takes you to the same conversation. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+    **Edit**, in the top bar of a plan in its own conversation, opens the conversation with Hazel about the plan rather than an editing mode. The household's **Financial Planning** tab carries no **Edit** button; **Open chat** there reaches the same conversation. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
   </Accordion>
 
   <Accordion title="Does regenerating keep my hand-edited text?">
-    Usually. Hazel is asked to preserve still-valid analysis and the content you wrote, so a passage you rewrote normally comes through. Wording the new information has made untrue can still change, which is what you asked for by regenerating. If a wording preference should hold on every plan, put it in your firm's [instructions](/guides/financial-planning/settings/personas/instructions) rather than editing each plan.
+    Usually. Hazel is asked to preserve still-valid analysis and the content you wrote, so a passage you rewrote normally comes through. Wording the new information has made untrue can still change. If a preference should hold on every plan, put it in your firm's [instructions](/guides/financial-planning/settings/personas/instructions).
   </Accordion>
 
-  <Accordion title="How do I add a lever?">
-    Ask for it in the plan's chat, naming the range, the step and the starting value: "Add a retirement-age lever from 60 to 70 in one-year steps, starting at 62." See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
-  </Accordion>
-
-  <Accordion title="Can I change a chart?">
-    Yes, anywhere in the plan. Naming the point you want the client to take away works better than naming a chart type: "I want them to see the spread, not a single line." See [How Hazel visualizes data](/guides/financial-planning/the-plan/how-hazel-visualizes-data).
+  <Accordion title="How do I add a lever, or change a chart?">
+    Both are requests in the plan's chat. For a lever, name the range, the step and the starting value: "Add a retirement-age lever from 60 to 70 in one-year steps, starting at 62." For a chart, name the point you want the client to take away rather than a chart type. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios) and [How Hazel visualizes data](/guides/financial-planning/the-plan/how-hazel-visualizes-data).
   </Accordion>
 
   <Accordion title="Does the plan go to the client automatically?">
-    No. Hazel never sends a plan to a client. You export the PDF and hand it over, or present the plan on screen. Your firm's disclaimer travels with both. See [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering).
+    No. Hazel never sends a plan to a client: you export the PDF and hand it over, or present the plan on screen. Your firm's disclaimer travels with both. See [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering).
   </Accordion>
 </AccordionGroup>
 
@@ -207,7 +180,7 @@ Find the symptom that matches your screen and open it. Several of these turn out
 
 <AccordionGroup>
   <Accordion title="Who can see Planning settings?">
-    Firm owners only, and not firm admins. For everyone else the Planning tab is absent, not shown and locked, so if you cannot find it, that is why. Every advisor still inherits what is set there, and can see which layer set each value from the plan's **Appendix**. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
+    Firm owners only, and not firm admins; for everyone else the Planning tab does not appear. Every advisor still inherits what is set there, and can see it in the plan's **Appendix**. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
   </Accordion>
 
   <Accordion title="How do I make a change apply to every plan?">
@@ -215,44 +188,34 @@ Find the symptom that matches your screen and open it. Several of these turn out
   </Accordion>
 
   <Accordion title="What happens if a module isn't in our layout?">
-    A module is in your plans exactly while your layout carries it, so there is no on and off switch to find: you add or remove one in the layout designer, opened with **Design layout** from the **Plan design** card.
-
-    Taking a module out removes the **dedicated treatment** of that topic, not the topic. Broader sections still fold it in where the household's facts call for it. See [Modules](/guides/financial-planning/plan-design/modules).
+    A module is in your plans exactly while your layout carries it, so there is no on and off switch: add or remove one with **Design layout** from the **Plan design** card. Taking one out removes the **dedicated treatment** of that topic; broader sections still fold it in. See [Modules](/guides/financial-planning/plan-design/modules).
   </Accordion>
 
   <Accordion title="How many Client personas should we have?">
-    Your firm starts with three that Hazel installs for you: HENRY, Pre-Retiree, and Retiree / Decumulator. Review them, rename them, edit them, delete the ones that do not describe your book.
+    Your firm starts with three that Hazel installs: HENRY, Pre-Retiree, and Retiree / Decumulator. Review, rename or edit them, and delete the ones that do not describe your book. Past that, enough for the client types you plan differently for.
 
-    Past that, enough to capture the client types you plan differently for. If two personas could describe the same household, you have one too many. If you are correcting the same thing on every plan for one client type, you are missing one.
-  </Accordion>
-
-  <Accordion title="What happens if no persona matches a household?">
-    Hazel builds on the base template alone and records no persona, which shows as None in the plan's **Applied settings**. If that keeps happening, you are missing a persona for a client type you serve.
+    When no persona matches a household, Hazel builds on the base template alone and records None in **Applied settings**.
   </Accordion>
 
   <Accordion title="Can advisors change firm assumptions?">
-    Not the firm defaults. Open the plan in its own conversation, then use the sliders button in its top bar to open **Plan settings**, where you can override the fields meant to vary. The household's **Financial Planning** tab does not carry that button, so use **Open chat** there first.
+    Not the firm defaults. In the plan's own conversation, the sliders button in the top bar opens **Plan settings**, which holds the fields meant to vary. The household's **Financial Planning** tab has no such button, so use **Open chat** there first.
 
-    A value you set in **Plan settings** belongs to that plan, not to the household, so a second plan for the same family keeps what it inherited. Each field prints the range Hazel accepts underneath it, a value outside that range comes back with a message rather than being quietly adjusted, and a reset control puts the field back to what it inherited. **Apply and replan** commits the change and recalculates.
+    A value you set belongs to that plan, not the household, so a second plan for the same family keeps what it inherited. Each field prints the range Hazel accepts, a value outside it comes back with a message, and a reset control restores the inherited one. **Apply and replan** commits and recalculates.
 
-    A few firm-wide inputs never vary, including the advisory fee, the terminal heir tax rate and the number of simulations. Those are simply absent from the panel rather than grayed out.
+    The advisory fee, the terminal heir tax rate and the number of simulations never vary, so the panel does not list them.
   </Accordion>
 
   <Accordion title="Why does this plan use a different success threshold than our firm standard?">
-    Almost always because the matched persona overrides it on purpose. Open **Appendix**, the last entry in the plan's navigation, and read **Applied settings**: every value there is labeled **Firm**, **Persona** or **This plan**, so you can see which layer set it.
+    Almost always because the matched persona overrides it on purpose. In the plan's **Appendix**, every value under **Applied settings** is labeled **Firm**, **Persona** or **This plan**, so you can see which layer set it.
   </Accordion>
 
   <Accordion title="Where do I set the disclaimer?">
-    **Settings → Planning**, in the **Client disclaimer** card. It opens holding wording Hazel suggests as a starting point, but nothing prints under a plan until your firm saves its own text there, so read it, make it yours, and it saves as you type. It then renders under every plan exactly as written and is carried into the PDF. Once you have edited it, **Restore Hazel default** brings the suggested wording back.
-  </Accordion>
-
-  <Accordion title="Do settings changes affect plans we already built?">
-    No. Published plans stay as they were built, and each version's **Appendix** records the settings it was built on. Use **Regenerate**, in the top bar of the household's **Financial Planning** tab, to bring a plan onto the new settings.
+    **Settings → Planning**, in the **Client disclaimer** card. It opens holding wording Hazel suggests, and nothing prints under a plan until your firm saves its own text. It saves as you type, and renders under every plan and in the PDF exactly as written. **Restore Hazel default** brings the suggested wording back.
   </Accordion>
 </AccordionGroup>
 
 ## Where to go next
 
-- [Best practices](/guides/financial-planning/best-practices): the habits that prevent most of the above.
-- [Glossary](/guides/financial-planning/glossary): the vocabulary, in one place.
-- [Prompt library: Financial Planning](/resources/prompt-library/financial-planning): requests worth learning by heart.
+- [Best practices](/guides/financial-planning/best-practices)
+- [Glossary](/guides/financial-planning/glossary)
+- [Prompt library: Financial Planning](/resources/prompt-library/financial-planning)

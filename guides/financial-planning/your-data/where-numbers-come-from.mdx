@@ -1,78 +1,62 @@
 ---
 title: "Where every number comes from"
 sidebarTitle: "Where Numbers Come From"
-description: "How to trace a figure in a plan back to the sources behind it, the calculation that produced it and the assumptions it rests on, and how to audit a whole plan before you present it."
+description: "Trace any figure back to its sources, calculation and assumptions, and audit a plan before you present it."
 ---
 
-You are going to put these numbers in front of a client, so you need to know where each one came from. Most figures in a plan carry their own audit trail, and you open it by selecting the figure.
+You are going to put these numbers in front of a client, so you need to know where each came from. Most figures carry their own audit trail.
 
 ## Selecting a figure
 
-A figure with something recorded behind it carries a dotted underline. Select it and a panel slides in from the right of the plan. Hover it first and a tooltip tells you what you will get: "How this was calculated" where there is math behind the figure, "Where this figure comes from" where there is only a source.
+A figure with something recorded behind it carries a dotted underline. Select it and the **Provenance and calculations** panel slides in from the right. Hover first for a tooltip: "How this was calculated" where there is math behind it, "Where this figure comes from" where there is only a source.
 
-Not every figure opens. A figure with no dotted underline is plain text, either because nothing was recorded behind it or because it sits inside another control that owns the click. Where a figure you need to check will not open, the plan's **Appendix** lists every recorded figure on one page.
+No underline means nothing was recorded, or another control owns the click. Where one you need will not open, the **Appendix** lists every recorded figure.
 
-Tiles in a **Key numbers** row have a second, quicker route. A small source icon sits in the corner of the tile. It opens a short version first, with the tile's label, its confidence and its source rows, and a **View calculations** link through to the full panel.
+Tiles in a **Key numbers** row carry a small source icon, opening a short version with confidence and source rows and a **View calculations** link to the full panel.
 
 ## What the panel contains
 
-<CardGroup cols="3">
-  <Card title="Sources" icon="file-lines">
-    A **Source / Confidence / Value** table: one row per input, naming what it is in plain words, how confident Hazel is in it, and the value that source establishes. A document Hazel can link to becomes a link, and where the input is something the household said, the row carries the quoted words.
-  </Card>
+| Section | What it shows |
+| --- | --- |
+| **Sources** | A **Source / Confidence / Value** table, one row per input. A linkable document becomes a link; where the household said it, the row carries their words |
+| **Methodology** | The calculation step by step: the formula in words, then the same formula with this household's figures and the result. Traced inputs name their source row |
+| **Assumptions** | What the figure rests on, numbered A1, A2 and so on, each a sentence rather than a value |
 
-  <Card title="Methodology" icon="calculator">
-    The calculation, step by step. Each step gives the formula in words, then the same formula with this household's figures in it and the result. Where a step's inputs are traced, each one names the source row it came from.
-  </Card>
-
-  <Card title="Assumptions" icon="sliders">
-    The assumptions this figure rests on, numbered A1, A2 and so on. Each is written as a sentence, not a value, because most of them are statements and not numbers.
-  </Card>
-</CardGroup>
-
-Methodology and Assumptions are collapsible sections, and each appears only where Hazel recorded something for that figure. A figure backed by a source alone opens a panel with one part. Where no source was recorded, the panel says so instead of leaving the space empty.
-
-**View full breakdown**, at the top of the panel, leaves the single figure and opens the plan's **Appendix**, where every recorded figure sits on one page.
+Methodology and Assumptions appear only where Hazel recorded them, and where nothing was recorded the panel says so. **View full breakdown**, at the top, opens the **Appendix**.
 
 ## The three confidence labels
 
-Every source row carries one of three words.
+| Label | What it means |
+| --- | --- |
+| **Verified** | A document established it, you entered or corrected it yourself, or the household said it about themselves and what they want, which Hazel treats as settled once said |
+| **Unverified** | Hazel captured it, but nobody confirmed it. Mostly money: a balance someone mentioned, an income figure in an email. Check it before you present it |
+| **Modeled** | Nobody stated it. The plan worked it out from figures it does have, or fell back on a standard assumption because the household had none; Methodology and Assumptions tell you which. Fine on the future; on today, find the document |
 
-**Verified.** A document established it, you entered or corrected it yourself, or it is something the household said about themselves and what they want, which Hazel treats as settled the moment it is said.
-
-**Unverified.** Hazel captured it, but nobody has confirmed it. That is mostly money: a balance someone mentioned, an income figure in an email, a property value. Check it before you present it.
-
-**Modeled.** Nobody stated this figure. Either the plan worked it out from figures it does have, or it fell back on a standard assumption because the household had none. The panel's Methodology and Assumptions sections tell you which. A figure that reads Unknown is a third case: nothing could source it at all. Modeled is what you want on anything about the future. On anything about today, treat it as a prompt to go find the document.
-
-Confidence is shown on source rows, in the figure's panel and in the Appendix, and on the quick look from a tile. It is not printed beside figures in the plan's prose, so the way to check a figure is to open it.
+Unknown is a further case: nothing could source the figure at all. Confidence is not printed beside figures in the plan's prose.
 
 <Note>
-  Confirming a fact happens in the household's profile, not in the plan. Settle it in the [profile review queue](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying) and rebuild, and the source reads verified next time.
+  Confirm a fact in the household's profile, not in the plan: settle it in the [profile review queue](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying) and rebuild, and the source reads verified next time.
 </Note>
 
 ## Changing an assumption from the panel
 
-Where an assumption can be changed for this plan, it carries an **Edit** button. Selecting it opens the sentence for rewriting, and **Queue change** adds your version to the plan's recalculation queue.
+A figure cannot be typed over. Change what produced it instead.
 
-Nothing recalculates yet. The bar at the bottom of the plan counts what is waiting, for example "2 changes needing recalculation". **Recalculate** there sends the lot to Hazel in one pass, and **Discard all** drops them.
+An assumption you can change for this plan carries an **Edit** button: selecting it opens the sentence for rewriting, and **Queue change** adds it to the recalculation queue. Nothing recalculates yet: the bar at the bottom of the plan counts what is waiting, and **Recalculate** sends the lot to Hazel in one pass. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
 
-An assumption with no **Edit** button is fixed for this plan. A button that will not open tells you why on hover: "Requires plan recalculation" where the plan cannot be recalculated from where you are reading it, and "Past plan versions are read-only" where you are looking at an earlier version.
+An assumption with no **Edit** button is fixed for this plan. One that will not open says why on hover: "Requires plan recalculation" where the plan cannot be recalculated from where you are reading it, "Past plan versions are read-only" on an earlier version.
 
 ## Auditing the whole plan
 
-When the question is "what was this plan built on" rather than "where did this one figure come from", two surfaces answer it.
+**Appendix.** The last entry in the plan's left rail. Near the top, **Applied settings** names the Client persona Hazel matched and the market scenario the projections drew from, then tables of **Solver assumptions**, **Planning assumptions** and **Market assumptions** under **Setting / Value / Set by**. A footnote says market rows nobody changed follow the scenario's published values. Below that, a card per figure.
 
-**Appendix.** The last entry in the plan's left rail, also reachable through **View full breakdown** in any figure's panel. Near the top sits **Applied settings**: the Client persona Hazel matched, the market scenario the projections drew from, then tables of **Solver assumptions**, **Planning assumptions** and **Market assumptions** under the headings **Setting / Value / Set by**. Market rows nobody changed are not listed one by one; a footnote says they follow the scenario's published values. Below that sits a card per figure, with the same sources, methodology and assumptions you would open one at a time.
-
-**Plan settings.** The sliders icon in the plan's top bar when you open a plan from its chat. It shows this plan's effective settings under **Solver assumptions** and **Market assumptions**, each labeled with the layer that set it, and lets you change the inputs that are allowed to vary by household. Each one prints the range it accepts and refuses a value outside it. Nothing reaches the plan until you select **Apply and replan**, which recalculates it, and **Discard changes** throws your edits away. The commit is sent as a message in the chat, so the change leaves a record.
+**Plan settings.** The sliders icon in the plan's top bar when you open a plan from its chat. It shows this plan's effective **Solver assumptions** and **Market assumptions**, each labeled with the layer that set it, and lets you change those that can vary by household. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
 
 <Note>
-  Plan settings and the figure panel share the same dock, so opening one closes the other. The household **Financial Planning** tab has no sliders icon at all: select **Open chat** in its top bar to reach the panel.
+  Plan settings and the figure panel share the same dock, so opening one closes the other. The household **Financial Planning** tab has no sliders icon: select **Open chat** in its top bar to reach the panel.
 </Note>
 
 ## Which layer set a setting
-
-A setting value is attributed to the layer that chose it. You read that attribution in the **Set by** column of Applied settings, and beside each field in the Plan settings panel.
 
 | Label | What it means |
 | --- | --- |
@@ -80,46 +64,38 @@ A setting value is attributed to the layer that chose it. You read that attribut
 | **Persona** | The matched Client persona's override of the firm default. The label carries the persona's name |
 | **This plan** | An override set on this plan, for this household only |
 
-That attribution answers a question like "why is this plan solving toward an 85% probability of success when our firm standard is 90%." The **Set by** column names the layer, so you can tell a persona override from something an advisor set on this plan.
-
-While you are editing in Plan settings, resetting a saved plan-level override reads **Inherited** until you apply, because which layer wins is settled by the replan.
+In Plan settings, a reset plan-level override reads **Inherited** until you apply.
 
 <Note>
-  A few inputs cannot vary by household, because they have to read the same across every plan your firm produces: **Advisory fee**, **Terminal heir tax rate** (the rate assumed on what heirs inherit from pre-tax accounts) and **Monte Carlo simulations** (how many market paths the model runs). They are not in the Plan settings panel at all, rather than sitting there disabled. Applied settings still lists all three, marked **Firm**, so you can always read the value the plan used. A firm owner changes them in Settings, then Planning.
+  Three inputs cannot vary by household: **Advisory fee**, **Terminal heir tax rate** and **Monte Carlo simulations**. They are not in the Plan settings panel, but Applied settings lists all three, marked **Firm**.
 </Note>
+
+## Display rules clients ask about
+
+- **Displayed probability of success is capped.** Above the ceiling, the figure reads as greater than the ceiling, and a line beneath names the ceiling and says the cap applied. The ceiling starts at 99% and is a firm-level setting, so read that line rather than assuming 99%. At 100% the cap is off and a plan prints a flat 100%.
+- **A range of outcomes stays a range.** Where the plan models market paths, the **Range of outcomes** chart draws an outer band for the 10th to 90th percentile, an inner band for the 25th to 75th, and a median line. Point a client at the bands, not the median.
 
 ## Before you present a plan
 
-Three of these are a read. Two can stop you: if the persona is wrong, or a figure you plan to quote rests on something unverified, fix it before the meeting instead of presenting around it.
-
 <Steps>
   <Step title="Read Plan orientation">
-    The info button on the plan's top bar. The brief has a fixed shape: the situation and the verdict, why the plan weighs these trade-offs, where the goals stand, then a bullet per recommendation showing the figures and the arithmetic behind it, and a closing bullet titled **Start here** naming what to resolve with the client first. Read **Start here** even if you read nothing else. The panel stamps the version the brief was written for, which can be an earlier version than the one on screen. Where a version has no brief, there is no info button.
+    The info button on the plan's top bar. Its closing **Start here** bullet names what to resolve with the client first. The panel stamps the version the brief was written for, which can be earlier than the one on screen; with no brief, there is no info button.
   </Step>
   <Step title="Check the matched persona">
-    Open the **Appendix** and read the **Persona** row at the top of Applied settings. That is the Client persona Hazel matched this household to, and it sets the plan's shape and several of its assumptions. "None" means nothing fitted, so Hazel built on your base template alone. Where Hazel matched the wrong persona, do not present the plan. Open the plan's conversation and ask Hazel to rebuild against the persona you want, by name. Reading the plan in chat, **Edit** in the top bar opens that conversation. Reading it on the household **Financial Planning** tab, select **Open chat** first. There is no persona picker on the plan itself.
+    Open the **Appendix** and read the **Persona** row at the top of Applied settings. "None" means nothing fitted, so Hazel built on your base template alone. Where it is wrong, do not present the plan: ask Hazel to rebuild against the persona you want, by name. In chat, **Edit** in the top bar opens that conversation; on the household **Financial Planning** tab, select **Open chat** first. There is no persona picker on the plan itself.
   </Step>
-  <Step title="Open the probability of success">
-    The figure on the plan's success gauge, and any other figure the plan leads with. Read its methodology and its assumptions.
-  </Step>
-  <Step title="Check one balance-sheet figure and one income figure">
-    These are the figures clients contest. Open each one and confirm the source rows name something you recognize and trust, and that the confidence reads verified and not unverified. A document row names the source, not the date of the figure inside it, so where currency matters open the document yourself. A row backed by the client's own words shows where and when they were said.
+  <Step title="Open the figures you will lead with">
+    The figure on the plan's success gauge, one balance-sheet figure and one income figure. Read the methodology and assumptions, and confirm the source rows name something you trust and read verified. A document row names the source, not the date of the figure inside, so open the document yourself where currency matters.
   </Step>
   <Step title="Look for unverified sources on anything you will quote">
-    The Appendix is the fastest way to see them together, since every figure's card carries the same Confidence column. Where a figure you plan to quote rests on an unverified source, confirm it with the client and settle it in the profile, or take the claim out of what you present.
+    Every figure's card in the Appendix carries the same Confidence column. Confirm an unverified figure with the client and settle it in the profile, or drop the claim.
   </Step>
 </Steps>
 
-<Tip>
-  If a figure looks wrong, check what set its inputs before you conclude the math is wrong. The figure's panel tells you which sources it used and how they combine. The **Set by** column, in Applied settings or in Plan settings, tells you which layer chose the assumption behind it. Two things to rule out first: a persona override you did not expect, and a document that has been superseded since the plan was built.
-
-  **Hazel makes mistakes. Review her answers.**
-</Tip>
-
 ## Where to go next
 
-- [Glossary](/guides/financial-planning/glossary): plain definitions for persona, layer, success threshold and the rest of the vocabulary on this page.
-- [Anatomy of a plan](/guides/financial-planning/the-plan/anatomy-of-a-plan): where these surfaces sit inside a plan.
-- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): what each planning input drives.
-- [How planning uses the client profile](/guides/financial-planning/your-data/how-hazel-uses-the-profile): where verified and unverified facts come from.
-- [Troubleshooting and FAQ](/guides/financial-planning/troubleshooting-and-faq): when a figure genuinely looks wrong.
+- [Glossary](/guides/financial-planning/glossary): the vocabulary on this page.
+- [Anatomy of a plan](/guides/financial-planning/the-plan/anatomy-of-a-plan).
+- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): what each input drives.
+- [How planning uses the client profile](/guides/financial-planning/your-data/how-hazel-uses-the-profile).
+- [Troubleshooting and FAQ](/guides/financial-planning/troubleshooting-and-faq): when a figure looks wrong.

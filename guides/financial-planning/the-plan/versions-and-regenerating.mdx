@@ -1,119 +1,98 @@
 ---
 title: "Versions and regenerating"
 sidebarTitle: "Versions & Regenerating"
-description: "Every accepted change publishes a new version and nothing is overwritten. How to step through a plan's history, which buttons actually create a version, and when to regenerate instead of asking Hazel for a change."
+description: "Nothing is overwritten. How to step through a plan's history, which buttons create a version, and when to regenerate."
 ---
 
-A plan belongs to the chat that built it, and that chat keeps every version the plan has ever had. Each accepted change publishes the next version on top of the last. Nothing is overwritten, so a change you regret has not destroyed anything.
+You will change a plan several times before a client sees it. A plan belongs to the chat that built it, that chat keeps every version, and each accepted change publishes the next one on top.
 
-There is no Restore button. The version before your change is still there to read, present and export, but you cannot promote it back to being the current plan. To put something back, open the plan's chat, tell Hazel what you want restored, and that comes forward as a new version on top.
+An older version stays readable, presentable and exportable, but it cannot become current again: there is no Restore button. To put something back, tell Hazel in the plan's chat what you want restored, and it returns as a new version on top.
 
 ## Moving through the history
 
-The top bar shows which version you are reading. Once a plan has two versions, arrows appear either side of the number and the label reads V3 (2 of 4): the version first, then your position in the stack. Step back and forward with the arrows. A plan with only one version shows a plain V1 badge, because there is nothing to step through yet.
+With two or more versions, arrows appear either side of the number and the label reads V3 (2 of 4): the version, then your position in the stack. One version shows a plain V1 badge. The number counts stored versions only, so it stays put while edits are in progress; the **N unsaved** badge beside it is your staged work.
 
-While you are reading an older version the top bar turns orange, names the version you are on, marks it read-only, and offers **Back to latest**, which returns you to the current plan exactly as you left it.
-
-The version number only ever counts stored versions, so it stays put while you have edits in progress. The **N unsaved** badge beside it is your staged work, and it is what tells you something is still waiting to be saved.
+While you read an older version the top bar turns orange, names the version, marks it read-only, and offers **Back to latest**, which returns you to the current plan as you left it. There is no split-screen compare, so ask Hazel in the plan's chat what changed between versions.
 
 ### What still works in an older version
 
-Tabs, priority selection and the levers all stay live, so you can open last quarter's plan in a review meeting and explore it as freely as the current one. The grips that drag goal cards into a different order are the exception: they go inert here, because a new order would be a change to the plan. **Export PDF** sits in the top bar of both views and downloads the version you are reading rather than the newest one. The PDF shows that version as it was published, so lever positions you moved on screen are not in it.
+Tabs, priority selection and the levers stay live, so you can present an older version freely. The grips that reorder goal cards go inert. **Export PDF** downloads the version you are reading as published, so lever positions you moved on screen are not in it.
 
-What goes away is everything that would change the plan: the staging bar at the bottom, the editing pencils, and, in the chat view, the **Edit** button that opens the conversation with Hazel. **Approve** and **Ignore** on a recommendation do not disappear. They gray out, so a decision you cannot press is a sign you are reading history rather than the current plan. Press **Back to latest** first, then make the change.
-
-<Tip>
-  The version stack is how you answer "what changed since the last review". Step back to the version you presented last time, read it, then press **Back to latest**. There is no split-screen compare, so if you want the differences written out, ask Hazel in the plan's chat what changed between the two versions.
-</Tip>
+Gone: the staging bar, the editing pencils, and, in the chat view, the **Edit** button. **Approve** and **Ignore** stay but gray out. Press **Back to latest** first to make a change.
 
 ## What creates a version
 
 | What you do | Creates a version |
 | --- | --- |
-| **Save** in the staging bar | Yes, one version for everything staged. Hazel confirms with "Saved as V5" |
-| **Recalculate** in the staging bar | Yes, one version for the whole queued batch, once Hazel publishes it |
-| Asking Hazel for a change in the plan's chat | Yes, once Hazel publishes |
-| **Regenerate** on the household's Financial Planning tab | Yes, once Hazel publishes |
-| **Apply and replan** in the Plan settings panel, in the chat view | Yes, once Hazel republishes the plan |
-| **Queue change** on an assumption | No. It joins the queue and waits for **Recalculate** |
-| **Approve** or **Ignore** on a recommendation | No. Your decision lands on the recommendation straight away and commits with your next **Save**. A decision never joins the recalculation queue |
-| **Looks right** on a question card | No. It stages like an edit and commits with your next **Save** |
-| **Use this** on a question card whose value you changed | No. It joins the queue and waits for **Recalculate** |
-| Moving a lever that is a number, a toggle or a choice | No. That kind of lever is a way of looking at the plan, and moving one stores nothing |
-| Dragging goal cards into a different order | No on its own. A new order stages like an edit and commits with your next **Save** |
+| **Save** in the staging bar | Yes. Everything staged becomes one version, confirmed "Saved as V5" |
+| **Recalculate** in the staging bar | Yes, once Hazel publishes. The whole queued batch becomes one version |
+| Asking Hazel for a change in the plan's chat, **Regenerate** on the household's Financial Planning tab, or **Apply and replan** in the chat view's Plan settings panel | Yes, once Hazel publishes |
+| **Queue change** on an assumption, or **Use this** on a question card whose value you changed | No. It waits for **Recalculate** |
+| **Approve** or **Ignore** on a recommendation | No. Your decision lands straight away, commits with your next **Save**, and never joins the queue |
+| **Looks right** on a question card, or dragging goal cards into a different order | No on its own. It stages like an edit and commits with your next **Save** |
+| Moving a lever that is a number, a toggle or a choice | No. That kind of lever is a way of looking at the plan and stores nothing |
 | Asking Hazel a question that changes nothing | No |
-| **Discard** | No. It clears everything you staged, text edits and queued changes together |
+| **Discard** | No. It clears your staged text edits and queued changes |
 
-If approving a particular recommendation would move the plan's numbers, pressing **Approve** marks the card decided on screen but puts nothing in the staging bar, and the decision is gone when you reload the plan. Ask for that change in the plan's chat instead, so Hazel recomputes and publishes it.
+Press **Recalculate** with text edits still unsaved and you get two versions: Hazel saves your edits first, then publishes the recalculated plan.
 
-Everything you stage in one sitting commits as a single version, not one version per click.
+If approving a recommendation would move the plan's numbers, **Approve** marks the card decided but stages nothing, and the decision is gone when you reload. Ask for that change in the plan's chat instead.
 
-Press **Recalculate** while text edits are still unsaved and you get two versions: Hazel saves your edits first as their own version, then publishes the recalculated plan. The edits go first on purpose, so a recalculation that fails cannot take your writing with it.
-
-If Hazel publishes a version while you have changes staged, the staging bar tells you so and offers only **Discard my changes**. Your work is still on screen, but it was written against a version that is no longer the latest, so there is nothing to save it onto. Discard it, read what Hazel published, and make the change again.
+If Hazel publishes a version while you have changes staged, the staging bar offers only **Discard my changes**. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
 
 ## Regenerate compared with asking for a change
 
-**Regenerate** sits in the top bar of the household's **Financial Planning** tab, beside **Open chat**. It is not in the plan's chat view, so if you are reading the plan inside a chat you will not find it there. On the sample household the button reads **Draft a financial plan** instead, which starts one for a client of your own rather than rewriting the sample.
+**Regenerate** sits in the top bar of the household's **Financial Planning** tab, beside **Open chat**, not in the plan's chat view. On the sample household it reads **Draft a financial plan**, which starts one for a client of your own.
 
-The button is grayed out while Hazel is already working on this plan, and reads "Plan update in progress" when that is why. It reads "Regenerating…" while it runs, and it runs the full drafting workflow, so give it several minutes. If the turn ends without publishing anything, Hazel says the plan was not regenerated and you stay on the version you had.
+The button grays out while Hazel is already working on this plan, reading "Plan update in progress", and "Regenerating…" while it runs the full drafting workflow, so give it several minutes. If nothing is published, Hazel says the plan was not regenerated and you stay on the version you had.
 
 <CardGroup cols="2">
   <Card title="Ask for a change" icon="comments">
-    Hazel revises the plan you have. Faster, surgical, and it leaves alone everything you did not mention. Use this for almost everything.
+    Hazel revises the plan you have, leaving alone everything you did not mention. Faster, surgical, and right for almost everything.
   </Card>
 
   <Card title="Regenerate" icon="rotate">
-    Hazel rereads the household's profile and documents, folds what is new into the plan you already have, and publishes the result as the next version. Slower, and it revisits every part of the plan the new information touches.
+    Hazel rereads the household's profile and documents, folds what is new into the plan, and publishes it as the next version. Slower, and it revisits everything the new information touches.
   </Card>
 </CardGroup>
 
 ### When to regenerate
 
-- **New data landed.** You uploaded the statement the plan said it was missing, or a new document reached the household profile.
+- **New data landed.** A document the plan said it was missing reached the household profile.
 - **The household's situation changed materially.** A job change, an inheritance, a death, a divorce.
 - **Your firm changed its Plan templates** and you want this household on the new shape.
 
 ### When not to regenerate
 
-- The plan is right but reads long. Ask for it to be tightened.
-- One chart is wrong. Ask for the chart you want.
-- One number is wrong. Fix the data, or change the assumption behind it.
-- You want to explore a what-if. Move a lever.
-- **The wrong persona was matched.** Regenerate carries no instructions from you, so there is no way to tell it which persona to use. Open the plan's chat, name the persona you want, and ask Hazel to rebuild against it.
+- A number is wrong. Fix the data or the assumption behind it.
+- A chart is wrong, or the plan reads long. Ask for the chart you want, or for a tighter draft.
+- **The wrong persona was matched.** Regenerate carries no instructions from you, so open the plan's chat, name the persona you want, and ask Hazel to rebuild against it.
 
 <Warning>
-  A regenerate uses your firm's settings as they stand today, not as they stood when the plan was built. If someone has changed the base template, a persona, or an assumption since then, the rebuilt plan picks that up, and its shape or its numbers can move for reasons that have nothing to do with this household. Worth a glance at [Planning settings](/guides/financial-planning/settings/overview) before you regenerate a plan that is going out today.
+  A regenerate uses your firm's settings as they stand today. If the base template, a persona or an assumption has changed since the plan was built, the rebuilt plan picks that up, and its shape or numbers can move for reasons unrelated to this household. Check [Planning settings](/guides/financial-planning/settings/overview) before you regenerate a plan going out today.
 </Warning>
 
 ## What a regenerate keeps
 
-- **The version history.** Nothing is deleted. A regenerate is a new version on top of the old ones.
-- **Your wording.** Hazel is asked to preserve still-valid analysis and the content you wrote. Wording the new information has made untrue can still change.
-- **Any assumptions you overrode for this plan.** They survive the refresh. To drop one, open **Plan settings** from the plan's chat view and use the small reset control on that field, which puts it back to your firm's or the persona's value.
+- **The version history.** A regenerate lands as a new version on top.
+- **Your wording.** Hazel is asked to preserve still-valid analysis and what you wrote. Wording the new information has made untrue can still change.
+- **Any assumptions you overrode for this plan.** To drop one, open **Plan settings** from the plan's chat view and use the small reset control on that field, which restores your firm's or the persona's value.
 
-A recalculation is stricter about your prose than a regenerate. Hazel is asked there to keep every sentence exactly as you wrote it, to update a number inside your wording rather than the wording itself, and to tell you when something you wrote no longer matches the plan instead of rewriting it. Either way, a figure sitting inside one of your sentences stays tied to the plan, so it follows the new numbers on its own.
+A recalculation is stricter with your prose: Hazel is asked to keep your sentences as written and to say when something no longer matches rather than rewrite it. A figure inside one of your sentences follows the new numbers either way.
 
-## Why it usually pays to stay in one plan
+## Staying in one plan
 
-A household can hold as many plans as you want. Each one is keyed to the chat that built it and keeps its own version history, so a second planning chat for the same household gives you a second plan rather than a new version of the first. The household's **Financial Planning** tab shows the plan whose newest version was published most recently, and the others stay reachable through their own chats in Ask Hazel.
+A household can hold as many plans as you want: a second planning chat gives you a second plan, not a new version of the first. The household's **Financial Planning** tab shows whichever plan published most recently.
 
-The **Financial Planning** page is not the way back to an older plan. A row there opens that household's Financial Planning tab, which shows the newest plan whichever row you clicked, so an older one looks as though it has vanished. Open its own chat in Ask Hazel to read it.
+On the **Financial Planning** page, a row opens that household's tab, which shows the newest plan whichever row you clicked. To reach an older plan, open its own chat in Ask Hazel.
 
-Staying in the plan you have is what keeps the version stack a true record of what you have presented to this family.
+Plans are owner-scoped for now, so a colleague's plans do not appear on your Financial Planning tab and a household that looks planless to you may not be. Ask them to open theirs. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
 
-Plans are owner-scoped for now. A colleague with full access to the household cannot open a plan you built, and their plans do not appear on your Financial Planning tab either, so a household that looks planless to you may not be. Shared financial-plan chats are a fast follow.
-
-If you want to present two genuinely different futures instead of a revision, do not build a second plan. Ask for the comparison inside the plan you have:
-
-```text
-Compare retiring at 62 against retiring at 65 side by side, with the
-success figure and the spending difference for each, and a verdict.
-```
+For two different futures, ask for the comparison inside the plan you have, not a second plan.
 
 ## Where to go next
 
-- [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly): which of your edits commit as a version, and how.
-- [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat): how to ask for a change that lands first time.
-- [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering): exporting a particular version as a PDF.
-- [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios): which levers explore without storing anything, and which one stages a change.
+- [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly)
+- [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat)
+- [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering)
+- [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios)

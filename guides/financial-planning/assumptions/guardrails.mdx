@@ -1,40 +1,38 @@
 ---
 title: "Guardrails"
 sidebarTitle: "Guardrails"
-description: "Your firm's never-do list: the rules nothing overrides, not a persona, not a single plan, not a request in chat. What ships turned on, how to write your own, and how to check which rules a plan was built under."
+description: "Your firm's never-do list: the rules nothing overrides. What ships turned on, how to write your own, and where a plan records them."
 ---
 
-**Guardrails** are the things your firm will never put in a plan, however a request is phrased. Every other planning setting can be moved somewhere: a persona changes it, one plan overrides it, or you ask Hazel for something different. A guardrail cannot be moved.
+Your firm has a handful of things it will never put in a plan, whatever the client's situation or however a request is phrased. Write those down as guardrails, so no plan anyone at your firm builds can cross them.
 
 ## Where you set them
 
-Open **Settings → Planning** and select **Base template**, the first entry under **Plan templates**. The never-do list sits directly below **Hazel instructions**, so the two halves of your firm's policy read together: what Hazel should do, and what Hazel must never do. These are the hard limits Hazel will not cross when building a plan, and they hold for every plan anyone at your firm builds.
+Open **Settings → Planning** and select **Base template**, the first entry under **Plan templates**. The never-do list sits directly below **Hazel instructions**.
 
-**Adding a rule.** Select **\+ Add a rule**, which carries "Never recommend variable annuities" as an example of the shape to aim for. Type your rule and press Enter, or click away and it saves anyway. Escape drops what you typed.
+- **Adding a rule.** Select **\+ Add a rule**, which shows "Never recommend variable annuities" as the shape to aim for. Type your rule and press Enter, or click away and it saves anyway. Escape drops what you typed.
+- **Suggestions.** Beside that button sit four common rules. Select one and it joins your list, then drops out of the row.
+- **Removing a rule.** Each row carries an X at the right. A row cannot be edited in place, so to reword a rule, remove it and add the new wording.
 
-**Suggestions.** Beside that button sit four common rules. Select one and it joins your list:
+The four suggestions:
 
 - Never recommend variable annuities
 - Never push a conversion into a higher IRMAA tier
 - Never assume Social Security benefits are cut
 - Never recommend leverage or margin
 
-A suggestion drops out of the row once its rule is on your list, which is how you can tell it landed.
-
-**Removing a rule.** Each rule sits on its own row with an X at the right. A row cannot be edited where it sits, so to reword a rule, remove it and add the new wording.
-
-Everything on this screen saves as you make the change. Planning settings have no Save button.
+Every change saves as you make it.
 
 ## The two rules that ship
 
 Your firm starts with two, and both apply until you remove them:
 
-- **"Never recommend a specific named security or ticker."** A plan can still recommend an allocation change, moving an asset into a different type of account, or a category of holding. It will not name an instrument.
-- **"Never propose a Roth conversion that pushes the client into the next IRMAA tier."** IRMAA is the income-related surcharge that raises a client's Medicare Part B and Part D premiums. A conversion that clears a tier line can cost more in premiums than it saves in tax.
+- **"Never recommend a specific named security or ticker."** A plan can still recommend an allocation change or a category of holding, but it will not name an instrument.
+- **"Never propose a Roth conversion that pushes the client into the next IRMAA tier."** IRMAA is the income-related surcharge that raises a client's Medicare Part B and Part D premiums, and a conversion that clears a tier line can cost more in premiums than it saves in tax.
 
-You can remove either one. Think hardest before removing the first.
+You can remove either one.
 
-## How a guardrail differs from an instruction or an assumption
+## How guardrails differ from instructions and assumptions
 
 |  | Instructions | Assumptions | Guardrails |
 | --- | --- | --- | --- |
@@ -42,25 +40,17 @@ You can remove either one. Think hardest before removing the first.
 | **Can a persona change it** | Its own list replaces the firm's | Some settings, one at a time | It can **add**, never remove |
 | **Can one plan change it** | In effect, by asking Hazel | Yes, inside the range your firm allows | **No** |
 
-Asking Hazel in chat is how you change one plan, so chat gets no separate row. Three solver settings stay firm-wide whatever anyone asks for on a single plan: the advisory fee, the terminal heir tax rate, and the number of simulations.
-
 <Warning>
-  A guardrail is not a preference expressed strongly. Hazel treats these as hard rules, declines a request that would break one, and names the rule it ran into. They are rules Hazel follows rather than a mechanical block, so if you ever see a plan cross one, tell whoever manages your firm's planning settings.
+  Hazel treats a guardrail as a hard rule, declines a request that would break one, and names the rule that request ran into. They are rules Hazel follows rather than a mechanical block, so if you ever see a plan cross one, tell whoever manages your firm's planning settings.
 </Warning>
 
 ## Writing a good one
-
-A good guardrail is absolute, checkable, and about what goes in the plan.
 
 <CardGroup cols="2">
   <Card title="Good guardrails" icon="circle-check">
     "Never recommend surrendering an in-force life policy."
 
     "Never model borrowing against a retirement account."
-
-    "Never recommend a private placement."
-
-    "Never propose a strategy requiring a client to change custodian."
   </Card>
 
   <Card title="Not guardrails" icon="circle-xmark">
@@ -69,38 +59,30 @@ A good guardrail is absolute, checkable, and about what goes in the plan.
     "Use a 90% success threshold." A number. Put it in Solver assumptions.
 
     "Always include an insurance section." Structure. Build it into the plan design.
-
-    "Prefer low-cost funds." Guidance. Put it in instructions.
   </Card>
 </CardGroup>
 
-Two tests before you write one down:
+Test each one:
 
-1. **Would you accept an exception in any client situation?** If yes, it is guidance. Write it as an instruction instead.
+1. **Would you accept an exception in any client situation?** If yes, it is guidance. Write it as an instruction.
 2. **Could a colleague tell whether a plan broke it?** If not, it is too vague to hold.
+
+Keep the list short. Two to six rules is usually enough, and past that some entries are really instructions or assumptions.
 
 ## Personas and single plans
 
-Guardrails are firm-wide. The never-do list on **Base template** is the only place you type one, and a Client persona has no guardrail field, so nothing on a persona loosens your firm's list. Whichever persona Hazel matches a household to, every firm rule still applies.
-
-So there is one list, and it is the firm's. A persona can shape how a plan is written and which planning inputs it uses, but it cannot add a never-do rule of its own, and it cannot drop one of yours.
-
-For a rule you only want for one kind of client, write it in that persona's **Hazel instructions**. Hazel weighs an instruction as strong guidance rather than as an absolute limit, so anything that must hold whatever the client's situation belongs on the firm list.
+Guardrails are firm-wide. Nothing on a persona drops one of yours: whichever persona Hazel matches a household to, every firm rule still applies. For a rule you only want for one kind of client, write it in that persona's **Hazel instructions**, which Hazel weighs as strong guidance rather than an absolute limit.
 
 ## Checking which rules a plan was built under
 
-Every published plan records the settings behind it. Open **Appendix**, the last entry in the plan's left rail. **Applied settings** opens with the persona Hazel matched, then a **Solver assumptions** table under the headings **Setting**, **Value** and **Set by**. Its **Guardrails** row lists the rules that applied, and **Set by** names where they came from: your firm, or the matched persona where that persona added its own.
+Open the plan's **Appendix** and read the **Applied settings** block. Its **Guardrails** row lists the rules that applied, and **Set by** names where each came from: your firm, or the matched persona where that persona added its own. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
 
-That record travels with the plan version, so an older version shows the list as it stood when it was built. A rule you add today applies to plans built from now on. To bring an existing plan under it, ask Hazel to update the plan or use **Regenerate** on the household's **Financial Planning** tab.
-
-## Keeping the list short
-
-Guardrails work because they are few and absolute. A long list makes plans worse: Hazel spends its judgment satisfying constraints instead of serving the household. Two to six rules is usually enough. If your list is growing past that, some of the entries are really instructions or assumptions in disguise.
+The record travels with the plan version, so an older version shows the list as it stood then. A rule you add today applies to plans built from now on. To bring an existing plan under it, ask Hazel in chat to update the plan, or use **Regenerate** on the household's **Financial Planning** tab.
 
 ## Where to go next
 
-- [Instructions](/guides/financial-planning/settings/personas/instructions): for house style and preferences rather than rules.
-- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): for the numbers behind every figure.
+- [Instructions](/guides/financial-planning/settings/personas/instructions): house style and preferences, not rules.
+- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): the numbers behind every figure.
 - [Base template](/guides/financial-planning/settings/base-template): the pane your never-do list lives on.
-- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how to read the Appendix and a figure's sources.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): reading the Appendix and a figure's sources.
 - [What it can and can't do](/guides/financial-planning/overview/what-it-can-and-cant-do): the limits that hold whatever your guardrails say.

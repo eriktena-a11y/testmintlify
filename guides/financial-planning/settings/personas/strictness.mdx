@@ -1,94 +1,71 @@
 ---
 title: "Strictness"
 sidebarTitle: "Strictness"
-description: "Exact, Guided, or Flexible: how closely Hazel must follow your plan design, whether Hazel may add sections you did not design, and how to tell which setting a plan was built on."
+description: "How closely Hazel follows your plan design: Exact, Guided, or Flexible, and how to tell which setting a plan was built on."
 ---
 
-Your plan design says what a plan should contain. **Strictness** says how binding that is.
+You put real time into a plan design, so you need to know how closely Hazel will follow it. **Strictness** decides that.
 
-It is set per design, not per firm. Your base template has its own, and so does every Client persona that has its own design. You will find it on the **Plan design** card in **Settings → Planning**, as a small panel headed **Strictness** that shows the current setting and its one-line consequence. Select it to change it.
+It is set per design, not per firm: your base template has its own, and so does every Client persona with its own design. Find it on the **Plan design** card in **Settings → Planning**, in a panel headed **Strictness** showing the current setting and its one-line consequence. Select it to change.
 
 ## The three settings
 
-<CardGroup cols="3">
-  <Card title="Exact" icon="lock">
-    Plans must match this design. Hazel cannot add a block, and cannot leave out one you set to **Always**. A plan that does not match is sent back to be fixed before it is published.
-  </Card>
-
-  <Card title="Guided" icon="compass">
-    Hazel follows this design, adapting where a household's facts call for it.
-  </Card>
-
-  <Card title="Flexible" icon="lightbulb">
-    Your design is a starting point, and Hazel composes each plan freely.
-  </Card>
-</CardGroup>
-
-## Check which one you are on
-
-A new firm starts on **Flexible**: on the base template, and on two of the three Client personas your firm arrives with. Only **Retiree / Decumulator** ships on **Guided**. So if you have spent real time on a design and plans keep arriving in a shape you did not ask for, look here first. Hazel may still be treating your design as a suggestion.
-
-Guided is the setting to move to once you have a design you trust. Changing it is one selection, but it applies to one design only, so make the change on the base template and on each persona that has its own design.
-
-## Side by side
-
 |  | Exact | Guided | Flexible |
 | --- | --- | --- | --- |
+| On screen | Plans must match this design | Hazel follows this design, adapting where a household's facts call for it | Your design is a starting point, and Hazel composes each plan freely |
 | Must include every **Always** block | Yes, checked before publishing | Yes, unless the household's facts say otherwise | Treated as a strong preference |
 | May add a section or block your design does not have | No | Yes, unless you turn **Allow additions** off | Yes |
 | May leave a block out | Not an **Always** one | Yes, when the facts call for it | Yes |
-| Best for | A design your firm has committed to and must reproduce | A firm that wants its shape respected, with room for the household in front of it | A firm still working out what its design should be |
 
-## The one switch beside the three settings
+## Check which one you are on
 
-Below the three settings sits a single switch, **Allow additions**, described on screen as Hazel adding sections or blocks you did not design. It starts on.
+A new firm starts on **Flexible**: the base template, and two of the three Client personas your firm arrives with. Only **Retiree / Decumulator** ships on **Guided**, so if plans keep arriving in a shape you did not ask for, look here first.
 
-Turn it off under **Guided** when you want your shape followed and nothing extra. That is the fix when Hazel keeps adding a section you never asked for.
+Guided is where to move once you have a design you trust.
 
-Under **Exact** the switch turns off and grays out, whatever it was set to before. Move that design back to **Guided** or **Flexible** later and the switch is still off, so turn it back on if you want Hazel covering ground your design does not.
+## Allow additions
 
-There is no matching switch for leaving things out. Whether a block may be left out is that block's own setting, covered below.
+Below the three settings sits a single switch, **Allow additions**, described on screen as Hazel adding sections or blocks you did not design. It starts on. Turn it off under **Guided** when you want your shape followed and nothing extra.
+
+Under **Exact** the switch turns off and grays out, whatever it was set to before. Move that design back to **Guided** or **Flexible** later and it is still off, so turn it back on if you want Hazel covering ground your design does not.
+
+There is no matching switch for leaving things out; that is each block's own setting.
 
 ## Choosing
 
-**Choose Guided** when you want your shape respected, with room for Hazel to notice what is different about a household: no children, so skip the education section; restricted stock, so cover something your design did not anticipate.
+| Pick | When |
+| --- | --- |
+| **Guided** | You want your shape respected, with room for Hazel to notice what is different about a household: no children, so skip the education section |
+| **Exact** | The design is a commitment: a deliverable format your firm has standardized on, or a shape a compliance review has approved |
+| **Flexible** | The design is a preference, while your firm is still working out its template, or on a persona covering households with little in common |
 
-**Choose Exact** when the design is a commitment, such as a deliverable format your firm has standardized on, a shape a compliance review has approved, or a template that has to look identical across a large team. Two things come with it. Exact works by checking the finished plan against your design and sending it back to be fixed, and now and then a plan still publishes with something not matching, so read the first few plans built on an Exact design before you present one. And an **Always** block covering something a household's facts cannot support gets produced thin rather than dropped, because Exact does not let Hazel drop it.
-
-**Choose Flexible** when you want Hazel to decide the structure household by household, and your design is a statement of preference rather than policy. Useful while your firm is still working out its template, and on a persona that covers households with little in common.
-
-<Tip>
-  A pattern that works: **Guided** on the base template, **Exact** on the one persona whose deliverable is standardized, and **Flexible** on a catch-all persona for households that do not fit your archetypes.
-</Tip>
+Exact checks the finished plan against your design and sends it back to be fixed, though now and then one still publishes with something not matching, so read the first few plans built on an Exact design before you present one. An **Always** block covering something a household's facts cannot support gets produced thin rather than dropped.
 
 ## Strictness and each block's own setting
 
-Strictness governs the design as a whole. Each block also carries its own setting for whether it belongs in a given plan. Select a chip on the **Plan design** card and the first field is **When it appears**.
+Strictness governs the whole design; each block also carries its own setting for whether it belongs in a plan. Select a chip on the **Plan design** card and the first field is **When it appears**.
 
 | Setting | What it means |
 | --- | --- |
 | **Always** | In every plan you build. |
 | **When it applies** | Only when the household's facts call for it. |
 
-The same control is labeled **When it shows up** in the layout editor. An older design may show a third choice, **Suggested (legacy)**, which Hazel may skip freely. Open that block in the layout editor and the field tells you the setting is retiring and asks you to pick one of the two above. Once you do, the third choice disappears from both screens.
+The same control is labeled **When it shows up** in the layout editor. An older design may show a third choice, **Suggested (legacy)**, which Hazel may skip freely. Open that block in the layout editor and the field says the setting is retiring and asks you to pick one of the two above. The third choice then disappears from both screens.
 
-An **Always** block under **Guided** can still be left out when the household's facts call for it. Under **Exact** it cannot. A block set to **When it applies** stays the household's call under every setting, Exact included.
+A block set to **When it applies** stays the household's call under every setting, Exact included.
 
 See [Block settings](/guides/financial-planning/plan-design/block-settings).
 
 ## Telling whether your strictness is right
 
-Read a few finished plans against the design they came from.
+Open a plan, look at **Plan sections** in the left nav, and compare it with the chips on your **Plan design** card. A section you designed that is not there, or a section you did not design that turned up, is Hazel's read of that household.
 
-Open a plan, look at **Plan sections** in the left nav, and compare that list with the chips on your **Plan design** card. A section you designed that is not there, or a section you did not design that turned up, is Hazel's read of that household.
+Check which design the plan was built on first: the **Applied settings** block in the plan's **Appendix** names the persona Hazel matched, or reads **None**. A persona with its own design held that plan to that persona's strictness, and otherwise your base template's applied.
 
-Check which design the plan was built on before you draw a conclusion. The plan's **Appendix** carries an **Applied settings** block whose first row names the persona Hazel matched, or reads **None** when nothing matched. A plan built on a persona that has its own design was held to that persona's strictness. A plan with no persona, or one on a persona that follows the base template, was held to your base template's.
-
-Then act on whatever keeps repeating:
+Then act on what keeps repeating:
 
 - The same section keeps disappearing. Your design is asking for something your households cannot support. Move that block to **When it applies**, or take it out.
 - Hazel keeps adding the same topic. Add it to your design so you control how it is written, or turn **Allow additions** off.
-- Plans keep arriving in a shape you did not want. The design is probably still on **Flexible**.
 
 ## Where to go next
 

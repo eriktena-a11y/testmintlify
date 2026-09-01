@@ -1,68 +1,41 @@
 ---
 title: "Block settings"
 sidebarTitle: "Block Settings"
-description: "The settings on a single block in a plan design: a pinned heading, instructions for that block alone, when it shows up, and the one case it may be skipped."
+description: "A pinned heading, instructions for that block alone, when it shows up, and the one case it may be skipped."
 ---
 
-Every piece of a plan design carries its own settings. This is where you say what one block should contain, in your firm's words, and whether Hazel has to include it at all.
+You are shaping one piece of the plan, so a block's settings say what belongs in it, in your firm's words, and whether Hazel must include it at all.
 
-There are two places to open them, and they are not identical.
+Two places open them, with different fields.
 
-- In **Settings → Planning**, the **Plan layout** card draws your design as a blueprint. Click a block chip or a tab name there, and a panel opens with three settings and a **Done** button. The top-level section bands are labels rather than buttons, so a whole section's settings live in the editor.
-- In the layout editor, which you open with **Design layout** on that same card, select anything on the canvas or in the outline. The rail on the right holds those three settings plus a **Heading**, and an **Advanced** group.
+- In **Settings → Planning**, the **Plan layout** card draws your design as a blueprint. Click a block chip or a tab name for a panel with three settings and a **Done** button. The top-level section bands are labels, not buttons, so a section's own settings live in the editor.
+- Open the layout editor with **Design layout** on that same card, then select anything on the canvas or in the outline. The right-hand rail holds those three settings plus a **Heading** and an **Advanced** group.
 
 ## What each setting does
 
-<CardGroup cols="2">
-  <Card title="Heading" icon="heading">
-    A title pinned above the block. Hazel uses your words exactly, so pin one when the wording matters to your firm. Leave it blank and Hazel writes a heading suited to what ends up in the block. Up to 200 characters.
+| Setting | What it does |
+| --- | --- |
+| **Heading** | A title pinned above the block, up to 200 characters. Hazel uses your words exactly. Leave it blank and Hazel writes one to suit the block. Only the layout editor has this field, so open **Design layout** to pin one |
+| **Instructions to Hazel** | Content and style guidance for this block alone, up to 2,000 characters. The layout editor counts characters as you near the limit |
+| **Leave out when** | The one case in which this block may be skipped, in plain English |
+| **When it shows up** | **Always** puts the block in every plan you build. **When it applies** puts it in only if it fits the household. The **Plan layout** card panel and the blueprint legend call it **When it appears** |
 
-    Only the layout editor has this field.
-  </Card>
-
-  <Card title="Instructions to Hazel" icon="pen">
-    Content and style guidance for this block alone, up to 2,000 characters. The layout editor counts the characters for you as you near the limit. The most useful of the settings.
-  </Card>
-
-  <Card title="Leave out when" icon="filter">
-    The one case in which this block may be skipped, written in plain English. One condition, not a list.
-  </Card>
-
-  <Card title="When it shows up" icon="eye">
-    **Always** puts the block in every plan you build. **When it applies** puts it in only if it fits the household.
-
-    A third setting, **Suggested (legacy)**, appears on a block somebody set that way in the past. It means Hazel may skip the block freely, and it is being retired: switch the block to one of the other two and the option disappears.
-  </Card>
-</CardGroup>
-
-<Note>
-  One setting, two names. The layout editor calls it **When it shows up**. The panel on the **Plan layout** card, and the legend above the blueprint, call the same setting **When it appears**.
-</Note>
+**Suggested (legacy)** shows only on a block somebody set that way in the past. It lets Hazel skip the block freely and is being retired: switch that block to one of the other two and it disappears.
 
 <Warning>
-  Instructions never set numbers. A block instruction saying "use a 4% withdrawal rate" does not change what Hazel calculates. The structured assumption does that, and it wins. Hazel says as much under the box: numbers belong in Assumptions. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
+  Instructions never set numbers. A block instruction saying "use a 4% withdrawal rate" does not change what Hazel calculates: the structured assumption does, and it wins. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
 </Warning>
 
 ## Writing block instructions
 
-Instructions here are scoped to one block, which is what makes them worth writing carefully. You are saying how Hazel should handle this one piece, not the whole plan.
+Most blocks in Hazel's default design arrive with instructions already: the summary's **Key numbers** block, headed **At a glance**, says "Exactly four headline tiles". Edit what is there rather than starting blank.
 
-Expect to find the box already full. Most blocks in Hazel's default design arrive with instructions written: the summary's **Key numbers** block, headed **At a glance**, says "Exactly four headline tiles", and the summary narrative is told to open with where the household stands. Edit what is there rather than starting from blank, and delete anything that does not match how your firm works.
+Concrete and local ones work, like this **Narrative** block in **Summary**: "Three paragraphs. Open with whether they can retire on their stated timeline, then the single biggest risk, then what we recommend."
 
-Good block instructions are concrete and local.
-
-| Block | Instruction |
-| --- | --- |
-| Narrative, in **Summary** | "Three paragraphs. Open with whether they can retire on their stated timeline, then the single biggest risk, then what we recommend." |
-| Key numbers | "Four tiles: net worth, annual savings, years to retirement, probability of success." |
-| Whole-life cash flow, the year-by-year table of money in and money out | "Lead with the years before retirement, then the years after, and show what is left over each year." |
-| Mix comparison | "Compare the current mix against the target mix, and name the largest single gap." |
-| Recommendation | "One recommendation, not three. Lead with the action, then the reason, then what it costs." |
-
-Weak instructions are the ones that could apply to anything: "be clear", "cover the important points", "make it good". They give Hazel nothing to act on.
+Weak instructions could apply to anything: "be clear", "cover the important points".
 
 <Tip>
-  Firm-wide guidance goes in [Instructions](/guides/financial-planning/settings/personas/instructions) on the template. Guidance about one block goes here. If you find yourself writing the same block instruction on five blocks, it belongs on the template.
+  Guidance about one block goes here. Firm-wide guidance goes in [Instructions](/guides/financial-planning/settings/personas/instructions) on the template, which is where the same instruction on five blocks belongs.
 </Tip>
 
 ## Using "Leave out when"
@@ -71,49 +44,40 @@ A single condition, in your words:
 
 - "The household has no dependent children."
 - "There is no restricted stock or option grant."
-- "The household is already fully retired."
 
-Set the block to **When it applies** and name the case there. That is the pairing that behaves the way you expect: the block is in the plan when the household's facts call for it, and your sentence names the case it should stay out of.
+Pair it with **When it applies**: the block lands when the household's facts call for it, and your sentence names the case it stays out of. The layout editor drops the field on an **Always** block. The panel on the **Plan layout** card still shows the box there, so a condition typed on an Always block is not a reliable exemption.
 
-On a block set to **Always**, the layout editor removes the field, because Always means Hazel is expected to build the block. The panel on the **Plan layout** card still shows the box on every block, so you can type a condition on an Always block there, but it is not a reliable exemption. **When it applies** is.
-
-Two conditions joined by "or" usually means the block is really two blocks, or that **When it applies** on its own is enough.
-
-Some default blocks arrive with a condition already written, the same way they arrive with instructions. The debt table, for one, is set to be left out when the household carries no debt.
+Two conditions joined by "or" usually means the block is really two blocks. Some default blocks arrive with a condition already written: the debt table is left out when the household carries no debt.
 
 ## The Advanced group
 
-At the bottom of the settings rail, below **When it shows up**, sits an **Advanced** disclosure. Sections and tabs always have one; a block has one when it has something to put in it. It starts shut, and it closes again when you select something else.
+At the bottom of the settings rail sits an **Advanced** disclosure. Sections and tabs always have one; a block has one when there is something to put in it.
 
-- **Module.** Which module this node is the home of, shown and not editable. Removing the node removes that module from the plan. See [Modules](/guides/financial-planning/plan-design/modules).
-- **Nav label** and **Nav icon** on a section, **Short tab name** on a tab. Overrides for how the item reads in the plan's left menu, or on the tab itself when the heading runs long.
-- **Levers.** On a **Levers to try** block only: the sliders the plan must offer, up to twelve of them. Each row takes a label, a minimum, a maximum, a step, a default, a unit and a note. Hazel may add dials of its own alongside yours, so what you write is a floor rather than a ceiling. There is no **Levers to try** block in the default design; you add one from the **Building blocks** shelf in the layout editor.
-- **Calculation.** A read-only note, not an editor. It appears only on a design that already carries a preference for the method behind a block's figures, and none of Hazel's designs carry one, so the row is usually absent. Where such a note and your structured assumptions disagree, the assumptions win.
-
-Two of these ride on the chip as small badges on the **Plan layout** card, so you can spot them without opening anything: a count of prescribed levers, and a calculation note. Neither appears on Hazel's default design, which prescribes no dials and names no methods.
+- **Module.** Which module this node is the home of, not editable. Removing the node removes that module from the plan. See [Modules](/guides/financial-planning/plan-design/modules).
+- **Nav label** and **Nav icon** on a section, **Short tab name** on a tab. How the item reads in the plan's left menu, or on the tab when the heading runs long.
+- **Levers.** On a **Levers to try** block only: the sliders the plan must offer, up to twelve. Each row takes a label, minimum, maximum, step, default, unit and note. Hazel may add dials of its own. The default design has no **Levers to try** block; add one from the **Building blocks** shelf in the layout editor.
+- **Calculation.** A read-only note about the method behind a block's figures, which none of Hazel's designs carry. Where such a note and your assumptions disagree, the assumptions win.
 
 ## Sections and tabs
 
-A section or a tab takes the same instructions and the same when-it-shows-up setting. Two things differ: its **Heading** caps at 160 characters rather than 200, and it has a **Subtitle** for one line under the heading, up to 240. See [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs).
+A section or a tab takes these same settings. Its **Heading** caps at 160 characters rather than 200, and it adds a **Subtitle** of one line, up to 240. See [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs).
 
 ## How the settings interact with strictness
 
-Strictness is set once for a whole design, in the **Strictness** control on the **Plan design** card that sits above the blueprint, and it decides how literally Hazel reads the settings above.
+Strictness is set once for a whole design, in the **Strictness** control on the **Plan design** card above the blueprint. It decides how literally Hazel reads the settings above.
 
 |  | Under Exact | Under Guided | Under Flexible |
 | --- | --- | --- | --- |
-| **Always** | Hazel must build it, and a plan that misses it goes back for a fix | Hazel builds it, adapting where the household's facts call for it | A strong preference; Hazel composes each plan freely |
+| **Always** | Hazel must build it; a plan that misses it goes back for a fix | Hazel builds it, adapting where the household's facts call for it | A strong preference; Hazel composes each plan freely |
 | **When it applies** | Built when the facts call for it | Same | Same |
 | **Leave out when** | Read on a **When it applies** block | Read | Read as guidance |
 
-If nobody has chosen a strictness, the design is running on **Flexible**, the third column: your design is a starting point and Hazel composes each plan freely. So choose a strictness before you lean on **Always**. Exact also switches off the separate **Allow additions** setting, which otherwise lets Hazel add sections or blocks you did not design.
-
-See [Strictness](/guides/financial-planning/settings/personas/strictness) for what each mode is for.
+With no strictness chosen, the design runs on **Flexible**, so choose one before you lean on **Always**. See [Strictness](/guides/financial-planning/settings/personas/strictness) for what each mode is for, and for the **Allow additions** switch that Exact turns off.
 
 ## Where to go next
 
-- [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs): the structure these blocks sit inside.
-- [Modules](/guides/financial-planning/plan-design/modules): the topic-level control, one level up from a block.
-- [Using the layout editor](/guides/financial-planning/plan-design/using-the-editor): the editor these settings live in.
-- [Visual reference](/guides/financial-planning/the-plan/visual-reference): what each block type puts on the page.
+- [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs): the structure these blocks sit in.
+- [Modules](/guides/financial-planning/plan-design/modules): one level up from a block.
+- [Using the layout editor](/guides/financial-planning/plan-design/using-the-editor): where these settings live.
+- [Visual reference](/guides/financial-planning/the-plan/visual-reference): what each block type renders.
 - [Instructions](/guides/financial-planning/settings/personas/instructions): the same idea at template scale.

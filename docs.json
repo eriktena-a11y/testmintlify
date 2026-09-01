@@ -278,7 +278,8 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/modes"
+              "resources/prompt-library/modes",
+              "resources/prompt-library/financial-planning"
             ]
           },
           "release-notes"

@@ -1,110 +1,74 @@
 ---
 title: "Market assumptions"
 sidebarTitle: "Market Assumptions"
-description: "The return, volatility, inflation and tax figures every plan is built on. One set your firm edits in place, how much detail to model, what the Monte Carlo switch changes, and how a plan shows which figures it used."
+description: "The return, volatility, inflation and tax figures every plan is built on: how your firm edits the set, how much detail to model, and how a plan shows which figures it used."
 ---
 
-**Market assumptions** are the capital-market figures behind every projection your firm produces. They decide what "the portfolio grows" means, how wide a range of outcomes is, and what a year of spending costs two decades from now.
+You are going to put a projection in front of a client, so the capital-market figures behind it should be your firm's own.
 
-They live in **Settings → Planning → Market assumptions**, a firm owner's screen. Like the rest of Planning settings, there is no Save button: edits save themselves.
+Market assumptions live in **Settings → Planning → Market assumptions**, a firm owner's screen. Like the rest of Planning settings, there is no Save button: edits save themselves.
 
 ## One set, edited in place
 
-Your firm has one set of market assumptions from the moment the screen first opens, already filled in with Hazel's published figures, and every plan is built on that set. This screen edits it directly. There is no draft copy to build alongside it, no future-dated set to prepare, and no separate step that switches a new set on. Each change saves as you make it and is in force for the next plan anyone builds.
+Your firm has one set from the moment the screen first opens, already filled in with Hazel's published figures, and every plan is built on it. This screen edits it directly: there is no draft copy and no separate step that switches a new set on.
 
 Along the top of the screen:
 
 - The **name** field labels the set for whoever opens the screen next.
 - A line counting how many values you have edited.
 - **Reset all to source**, which appears once there is something to reset and returns every row to Hazel's figure.
-- **Publish to firm**, which stays unavailable until you have changed a row. Pressing it flashes "Published" and changes nothing else, because the edit was saved when you made it. An edited row also wears a badge reading "Applies to all new plans when published". Read that as already applying, because there is no publishing step left to wait for.
-
-<Tip>
-  Name the set for the decision it holds. "2026 committee set" tells a colleague what they are looking at. "Conservative v3" does not.
-</Tip>
-
-The figures start as Hazel's own published set. A firm makes them its own by moving rows, not by choosing a different research source, so there is nothing to pick before you start.
+- **Publish to firm**, unavailable until you have changed a row. Pressing it flashes "Published" and changes nothing else, because the edit saved when you made it. An edited row wears a badge reading "Applies to all new plans when published", and it already applies.
 
 ## The four sections
 
-| Section | What it sets |
-| --- | --- |
-| **Returns** | The expected returns used to grow assets in every plan |
-| **Volatility** | The variability that market simulations draw on |
-| **Inflation** | The general price growth applied to spending and goals |
-| **Taxes** | The effective rates used for tax-aware projections |
+| Section | What it sets | Simple | By sub-asset class |
+| --- | --- | --- | --- |
+| **Returns** | Expected returns used to grow assets | Three rows: Equity, Fixed income, Cash & equivalents | Nine rows: four equity classes, four fixed-income classes, cash |
+| **Volatility** | Variability market simulations draw on | The same three rows | The same nine rows |
+| **Inflation** | General price growth on spending and goals | One row | One row, so switching changes nothing on screen |
+| **Taxes** | Effective rates for tax-aware projections | One row, **Effective tax rates**, a single blended figure | **Ordinary income**, **Long-term capital gains** and **Qualified dividends** |
 
-### What the figures mean
-
-The return rows are nominal long-term figures, one compound annual rate per asset class. Inflation is modeled separately and applied to spending and goals, so enter the nominal returns your committee agreed. A real return entered here removes inflation twice over, and every plan comes out more pessimistic than your house view.
-
-Volatility rows are annualized standard deviations, which is where a simulated spread of outcomes gets its width.
+Return rows are nominal long-term figures, one compound annual rate per asset class, and volatility rows are annualized standard deviations. Inflation is modeled separately, so enter the nominal returns your committee agreed: a real return here removes inflation twice.
 
 ### How much detail to model
 
-Each of the four sections carries its own two-segment toggle, **Simple** or **By sub-asset class**, and you choose per section.
-
-- **Returns** and **Volatility.** Simple is three rows: Equity, Fixed income, and Cash & equivalents. By sub-asset class is nine: four equity classes, four fixed-income classes, and cash.
-- **Inflation.** One row either way. Hazel holds a single general price-growth figure rather than inventing a second one, so switching this section changes nothing on screen.
-- **Taxes.** Simple is one row, **Effective tax rates**, carrying a single blended figure. By sub-asset class splits it into **Ordinary income**, **Long-term capital gains** and **Qualified dividends**, grouped under a heading that names rate type rather than asset class. If you went looking for a capital-gains rate and found one blended number, that toggle is what you were missing.
-
-A firm arrives on Simple returns, by-sub-asset-class volatility, Simple inflation and Simple taxes. The mix is deliberate, so an uneven screen is not a mistake.
+Each section carries its own **Simple** or **By sub-asset class** toggle, so the levels can differ. If you went looking for a capital-gains rate and found one blended number, the Taxes toggle is what you were missing.
 
 <Note>
-  Hazel's Simple Equity and Fixed income figures are the equal-weight average of the four sub-asset-class rows in the same section, which is why they read like a blend. Past that, the two levels are independent. Each keeps its own rows, an edit you made at one level is remembered and left out of plans while the other level is showing, and only the rows visible at the level you have selected reach a plan. Edits you cannot currently see still count in the edited-values line, so that number can run ahead of what is on screen.
+  Hazel's Simple Equity and Fixed income figures are the equal-weight average of that section's four sub-asset-class rows. Past that the levels are independent: each keeps its own rows, and only the rows visible at your selected level reach a plan. An edit at the level you are not showing is remembered, and still counts in the edited-values line, so that count can run ahead of the screen.
 </Note>
 
 ## Changing a row
 
-Every row is a slider. Drag it, or nudge it with the arrow keys, and the reading beside it follows. That reading is a display rather than a field to type in. Returns, volatility and inflation move in tenths of a percent and tax rates in half points, so a figure between two steps cannot be set here. The [Assumptions reference](/guides/financial-planning/assumptions/reference) lists every range.
+Every row is a slider: drag it or nudge it with the arrow keys. The reading beside it is a display, not a field to type in. Returns, volatility and inflation move in tenths of a percent and tax rates in half points, so a figure between two steps cannot be set here, and **Reset to source** is the only way back to the exact published figure. The [Assumptions reference](/guides/financial-planning/assumptions/reference) lists every range.
 
-An edited row says so. Its provenance line changes from the source label to **Set by You**, a badge appears, and a small **Reset to source** control sits beside it. The section header gains a **Custom** badge naming what the section is based on. Reset to source is also the only way back to the exact published figure, since the slider steps cannot always land on it.
-
-Move rows sparingly and deliberately. Two considered changes are a firm's house view. A screen where every row has been moved is a spreadsheet nobody will be able to explain in a year.
+An edited row says so: its provenance line changes from the source label to **Set by You**, a badge appears, and **Reset to source** sits beside it. The section header gains a **Custom** badge naming what the section is based on.
 
 ## The Monte Carlo switch
 
-A switch labeled **Monte Carlo** sits in the header of the Volatility card. One switch covers the whole set, whatever detail level each section is on.
-
-On, Hazel models many market paths, which is where a range of outcomes and a probability of success come from. Off, Hazel is told not to model paths for this set, so expect plans to lean on single-path figures instead of a spread. Leave it on unless you have a specific reason not to.
+A switch labeled **Monte Carlo** sits in the header of the Volatility card and covers the whole set, whatever detail level each section is on. On, Hazel models many market paths, which is where a range of outcomes and a probability of success come from. Off, expect plans to lean on single-path figures instead of a spread. Leave it on unless you have a specific reason not to.
 
 ## What plans do with these
 
-A figure that carries its workings can be selected in the plan, and **Provenance and calculations** names the assumption behind it, its value, and where the value came from: Hazel's default set until your firm moves that row, your firm afterwards. A figure with no workings behind it renders as plain text and does not open, so not every number on a page is selectable.
+Select a figure that carries its workings and **Provenance and calculations** names the assumption behind it, its value, and where it came from: Hazel's default set until your firm moves that row, your firm afterwards. A figure with no workings renders as plain text and does not open.
 
-The plan's **Appendix** gathers the whole picture under **Applied settings**: a **Market scenario** row, then the rows your firm or this plan changed, with a footnote saying the rows not listed follow the set's published values. That scenario row identifies the set rather than repeating the name you typed in settings, so treat the name as bookkeeping for your own team.
+The plan's **Appendix** lists them under **Applied settings**: a **Market scenario** row, then the rows your firm or this plan changed. The scenario row identifies the set rather than repeating the name you typed in settings. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
 
-One plan can differ from the firm set. Open a plan from its chat and the **Plan settings** panel lists the market rows your firm has hand-edited, adjustable for that plan alone and committed with **Apply and replan**. A firm that has hand-edited nothing has no adjustable market rows there, which is the usual case early on. That panel belongs to the chat view; a plan opened on the household's **Financial Planning** tab has no Plan settings control, and the route to changes there is the plan's own chat.
+One plan can differ from the firm set. Open a plan from its chat and the **Plan settings** panel lists the market rows your firm has hand-edited, adjustable for that plan alone and committed with **Apply and replan**. Hand-edit nothing and that panel has no market rows to adjust. **Plan settings** is chat-only: a plan opened on the household's **Financial Planning** tab has no such control, so make the change from that plan's own chat.
 
 <Warning>
-  Changing a figure here changes what new plans and rebuilds are built on. A plan version you leave alone keeps the figures it was built with, which is why an older version can disagree with the screen in front of you. To bring a household onto new figures, use **Regenerate** in the top bar of the household's **Financial Planning** tab.
+  Changing a figure here changes what new plans and rebuilds are built on. A plan version you leave alone keeps the figures it was built with, so nothing you have shown a client moves under you, though an older version can disagree with this screen. To bring a household onto new figures, use **Regenerate** in the top bar of the household's **Financial Planning** tab.
 </Warning>
 
 ## Reviewing them
 
-Once a year, with your investment committee. Mid-year changes are hard to explain to a client and harder to remember a quarter later.
+Once a year, with your investment committee: mid-year changes are hard to explain to a client, and there is no draft to circulate, so bring agreed numbers. Rename the set for the year you adopted it.
 
-<Steps>
-  <Step title="Settle the figures before you open the screen">
-    This screen edits the set every plan is built on, so there is no draft to circulate for comment. Bring agreed numbers to it.
-  </Step>
-  <Step title="Change the rows, then read the counter">
-    The edited-values line is your record of how far the set has moved from Hazel's figures. Check the provenance line on each row you touched, and remember that a level you are not showing can be holding edits too.
-  </Step>
-  <Step title="Rebuild two plans you know">
-    A household near retirement and an accumulator. Regenerate each from the household's **Financial Planning** tab, then read what moved and by how much.
-  </Step>
-  <Step title="Back out anything that surprises you">
-    **Reset to source** on the row, or **Reset all to source** to return the whole set to Hazel's figures.
-  </Step>
-  <Step title="Rename the set, then decide who gets regenerated">
-    Name it for the date you adopted it, so anyone opening the screen later can see which decision they are reading. Existing plans stay as they were built, so regenerate the households going into a review.
-  </Step>
-</Steps>
+Then rebuild two plans you know, one near retirement and one accumulator, with **Regenerate** on each household's **Financial Planning** tab, and back out surprises with **Reset to source** or **Reset all to source**.
 
 ## Where to go next
 
 - [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): the planning inputs the math runs on.
-- [Assumptions reference](/guides/financial-planning/assumptions/reference): every shipped figure, range and scope in one table.
-- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how a plan attributes a figure, and where to read it.
-- [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly): changing an assumption on a single figure and recalculating.
+- [Assumptions reference](/guides/financial-planning/assumptions/reference): every shipped figure and range.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how a plan attributes a figure.
+- [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly): changing one figure and recalculating.

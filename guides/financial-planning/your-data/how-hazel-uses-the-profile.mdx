@@ -1,12 +1,10 @@
 ---
 title: "How planning uses the client profile"
 sidebarTitle: "Using the Client Profile"
-description: "The Intelligent Client Profile is Hazel's record of a household: which facts a plan reads, how confirmed and unconfirmed facts are treated, and what to check before you build."
+description: "Which household facts a plan reads, how confirmed and unconfirmed facts are treated, and what to check before you build."
 ---
 
-Every household in Hazel has an [Intelligent Client Profile](/guides/intelligent-client-profiles/overview/introduction): a record of the lasting facts about that household, captured from recorded meetings, client emails, uploaded documents and your notes, each fact traced back to where it came from.
-
-The profile is where those four kinds of material end up once Hazel has read them, not a separate source sitting alongside them. The Financial Planning Agent reads the profile before drafting anything, so whatever the profile holds on the day you build is what the plan rests on.
+Before you draft a plan, you want to know what Hazel is drafting it from: the household's [Intelligent Client Profile](/guides/intelligent-client-profiles/overview/introduction), the lasting facts captured from recorded meetings, client emails, uploaded documents and your notes. Whatever the profile holds on the day you build is what the plan rests on.
 
 ## What a plan takes from the profile
 
@@ -14,73 +12,57 @@ The profile is where those four kinds of material end up once Hazel has read the
 | --- | --- |
 | Household members, dates of birth, dependents | Who the plan covers, whose retirement and claiming ages get modeled, who is named as a beneficiary |
 | Income, employment, business ownership | Cash flow, savings capacity, and whether a business needs its own treatment |
-| Spending, by category | What the household actually lives on, which is what every retirement figure gets measured against |
+| Spending, by category | What the household lives on, which every retirement figure gets measured against |
 | Accounts, balances, and ownership | The balance sheet, and which accounts fund which spending |
 | Property, debts, and terms | Net worth, the order debts get paid down in, and the housing picture |
-| Insurance coverage in force | Whether the coverage holds up, and which gaps are worth naming |
+| Insurance coverage in force | Whether the coverage holds up, and which gaps to name |
 | Wills, directives, trusts, beneficiary designations | The estate picture, and whether the titling matches the intent |
 | Stated goals, in the household's own words | The Goals section, and what every trade-off gets measured against |
 | Constraints and preferences | The lines a plan should not cross, and the tone it takes |
 
-The last two rows are the ones only you can supply. Hazel can read a balance off a statement. "We want to be done working at 62 and we are not touching the lake house" reaches a plan only because someone said it in a meeting Hazel could hear, and the profile kept it.
-
 <Note>
-  Hazel records a date of birth, never an age. When a client only mentioned an age in conversation, Hazel works out an approximate birth year from the date of that conversation and marks it approximate. Retirement ages, claiming ages and required distributions all hang off that date, so it is worth putting the real one in on the household's **Data** tab.
+  Hazel records a date of birth, never an age. When a client only mentioned an age, Hazel works out an approximate birth year from the date of that conversation and marks it approximate. Retirement ages, claiming ages and required distributions all hang off that date, so put the real one in on the household's **Data** tab.
 </Note>
 
 ## Confirmed and unconfirmed facts
 
-Hazel treats some facts as settled the moment they arrive:
+Some facts count as settled the moment they arrive: anything a document said, anything you typed in or corrected yourself, and everything about the people and what they want, from who is in the household to their goals, concerns, preferences and life events.
 
-- Anything a document said, and anything you typed in or corrected yourself.
-- Everything about the people and what they want: who is in the household, their goals, their concerns, their preferences, the life events they mentioned. Saying those out loud is what makes them true, so Hazel records them as stated.
+What waits to be confirmed is mostly money: a balance someone mentioned in a meeting, an income figure in an email, the name of an executor. On screen, Hazel labels the two states verified and unverified.
 
-What waits to be confirmed is narrower, and it is mostly money. A balance someone mentioned in a meeting, an income figure in an email, a premium, a property value, the name of an executor: facts Hazel has heard but has not yet seen backed up in writing. On screen, Hazel labels the two states verified and unverified.
+**The most recent source holds the figure.** An older document saying the same thing confirms the newer figure rather than displacing it, and the fact reads verified from then on. When Hazel has the wrong figure, correct that fact on the household's **Data** tab: your correction carries today's date and arrives confirmed.
 
-Two rules decide which figure reaches the plan.
-
-**The most recent source holds the figure.** Where two sources give Hazel a figure for the same fact, the one with the later date is the one the plan uses. An older document that says the same thing does not displace the newer figure. It confirms it, and the fact reads verified from then on. When the figure Hazel is working from is not the right one, correct that fact yourself on the household's **Data** tab. Your correction carries today's date and arrives confirmed, so it becomes the figure the plan uses.
-
-**A consequential unconfirmed figure earns a question.** The build pauses partway through, at the step titled "A few questions before I draft", and Hazel asks you to confirm the unconfirmed figures that would move the outcome most, rather than quietly leaning on them. Small ones get used without a question.
-
-To see what a figure rests on, select it in the plan. Its sources open, each one marked verified, unverified or modeled. A figure with no sources behind it is plain text and does not respond to a click.
+**A consequential unconfirmed figure earns a question.** The build pauses to ask you to confirm the figures that would move the outcome most; small ones get used without a question. See [Getting started](/guides/financial-planning/overview/getting-started).
 
 <Tip>
-  Before you build, open the household, select the **Data** tab and choose **Review** in the left list. The badge beside it counts the records with something still to confirm, and each record carries a **Verify** button that settles all of its waiting items at once. Confirm what is right, correct what is not. A misheard balance costs seconds to fix here and is awkward to fix in front of a client. Goals and preferences are not in that list, because Hazel already treats what a client said they want as settled.
+  Before you build, open the household, select the **Data** tab and choose **Review** in the left list. The badge counts the records with something still to confirm, and each record carries a **Verify** button that settles all of its waiting items at once.
 </Tip>
 
 ## What the profile does not carry
 
-The profile records what was stated, never what can be worked out from it. It holds "about two million across the IRAs, as of the March meeting" because a client said so. It does not hold a total net worth, a probability of success or a range of outcomes, because those are results of the analysis rather than facts about the household.
-
-That is what makes a plan checkable. Any figure leads back either to a fact in the profile, with the meeting or document it came from, or to an assumption the plan used. [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from) shows how to follow one back.
+The profile records what was stated, never what can be worked out from it. It holds "about two million across the IRAs, as of the March meeting" because a client said so, but never a total net worth or a probability of success. [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from) shows how to follow a figure back to the fact or assumption behind it.
 
 ## Keeping the profile current
 
-Every plan for this household starts from the profile, so what you keep current between reviews shows up in the next plan on its own. Four habits do most of the work.
-
 <Steps>
   <Step title="Record the meetings where goals come up">
-    Goals, constraints and family context reach the profile from conversation, so a recorded meeting is what puts a client's own words in front of Hazel. When a meeting goes unrecorded, write up what was said as a note on the household's **Notes** tab. Hazel reads notes too. The goals and preferences in a note land settled; any figures in it wait to be confirmed.
+    Goals, constraints and family context reach the profile from conversation. When a meeting goes unrecorded, write up what was said as a note on the household's **Notes** tab: the goals and preferences in it land settled, and any figures wait to be confirmed.
   </Step>
   <Step title="Upload the documents once">
-    A statement or a tax return uploaded to the household's **Documents** tab becomes profile facts, and those facts are then available to every plan for that household, not only the one you are building. Scans and photos are fine, because Hazel reads the text off them.
+    A statement or a tax return uploaded to the household's **Documents** tab becomes profile facts, available to every plan for that household. Scans and photos are fine.
   </Step>
   <Step title="Tell Hazel what changed, in plain words">
-    In an **Ask Hazel** chat, name the household and say what happened: "The Hendersons paid off the HELOC and opened a 529 for Maya." Hazel comes back with the exact changes to be written, you approve them, and they land as confirmed facts. Do this in an ordinary chat rather than inside a plan's own conversation: a plan chat reads the profile and never writes to it, so the same sentence there shapes that one plan and leaves the profile untouched.
-  </Step>
-  <Step title="Clear Review before a build">
-    On the household's **Data** tab, work through the **Review** list. Two minutes there saves correcting the same figure inside a plan later.
+    In an **Ask Hazel** chat, name the household and say what happened: "The Hendersons paid off the HELOC and opened a 529 for Maya." Hazel comes back with the exact changes, you approve them, and they land as confirmed facts. Do this in an ordinary chat, not in a plan's own conversation: a plan chat reads the profile and never writes to it.
   </Step>
 </Steps>
 
 <Note>
-  A thin profile does not stop you building. On a household's **Financial Planning** tab, the card headed **Begin right away** names what is missing and still offers **Draft financial plan**, with a line saying that parts of the plan will use labeled assumptions. An early plan is often the quickest way to find out which gaps actually change the answer.
+  A thin profile does not stop you building. On a household's **Financial Planning** tab, the card headed **Begin right away** names what is missing and still offers **Draft financial plan**, with a line saying that parts of the plan will use labeled assumptions.
 </Note>
 
 ## Where to go next
 
-- [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm): where the profile's facts come from, and which documents earn their keep first.
+- [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm): where the profile's facts come from.
 - [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief): what to tell Hazel that the profile cannot know.
-- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how to check any figure before you present it.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how to check a figure before you present it.
 - [Reviewing and verifying profile data](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying): the Review list in full.

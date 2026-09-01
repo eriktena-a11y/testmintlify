@@ -1,119 +1,85 @@
 ---
 title: "Using the layout editor"
 sidebarTitle: "Using the Editor"
-description: "The Design layout editor end to end: the two left-rail tabs, the canvas and its Sample data view, adding and reordering, the Editor panel, undo, zoom, and saving without losing work."
+description: "The Design layout editor: the rails, the canvas, Sample data, adding and removing, undo, zoom, and saving."
 ---
 
-**Design layout** opens a full-screen editor for one design: your base template's, or one persona's. The header tells you which. It reads **Plan design**, then the name of what you are editing, either **Base template** or the persona's name.
+You open **Design layout** to set what a plan contains and in what order, so every plan Hazel builds from then on comes out the way your firm presents advice. Nothing you do here reaches a plan until you save.
 
-Only firm owners can open a plan design. Nothing you do here reaches a plan until you save, and once you save it shapes the plans Hazel builds from then on. Plans you have already delivered stay exactly as they are until someone rebuilds them.
+Only firm owners can open a plan design. The header names the one you are editing: **Plan design**, then **Base template** or the persona's name.
 
 ## What is where
 
-<CardGroup cols="3">
-  <Card title="Left rail" icon="list-tree">
-    Two tabs. **Outline** opens first: your design as a list of sections, tabs and pieces, with a search box above it. **Modules** is the library of everything you could add.
-  </Card>
+The left rail opens on **Outline**: your design as a list of sections, tabs and pieces, with a search box above it. Beside it, **Modules** is the library of everything you could add.
 
-  <Card title="Canvas" icon="table-columns">
-    The middle. Your design drawn the way a plan is drawn, at one full screen width. Click anything to select it.
-  </Card>
+The canvas draws your design the way a plan is drawn. Click anything to select it, and its settings open in the **Editor** panel on the right. With nothing selected, that panel describes the whole design: its strictness mode, how many of Hazel's nineteen planning modules it uses, and **See what's left out**.
 
-  <Card title="Editor panel" icon="sliders">
-    Right. The settings for whatever you have selected. With nothing selected, it describes the design as a whole.
-  </Card>
-</CardGroup>
+**Strictness** shows in the header as a badge but is set on the **Plan design** card in **Settings → Planning**. See [Strictness](/guides/financial-planning/settings/personas/strictness).
 
-The row along the top holds, left to right: a back link labeled **Planning settings**, the title, a chip naming this design's relationship to the base template, the strictness badge, the **Sample data** switch, zoom, undo and redo, and the save button. The two panel icons, one beside the back link and one beside the save button, hide and show the side rails when you want the canvas wider.
+## What fills the canvas
 
-Read the right-hand panel once before you start changing things. With nothing selected it names the design, explains what the current strictness mode means in one sentence, counts how many of Hazel's nineteen planning modules this design uses, and offers **See what's left out**, which takes you to the Modules tab.
+The **Sample data** switch in the header decides. Off, the default, every piece draws itself with stand-in content, and a piece with no heading of its own names itself at the top of its card. On, Hazel fills the design with a made-up example household, so you can read it roughly the way a client will. A band across the top names that household and confirms it is fictional, never a real client, and on a persona the example fits the persona.
 
-**Strictness** shows in the header as a badge but is not edited here. You change it on the **Plan design** card in **Settings → Planning**. See [Strictness](/guides/financial-planning/settings/personas/strictness).
-
-## Two ways to look at it
-
-The **Sample data** switch in the header decides what fills your design on the canvas.
-
-Off, which is how it starts, every piece draws itself with stand-in content: filler sentences where the writing goes, round numbers in the figures, a chart with the right shape and no story. A piece with no heading of its own names itself at the top of its card and says in a few words what it does, which is how you pick up the vocabulary. Once a piece has a heading pinned to it, the heading leads instead: the name of the kind of piece shrinks to a small label above the heading, and the one-line description moves into the hover tooltip. This is the view for judging structure, because there is nothing to read.
-
-On, Hazel fills the whole design in with a made-up example household, so you can read it roughly the way a client will. A band across the top of the canvas names that household and confirms it is fictional, never a real client. On a persona, the example is picked to fit that persona. Hazel remembers which view you prefer the next time you open the editor.
-
-Zoom sits beside the switch. **Fit width** is the default and reflows the design to your window. The percentages from 50% to 150% magnify one fixed layout instead, so you can lean into a composition or step back from it without it rearranging under you. There is no phone view, because a plan is read on a screen.
-
-Your per-piece settings show on the canvas too. At rest they are a small row of dots and icons under the piece. Hover or select the piece and each one names itself: the module it came from, **Always**, **Instructions**, **Leave out when**. Handy for spotting which pieces already carry guidance.
+Zoom sits beside the switch: **Fit width**, the default, reflows the design to your window, and the percentages from 50% to 150% magnify one fixed layout instead.
 
 ## Working in it
 
 <Steps>
   <Step title="Add">
-    Open the **Modules** tab, find what you want, and press **Add to plan**. Nothing is dragged. Each card says where it will land before you click, for example that Insurance adds its own tab inside **Getting there**. Hazel places it, selects it, scrolls the canvas to it, and shows a message naming where it went.
+    In the **Modules** tab, find what you want and press **Add to plan**. Each card says where it will land, and Hazel selects it and scrolls to it.
 
-    A module arrives set to **When it applies**. The small chevron beside the button offers to add it as always included instead, for a topic your firm puts in every plan. If a tab of that name already exists, Hazel asks whether to use the existing one or create a second. If the tab is there but empty, the button changes to offer to furnish that tab.
+    A module arrives set to **When it applies**, and the chevron beside the button adds it as always included instead.
 
-    Modules already in this design are marked **In plan** and offer **Jump to it** in place of an add button, and the **Not in plan** filter hides them so you see only what is still available.
-
-    Single pieces, and bare sections and tabs, come from the **Building blocks** shelf at the foot of the Modules tab. That shelf is the one place in the editor you drag from.
+    Single pieces, and bare sections and tabs, come from the **Building blocks** shelf at the foot of that tab, the one place you drag from.
   </Step>
   <Step title="Reorder">
-    In the **Outline**, hover a section or tab row and use the up and down arrows that appear. They move it one place within its own level, so the spine of the plan never needs a drag. Those arrows are only on section and tab rows. To reorder the pieces inside a section, or to move a piece out of one section and into another, drag it on the canvas.
+    In the **Outline**, hover a section or tab row and use the up and down arrows that appear. To reorder pieces inside a section, or move one into another section, drag it on the canvas.
   </Step>
   <Step title="Edit a piece">
-    Select it, on the canvas or in the Outline, and its settings open in the **Editor** panel on the right, in this order: a **Heading**, **Instructions to Hazel** for that piece alone, **Leave out when**, and **When it shows up**. Below those, an **Advanced** disclosure holds the rarely-touched extras, such as a short tab name and the icon beside a section in the plan's menu. A line at the top of the panel says where the selected piece sits, from the whole design down through its section and tab, and each step in it is clickable.
+    Select the piece and the **Editor** panel holds its settings: a **Heading**, **Instructions to Hazel** for that piece alone, **Leave out when**, **When it shows up**, and the rarely-touched extras under **Advanced**.
 
-    The **Leave out when** field disappears once a piece is set to **Always**, because a piece that must always appear has no condition to be dropped for. See [Block settings](/guides/financial-planning/plan-design/block-settings).
+    **Leave out when** disappears once a piece is set to **Always**. See [Block settings](/guides/financial-planning/plan-design/block-settings).
   </Step>
   <Step title="Remove">
-    For one piece: select it and use **Remove from layout** at the foot of the Editor panel. For a whole module: open the small circle icon at the left of its row in the Outline and choose **Remove from plan…**, which also takes out the pieces that came with it, apart from any companion piece you have edited yourself.
+    | To remove | How |
+    | --- | --- |
+    | One piece | Select it, then **Remove from layout** in the Editor panel. |
+    | A whole module | The circle icon at the left of its row in the Outline, then **Remove from plan…**. Its other pieces go too, apart from any companion piece you have edited yourself. |
+    | A section, or a tab you added | The trash icon that appears when you hover its row in the Outline. A section's icon grays out with an explanation once only one section is left; a design keeps at least one. |
+    | A tab a module brought with it | No trash icon. Use the circle icon on that row and **Remove from plan…**, so the module's other pieces leave with it. |
 
-    A whole section or tab comes out through the trash icon on its row in the Outline, which appears when you hover the row. A section always has one, grayed out with an explanation once only one section is left, because a design has to keep at least one. So does a bare tab you added yourself. A tab that a module brought with it has no trash icon at all: take it out through the circle icon on the same row, choosing **Remove from plan…**, so the module's other pieces leave with it rather than being stranded.
-
-    Every removal shows a message naming what went, with an **Undo**. If the module you are removing has been customized in this design, Hazel asks first whether to save your version to your firm's module library, so you can add it back to any design later.
+    Every removal shows a message naming what went, with an **Undo**. If the module has been customized here, Hazel asks first whether to save your version to your firm's module library.
   </Step>
   <Step title="Save">
-    The button at the top right tells you where you stand: **Saved** when there is nothing to save, **Save changes** when there is, and **Saving…** while it works. Press it and Hazel confirms with a message. Until then your work lives in this editor only, so a refresh or a closed tab loses it.
+    The button at the top right reads **Saved** when there is nothing to save, **Save changes** when there is, and **Saving…** while it works. Until you press it, your work lives in this editor only: closing or refreshing the tab makes your browser ask first, and the **Planning settings** back link opens **Save your changes?**, offering **Keep editing**, **Discard and leave**, or **Save and leave**.
+
+    A module you create with **New module…** in the Modules tab does not wait for this button. It joins your firm's module library at once.
   </Step>
 </Steps>
 
-<Note>
-  One thing does not wait for the save button. A module you create with **New module…** in the Modules tab joins your firm's module library the moment you create it, whether or not you save the layout, because that library belongs to the firm rather than to this one design.
-</Note>
+## Undo and redo
 
-## Undo, redo, and the Undo in a message
+The two arrow buttons left of the save button, and Cmd\+Z or Ctrl\+Z outside text fields. They cover everything you do on the canvas. Escape clears the selection.
 
-**Undo** and **redo** are the two arrow buttons in the header, just left of the save button, and Cmd\+Z or Ctrl\+Z works anywhere outside a text field. They cover everything you do on the canvas, and Hazel scrolls to whatever the step changed so an undo is never invisible. Escape clears the selection.
+The **Undo** inside a message covers that one change, and only while nothing else has changed since. After another edit, Hazel says so and points you back at the header arrow.
 
-The **Undo** inside a message is a shortcut for that one change, and it works only while nothing else has changed since. Once you have made another edit, Hazel says so and points you back at the arrow in the header.
+## When a save is blocked
 
-## Leaving without losing work
+A red band under the header saying your firm's stored planning settings could not be read means Hazel is holding the save back on purpose, so saving cannot replace your real settings with defaults. Reload **Settings → Planning** and open the editor again. If the band comes back, report it.
 
-The editor tracks unsaved changes and will not let you walk away by accident:
-
-- Closing or refreshing the tab makes your browser ask first.
-- Leaving through the **Planning settings** back link opens a dialog headed **Save your changes?**, offering **Keep editing**, **Discard and leave**, or **Save and leave**.
-
-## When a save will not go through
-
-Most of the time a grayed-out save button means there is nothing to save, and it reads **Saved**. Two other cases are worth recognizing.
-
-If a red band sits under the header saying your firm's stored planning settings could not be read, Hazel is holding the save back on purpose, so that saving cannot replace your real settings with defaults. Go back to **Settings → Planning**, reload the page, and open the editor again. If the band comes back, that is worth reporting.
-
-Any other failure arrives as a message under the header rather than failing quietly: a request that timed out, a persona somebody deleted in another tab, or another owner saving in the same instant. In that last case, pressing save again is safe. Hazel re-reads the latest settings and writes only this design onto them, so the retry loses nothing.
+Any other failure arrives as a message under the header: a request that timed out, a persona somebody deleted in another tab, or another owner saving in the same instant. In that last case, press save again, and Hazel re-reads the latest settings and writes only this design onto them.
 
 <Warning>
-  Because only firm owners can open a plan design, the only person who might be in here alongside you is another owner, and the advisors who build plans cannot change your design at all. Saving writes just this one design, so it cannot overwrite an owner's work on a different persona. Two people editing the **same** design at the same time will still overwrite each other, so agree who has it before a run of edits.
+  Advisors who build plans cannot open or change your design, and saving writes only this one design, so it cannot touch an owner's work on a different persona. Two owners editing the **same** design will overwrite each other, so agree who has it first.
 </Warning>
 
 ## Editing a persona that follows the base
 
-If a persona has no design of its own, the editor opens the base template's design and the chip in the header reads **Follows base template**. Nothing changes for the persona while you look around and try things.
-
-When you press save, Hazel asks first whether to give that persona its own design. Say yes and the version on screen becomes that persona's own, and it stops picking up later changes to the base. The chip then reads **Customized from base**.
-
-The **Plan design** card back in planning settings behaves differently, because that card saves as you go. Editing a chip there gives the persona its own design there and then, and Hazel tells you in a message afterwards. **Re-sync from base**, on that same card, hands the persona back to the base template whenever you want it back. See [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance).
+If a persona has no design of its own, the editor opens the base template's design and the chip in the header reads **Follows base template**, and nothing changes for the persona while you look around. Press save and Hazel asks first whether to give that persona its own design. Say yes and the version on screen becomes the persona's own, stops picking up later changes to the base, and the chip reads **Customized from base**. Editing a chip on the **Plan design** card does the same at once, since that card saves as you go. See [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance).
 
 ## Where to go next
 
 - [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs): the structure you are arranging.
 - [Modules](/guides/financial-planning/plan-design/modules): what to add, and what leaving one out means.
-- [Block settings](/guides/financial-planning/plan-design/block-settings): the per-piece controls in detail.
-- [Strictness](/guides/financial-planning/settings/personas/strictness): how closely Hazel has to follow the design.
+- [Block settings](/guides/financial-planning/plan-design/block-settings): the per-piece controls.
+- [Strictness](/guides/financial-planning/settings/personas/strictness): how closely Hazel follows the design.
