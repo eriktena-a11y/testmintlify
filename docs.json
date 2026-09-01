@@ -81,48 +81,48 @@
               {
                 "group": "Overview",
                 "pages": [
-                  "untitled-page-4",
-                  "untitled-page-5",
-                  "untitled-page-7",
-                  "untitled-page-8"
+                  "guides/financial-planning/overview/introduction",
+                  "guides/financial-planning/overview/getting-started",
+                  "guides/financial-planning/overview/what-it-can-and-cant-do",
+                  "guides/financial-planning/overview/access-and-availability"
                 ]
               },
               {
                 "group": "Your Data",
                 "pages": [
-                  "untitled-page-9",
-                  "untitled-page-10",
-                  "untitled-page-11",
-                  "untitled-page-12"
+                  "guides/financial-planning/your-data/how-hazel-uses-the-profile",
+                  "guides/financial-planning/your-data/documents-and-crm",
+                  "guides/financial-planning/your-data/front-loading-the-brief",
+                  "guides/financial-planning/your-data/where-numbers-come-from"
                 ]
               },
               {
                 "group": "The Plan",
                 "pages": [
-                  "untitled-page-13",
-                  "untitled-page-14",
-                  "untitled-page-15",
-                  "untitled-page-16",
-                  "untitled-page-17",
-                  "untitled-page-18",
-                  "untitled-page-19",
-                  "untitled-page-20"
+                  "guides/financial-planning/the-plan/anatomy-of-a-plan",
+                  "guides/financial-planning/the-plan/how-hazel-visualizes-data",
+                  "guides/financial-planning/the-plan/levers-and-scenarios",
+                  "guides/financial-planning/the-plan/changing-a-plan-with-chat",
+                  "guides/financial-planning/the-plan/editing-a-plan-directly",
+                  "guides/financial-planning/the-plan/versions-and-regenerating",
+                  "guides/financial-planning/the-plan/sharing-and-delivering",
+                  "guides/financial-planning/the-plan/visual-reference"
                 ]
               },
               {
                 "group": "Planning Settings",
                 "pages": [
-                  "untitled-page-21",
-                  "untitled-page-22",
+                  "guides/financial-planning/settings/overview",
+                  "guides/financial-planning/settings/base-template",
                   {
                     "group": "Client Personas",
                     "pages": [
-                      "untitled-page-23",
-                      "untitled-page-24",
-                      "untitled-page-25",
-                      "untitled-page-26",
-                      "untitled-page-27",
-                      "untitled-page-28"
+                      "guides/financial-planning/settings/personas/overview",
+                      "guides/financial-planning/settings/personas/default-templates",
+                      "guides/financial-planning/settings/personas/creating-a-persona",
+                      "guides/financial-planning/settings/personas/instructions",
+                      "guides/financial-planning/settings/personas/strictness",
+                      "guides/financial-planning/settings/personas/inheritance"
                     ]
                   }
                 ]
@@ -130,26 +130,26 @@
               {
                 "group": "Plan Design",
                 "pages": [
-                  "untitled-page-29",
-                  "untitled-page-30",
-                  "untitled-page-31",
-                  "untitled-page-32",
-                  "untitled-page-33",
-                  "untitled-page-34"
+                  "guides/financial-planning/plan-design/overview",
+                  "guides/financial-planning/plan-design/using-the-editor",
+                  "guides/financial-planning/plan-design/sections-and-tabs",
+                  "guides/financial-planning/plan-design/modules",
+                  "guides/financial-planning/plan-design/block-settings",
+                  "guides/financial-planning/plan-design/module-reference"
                 ]
               },
               {
                 "group": "Assumptions",
                 "pages": [
-                  "untitled-page-35",
-                  "untitled-page-36",
-                  "untitled-page-37",
-                  "untitled-page-38"
+                  "guides/financial-planning/assumptions/solver-assumptions",
+                  "guides/financial-planning/assumptions/market-assumptions",
+                  "guides/financial-planning/assumptions/guardrails",
+                  "guides/financial-planning/assumptions/reference"
                 ]
               },
-              "untitled-page",
-              "untitled-page-2",
-              "untitled-page-3"
+              "guides/financial-planning/best-practices",
+              "guides/financial-planning/troubleshooting-and-faq",
+              "guides/financial-planning/glossary"
             ]
           },
           {
