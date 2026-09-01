@@ -267,6 +267,7 @@
           {
             "group": "Prompt Library",
             "pages": [
+              "resources/prompt-library/financial-planning",
               "resources/prompt-library/ask-hazel",
               "resources/prompt-library/prompting-tips-and-tricks",
               {
@@ -278,8 +279,7 @@
                   "resources/prompt-library/meeting-types/follow-up-email"
                 ]
               },
-              "resources/prompt-library/modes",
-              "resources/prompt-library/financial-planning"
+              "resources/prompt-library/modes"
             ]
           },
           "release-notes"
