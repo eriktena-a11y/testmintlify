@@ -1,0 +1,87 @@
+---
+title: "Client personas"
+sidebarTitle: "Overview"
+description: "What a Client persona is, which fields it holds and where each one is edited, how Hazel matches a household to a persona, how to override the match, and what a persona inherits from the base template."
+---
+
+A **Client persona** is a kind of client your firm serves. An accumulator in their thirties needs a different plan from a couple three years out from retirement, and both need something different from a household already drawing income.
+
+You describe your archetypes once. Hazel matches each household to the closest one and builds the plan accordingly.
+
+Personas live in **Settings**, then **Planning**, under **Client persona** in the left rail. Your firm already has three, installed the first time anyone opens Planning settings, so the screen is never blank. Planning settings are open to firm owners. See [Roles and permissions](/guides/settings/members/roles-and-permissions).
+
+## What a persona holds
+
+| Field | What it does |
+| --- | --- |
+| **Name** | What you call this archetype. It has to be unique within your firm |
+| **Description** | Who this persona is for, and what their planning centers on. This is what Hazel matches households against |
+| **Age band** | An optional matching hint, such as 55 to 67. A hint, never a hard rule |
+| **Hazel instructions** | An ordered list of guidance Hazel follows for this client type |
+| **Plan design** | This persona's layout, when it differs from the base template |
+| **Solver assumptions** | The planning values this client type uses instead of your firm defaults, such as **Success threshold** or **Default reserve length** |
+
+Open a persona and you can edit its name, its description, its **Hazel instructions** and its **Plan design**, or delete it. Two of the six fields work differently from the rest:
+
+**The age band is set while you create the persona.** The **New persona** dialog has **Age min** and **Age max** fields, both optional. The persona screen afterwards has no age control, so fill the band in at creation if age is a useful signal for this client type. The persona's row in the left rail shows the band, so you can always see what it is.
+
+**Solver assumptions are not edited on the persona screen.** The three personas your firm starts with already carry their own: HENRY plans to an 85% success threshold, Pre-Retiree to a five-year reserve with a bracket-filling Roth conversion default, and Retiree / Decumulator to a seven-year reserve with its own withdrawal guardrails. To change a planning value yourself, either change it for the whole firm in **Solver assumptions**, or change it on a single plan by editing the assumption behind the figure it drives. A persona you create with **Starting template** set to one of the Hazel presets, or to **Copy from** an existing persona, starts with that persona's solver assumptions.
+
+<Note>
+  Read [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions) for what each value does and what it is set to by default, and [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from) for editing an assumption on one plan.
+</Note>
+
+## How the match happens
+
+At the start of a build, Hazel reads your personas and picks the closest fit for the household. The match rests on two signals, weighed together rather than in order:
+
+- **The description.** What the persona says it is for, held against what Hazel knows about this household, including the goals the household has stated. A vague description matches vaguely.
+- **The age band.** Hazel will match a 58-year-old to a persona banded 55 to 67, all else being equal. A better fit elsewhere still beats a match on age alone.
+
+Both read from what Hazel already knows about the household, so a thin profile matches poorly. See [How Hazel uses the profile](/guides/financial-planning/your-data/how-hazel-uses-the-profile).
+
+If nothing fits well, Hazel builds on the **base template** alone and records that no persona was used. That usually means you are missing a persona for a client type you serve.
+
+### Hazel records the match
+
+Every plan records which persona built it. Open the plan, open **Appendix** from the footer of the **Plan sections** rail, and read the **Applied settings** block. A **Persona** row names the matched persona, or reads **None**. Under it, each planning value is listed with a **Set by** chip: **Firm**, **Persona** followed by the persona's name, or **This plan**.
+
+So when a plan uses a five-year reserve and your firm default is three, the answer is on the plan itself: the matched persona sets five. The record is stamped when that version is published, so an older version shows what it was built with rather than today's settings.
+
+## Overriding the match
+
+You are not stuck with the match. Two ways:
+
+**Say so up front**, which is the cleaner path:
+
+```text
+Build a plan for the Okonkwos using the Business Owner persona,
+not the pre-retiree one. He is 58 but the exit drives everything.
+```
+
+**Or correct it afterwards** on a built plan, naming the persona you want. Hazel rebuilds against it.
+
+<Tip>
+  A persona that keeps getting mismatched is telling you its description is wrong. Rewrite the description to say plainly who it is for, and the matching improves for every household after that.
+</Tip>
+
+## What a persona inherits
+
+A persona is built on the base template and follows it until you change something. Its solver assumptions work value by value: the persona carries only what differs and inherits the rest from your firm settings. Its plan design follows the base design live until the first edit on its **Plan design** card, which forks a copy for that persona.
+
+Guardrails are firm-wide. You write them once, in the never-do list on the **Base template** pane, and they apply to every plan your firm builds. No persona, no plan, and no request in chat removes one.
+
+See [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance) for exactly how a persona diverges from the base and how to bring it back.
+
+## How many personas to have
+
+Enough to capture the client types you plan differently for, and no more. Three to six is usually plenty.
+
+You have too few if you are correcting the same thing on every plan for a certain kind of client. You have too many if two personas differ only in wording, or you cannot tell them apart without reading both descriptions.
+
+## Where to go next
+
+- [Default templates](/guides/financial-planning/settings/personas/default-templates): the three personas your firm already has, and what each one does.
+- [Creating a persona](/guides/financial-planning/settings/personas/creating-a-persona): build your own, field by field.
+- [Instructions](/guides/financial-planning/settings/personas/instructions): how to write guidance Hazel follows.
+- [Strictness](/guides/financial-planning/settings/personas/strictness): how tightly a persona's layout binds Hazel.

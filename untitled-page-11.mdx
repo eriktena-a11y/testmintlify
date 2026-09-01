@@ -1,0 +1,168 @@
+---
+title: "Front-loading the brief"
+sidebarTitle: "Front-Loading the Brief"
+description: "Say what you want before Hazel starts. A few lines of context, goals and constraints in the message that asks for the plan produce a sharper first draft and remove most of the back-and-forth that follows a bare request."
+---
+
+Say what you want before Hazel starts, and the first draft is usually the draft you wanted.
+
+A bare request works. "Build a plan for the Hendersons" produces a real plan. But Hazel makes reasonable choices on everything you did not mention, and you spend the next several requests undoing them.
+
+## Where you can front-load
+
+Only one of the three ways into a plan gives you somewhere to type, so it is worth knowing which.
+
+- **Ask Hazel.** On the segmented control under the message box, choose **Financial Planning**, then send your request and your context in the same message. A chat left on **Ask** will answer you helpfully and will never build a plan.
+- **A household's Financial Planning tab.** The **Draft financial plan** button sends a plain request naming the household and its members, with nothing of yours attached. Nothing is lost: once the build is running, **Open chat** in the plan's top bar takes you to the conversation, and you can say the rest there. It just takes an extra pass.
+- **New financial plan** on the Financial Planning page. This wizard asks for your data source, who the plan is for, and any uploads, then starts the same plain request as the tab.
+
+<Tip>
+  Keep the brief in the same message as the request. That message is what the build reads when it starts.
+</Tip>
+
+## Why up front beats after the fact
+
+Said before the build, your intent reaches Hazel while the plan is still being composed: which Client persona to build against, which topics to lead with, which scenario to model, and which sections this family does not need.
+
+Said afterwards, Hazel is revising a plan that was composed around different priorities. You get there, but in several passes, and each pass is a change to review.
+
+Anything you would tell a junior analyst before they started is worth telling Hazel before the build starts.
+
+## Hazel stops partway to ask
+
+A build runs in three steps, and the second one is questions. Hazel asks about at most three inputs, the ones that would move the outcome most, plus a check on how this household's goals should be ranked. Each question arrives carrying the value Hazel would otherwise use, so answering is usually a confirmation rather than data entry, and a **Make reasonable assumption** button hands the choice back to Hazel.
+
+What happens if you step away depends on where you started.
+
+- **From the household's Financial Planning tab.** Each question runs a 30 second timer and then takes the assumption on its own, so an unattended build still finishes. Hovering over the card pauses the timer, and lingering on one question stops the timer for it. While the build waits, the tab reads "Waiting for answer" with a count like "Question 2 of 4".
+- **In a chat.** There is no timer. The question waits for you, however long that takes. A chat build that looks stuck is usually a question sitting unanswered in the transcript.
+
+## The seven things worth saying
+
+You do not need all seven. If you only manage two, make them the question the plan has to answer and the constraints.
+
+<AccordionGroup>
+  <Accordion title="1. Who the plan is for, and what kind of client they are">
+    Name the household, and say the archetype if you have a view. "The Hendersons, treat them as pre-retirees" tells Hazel which of your Client personas to build against, rather than leaving the persona to be inferred.
+
+    If your firm has not set up personas yet, leave this line out. Hazel builds from your firm's base template and records that no persona was used, which makes a perfectly good first plan.
+  </Accordion>
+
+  <Accordion title="2. The question the plan has to answer">
+    Most planning engagements have one real question. "Can they retire at 62?" "Should she take the pension or the lump sum?" "Is the concentrated position the biggest risk here?" Say it, and the whole plan orients around answering it.
+  </Accordion>
+
+  <Accordion title="3. The goals, in the household's terms">
+    Anything the profile does not already carry. Target retirement year, a second home, a college target, a giving intention, a business exit.
+
+    If you are not sure whether Hazel already knows one of these, say it anyway. Repeating a goal Hazel already has costs you nothing.
+  </Accordion>
+
+  <Accordion title="4. The constraints">
+    What is off the table. "They will not sell the rental." "No annuities, ever." "She is not willing to work past 65." Constraints shape a plan as much as goals do, and Hazel has no way to infer them.
+  </Accordion>
+
+  <Accordion title="5. What to emphasize, and what to leave out">
+    "Lead with the income sequencing, they have seen the balance sheet a hundred times." "Skip the education section, the kids are done."
+
+    Whether Hazel can drop a section your firm's plan design asks for depends on that design's strictness. Under **Flexible** or **Guided** Hazel can. Under **Exact** the design is built as written, however you word the request. [Strictness](/guides/financial-planning/settings/personas/strictness) covers the three modes.
+  </Accordion>
+
+  <Accordion title="6. What data to trust, and what to ignore">
+    "The retirement account statement is current, the brokerage statement is from last year." "Ignore the old insurance policy, it lapsed."
+  </Accordion>
+
+  <Accordion title="7. Who is going to read it">
+    "This is for a first meeting with a skeptical engineer." "This is a review for a client who only wants the headline." Audience changes how the plan is written, so say who is reading it.
+  </Accordion>
+</AccordionGroup>
+
+## A brief you can copy
+
+Paste this into a Financial Planning chat and fill in the lines that apply. Delete the rest.
+
+```text
+Build a financial plan for [household].
+
+Treat them as [Client persona, if you have a view].
+
+The question this plan has to answer: [the one real question].
+
+Goals: [target retirement year, purchases, education, giving, exit].
+Constraints: [what is off the table, what they will not consider].
+
+Emphasize: [the topics that matter for this family].
+Leave out: [what does not apply].
+```
+
+## The same request, two ways
+
+<CodeGroup>
+
+```text Bare request
+Build a financial plan for the Hendersons.
+```
+
+```text Front-loaded
+Build a financial plan for the Hendersons. Treat them as pre-retirees.
+
+The question: can Bill retire at 62 and Susan at 65, without cutting
+their current spending?
+
+Goals: retire at 62 and 65, keep the lake house, fund two more years
+of college for their daughter.
+Constraints: they will not sell the lake house and they do not want
+to consider annuities.
+
+Emphasize the income sequencing and the healthcare gap before 65.
+Leave out debt paydown, the mortgage is gone.
+```
+
+</CodeGroup>
+
+The first produces a competent general plan. The second produces the plan for this meeting.
+
+## What a brief does not set
+
+Front-loading shapes what the plan covers and how it reads. It does not set planning numbers. Those come from firm configuration, set once by your firm owner and inherited by every plan. If a name in the second list below is new to you, that is fine. It means someone else has already decided it.
+
+**Say this in the brief.** "Emphasize the healthcare gap before 65." "Model retirement at 62." "Lead with income sequencing." "Skip the education section." "Write for a skeptical reader."
+
+**These live in Planning settings.** The success threshold, the default reserve length and its refill policy, the withdrawal guardrails, the Roth conversion strategy, the advisory fee, the Monte Carlo simulation count, and the return, volatility, inflation and tax figures. [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions) and [Market assumptions](/guides/financial-planning/assumptions/market-assumptions) explain what each one drives.
+
+A sentence in a brief does not move one of those numbers. Prose steers how a plan is written and what it leads with; the structured settings supply the figures. Where your firm has set a hard guardrail, asking for something it forbids gets a friendly refusal naming the policy rather than a quiet workaround. [Guardrails](/guides/financial-planning/assumptions/guardrails) has the details.
+
+<Note>
+  For a genuine one-off, open **Plan settings** from the top bar of a plan you are reading in its chat. It lists the figures this plan is running on, with a chip on each saying whether **Firm**, a **Persona** or **This plan** set it, and commits your change with **Apply and replan**. The change belongs to that one plan and stays inside the range your firm allows. Three firm-wide figures are deliberately not in the panel: the advisory fee, the terminal heir tax rate and the Monte Carlo simulation count.
+</Note>
+
+## Checking and overriding the matched persona
+
+Hazel matches each household to the closest Client persona without being asked. The persona's description is the main signal, its age band is a hint rather than a rule, and the household's stated goals fill in the rest.
+
+To see which one a plan used, open the plan's **Appendix** and read the **Applied settings** block. The **Persona** row names it, or reads **None** when nothing fitted and Hazel built from your firm's base template.
+
+When the match is wrong, saying so up front is the cleanest fix:
+
+```text
+Build a plan for the Okonkwos using our Business Owner persona,
+not the pre-retiree one. He is 58 but the exit drives everything.
+```
+
+You can also name a different persona on a plan that is already built. Doing it up front is one step instead of two.
+
+## Front-loading a change to an existing plan
+
+The same discipline pays on follow-ups. Compare:
+
+- "Add a lever." Hazel picks one.
+- "Add a retirement-age lever from 60 to 70 in one-year steps, starting at 62, and show what it does to the success gauge." Hazel builds that. The success gauge is the dial that shows probability of success today against probability with the plan.
+
+One extra sentence saves a round trip. The [prompt library](/resources/prompt-library/financial-planning) has ready-made phrasings for the common requests.
+
+## Where to go next
+
+- [Getting started](/guides/financial-planning/overview/getting-started): the three ways into a plan, start to finish.
+- [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat): the follow-up vocabulary.
+- [Prompt library: Financial Planning](/resources/prompt-library/financial-planning): requests you can copy and paste.
+- [Best practices](/guides/financial-planning/best-practices): where this habit sits in the wider workflow.

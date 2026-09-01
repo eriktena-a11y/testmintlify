@@ -1,0 +1,97 @@
+---
+title: "Sharing and delivering"
+sidebarTitle: "Sharing & Delivering"
+description: "How a plan reaches the client: exporting the PDF, what does and does not print, presenting the plan live in a meeting, and the two firm-wide rules that shape anything client-facing."
+---
+
+Hazel never sends a plan to a client. A plan reaches the household one of two ways, and both start with you: export a PDF and send it yourself, or present the plan on screen. There is no client link and no client login.
+
+<Note>
+  A plan opens only for the advisor who built it. A colleague with full access to the household still cannot open it, and sharing the conversation does not carry the plan across. Shared financial-plan chats are a fast follow. Until they land, send a colleague the PDF.
+</Note>
+
+## Exporting the PDF
+
+**Export PDF** sits in the plan's top bar, in the chat plan view and on the household **Financial Planning** tab alike. It produces a PDF of the version you are reading, so if you have stepped back into an older version, that is the one you get. The button reads "Generating PDF…" while it works, which takes a few seconds on a long plan, and the file arrives named after the plan with its version number on the end.
+
+What the PDF carries:
+
+- A cover masthead: the plan title, who it was built for, the date and the version number, so a file sitting in an archive still identifies itself.
+- Every section, in order, laid out for print. Tabs and priority cards all open out, so the document runs longer than the screen suggests.
+- Every chart and table, drawn.
+- The controls, printed under a **Plan settings** heading at the values the plan published, rather than as sliders anyone can move.
+- Recommendations with their recorded decision in place of their buttons. One you have not decided on prints the words "Pending review", so settle those before you send the file.
+- Your firm's disclaimer, verbatim, as the footer.
+
+What it does not carry:
+
+- Interactivity. A PDF cannot recalculate, and the first page says as much: these are the published figures, and alternatives live in the plan in Hazel.
+- The detail behind each figure. Sources, methodology and the numbered assumptions sit in the panels you open on screen, and so does the Appendix. None of that prints. If the client needs to see an assumption, ask Hazel to state it in the plan itself, where it prints with the section it belongs to.
+- Controls only Hazel can re-solve. Only the ones you could move on screen print as settings, and a card holding none of those prints nothing at all, so where a setting matters to the client, check that the plan also states it in prose.
+
+<Note>
+  **Export PDF grayed out?** You have unsaved changes, and Hazel will not export a plan that differs from what you are looking at. Press **Save** in the bar at the bottom of the plan, or **Discard**, and the button comes back. Hovering it tells you the same thing.
+
+  Moving a slider, a switch or a row of option buttons is not an unsaved change. It never reaches the save bar and never blocks the export, and the PDF prints every control at the value the plan was published with, not where you left it.
+
+  Dragging cards into a different order is the exception. Hazel treats an order as a statement rather than exploration, so that drag stages a change straight away and does hold the export until you save it or discard it.
+</Note>
+
+### If the export fails
+
+| What you see | What it means |
+| --- | --- |
+| PDF generation is busy | Hazel is already generating other PDFs. Wait a few seconds, then try again |
+| PDF export is temporarily unavailable | Try again in a few minutes |
+| Couldn't export PDF | The catch-all. Either something in the plan would not draw, or the request itself failed on the way. Try again, and if it repeats, ask Hazel in chat to rebuild the plan |
+| The PDF download was invalid | Nothing was saved to your machine. Try again |
+| This plan isn't ready to export | The saved plan cannot be rendered at all. See below |
+
+For that last one, open the plan in its chat. If it will not display, Hazel offers a card headed "This plan needs Hazel's help" with a button reading **Ask Hazel to repair plan**. Press it, wait for the fresh version, then export that one. The repair runs from the chat, so if you are reading the plan on the household **Financial Planning** tab, press **Open chat** in the top bar first.
+
+## Presenting live
+
+You do not have to export for a review meeting. Presenting on screen is where the levers work.
+
+<Steps>
+  <Step title="Open Plan orientation before you walk in">
+    The small info button in the plan's top bar, just left of **Export PDF**. It opens a short brief on what this plan concludes and why, stamped with the version it describes. One minute, and you are oriented without rereading the plan.
+
+    No info button means this version has no brief, not that something is missing on your end. Read the Summary section instead, or ask Hazel in chat for a two-line brief.
+  </Step>
+  <Step title="Open on the Summary">
+    The narrative and the Success gauge. Let them read it.
+  </Step>
+  <Step title="Go straight to the decision">
+    Skip the tour. Open the section that answers the question they arrived with.
+  </Step>
+  <Step title="Use levers when they ask a what-if">
+    Move the control and let them watch the figures move. Every figure wired to it recomputes as you drag. Anything it does not feed stays where the plan published it, and only two visuals announce that: **Range of outcomes** and **Mix comparison** carry a line saying they are holding the published scenario. Everything else that does not move simply does not move, with no notice, so name the figures that are answering the question rather than letting a still chart read as an answer.
+  </Step>
+  <Step title="Record what they chose, before you leave">
+    A moved control is only a view on your screen. It springs back to the published value the moment the page reloads.
+
+    To make it part of the plan, press **Approve** on the recommendation those controls sit with. Approving picks up the values showing on screen and writes the decision into the plan's **Decisions** section. Then press **Save** in the bar at the bottom, which commits it as a new version.
+
+    Controls that sit with no recommendation have no **Approve**, so ask Hazel for those changes in the plan's chat before you leave. From the household **Financial Planning** tab, **Open chat** in the top bar is the way there.
+  </Step>
+  <Step title="Export afterwards">
+    Send the PDF of the version you agreed on, not the one you walked in with.
+  </Step>
+</Steps>
+
+## Two firm-wide rules
+
+**The display ceiling.** A projection in which every simulated path succeeds computes as 100%, which a client reads as a promise, so plans cap the probability of success they print. The ceiling starts at 99% and your firm can set its own, so read the line under the figure rather than assuming the number. Where a projection lands above the ceiling, the figure shows as `>99%` with a short line beneath saying the display is capped. It applies wherever that figure appears, your own screen included, and it changes only what is shown. The plan keeps the modeled figure underneath. The ceiling is one figure for the whole firm, not something you set plan by plan, and a firm that puts it at 100% switches the cap off, so figures then print as computed.
+
+**The disclaimer.** Whatever your firm saves as its disclaimer renders under every plan exactly as written, on screen and in the PDF. It lives in **Settings → Planning**, on the **Client disclaimer** card, marked firm-wide. Planning settings are the firm owner's surface, so if you cannot see Planning in Settings, ask whoever owns your firm's account to set it.
+
+<Warning>
+  Until someone saves that text, no disclaimer renders anywhere. The wording already sitting in the box is Hazel's suggestion, offered so you have somewhere to start, and it is not stored until you edit it. Before your firm's first export, open the card, put your own wording in, and click outside the box to save. Once you have edited it, a **Restore Hazel default** button appears if you want the suggestion back. This is client-facing text your firm owns, so have whoever handles compliance approve it.
+</Warning>
+
+## Where to go next
+
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): stepping back through versions, and exporting an older one.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): the audit worth running before you export.
+- [Best practices](/guides/financial-planning/best-practices): the review-meeting workflow end to end.

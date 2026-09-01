@@ -1,0 +1,88 @@
+---
+title: "Module reference"
+sidebarTitle: "Module Reference"
+description: "All nineteen modules Hazel ships: what each one adds to a plan, where it lands by default, and what a household's data needs to contain for it to have something to say."
+---
+
+A module is one topic a plan can treat on its own: debt paydown, Social Security claiming, estate documents. Nineteen ship with Hazel. You add and remove them in the **Modules** tab of the plan design editor, and the tables below are that library, in the same four groups and the same order.
+
+Three column headings to read first.
+
+**Where it lands by default** is the spot a module takes when you add it with nothing selected. Five modules own a whole tab of their own, and their card in the library carries a small **Tab** badge. The other fourteen add treatment inside a section that is already there. Select a section or tab first and the module lands where you were looking instead.
+
+**What it needs** is what has to be in the household's data for the module to have something to say. When it is not there, the module has less to work with. Several modules also carry a leave-out condition of their own, so an empty treatment stays out of the plan rather than printing a blank table.
+
+A module absent from your design means no dedicated treatment of that topic, not a ban on mentioning it. The broader sections still fold the subject in.
+
+## Core planning
+
+| Module | What it adds to a plan | Where it lands by default | What it needs |
+| --- | --- | --- | --- |
+| **Net worth & balance sheet** | Assets, liabilities and the net-worth trend, with the account detail behind it | Today | Account balances, property values and debts |
+| **Cash flow** | A Cash flow tab: income, spending, the monthly surplus, and a year-by-year cash-flow view | Its own Cash flow tab in Getting there | Income and spending detail |
+| **Emergency fund** | Months of essential spending covered today, against a target of three to six months | Cash flow tab | Spending detail and cash balances |
+| **Debt paydown** | Balances, rates and a payoff order that puts balances above 6% APR first | Cash flow tab | Debts with balances and rates |
+| **Insurance** | An Insurance tab: term life and disability coverage in place, the gaps, and what closing them costs | Its own Insurance tab in Getting there | Policies in force, income and dependents |
+| **Goal funding** | One card per goal, with its funding status and progress toward the target | Goals | Stated goals with amounts and dates |
+
+## Retirement & tax
+
+| Module | What it adds to a plan | Where it lands by default | What it needs |
+| --- | --- | --- | --- |
+| **Retirement** | A Retirement tab: progress toward the retirement target, a range of outcomes, and readiness figures | Its own Retirement tab in Getting there | Retirement accounts, contributions and a target retirement date |
+| **Retirement income sequencing** | Which accounts fund spending, in what order, and where required withdrawals force the order | Retirement tab | Which accounts are taxable, tax-deferred or Roth, plus a spending target |
+| **Social Security optimization** | Claiming ages compared for each earner, with the lifetime trade-off between them | Retirement tab | Dates of birth, and an earnings history or a benefit estimate |
+| **RMD calculation** | Required minimum distributions, the amounts a household has to start withdrawing from tax-deferred accounts once it reaches the qualifying age, by year and account, with each earner's start year called out | Retirement tab | Tax-deferred balances and dates of birth |
+| **Roth conversion** | A year-by-year conversion plan with each year's bracket impact, following your firm's conversion strategy | Retirement tab | Tax-deferred balances and a current income and tax picture |
+| **Healthcare coverage estimation** | Coverage before 65, the move onto Medicare, and estimated annual costs | Retirement tab | Ages, retirement dates and coverage in force |
+
+## Investments & analysis
+
+| Module | What it adds to a plan | Where it lands by default | What it needs |
+| --- | --- | --- | --- |
+| **Investments** | An Investments tab: the current allocation, how it compares with the target mix, and how that mix shifts over time | Its own Investments tab in Getting there | Holdings, and which accounts are taxable, tax-deferred or Roth |
+| **Equity compensation** | Vesting lanes for restricted stock, options and employee purchase plans, plus single-stock concentration measured against the target mix | Investments tab | Grant schedules and current share prices |
+| **Monte Carlo success** | One figure for the chance the plan holds up, found by running it through many varied market futures and counting how many finish with the money lasting | Summary | A goal with an amount and a date, so there is something to measure |
+
+## Wealth transfer & legacy
+
+| Module | What it adds to a plan | Where it lands by default | What it needs |
+| --- | --- | --- | --- |
+| **Education funding** | Funding targets against projected education costs, one card per child | Goals | An education goal, children's ages, and any savings set aside for it |
+| **Charitable giving** | A giving strategy sized against the household's tax picture: donor-advised funds, qualified charitable distributions, gifts of appreciated stock | Estate plan tab | A stated giving intention and appreciated holdings |
+| **Gifting & wealth transfer** | Annual gifting capacity, lifetime exemption use, and planned transfers to heirs | Estate plan tab | Net worth, named heirs and a stated intention |
+| **Estate plan** | An Estate plan tab: documents, beneficiaries and titling, with what is current, what is missing, and what to fix first | Its own Estate plan tab in Getting there | Estate documents and how accounts are titled |
+
+<Note>
+  Adding a module whose home is not in your design creates that home. Put **Roth conversion** into a design with no Retirement tab and the tab appears to hold it. Each card says where the add will land before you click, and when a section module would fill a tab that is sitting there empty, its button reads **Furnish the Retirement tab** instead of **Add to plan**.
+</Note>
+
+## What the default plan design includes
+
+Hazel's default design carries eight modules: the six under Core planning, plus **Retirement** and **Monte Carlo success**. So a default plan has Cash flow, Insurance and Retirement tabs but no Investments or Estate plan tab, and the specialist retirement, tax and legacy modules wait in the library until you add them.
+
+Each group header in the library keeps a running count, such as 2 of 6 in plan, and a **Not in plan** filter narrows the list to what you have not added yet. Adding every module is rarely the right move, because a narrow module takes its topic over from the broader section that would otherwise have covered it. [Modules](/guides/financial-planning/plan-design/modules) covers how to choose.
+
+Two of the numbers behind these rows are yours to change. The 6% APR line on **Debt paydown** sits in that block's **Instructions to Hazel** field, and the probability at which a plan counts as on track sits in [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
+
+## How Hazel's personas differ
+
+Your firm's Planning settings arrive with three Hazel personas already in place, and their designs differ from the base template and from each other.
+
+- **HENRY**, for high earners still building wealth, leaves out the standalone success figure. A single goal's probability undersells a household juggling several at once.
+- **Pre-Retiree** leaves out debt paydown, usually settled by that stage of life.
+- **Retiree / Decumulator** opens its Getting there tabs with retirement income sequencing and healthcare costs, and leaves the saving-phase treatments out, so there is no accumulation trajectory, no emergency fund and no debt paydown.
+
+Review, rename, edit or delete any of them. [Default templates](/guides/financial-planning/settings/personas/default-templates) walks through each one in full.
+
+## Your firm's own modules
+
+Modules you create sit in the library under **Your firm's modules**, with the name and description you gave them. Start one from scratch or copy one of Hazel's. If you remove a module you had customized, Hazel offers to save your version to that shelf first, so the work is not lost. Write one as a tab with no blocks of its own and its card says Hazel will compose the tab from your instructions.
+
+## Where to go next
+
+- [Modules](/guides/financial-planning/plan-design/modules): adding and removing them, and what absence means for a plan.
+- [Block settings](/guides/financial-planning/plan-design/block-settings): the instructions and leave-out conditions on the pieces a module brings.
+- [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs): how tabs sit inside Getting there.
+- [Visual reference](/guides/financial-planning/the-plan/visual-reference): the charts, tables and cards a module places.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how the facts in the last column reach Hazel.

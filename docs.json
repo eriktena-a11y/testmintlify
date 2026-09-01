@@ -76,6 +76,83 @@
             ]
           },
           {
+            "group": "Financial Planning",
+            "pages": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "untitled-page-4",
+                  "untitled-page-5",
+                  "untitled-page-7",
+                  "untitled-page-8"
+                ]
+              },
+              {
+                "group": "Your Data",
+                "pages": [
+                  "untitled-page-9",
+                  "untitled-page-10",
+                  "untitled-page-11",
+                  "untitled-page-12"
+                ]
+              },
+              {
+                "group": "The Plan",
+                "pages": [
+                  "untitled-page-13",
+                  "untitled-page-14",
+                  "untitled-page-15",
+                  "untitled-page-16",
+                  "untitled-page-17",
+                  "untitled-page-18",
+                  "untitled-page-19",
+                  "untitled-page-20"
+                ]
+              },
+              {
+                "group": "Planning Settings",
+                "pages": [
+                  "untitled-page-21",
+                  "untitled-page-22",
+                  {
+                    "group": "Client Personas",
+                    "pages": [
+                      "untitled-page-23",
+                      "untitled-page-24",
+                      "untitled-page-25",
+                      "untitled-page-26",
+                      "untitled-page-27",
+                      "untitled-page-28"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Plan Design",
+                "pages": [
+                  "untitled-page-29",
+                  "untitled-page-30",
+                  "untitled-page-31",
+                  "untitled-page-32",
+                  "untitled-page-33",
+                  "untitled-page-34"
+                ]
+              },
+              {
+                "group": "Assumptions",
+                "pages": [
+                  "untitled-page-35",
+                  "untitled-page-36",
+                  "untitled-page-37",
+                  "untitled-page-38"
+                ]
+              },
+              "untitled-page",
+              "untitled-page-2",
+              "untitled-page-3"
+            ]
+          },
+          {
             "group": "Meeting Assistant",
             "pages": [
               {
@@ -98,14 +175,6 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Email Assistant",
-            "pages": [
-              "guides/email-assistant/overview",
-              "guides/email-assistant/setting-up-your-email"
-            ],
-            "hidden": true
           },
           {
             "group": "Modes",

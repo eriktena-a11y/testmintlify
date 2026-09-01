@@ -1,0 +1,196 @@
+---
+title: "Getting started"
+sidebarTitle: "Getting Started"
+description: "The three ways to start a plan, what Hazel checks before building, what happens while a plan drafts, and what to look at once it lands."
+---
+
+From a household, starting a plan is one click, and the draft usually lands inside fifteen minutes. This page covers where you can start one, what Hazel checks first, what happens while you wait, and what to look at when the plan arrives.
+
+## Look at the finished example first
+
+On the **Financial Planning** page, the welcome card carries a button reading **See financial plan example**. It opens a finished plan built on a made-up family, so nothing you press there touches client data. The first time you open it, Hazel walks you through six short callouts. **Skip tour** on the first callout ends the walkthrough; from the second onwards the footer offers **Back** and **Next**, and **Take the tour** at the top of the page reopens it whenever you like.
+
+The example is read-only, so nothing you press changes it. The **Approve** and **Ignore** buttons on decisions are grayed out, the question cards will not take an answer, the grips that reorder cards are inert, and there is no prose editing, no version history and no PDF download. The parts that only look things up still work: move a lever and the figures recompute, and select a sourced figure to read the panel behind it. The guided flow's **Sample household data** card opens this same example.
+
+The welcome card only appears while you have no plans of your own, so look at the example before your first real build.
+
+## The three entry points
+
+<CardGroup cols="3">
+  <Card title="From a household" icon="house">
+    Open the household and select the **Financial Planning** tab. Best when you already have a client in front of you.
+  </Card>
+
+  <Card title="From the Financial Planning page" icon="list">
+    A guided flow that takes you from no data in Hazel to a finished plan. Best for your first plan, or when you are working through a book of clients.
+  </Card>
+
+  <Card title="From Ask Hazel" icon="message">
+    Ask for a plan in a chat set to Financial Planning mode. Best when planning comes up mid-conversation, and the easiest place to say what you want before Hazel starts.
+  </Card>
+</CardGroup>
+
+<Note>
+  A plan belongs to the person who built it. A colleague with full access to the household still cannot open your plan, so build the plan you are going to present. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
+</Note>
+
+### From a household
+
+The **Financial Planning** tab opens on a readiness list headed **Financial Plan document readiness**: what Hazel already holds for this household, and what is thin. Nothing here blocks a build.
+
+| What the tab checks | Why it matters |
+| --- | --- |
+| Accounts & Holdings | Balances and holdings, which give you the balance sheet and the investment picture |
+| Calendar | Whether your calendar is connected, and whether this household has a meeting coming up |
+| Tax documents | Income, brackets, and what is already going into retirement accounts |
+| Uploaded documents | Statements, returns, policies, estate paperwork |
+| Meetings & transcripts | Goals and constraints in the household's own words |
+| CRM | Whether your CRM is connected, and how recently this household's record synced |
+| Email | Whether your mailbox is connected, and the threads with this household |
+| Business valuation | A valuation for a business the household owns |
+
+Each row shows a tick when that source is in place, or **Incomplete** or **Missing** when it is not. A dash means the check has not answered yet: the row reads **Loading…** while it is still running, and **unavailable** when Hazel could not reach that source. Neither one stops you building. While the checks are still running you get a gray placeholder where the card and its button will be, because the tab will not tell you a household is ready before the answers are in. It settles in a second or two.
+
+Three of these rows are about your own setup rather than the client. Calendar, CRM and Email read **Missing** with a subtitle naming what is absent, such as no mailbox connected. The fix there is connecting your calendar, CRM or mailbox to Hazel, not chasing the client for paperwork. Calendar reads **Incomplete** when it is connected but this household has nothing on the books, which is normal. See [Integrations](/guides/integrations/overview).
+
+Business valuation is shown for every household, whatever it owns, and it never holds a build up. With nothing on file it reads **Missing**, and the plan labels the figure as an assumption.
+
+The other seven rows decide which card you get:
+
+- When all seven are complete, the card reads **Ready to build** and summarizes what Hazel has to draw on.
+- When any of them is short, that card is replaced by one headed **Begin right away**, which names in a sentence what is connected and what is missing. A second card, **Prepare data**, appears beside it.
+
+Either way the button that starts the build is the same, **Draft financial plan**, and either way you are allowed to build. Missing data and assumptions are labeled in the finished plan, so building early is a reasonable choice.
+
+**Prepare data** works in two steps. The first uploads documents straight onto the household. The second drafts an email asking the client for what is still missing, which you can copy or send from your own mailbox.
+
+A household can hold more than one plan, and each plan keeps its own version history.
+
+### From the Financial Planning page
+
+The page has a guided flow, opened by **Draft a plan** on the welcome card or by **New financial plan** once you have a plan of your own.
+
+<Steps>
+  <Step title="See what you are about to do">
+    The flow opens on a screen headed **Draft your first financial plan in minutes**, listing the three things ahead of you, with a **Continue** button.
+  </Step>
+  <Step title="Choose your data source">
+    Three cards: **From my CRM**, **Manual entry** and **Sample household data**.
+
+    **From my CRM** leads to **Choose your CRM**, where you connect Salesforce, HubSpot, Wealthbox or Redtail. If Hazel already holds clients, the flow moves straight to your client list and you can build now. If Hazel holds none yet, a screen headed **Your CRM is connected** says the import is running, usually five to ten minutes, and a **Done** button lets you leave while it does. The flow stays usable throughout, so the manual route is still open to you.
+
+    HubSpot takes one extra step, headed **One more step in Settings**: choose which records Hazel should import, and the first sync starts as soon as you save.
+  </Step>
+  <Step title="Say who the plan is for">
+    Pick a client, or create one. Hazel files a document against a household, so on the manual route the client comes before the documents: the button reads **Continue**, and uploading is next.
+
+    On the CRM route the client's data is already in Hazel, so this step is the last one. The button reads **Draft financial plan**, and the build starts when you press it.
+
+    A client whose record has no contacts on it cannot take documents. If the button will not enable, add a contact to that household first.
+  </Step>
+  <Step title="Upload documents">
+    Hazel asks for brokerage and custodian statements as PDFs, and recent tax returns (Form 1040). Files are read as they arrive, and **Draft financial plan** stays unavailable until at least one file has been read, usually a few minutes per file. You can close the flow while Hazel reads and pick it up later. If nothing you uploaded could be read, the step tells you so, and you will need to add a different document.
+  </Step>
+</Steps>
+
+Both routes hand you off to the household's **Financial Planning** tab. That tab is what actually starts the build and shows its progress.
+
+#### The page is also your list of plans
+
+Once you have built something, the welcome card gives way to a table of your own plans, one row each, which is how you find a plan again without remembering which household or which chat it lives in. The columns are the household with its members, **Status**, **Persona applied**, **Created** and **Updated**.
+
+**Status** reads one of two things. **Ready to review** means the plan has published a version you can open. **Draft in progress** means that plan has not published a version yet. Usually Hazel is still building it, and the same status also covers a build that stopped part way. So if a row has sat there a while, open it: the household's **Financial Planning** tab will either show the build running or say **Build didn't finish** and offer **Try again**.
+
+Selecting a row opens that household's **Financial Planning** tab. A plan Hazel has not been able to file against a household opens its own conversation instead, so no row is a dead end. The menu above the table filters by household, and the sample plan sits at the top with a badge whatever you have filtered to. If you own the firm, **Set financial plan assumptions** beside that menu is a shortcut into Planning settings.
+
+The table lists the plans you built. A colleague's plans for the same households are not in it, and yours are not in theirs. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
+
+### From Ask Hazel
+
+Chat starts a plan only when the chat is set to **Financial Planning** mode. On a new chat's start screen, choose **Financial Planning** on the segmented control under the message box, sitting alongside Ask and Tax Planning. That control is where the mode is set, so there is no separate menu to find. Then ask:
+
+```text
+Build a financial plan for the Hendersons.
+```
+
+A chat keeps the mode it started in, so switch before you send the first message. An existing Ask-mode chat cannot be converted part way through; start a new one instead.
+
+Chat is where you can say what you want before Hazel starts, rather than correcting the draft afterwards:
+
+```text
+Build a financial plan for the Hendersons. They want to retire in 2032,
+they care most about whether they can keep the lake house, and Ann's
+deferred compensation is the piece I want covered properly.
+```
+
+Everything you say here shapes the first draft. See [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief) and the [prompt library](/resources/prompt-library/financial-planning).
+
+## What happens during a build
+
+Hazel names each step on screen, and a three-segment rail marks progress: **Reading files**, then **Clarifying points**, then **Writing plan**.
+
+- **Reading your paperwork**, step 1 of 3. Hazel reads the files you sent against the client profile already on file. The step says this usually takes 5-12 minutes.
+- **A few questions before I draft**, step 2 of 3. The build stops here and asks you a handful of things. What happens if you step away depends on where you started it, covered just below.
+- **Drafting your plan**, step 3 of 3. Hazel turns the numbers into the plan.
+- **Your plan is ready**. A **View plan** button opens it.
+
+The card that carries **Draft financial plan** estimates 5-15 min. A household with a lot of documents can run past twenty minutes with nothing wrong. The progress badge shows a rough estimate of the time left and, once a build is over budget, reads **Taking longer than usual** rather than counting down to a number Hazel no longer believes.
+
+### The questions step
+
+Part way through, Hazel pauses to ask a few things the documents did not settle. On the household's **Financial Planning** tab the badge reads **Waiting for answer**, with a line beneath it naming what Hazel has read so far, such as the pages read and the accounts found. Where there was no paperwork to summarize, that line is a count instead, such as **Question 2 of 4**. The card shows one question at a time.
+
+You can answer it, or press **Skip this one** and let Hazel decide it. The card also carries a pill labeled **Make reasonable assumption**, which does the same thing and doubles as the countdown to it.
+
+On that tab, an unanswered question falls back to a reasonable assumption after thirty seconds, which is what lets an unattended build finish. Hovering or focusing the card pauses that countdown, so reading a question does not run it out from under you.
+
+A build started in Ask Hazel never answers its own questions. The questions arrive in the chat itself, with no countdown and a plain **Skip**, because an advisor mid-conversation is there to answer. So if a chat build looks stalled, go back to that chat and look for the question card.
+
+Every assumption Hazel makes is labeled in the plan.
+
+### You do not have to watch it
+
+- **Leave the page.** A banner across every tab of the household says Hazel is drafting the plan and invites you to leave the page.
+- **Listen for the chime.** Hazel plays a short sound when the plan publishes, wherever you have moved to inside Hazel, and stays quiet while you are watching the build itself. The speaker icon on the Financial Planning tab mutes it if you would rather work in silence. You do need Hazel open in a tab to hear it.
+- **Come back to the Financial Planning tab.** That tab is where you pick the build back up, and where the finished plan lives.
+
+<Note>
+  While a build is running, the Financial Planning tab shows its progress in place of the **Draft financial plan** button, so you cannot start a second build for the same household by accident. Once the plan lands, ask for changes in the plan's chat, or press **Regenerate** in the tab's top bar to refresh the plan from the household's latest information. Either way the earlier version stays in the history.
+</Note>
+
+## The first five minutes with a new plan
+
+<Steps>
+  <Step title="Read the Plan orientation brief">
+    The info button at the top of the plan opens **Plan orientation**: a short read on what this plan concludes and why, written for the minute before a client meeting. Each version has its own brief, and where a version has none the button is simply absent, which is nothing to worry about.
+  </Step>
+  <Step title="Check which Client persona was used">
+    A Client persona is a client type your firm has set up, such as early saver, close to retirement, or already retired. The persona decides which sections a plan gets and which assumptions it starts from.
+
+    Hazel picks the closest fit for the household and records the choice in the **Applied settings** block in the plan's **Appendix**, on a row labeled **Persona**. Reading **None** there means Hazel did not settle on one of your personas and worked from your firm's base template alone. The Financial Planning page carries the same answer in its **Persona applied** column, where a household that matched nothing shows a dash.
+
+    If the persona is wrong for this family, say so in the plan's chat and ask for a new version. See [Client personas](/guides/financial-planning/settings/personas/overview).
+  </Step>
+  <Step title="Spot-check a few numbers">
+    Figures Hazel can source carry a dotted underline. Select one and a panel opens with where the figure came from, the assumptions behind it, and the arithmetic when there is arithmetic to show. A figure with nothing behind it renders as plain text and does not open anything, so do not read that as a fault.
+
+    Check the number the summary leads with, one account balance and one income figure. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+  </Step>
+  <Step title="Move a lever">
+    Find a lever, retirement age or how much the household saves, and move it. The plan works the numbers out again while you watch, which is exactly how you will use it in a client meeting. Not every dial behind a plan is a movable control: the ones Hazel cannot recompute in the browser render no control at all. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
+  </Step>
+  <Step title="Ask for one change">
+    Say what you would want differently in a client meeting. Reading the plan in chat, **Edit** at the top opens the conversation with Hazel about it, and its tooltip reads **Ask Hazel to change this plan**. Reading it on the household's **Financial Planning** tab there is no **Edit** button, and **Open chat** in the top bar goes to the same conversation. The reply comes back as a new version.
+
+    Edits you make by hand work differently. Prose you rewrite and assumptions you queue collect in a bar at the bottom of the plan, which reads something like "3 unsaved changes", and they become a version only when you press **Save**. Anything Hazel has to recompute waits for **Recalculate**. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+  </Step>
+</Steps>
+
+## Where to go next
+
+- [Anatomy of a plan](/guides/financial-planning/the-plan/anatomy-of-a-plan): a tour of the plan, section by section.
+- [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief): how to get a sharper first draft.
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): how the version ladder works, and when to regenerate.
+- [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering): getting the plan in front of the client.
+- [Planning settings](/guides/financial-planning/settings/overview): for firm owners shaping the house style.
+- [Troubleshooting and FAQ](/guides/financial-planning/troubleshooting-and-faq): what to do when something looks wrong.

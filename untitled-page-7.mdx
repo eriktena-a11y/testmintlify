@@ -1,0 +1,110 @@
+---
+title: "What it can and can't do"
+sidebarTitle: "What It Can & Can't Do"
+description: "What the Financial Planning Agent builds, what Hazel will not invent, what can still go wrong, and which calls stay with you."
+---
+
+Here is what the Financial Planning Agent builds, what Hazel will not invent, what can still go wrong, and which calls stay yours. Most of the boundaries below are deliberate. Knowing them tells you where your judgment is needed, and where Hazel stops and asks instead of deciding.
+
+## What Hazel does
+
+<CardGroup cols="2">
+  <Card title="Composes a full plan" icon="file-lines">
+    Out of the box: net worth and balance sheet, cash flow, emergency fund, debt paydown, goal funding, insurance, retirement, and probability of success. Eleven further topics, among them Investments, Roth conversion and Social Security, are yours to switch on in **Plan design**, which also sets the order.
+  </Card>
+
+  <Card title="Runs the analysis" icon="calculator">
+    Probability of success from a Monte Carlo simulation, a thousand market paths by default, with the range of outcomes behind it. Also which accounts to draw down first, Roth conversion schedules, when each earner claims Social Security, required minimum distributions, college funding targets, and equity compensation.
+  </Card>
+
+  <Card title="Reads your documents" icon="file-pdf">
+    Statements, tax returns, policy documents, estate documents, and meeting transcripts. Hazel pulls out the figures a plan needs. A scan or a photograph is read too, so there is no need to hunt down a copy whose text you can select.
+  </Card>
+
+  <Card title="Answers follow-ups in place" icon="comments">
+    Ask in the plan's chat: rewrite a section, add a tab, swap a chart, add a lever, put two choices side by side, tighten the language. What Hazel changes arrives as a new version, and the version before it stays readable.
+  </Card>
+</CardGroup>
+
+## What Hazel will not invent
+
+| Hazel will not | What happens instead |
+| --- | --- |
+| Make up a balance, an income, or a premium | Asks you when the number would move the plan, and records the assumption behind any figure that leans on it |
+| Assume a goal nobody in the household expressed | Builds on the goals the household's record supports, and asks about the rest |
+| Quietly swap in a market figure | Uses your firm's **Market assumptions**, and names the origin of the value on the figure's source card |
+| Treat a figure nobody has confirmed as settled | Labels the figure **Verified**, **Unverified** or **Modeled** on its source card |
+| Print a probability of success of 100 percent | Caps the displayed figure at the ceiling your firm sets, 99 percent until someone changes it, and says when the cap applied |
+
+<Note>
+  Refusing to invent is not the same as never being wrong. Hazel can misread an unusual statement layout, attach a figure to the wrong account, or write a sentence that claims more than the arithmetic behind it. Every figure that carries a source is a button with a dotted underline: select one to see where it came from and how it was worked out. Check the figures you will say out loud, and the sentences that make a recommendation.
+
+  **Hazel makes mistakes. Review her answers.**
+</Note>
+
+## What Hazel never does
+
+<Warning>
+  No instruction, persona, or request changes the four rules below.
+</Warning>
+
+- **Hazel does not place trades or move money.** A plan can recommend a change in allocation, or in which account holds what. Executing it is your job, in the systems where you execute.
+- **Tax and legal advice are.** Hazel models the consequences of a planning decision. The rates behind those projections are your firm's effective tax rates in **Market assumptions**, sourced from IRS brackets, and each rate's origin is named on the source card of any figure that used it. A tax position, a document, or a filing needs the appropriate professional.
+- **A plan does not reach a client on its own.** There is no client login and no share link. A plan gets to a household in one of two ways, and both are yours: you export the PDF and hand it over, or you sit with the plan on your screen and walk the household through it.
+- **Suitability is your call.** Whether a recommendation suits this person is a judgment about a person, made by a person.
+
+## Two rules firm are listed as examples, and can be unset
+
+Every firm starts with two never-do rules already switched on: "Never recommend a specific named security or ticker." and "Never propose a Roth conversion that pushes the client into the next IRMAA tier." IRMAA is the income threshold that raises a client's Medicare Part B and D premiums, so the second rule keeps a conversion from quietly costing the client more for Medicare.
+
+These are two example firm rules, not product limits. A firm owner can remove either one, or add rules of your own, on the base template's **Guardrails** list in **Settings**, then **Planning**. A persona can add rules on top of the firm's; it can never take one away. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
+
+## Where you sign off
+
+Nothing stops you exporting a plan the minute Hazel publishes it, which is why the last read is yours. Each recommendation carries **Approve** and **Ignore**, and those decisions stage on the plan until you press **Save**. Export is switched off while changes are staged, so save or discard before you export.
+
+<AccordionGroup>
+  <Accordion title="The questions the plan puts to you">
+    Hazel asks instead of guessing when a judgment call would move the numbers and nothing on record settles it. Some of those questions arrive during the build, at the step where Hazel pauses to ask before drafting. A plan can also carry a short **Questions** list, each with Hazel's answer already filled in, the basis for that answer, and a line saying what the answer does to the figures.
+  </Accordion>
+
+  <Accordion title="The persona Hazel matched">
+    Hazel matches the household to the closest **Client persona**, using the persona's description, the household's stated goals, and an age band as a hint rather than a rule. That match shapes what the plan contains and several of its assumptions.
+
+    The plan names the persona it was built from in the **Applied settings** block in the **Appendix**, and reads None when nothing fitted and Hazel built on the base template alone. If the match is wrong, tell Hazel in chat which persona this household belongs to and ask for a rebuild. To stop it recurring, sharpen that persona's description, since the description is the main thing Hazel matches on. See [Client personas](/guides/financial-planning/settings/personas/overview).
+  </Accordion>
+
+  <Accordion title="Any figure you would say out loud">
+    Select the figure and **Provenance and calculations** opens: the sources behind it with a confidence label on each, the methodology that produced it, and the assumptions it used. A figure with no source renders as plain text and does not open, so a number you cannot click has nothing recorded behind it.
+
+    If an assumption there is not the one you want for this household, use **Edit**, then **Queue change**, and commit it from the bar at the bottom of the plan with **Recalculate**. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+  </Accordion>
+
+  <Accordion title="Your firm's client disclaimer">
+    The **Client disclaimer** in **Settings**, then **Planning**, is firm-wide. It renders exactly as written in the footer of every plan, on your own screen as well as in the exported PDF.
+
+    It ships empty. The card previews a plain Hazel default you can adopt or replace, and nothing appears in a client-facing plan until someone at your firm saves text there. 
+  </Accordion>
+
+  <Accordion title="Everything client-facing">
+    Prose, framing, and emphasis are yours to edit. Hover a paragraph and a pencil appears. Cmd or Ctrl plus Enter commits your wording, Escape discards it.
+
+    A figure sitting inside a sentence is locked to the plan and cannot be typed over, so rewrite the sentence around it and, if the number itself is wrong, change the assumption or the underlying data. Put the plan in your own words before a client reads it. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+  </Accordion>
+</AccordionGroup>
+
+## Known edges
+
+- **A household with no documents and no meetings has nothing to plan from.** A CRM or custodian connection alone does not put financial facts into the profile. Balances and incomes arrive through a document, a meeting, an email or a note. Upload statements and tax returns, or use **Prepare data** to ask the client for them, then build. See [Documents and CRM data](/guides/financial-planning/your-data/documents-and-crm).
+- **A household can hold more than one plan, and the tab shows the newest.** The household's **Financial Planning** tab opens the most recently published plan, the **Financial Planning** page lists them all, and each plan keeps its own version history. To weigh two courses of action, ask for the comparison inside the plan you already have rather than starting a second one.
+- **Only some levers move.** A lever that renders as a control recalculates the figures that depend on it, in your browser, straight away. It does not rewrite the words around it, and it does not save: moving a lever never becomes a version of the plan. For a change you want to keep, ask Hazel.
+- **Editing and rebuilding are different tools.** Editing prose changes the words and commits as a new version. **Regenerate**, in the household tab's top bar, asks Hazel to reread the household's data, reconcile the plan and publish a fresh version, keeping the analysis and your own wording where they still hold. Edit for polish, ask for substance.
+- **A plan belongs to whoever built it.** A colleague with full access to the household still cannot open a plan you built, because a plan travels with the chat that owns it. Shared financial-plan chats are coming soon. Until then, the person who built a plan is the person who exports and presents it. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
+- **A missing section has two possible causes.** Either your firm's **Plan design** does not include that module, in which case Hazel folds the topic into a broader section rather than dropping it, or the household's facts did not support it here. Check Plan design for the first, and ask Hazel in chat for the second.
+
+## Where to go next
+
+- [Planning philosophy](/guides/financial-planning/overview/planning-philosophy): why Hazel asks instead of assuming.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how to check a figure in seconds.
+- [Guardrails](/guides/financial-planning/assumptions/guardrails): how to add your firm's own never-do rules.
+- [Access and availability](/guides/financial-planning/overview/access-and-availability): who can open a plan, and who cannot.

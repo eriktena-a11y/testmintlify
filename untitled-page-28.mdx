@@ -1,0 +1,102 @@
+---
+title: "Inheritance and re-syncing"
+sidebarTitle: "Inheritance & Re-Syncing"
+description: "A Client persona's plan design either follows your base template live or is a copy of its own. How to tell which state a persona is in, what the first change costs, and how to put a persona back on the base."
+---
+
+A Client persona's plan design has one of two relationships to your firm's base template. It either follows the base live, or it is a copy of its own that base changes no longer reach. Which one it is decides whether the work you put into the base template ever shows up in that persona's plans.
+
+## Follows base, or Customized
+
+<CardGroup cols="2">
+  <Card title="Follows base" icon="link">
+    The persona has no design of its own, so it uses your firm's current base design, live. Improve the base and this persona's plans improve with it. On the persona's **Plan design** card the blueprint is drawn faded, a **Follows base** badge sits beside the heading, and the line under the strictness control reads "This persona follows the base template".
+  </Card>
+
+  <Card title="Customized" icon="link-slash">
+    The persona has a design of its own, and that design replaces the base for this persona. The line under the strictness control reads "Customized", and a **Re-sync from base** button appears below it. Changes you make to the base template do not reach this persona.
+  </Card>
+</CardGroup>
+
+## Where your firm starts
+
+Both states are real, but on day one every persona you have is in the second one. The three personas your firm arrives with each ship with a plan design of their own, so all three read **Customized** before you touch anything, and none of them picks up a base-template change.
+
+The left nav of **Settings → Planning** says so too. Under **Plan templates**, the subtitle beneath **Base template** reads "No persona follows it right now" while nothing follows it, and the base pane's **Used by** card is hidden entirely.
+
+A persona follows the base when you create it with **Starting template: Base template**, or when you re-sync one of the three.
+
+<Note>
+  Base-template work is still worth doing while your personas are customized. A plan for a household that matched no persona is built on the base design, and the base is what every persona you create from **Base template** starts on.
+</Note>
+
+## What gives a persona its own design
+
+A persona takes its own copy on the **first** change to its design. Any of these does it:
+
+- Editing a block on the **Plan design** card: **When it appears**, **Instructions to Hazel**, or the condition for leaving the block out.
+- Changing **Strictness** on that card.
+- Saving in the layout designer, which you open with **Design layout**. Adding, removing, reordering, and the fields in the settings rail all count.
+
+On the **Plan design** card the change lands as soon as you make it, because Planning settings autosave. A notice appears the first time it happens, reading "This persona now has its own plan design." and "It no longer follows the firm's base design. Re-sync from base any time."
+
+In the layout designer nothing is committed until you save, and the first save asks first. A dialog explains that the persona currently follows the firm's base template and that saving gives it a design of its own, with **Keep editing** and **Save design** as the two choices. The designer's header chip reads **Follows base template** before that save and **Customized from base** after it.
+
+<Note>
+  Giving a persona its own design is normal, and it is how a persona comes to differ from the base at all. Just keep track of which of your personas have done it, because a customized persona stops receiving base improvements.
+</Note>
+
+## What does not follow the base
+
+**Hazel instructions.** A persona's instruction list is its own from the moment the persona exists, not a live link to your base list. Creating a persona from **Base template** copies your base instructions across once, and later edits to the base list do not follow. When Hazel matches a household to a persona, Hazel works from that persona's instructions and sets the base list aside for that plan, so a house instruction you rely on has to appear on each persona as well.
+
+**Assumptions.** The planning figures live on two firm-wide screens, **Solver assumptions** and **Market assumptions**, and personas inherit them value by value. A persona carries only the values that differ for it, so changing a firm figure reaches every persona that does not set that particular value. Assumptions therefore do not go stale the way a design does. The never-do rules on your base template apply to every plan too, and nothing on a persona loosens them.
+
+## Re-syncing
+
+**Re-sync from base** sits on the persona's **Plan design** card, under the strictness control, and only while the persona reads **Customized**. It discards the persona's own design, puts the persona back on your current base design, and keeps it there until the next change. A confirmation dialog headed "Re-sync from base?" comes first.
+
+It discards, it does not merge. Anything the persona's design carried that your base does not have goes with it. Instructions and assumption values are untouched, since neither of those lives in the design.
+
+<Warning>
+  Move anything you want to keep into the base template before you re-sync, or write it down first. There is no undo for it.
+</Warning>
+
+### When to re-sync
+
+- You improved the base and want this persona on the new shape.
+- The persona's design has become a pile of one-off edits rather than a shape you chose.
+- The persona took its own design by accident, from an edit somebody made to see what would happen.
+
+### When not to re-sync
+
+- The persona's design is doing real work.
+- You want one thing from the base and nothing else. Make that change on the persona directly.
+
+## If a base change did not reach your plans
+
+<Steps>
+  <Step title="Which persona the plan used">
+    Open the plan's **Appendix** and read the **Applied settings** block. It names the persona the plan was built from, or shows none when the household matched nothing.
+  </Step>
+  <Step title="That persona's Plan design card">
+    If it reads **Customized**, your base change never reached it. Re-sync it, or make the same change on the persona.
+  </Step>
+  <Step title="Whether the plan predates the change">
+    Settings changes shape the plans Hazel builds from then on. A plan you have already delivered keeps the design it was built with until you rebuild it with **Regenerate**, in the top bar of the household's **Financial Planning** tab.
+  </Step>
+</Steps>
+
+## Habits that keep this simple
+
+- **Settle the base first.** A persona that takes its own design takes a copy of the base as it stands that day. Diverge from a base you are still working out and each persona ends up carrying a half-finished shape.
+- **Ask whether the change belongs on the base.** If every persona would want it, put it on the base and leave any persona that follows the base to pick it up.
+- **Keep the differences few.** A persona whose design differs in three deliberate ways is easy to maintain. One rebuilt from scratch is a second base template you now own.
+- **Re-read the personas after a base change.** Open each one's **Plan design** card. **Follows base** picks the change up, **Customized** does not, and you decide whether each should stay that way.
+
+## Where to go next
+
+- [Base template](/guides/financial-planning/settings/base-template): the design a persona inherits.
+- [Default templates](/guides/financial-planning/settings/personas/default-templates): the three personas your firm already has, and what each carries.
+- [Plan design](/guides/financial-planning/plan-design/overview): where a design is read and edited.
+- [Strictness](/guides/financial-planning/settings/personas/strictness): Exact, Guided and Flexible, and why changing it gives a following persona its own design.

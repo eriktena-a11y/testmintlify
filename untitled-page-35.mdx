@@ -1,0 +1,144 @@
+---
+title: "Solver assumptions"
+sidebarTitle: "Solver Assumptions"
+description: "The planning inputs behind every figure in a plan: probability and simulation settings, fees and taxes, and decumulation strategy. What each one drives, and which of them a persona or a single plan can change."
+---
+
+**Solver assumptions** are the numbers and written policies the planning math runs on. Every success figure, outcome range, and distribution schedule in your firm's plans comes out of them.
+
+They live in **Settings → Planning → Solver assumptions**, a firm owner's screen. There is no Save button. Edits save themselves when you move off a field, and a small indicator reads "Saving…" and then "Saved". If you own the firm, the **Planning settings** gear in the top bar of a plan you are reading in its chat jumps straight to this screen.
+
+Three cards, in this order: **Probability & simulation**, **Fees & taxes**, and **Decumulation strategy**. Beside each field name sits a small tag reading either **Overridable per persona** or **Set Firm-wide**. That tag is the field's scope, and it is repeated in the tables below.
+
+## Probability & simulation
+
+| Setting | What it does | Scope tag |
+| --- | --- | --- |
+| **Success threshold** | The probability of success a plan solves toward, and the bar it is judged against. Below it, the plan is flagged | Overridable per persona |
+| **Monte Carlo simulations** | How many market paths each projection models | Set Firm-wide |
+
+Success threshold is the most consequential number on the screen. Raise it and plans turn more conservative: more saving, later retirement dates, lower sustainable spending. Lower it and the same household reads as on track sooner. Firms serving accumulators often sit below firms serving retirees.
+
+The threshold is a bar the math must clear. It is not a limit on what a plan is allowed to display, which is a separate firm setting listed in the [Assumptions reference](/guides/financial-planning/assumptions/reference).
+
+Simulation count is the same for every plan your firm builds. More trials are more precise and slower to compute. The shipped value is 1,000.
+
+## Fees & taxes
+
+| Setting | What it does | Scope tag |
+| --- | --- | --- |
+| **Advisory fee** | Annual fee drag applied to assets under management in every projection | Set Firm-wide |
+| **Terminal heir tax rate** | The rate heirs are assumed to pay on inherited pre-tax balances, used to value the after-tax estate | Set Firm-wide |
+
+Neither varies below the firm. A fee that changed household by household would make your plans incomparable, and a plan is not the place to model a fee schedule.
+
+## Decumulation strategy
+
+Four fields, three of them free text. This card is where your firm's drawdown policy gets written down in plain language, and Hazel follows what you write rather than a rule of its own. Every field here is overridable per persona.
+
+<AccordionGroup>
+  <Accordion title="Default reserve length">
+    A slider, in years: how much retirement spending the plan carves into safe assets so a client never has to sell equities into a down market. It ships at three years, and it typically runs longer for households already drawing income than for accumulators.
+  </Accordion>
+
+  <Accordion title="Reserve refill policy">
+    No heading marks this one. It is the text box sitting directly under the reserve-length slider, and it says what the reserve is held in and when it gets topped back up. What ships:
+
+    "Hold the reserve in cash, T-bills, and short-duration bonds. Refill it from equities in years the portfolio finished up."
+
+    Rewrite it in your firm's terms. Hazel follows the refill rule as you state it.
+  </Accordion>
+
+  <Accordion title="Retirement withdrawal guardrails">
+    Your spending policy in retirement, written as rules that adjust spending as markets move: when spending gets trimmed, and when it can rise. What ships:
+
+    "Use Guyton-Klinger guardrails: trim spending 10% when the withdrawal rate drifts 20% above its initial target, and raise it 10% when it falls 20% below. Skip the inflation raise in any year the portfolio finished down."
+
+    Three suggestion chips sit under the box: **Savings rate**, **Debt-free date**, and **Simple assumptions**. Each one appends a ready-made sentence to whatever the box already holds, so if you want a chip's wording on its own, clear the box first. Otherwise you can end up with two policies stacked in one field.
+
+    This is a spending policy, not an absolute rule. Rules Hazel must never break belong in [Guardrails](/guides/financial-planning/assumptions/guardrails).
+  </Accordion>
+
+  <Accordion title="Default Roth conversion strategy">
+    Six choices, one at a time, setting the default ceiling for annual conversions. The chips read exactly:
+
+    - **Stop under first IRMAA tier**, the first Medicare premium tier
+    - **Cap at ACA-subsidy MAGI**, the income level where the marketplace subsidy phases out
+    - **Drive off the heir's bracket**
+    - **Fill to top of 24% bracket**, fixed at 24 percent rather than a bracket you pick
+    - **Low-income years only**
+    - **No default**
+
+    The shipped choice is **Stop under first IRMAA tier**, with this elaboration in the box below it: "Convert each year up to just under the first IRMAA tier, so the client avoids a higher Medicare Part B/D premium."
+
+    The elaboration box takes a full sentence, and Hazel honors it over the chip's usual behavior where the two would disagree. So a house rule like filling the 22 percent bracket for ages 60 to 72 goes there, alongside whichever chip is closest.
+  </Accordion>
+</AccordionGroup>
+
+## The three layers
+
+Every solver value a plan uses comes from one of three layers.
+
+<Steps>
+  <Step title="Firm">
+    Everything on this screen. The starting point for every plan your firm builds.
+  </Step>
+  <Step title="Persona">
+    The matched Client persona's own values, for the fields tagged **Overridable per persona**. A persona carries only what it changes and inherits the rest, so it does not go stale when you edit a firm number.
+
+    The three personas Hazel installs for you already use this. **HENRY** sets the success threshold to 85 percent, under the shipped firm figure of 90. **Pre-Retiree** holds a five-year reserve and defaults to **Fill to top of 24% bracket**. **Retiree / Decumulator** holds a seven-year reserve and carries its own withdrawal wording. A new persona created as a copy of an existing one brings those values with it; one started from the **Base template** brings none and inherits everything.
+  </Step>
+  <Step title="This plan">
+    One household's plan, changed in that plan's **Plan settings** panel and committed with **Apply and replan**. A short message lands in the chat when you apply, so the replan shows up in the transcript instead of happening silently.
+  </Step>
+</Steps>
+
+Three fields never leave the firm: the advisory fee, the terminal heir tax rate, and the simulation count. Rather than show them grayed out, the per-plan panel leaves them out entirely.
+
+## Changing one plan
+
+<Steps>
+  <Step title="Open Plan settings">
+    Open the plan in its chat, and the sliders icon labeled **Plan settings** in the top bar opens a panel on the right. On a household's **Financial Planning** tab there is no sliders icon, so press **Open chat** first.
+  </Step>
+  <Step title="Read where each value came from">
+    Every row carries a chip: **Firm**, **Persona** followed by the persona's name, or **This plan**. **Withdrawal guardrails** appears here read-only, so you can see which layer supplied the wording without changing it.
+  </Step>
+  <Step title="Change what you need">
+    Three solver fields are adjustable per plan: **Success threshold**, **Reserve length**, and **Roth conversion strategy**. Underneath them, a **Market scenario** row names the assumption set this plan draws from, and any market row your firm has hand-edited can be adjusted here too. A value outside the allowed range is refused with the range named, rather than quietly rounded into bounds.
+  </Step>
+  <Step title="Apply and replan">
+    Nothing changes until you press **Apply and replan**, which the panel's footer says outright. A small reset arrow on a changed row returns it to the inherited value, and **Discard changes** drops everything staged. The button stays unavailable until something is actually changed, and while Hazel is mid-turn in that chat.
+  </Step>
+</Steps>
+
+<Note>
+  This is why a plan can run on a different threshold than your firm standard. Open the plan's **Appendix**, find the **Applied settings** block, and read the rows under **Solver assumptions**: each value is tagged **Firm**, **Persona**, or **This plan**. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+</Note>
+
+## Setting these well
+
+<Steps>
+  <Step title="Write down what your firm already does">
+    Most firms have a house view on reserve length, spending policy, and conversion strategy. This screen is where it stops living in people's heads.
+  </Step>
+  <Step title="Set the firm defaults to your most common client">
+    Not the average of all your clients. The most common one.
+  </Step>
+  <Step title="Put real numbers in the free-text boxes">
+    Write those three fields the way you would explain the policy out loud, with the figures in the sentence. The shipped defaults are a good model for the level of detail.
+  </Step>
+  <Step title="Handle the one-off household in its own plan">
+    When a single household needs a different threshold or a longer reserve, change it in that plan's **Plan settings** rather than moving the firm default for everyone.
+  </Step>
+  <Step title="Change one setting and rebuild a plan you know">
+    Adjust a single value, rebuild a plan whose numbers you already have in your head, and read what moved.
+  </Step>
+</Steps>
+
+## Where to go next
+
+- [Market assumptions](/guides/financial-planning/assumptions/market-assumptions): returns, volatility, inflation, and tax rates.
+- [Guardrails](/guides/financial-planning/assumptions/guardrails): the rules nothing overrides.
+- [Assumptions reference](/guides/financial-planning/assumptions/reference): every shipped default in one table.
+- [Client personas](/guides/financial-planning/settings/personas/overview): how a household gets matched to a persona.

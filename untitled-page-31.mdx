@@ -1,0 +1,129 @@
+---
+title: "Sections and tabs"
+sidebarTitle: "Sections & Tabs"
+description: "The spine of a plan: top-level sections, the tabs inside them, and how to add, order and name each one. One level of nesting, and what that means in practice."
+---
+
+A layout has two structural levels.
+
+| Level | Becomes | Example |
+| --- | --- | --- |
+| **Section** | An entry in the plan's left navigation | Summary, Today, Goals, Getting there, Decisions |
+| **Tab** | One tab inside a section | Cash flow, Retirement, Insurance |
+
+Blocks, meaning the individual paragraphs, charts, tables and figure rows a plan is made of, sit in either one. Sections never nest deeper than this.
+
+Two blocks are the exception, because they hold other blocks: **Tab group** and **Priority list**. On the canvas their children sit nested inside them, and a **Tab group** draws a real row of chips you can click between. Everything else is a single piece. The outline in the left rail lists sections and tabs, never blocks, so the canvas is where you look inside a container.
+
+## Why one level
+
+A plan a client can navigate has a handful of destinations, each with at most one level of grouping inside it. When a design seems to want a third level, what it usually wants is another section.
+
+## The default spine
+
+Out of the box, a plan runs five sections in this order.
+
+<Steps>
+  <Step title="Summary">
+    The opening narrative, the chance-of-success gauge, and four headline figures. What a client reads first, and often all they read.
+  </Step>
+  <Step title="Today">
+    Net worth and the balance sheet, with account-level detail underneath. Where the household stands.
+  </Step>
+  <Step title="Goals">
+    One card per goal, each with its funding status and progress toward the target. What the household is working toward.
+  </Step>
+  <Step title="Getting there">
+    The working topics, shown as a row of tabs: **Cash flow**, **Retirement** and **Insurance** to begin with. **Investments** and **Estate plan** are [modules](/guides/financial-planning/plan-design/modules) you add when you want them. Most of a plan lives here.
+  </Step>
+  <Step title="Decisions">
+    What Hazel would do first, and the log of what was decided. What happens next.
+  </Step>
+</Steps>
+
+That order carries an argument: here is the picture, here is where you stand, here is what you want, here is how, here is what to do. Reorder it if your firm tells it differently.
+
+**Getting there** carries no blocks of its own by default, so Hazel writes whatever sits above the tab bar for each household. A section can hold both: its own blocks lead, then the tabs.
+
+Your firm already has a worked-out variation to look at. The **Retiree / Decumulator** persona ships its own design, where Today is renamed "Where you stand today", **Getting there** opens on a **Retirement income** tab, an **Investments** tab is present, and a set of levers sits in the section body above the tabs.
+
+## Adding a section or a tab
+
+Structure is added in the layout editor, which opens from **Design layout** on the **Plan layout** card. Selecting a chip on the card itself changes how that piece is written, not where it sits.
+
+**A top-level section.** You build this one by hand. In the editor, open the **Modules** tab in the left rail, expand **Building blocks** at the foot of the list (it starts closed), and drag **Section** out of the **Structure** group onto the canvas. It arrives titled "New section", set to **Always**.
+
+No module makes a top-level section. The five section-shaped modules, Cash flow, Investments, Retirement, Insurance and Estate plan, each add a tab to **Getting there** instead, which is why their cards wear a **Tab** badge.
+
+**A tab.** Drag **Tab** from the same shelf into the section that should hold it, or add one of those five modules and let it bring its own tab along with the blocks that belong in it. A tab that arrives with a module starts on **When it applies**; one you drag in starts on **Always**.
+
+An empty tab is a legitimate design. Give it a heading, write **Instructions to Hazel**, and the canvas says what will happen: left empty, Hazel composes that tab from its instructions.
+
+<Tip>
+  Every card for a module you have not added yet names its destination before you click, in words: "Adds the Investments tab to Getting there", "Adds to the Retirement tab". Hazel's own modules ignore whatever you have selected and go to their own home, so read the line rather than picking a spot first. Modules your firm has written do follow the selection, and their line updates as you select.
+</Tip>
+
+## Ordering
+
+Reorder from the **Outline** tab in the left rail. Hover a row and two arrows appear, moving it up or down among its siblings: a section among sections, a tab among the tabs of its section. The canvas follows at once, and undo covers it.
+
+Moving something to a different parent, say a block out of the Retirement tab and into a section of your own, is a drag on the canvas.
+
+## Naming
+
+Section and tab names are client-facing, so name them the way you would say them out loud. "Cash flow" beats "Cash flow and budgeting analysis."
+
+Select a section and the **Editor** panel on the right offers:
+
+- **Heading.** The words above the section's content.
+- **Subtitle.** One optional line under the heading.
+- **Nav label**, under **Advanced.** What the plan's left navigation says when you want it shorter than the heading. This is why Hazel's own first section reads "Executive summary" above its content and **Summary** in the navigation.
+
+A tab has a **Heading** too, which names the tab and heads its content. If the right name genuinely runs long, keep it and set a **Short tab name** under **Advanced**: the full heading leads the content, and the short one rides the tab.
+
+## Headings inside a section
+
+You name the section. Hazel writes the headings on the blocks inside it, unless you pin them, and pinning is done one block at a time. See [Block settings](/guides/financial-planning/plan-design/block-settings).
+
+<Tip>
+  Pin headings in the sections your firm has standardized and leave the rest open. A pinned heading that no longer matches the content under it reads worse than no pinned heading at all.
+</Tip>
+
+## A worked example
+
+Say your firm always presents tax planning as its own destination rather than a tab.
+
+<Steps>
+  <Step title="Add the section">
+    Drag **Section** from **Building blocks** onto the canvas, then move it into place after **Getting there** and before **Decisions**, so it reads as analysis rather than an afterthought.
+  </Step>
+  <Step title="Name it for clients">
+    Set its **Heading** to "Tax planning".
+  </Step>
+  <Step title="Add the modules that belong to it">
+    **Roth conversion**, plus **RMD calculation** for the required-distribution schedule if you serve retirees. Each adds one block, and each card says where before you click: "Adds to the Retirement tab". That is where it lands no matter what you have selected. Add them there, open the Retirement tab on the canvas, then drag each block across into your new section. Hazel scrolls to whatever you just added, so you can always see where it started.
+  </Step>
+  <Step title="Give the section a lead">
+    Put a **Narrative** block first, ahead of the schedules. A section that opens with a table asks the client to interpret before anyone has told them what they are looking at.
+  </Step>
+  <Step title="Decide when it shows up">
+    **When it shows up** sits in the Editor panel. Pick **When it applies** if some of your households have nothing to say here, or leave it on **Always** if it belongs in every deliverable. On **Always** the **Leave out when** field disappears, since a section that always appears has no exception to name. Move it to **When it applies** and the field comes back.
+  </Step>
+</Steps>
+
+## If a section you designed is missing from a plan
+
+Work down this list before assuming something broke.
+
+- **The design was never saved.** The editor's save button reads **Save changes** while work is unsaved, and **Saved** when there is none.
+- **The plan predates the change.** A design shapes the plans built from now on. An existing plan keeps its structure until someone rebuilds it.
+- **The section is set to When it applies**, and this household's facts did not call for it. Switch it to **Always** if it belongs everywhere.
+- **Strictness is doing what you asked.** On **Flexible**, the setting a new firm starts on, your design is a starting point and Hazel composes each plan freely. **Guided** follows the design and adapts where a household's facts call for it. **Exact** tells Hazel to build the design as you drew it, adding and leaving out nothing. See [Strictness](/guides/financial-planning/settings/personas/strictness).
+- **You edited a different design.** A plan is built from the base template, or from the persona Hazel matched the household to, and each carries a layout of its own. See [Inheritance](/guides/financial-planning/settings/personas/inheritance).
+
+## Where to go next
+
+- [Modules](/guides/financial-planning/plan-design/modules): what to put in a section.
+- [Block settings](/guides/financial-planning/plan-design/block-settings): headings, instructions, and when a block shows up.
+- [Using the layout editor](/guides/financial-planning/plan-design/using-the-editor): the rest of the mechanics.
+- [Module reference](/guides/financial-planning/plan-design/module-reference): all nineteen modules, and where each one lands.

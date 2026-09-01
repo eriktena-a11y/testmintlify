@@ -1,0 +1,144 @@
+---
+title: "Changing a plan with chat"
+sidebarTitle: "Changing a Plan with Chat"
+description: "Every plan has a conversation behind it. Where to find it, what to ask for, how specific to be, what Hazel pushes back on, and what comes back."
+---
+
+Every plan Hazel builds has a conversation behind it, and that conversation is where changes happen. Ask for a change in plain English and the plan comes back changed, as a new version, with the earlier one still readable.
+
+## Where to ask
+
+- **From the plan in chat.** Press **Edit** in the plan's top bar. The conversation opens over the plan, so you can read one and type in the other. The button's tooltip says it plainly: ask Hazel to change this plan.
+- **From the household.** On the household's **Financial Planning** tab, press **Open chat** in the plan's top bar. That takes you to the same conversation.
+
+**Edit** is absent while you are reading an older version, because past versions cannot be changed. If you cannot find it, look at the top bar for a note reading "Viewing v2 of 4", marked read-only, and press **Back to latest**.
+
+<Warning>
+  Save your own edits before you ask. If Hazel publishes a new version while you still have hand edits staged in the bar at the bottom of the plan, that bar switches to a warning saying Hazel published a newer version while you were editing, and your only way out is **Discard my changes**. Press **Save** first and there is nothing to lose.
+</Warning>
+
+## The five kinds of request
+
+<AccordionGroup>
+  <Accordion title="Add or change a visual">
+    ```text
+    Show the allocation as a mix comparison, current versus target.
+    ```
+
+    ```text
+    Turn the conversion schedule into a table, with a column for the bracket it fills.
+    ```
+
+    Naming the argument you want to make works better than naming the chart. See [How Hazel visualizes data](/guides/financial-planning/the-plan/how-hazel-visualizes-data).
+  </Accordion>
+
+  <Accordion title="Add or change a lever">
+    ```text
+    Add a retirement-age lever from 60 to 70 in one-year steps, starting at 62.
+    ```
+
+    Give the range, the step and the starting value and you get the dial you described. Most dials recompute the figures on screen as you move them, without producing a version. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
+  </Accordion>
+
+  <Accordion title="Add, remove, or reorder content">
+    ```text
+    Add a healthcare tab covering the gap between 62 and Medicare.
+    ```
+
+    ```text
+    Drop the education section, both kids are finished.
+    ```
+
+    ```text
+    Move the income sequencing ahead of the balance sheet.
+    ```
+  </Accordion>
+
+  <Accordion title="Change the framing or the voice">
+    ```text
+    Rewrite the summary for a client who only wants the headline and the two decisions.
+    ```
+
+    ```text
+    Lead the retirement tab with the answer, then the reasoning.
+    ```
+
+    ```text
+    Tighten the whole plan. It reads long.
+    ```
+  </Accordion>
+
+  <Accordion title="Deepen the analysis">
+    ```text
+    Model Social Security at 67 and at 70 for both of them, and show the lifetime difference.
+    ```
+
+    ```text
+    Stress-test the plan against two down years right at retirement.
+    ```
+
+    ```text
+    Compare the pension against the lump sum, side by side, with a verdict.
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## How specific to be
+
+Specific enough that there is one obvious reading. Compare:
+
+| Vague | Specific |
+| --- | --- |
+| "Add a chart to the retirement tab" | "Add the range of outcomes to the retirement tab, so they see the spread rather than one line" |
+| "Fix the summary" | "Cut the summary to three paragraphs and lead with whether they can retire at 62" |
+| "Show the tax stuff" | "Add a Roth conversion schedule through age 72, with the bracket each year fills" |
+| "Make it shorter" | "Cut the Today section to net worth and the accounts table" |
+
+One extra clause now saves a second round of revision.
+
+## What Hazel pushes back on
+
+Some requests come back with a reason instead of a change. The four you are most likely to meet:
+
+- **A visual that cannot carry the claim.** Ask for a donut chart of income over the next twenty years and Hazel explains that a donut shows shares at a single moment, then offers stacked columns instead.
+- **A number Hazel cannot evidence.** With no business valuation on file, a request for the value of the business comes back as a request for the document. Hazel shows a figure as not provided instead of picking one.
+- **Something a firm guardrail forbids.** Guardrails are your firm's never-do list, such as never naming a specific security. Hazel treats them as hard rules and names the one your request runs into. They are rules Hazel follows rather than a mechanical block, so if you ever see a plan cross one, tell whoever manages your firm's planning settings. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
+- **Structure your firm has locked.** If your firm set its plan design to Exact, Hazel cannot add or leave out sections and blocks, so a request to drop a section is declined and pointed back at the design. Guided and Flexible leave room to adapt. See [Strictness](/guides/financial-planning/settings/personas/strictness).
+
+Read the reason before rephrasing. It usually names the alternative worth asking for.
+
+## What comes back
+
+A request Hazel accepts ends with the plan republished, so the change arrives as a new version. Once a plan has more than one version, the version reading in the top bar grows arrows and you can step back through the earlier ones. Your own unsaved pencil edits are counted separately, next to that reading, and do not move the version number until you save.
+
+Rewording, reordering and most presentation changes come back quickly. A change that moves the numbers has to run the projections again, which takes longer. You do not have to sit and watch: while a recalculation runs, a banner on the household page says Hazel is recalculating and that the plan updates when it finishes.
+
+Hazel works on one plan at a time. While a change is running, **Regenerate** on the household tab reads "Plan update in progress" and the tooltip says Hazel is already working in this plan chat. Let the running change land before asking for the next.
+
+<Note>
+  Several small requests in one message are fine, and often better than one at a time. Hazel usually composes them and comes back with a single version rather than four, so group related requests.
+</Note>
+
+## Which tool for which change
+
+| You want | Where to do it |
+| --- | --- |
+| Different wording on the summary's opening paragraph, a highlight card, a goal card or a recommendation | The pencil that appears when you hover that text, then **Save**. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly) |
+| Anything else about the writing, the structure, the visuals or the analysis | Ask Hazel in chat |
+| A what-if while you are sitting with a client | Move a [lever](/guides/financial-planning/the-plan/levers-and-scenarios), where the plan offers one |
+| A different assumption for this household only | **Plan settings** in the plan's top bar, then **Apply and replan** |
+| A rebuild after new documents or a meeting | **Regenerate**, on the household's Financial Planning tab. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating) |
+| The same change on every plan your firm builds | Settings, then Planning: the [base template](/guides/financial-planning/settings/base-template), a persona's [instructions](/guides/financial-planning/settings/personas/instructions), or the [plan design](/guides/financial-planning/plan-design/overview) |
+
+Most prose in a plan is Hazel's to write, so a wording change outside that first row is a chat request, not a pencil. And if you are asking for the same change on every plan, that belongs in settings instead of chat.
+
+**Plan settings** is the sliders icon in the top bar of a plan you opened from its chat. It lists the settings this plan was built on, each labeled with the layer that set it, and lets you change the ones a plan is allowed to change. Press **Apply and replan** and Hazel reruns the plan on the new number. A few fields stay firm-wide and read as set in firm settings, not adjustable per plan. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
+
+You can also change an assumption from the figure it affects. Select the figure, open the **Assumptions** section of **Provenance and calculations**, press **Edit**, then **Queue change**. The change waits in the bar at the bottom of the plan until you press **Recalculate**.
+
+## Where to go next
+
+- [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly): the pencil path, and which passages it reaches.
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): how the version ladder works and when to rebuild instead.
+- [Prompt library: Financial Planning](/resources/prompt-library/financial-planning): requests you can copy.
+- [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief): saying it up front so you need fewer of these requests.

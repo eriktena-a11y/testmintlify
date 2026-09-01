@@ -1,0 +1,140 @@
+---
+title: "Anatomy of a plan"
+sidebarTitle: "Anatomy of a Plan"
+description: "A tour of the plan surface: the navigation rail, the five default sections and their tabs, the top bar on both surfaces, the Appendix, the plan settings panel, the staging bar, and feedback."
+---
+
+A finished plan is one long document. A navigation rail runs down the left, a row of controls sits across the top, and a bar appears at the bottom once you have changed something. Here is each part and what it does.
+
+## The navigation rail
+
+Above the section list, the rail carries the plan's name, the household with its members, and the date the plan was written. Below that sit the sections. Selecting one scrolls the document to it.
+
+Whichever section you are reading expands to show what is inside it. For **Getting there**, that means the household's individual priorities, then the remaining tabs.
+
+Last in the rail, set apart below the list, is **Appendix**. It swaps the document for the full detail behind the plan, and it gets its own explanation further down this page.
+
+## The five default sections
+
+| Section | What it holds |
+| --- | --- |
+| **Summary** | The narrative opening, four headline figures, and the success gauge: paired rings comparing the chance of success as things stand with the chance once the plan's recommendations are in place |
+| **Today** | Where the household stands now, as net worth, the balance sheet, and account-level detail |
+| **Goals** | What the money is for, as one card per goal with its funding status and its progress toward the target |
+| **Getting there** | The analysis itself, split across tabs |
+| **Decisions** | What Hazel would do first, and the log of what you approved or ignored |
+
+Your firm can change this shape in [Plan design](/guides/financial-planning/plan-design/overview), and each Client persona can carry a shape of its own, so a plan may not have all five sections. The rail always tells you what the plan in front of you actually holds.
+
+### Getting there and its tabs
+
+Most of the plan lives in this section. It normally leads with **Your priorities**: one card per priority Hazel ranked for this household. Select a card and its detail opens underneath, with what Hazel recommends, the figures behind it, and the dials that move it.
+
+The tabs after that come from the modules your firm has enabled. Out of the box you get **Cash flow**, **Retirement** and **Insurance**. **Investments** and **Estate plan** appear once your firm adds those modules. See [Modules](/guides/financial-planning/plan-design/modules).
+
+## The top bar
+
+On the left the bar shows the plan's title, which version you are reading, an **N unsaved** badge whenever you have staged work, and, while an older version is on screen, a read-only banner with **Back to latest**. The controls sit on the right.
+
+<CardGroup cols="2">
+  <Card title="Plan version" icon="clock-rotate-left">
+    Reads as "V3 (2 of 4)", with an arrow either side to step back and forward through the plan's history. An older version is read-only: editing, staging and recalculating all switch off until you press **Back to latest**. A plan with only one version shows a plain badge and no arrows. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating).
+  </Card>
+
+  <Card title="Plan orientation" icon="circle-info">
+    The info button opens a short generated brief: the household's situation and what the plan concludes, why the analysis weighs these trade-offs, where the goals stand, up to four recommendations with the figures behind them, and a closing **Start here** line naming what to settle with the client first. Written for the minute before a meeting.
+  </Card>
+
+  <Card title="Export PDF" icon="download">
+    Turns the version on screen into the client-ready PDF, older versions included. Grayed out while you have unsaved changes, with a tooltip telling you to save or discard them first. See [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering).
+  </Card>
+
+  <Card title="Edit" icon="comment">
+    Opens the conversation with Hazel about this plan. Its tooltip says as much: "Ask Hazel to change this plan". It does not switch on an editing mode, and there is no editing mode to switch on. See [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat).
+  </Card>
+
+  <Card title="Plan settings" icon="sliders">
+    The sliders icon opens this plan's own assumptions, with the few you can override for one household. Explained below.
+  </Card>
+
+  <Card title="Planning settings" icon="gear">
+    The gear beside it leaves the plan for your firm's planning settings, opened on Solver assumptions. Those are the defaults behind every plan, not this one, and the gear appears only if you own the firm, since that is who the settings belong to. See [Settings overview](/guides/financial-planning/settings/overview).
+  </Card>
+
+  <Card title="Feedback" icon="thumbs-up">
+    A thumbs-up and a thumbs-down on the plan itself. Explained below.
+  </Card>
+</CardGroup>
+
+<Note>
+  A plan opens in two places and the top bar is not identical. In **Ask Hazel** you get all of these. On a household's **Financial Planning** tab you get the version arrows, **Plan orientation**, **Export PDF**, **Regenerate** (which rebuilds the plan from the household's latest information), **Open chat**, and the control that mutes the chime Hazel plays when a build finishes. **Plan settings**, the Planning settings gear, the feedback thumbs and **Edit** are not on that tab. **Open chat** takes you to the same plan with the rest of the controls.
+</Note>
+
+## Inside the document
+
+**Blocks.** Every part of a section is a block: a narrative, a row of key numbers, a chart, a table, a lever panel, a recommendation. Which blocks appear, and in what order, comes from your firm's layout. See [How Hazel visualizes data](/guides/financial-planning/the-plan/how-hazel-visualizes-data).
+
+**Figures you can open.** A figure with a dotted underline has a source recorded behind it. Selecting it opens a panel showing where the number came from, how it was calculated, and the assumptions it rests on. Numbers without the underline are plain text with nothing recorded behind them, so not every figure opens. Where a figure has sources but no recorded arithmetic, the panel says so in place rather than leaving a gap. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+
+**Editing text in place.** Hover a piece of the plan's prose and a pencil appears at its top right. Click it, type, then stage the edit by clicking away or pressing Cmd or Ctrl plus Enter. Escape drops it instead. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+
+**Figures inside sentences.** A number woven into prose is locked, and its tooltip reads "Kept in sync with the plan". You can rewrite the sentence around it. To change the number, change the assumption behind it or the data underneath.
+
+**Levers.** Dials you can move in front of a client. Figures tied to a lever move as you drag it, so a what-if takes seconds. If the panel says it is preview only, those controls are not wired into the projections yet, so the figures will not move. Moving a dial changes nothing that is stored and creates no version: it is a view of the plan, not an edit to it.
+
+**Dragging goal cards.** The order of the goal cards changes nothing the plan calculates, so you can drag one and the new order stages as an edit for **Save** to commit. Where an order does feed the numbers, the grip beside the card is grayed out and its hover text says the change needs a round trip to Hazel, so ask for it in chat. A dial that needs Hazel to re-solve the plan is different again: no control renders for it at all. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
+
+**Recommendations.** Each one carries **Approve** and **Ignore**. Either records your decision on the card and in the Decisions log straight away, and stages it to be saved with the rest of your changes.
+
+**Questions Hazel asks you.** On a new plan you may meet a card with up to three assumptions Hazel had to make, each with a line saying what the answer changes. **Looks right** accepts the figure as it stands. Change it and the button becomes **Use this**, which queues a recalculation. Where Hazel had nothing to go on there is no figure to accept: the box reads **Unknown** and **Looks right** stays grayed out until you type an answer, which then commits as **Use this**.
+
+**The Appendix.** The last entry in the rail opens the plan's full detail on one page: an **Applied settings** table listing every planning setting this version was built with, its value, and whether the firm, the persona or this plan set it, then one card per figure with its sources, its arithmetic and its assumptions.
+
+**The disclaimer.** Your firm's client-facing footer, rendered at the bottom of the plan exactly as written and carried into the PDF. Until someone at your firm writes one, nothing renders there.
+
+## The plan settings panel
+
+Open the panel from the sliders icon, on the plan's chat surface. It slides in from the right, sharing that edge with a figure's detail panel, so opening one closes the other. Its header names the household, the plan and the version you are adjusting.
+
+Every row shows a value and a chip for the layer that set it: **Firm**, the persona by name, or **This plan**. Reset an override you had saved and the chip reads **Inherited** until the next recalculation settles whether the persona or the firm value takes over. A market row skips that step and reads **Firm** at once, because a persona never carries market rows, so the firm's value is the only thing left to fall back to.
+
+Two groups appear. Under **Solver assumptions** you can change the success threshold, the reserve length and the Roth conversion strategy; the withdrawal guardrails are shown for reference, not for editing here. Under **Market assumptions** you see the scenario this plan's projections draw from, plus any assumption rows your firm has adjusted, most of which you can adjust again for this plan. A row the panel cannot offer per household is shown read-only and says it is set in firm settings. Each numeric field prints the range your firm allows underneath it, and a value outside that range is refused on the spot.
+
+**Apply and replan** commits your overrides. **Discard changes**, in the same footer, drops them. Apply waits while Hazel is mid-turn, for the same reason the chat composer does: one turn at a time.
+
+Committing sends a message into the plan's chat asking Hazel to apply the settings, so the recalculation is a visible turn rather than a silent effect. That message does not itemise what you changed. The **Applied settings** table in the Appendix of the new version is where the values are recorded.
+
+<Note>
+  Inputs that must not vary by household are absent from the panel rather than shown disabled: the advisory fee, the terminal heir tax rate, the simulation count, and wording-level settings such as the reserve refill policy. Those live at firm or persona level. See [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions).
+</Note>
+
+## The staging bar
+
+Once you have staged anything, a bar appears at the bottom of the plan. It counts two kinds of staged work on one line, for example "3 unsaved changes · 2 changes needing recalculation", prints the labels of what is queued below that, and offers the buttons for each:
+
+- **Save** commits your direct edits as one new version.
+- **Recalculate** sends the queued changes to Hazel together, as one turn.
+- **Discard** clears everything you staged, both kinds at once. It reads **Discard all** while something is queued.
+
+While either job runs, the bar becomes the status line, saying "Saving your changes…" or "Hazel is recalculating your plan…".
+
+<Warning>
+  Staged work lives on the page and nowhere else, so it does not survive a reload or navigating away. The **N unsaved** badge in the top bar is your reminder. Save before you leave the plan.
+</Warning>
+
+<Warning>
+  If a new version lands while you have changes staged, the bar withdraws **Save** and offers only **Discard my changes**, naming what happened: "Hazel published V4 while you were editing". Usually that means Hazel finished something you asked for in chat, not that a colleague was in the plan. Folding your changes onto a version they were not written against could quietly lose one, so discarding is the way through. It clears your changes and moves you onto the version Hazel published, ready to redo the edit there.
+</Warning>
+
+## Feedback
+
+The thumbs-up and thumbs-down sit in the top bar when the plan is open in Ask Hazel. Thumbs-down opens a short form: pick what went wrong from the list, add the detail. Each version takes one vote and the vote cannot be changed, so cast it on the version you actually reviewed.
+
+That feedback goes to Hazel's team, and it is the most direct way to tell them where plans fall short. It does not change how your firm's plans get built. To move that, edit your base template or a persona's instructions. See [Instructions](/guides/financial-planning/settings/personas/instructions).
+
+## Where to go next
+
+- [How Hazel visualizes data](/guides/financial-planning/the-plan/how-hazel-visualizes-data): why each chart is the chart.
+- [Visual reference](/guides/financial-planning/the-plan/visual-reference): every block type you can meet in a plan.
+- [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios): the interactive part.
+- [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat): how to ask for something different.

@@ -1,0 +1,140 @@
+---
+title: "Best practices"
+sidebarTitle: "Best Practices"
+---
+
+The habits behind good plans: set your firm's shape once, keep each household's profile current, say what you want before Hazel starts, build early, audit before you present, and revisit your settings on a schedule.
+
+The habits below run roughly in the order they pay off, starting with your firm's setup and ending with the ones a team shares. None is a setting you switch on.
+
+## Set your firm's shape before you scale
+
+**Settings → Planning** holds the shape every plan starts from: [**Plan templates**](/guides/financial-planning/settings/overview), with your **Base template**, and your **Client persona** entries. Time spent there improves every plan built afterwards. Time spent correcting the same thing on one plan improves that plan.
+
+<Steps>
+  <Step title="Build one plan on the Hazel defaults">
+    Pick a household you know inside out and let Hazel build before you change a single setting. Then read the finished plan the way a client would. You will learn more from that than from studying the settings screen.
+  </Step>
+  <Step title="Fix the shape, then the voice, then the numbers">
+    Structure first, in [Plan design](/guides/financial-planning/plan-design/overview). Then the [instructions](/guides/financial-planning/settings/personas/instructions) that set the voice. Then the [assumptions](/guides/financial-planning/assumptions/solver-assumptions). Shape errors cost the most, because they decide what a plan discusses at all.
+  </Step>
+  <Step title="Write your guardrails">
+    Guardrails are the rules Hazel must never break, however a request is phrased. Two ship already, one of them stopping Hazel from naming a specific security or ticker. Add yours as plain sentences, and use the quick-add chips for common ones such as never recommending variable annuities. Two to six is plenty, and a persona can add a guardrail but never remove one. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
+  </Step>
+  <Step title="Sort out the personas you already have">
+    Your firm arrives with three: HENRY, Pre-Retiree, and Retiree / Decumulator. Review, rename, edit or delete those before adding more. Each of the three carries its own plan design and its own instructions, so base-template work does not reach a household that matched one of them. **Re-sync from base** puts a persona back on the base design. See [Personas](/guides/financial-planning/settings/personas/overview) and [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance).
+  </Step>
+  <Step title="Set the Client disclaimer before anyone exports">
+    The **Client disclaimer** card is firm-wide, and its text sits in the footer of every plan, on your screen and in the PDF alike. The wording already in the box is Hazel's suggestion rather than your setting: nothing prints under a plan until you put your firm's own text in. An edit reaches plans you have already published, next time one is opened.
+  </Step>
+</Steps>
+
+## Keep each household's profile current
+
+A plan reads the household's [Intelligent Client Profile](/guides/financial-planning/your-data/how-hazel-uses-the-profile) before it starts, and the profile only learns from recorded meetings, client emails, uploaded documents, notes, and what you tell Hazel directly. A CRM or custodian connection does not put facts there. So a household that syncs cleanly but has never been met with, and has no documents, gives a plan nothing to work from.
+
+- **Record the meetings where goals come up.** A conversation nobody recorded is context no plan can use.
+- **Clear the review queue before you build.** Verifying a fact lets a plan state it plainly instead of labeling it, and it catches a wrong fact before it turns into a figure. The queue is **Review**, first in the left-hand list on the household's **Data** tab. See [Reviewing and verifying data](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying).
+- **Tell Hazel what changed, as it changes.** Say it in the household's chat, in plain English: "They paid off the HELOC and opened a 529 for Maya." Confirm the update Hazel offers back and it becomes part of the profile. See [Adding client data](/guides/intelligent-client-profiles/managing-client-data/adding-client-data).
+
+## Front-load the brief
+
+One paragraph of context before Hazel starts saves you five corrections afterwards. Cover:
+
+- Who the plan is for, and what kind of client they are
+- The one question the plan has to answer
+- The goals, and the constraints
+- What to emphasize, and what to skip
+- Who is reading it, and at what level of detail
+
+Partway through the build Hazel stops and asks a few questions before drafting. A good brief means fewer of them, and the ones you still get are the ones worth answering. [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief) has a template you can paste.
+
+## Build early, then fill the gaps
+
+Do not assemble a complete document set before your first build. Build from what you have and let the draft tell you what is missing.
+
+- Where an answer would move a number, the plan carries a questions card with at most three of them. **Looks right** accepts the figure the plan is already using. Edit the answer instead and the button becomes **Use this**.
+- Any figure underlined with dots opens onto its own sources. A number resting on something heard once in a meeting shows as **Unverified** there.
+- The household's **Financial Planning** tab lists what Hazel has and what it is missing, and its **Prepare data** card turns those gaps into a document request for the client through **Prepare data for full financial plan**.
+
+Upload exactly the documents that settle those points, then use **Regenerate** in the top bar of the household's **Financial Planning** tab. That beats guessing which documents matter. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating).
+
+## Carry a plan into the next review
+
+The plan you built in March is the plan you review in September. Working the plan you have keeps a household's planning history in one place, where starting a fresh one leaves you with two plans and no single record of what you presented.
+
+<Steps>
+  <Step title="Add what has happened since">
+    The new statements, the new tax return, the meeting where they mentioned the inheritance. Upload documents to the household's **Documents** tab, record the meetings, and clear whatever is waiting in **Review** on the **Data** tab.
+  </Step>
+  <Step title="Regenerate instead of rebuilding">
+    **Regenerate**, in the top bar of the household's **Financial Planning** tab, rereads the household and publishes a refreshed version of the same plan, so the history stays intact. Starting a new plan instead gives you a second plan whose history begins again at V1.
+  </Step>
+  <Step title="Read what moved">
+    Step back with the version arrows to the version you presented last time, read it, then press **Back to latest**. For the differences written out, ask Hazel in the plan's chat what changed between the two versions.
+  </Step>
+</Steps>
+
+A regenerate can land on a different persona and pick up firm settings that have changed since the first build, so treat the refreshed plan as a plan you have not reviewed yet, and run the audit below on it.
+
+## Audit before you present, every time
+
+<Steps>
+  <Step title="Read the Plan orientation brief">
+    The info button in the plan's top bar opens **Plan orientation**, a short brief on what this plan concludes and why. A minute with it and you walk into the meeting knowing the argument. The button only appears on a version that has a brief.
+  </Step>
+  <Step title="Confirm the persona">
+    Open **Appendix**, the last entry under **Plan sections**, and read **Applied settings**. Its **Persona** row names the Client persona this plan was built from, or reads **None** when nothing matched. The persona drives the plan's shape and several of its assumptions, so it is worth the ten seconds.
+  </Step>
+  <Step title="Spot-check three figures">
+    The plan's probability of success, one number off the balance sheet, one income number. Hover each first, and the tooltip tells you whether Hazel recorded the calculation or only where the number came from. Click, and the panel carries a Source, Confidence and Value table, and where Hazel recorded them, a **Methodology** section with the arithmetic and an **Assumptions** section. A figure with nothing recorded behind it is plain text and does not open.
+  </Step>
+  <Step title="Read the Confidence column">
+    **Verified** means a document or a confirmation establishes the figure. **Unverified** means Hazel heard the fact once and nobody has confirmed it. **Modeled** means Hazel projected the number rather than read it. An Unverified figure sitting under your main recommendation is worth settling before the meeting rather than during it.
+  </Step>
+  <Step title="Save or discard your edits, then export">
+    The bar at the bottom of the plan offers **Save** for text and value edits, and **Recalculate** for anything the math has to run again. **Export PDF** stays grayed out while you have unsaved changes, and the PDF is always the last saved version rather than what is on your screen.
+  </Step>
+</Steps>
+
+## Use levers in the room
+
+Where a plan carries dials, they move in the browser and every figure bound to them moves with them, so "what if we waited two more years" is a question you can answer while the client is sitting there. Move them freely: nothing saves, and the panel's **Reset to optimized** button puts them all back. If the panel notes that projections do not respond to a control yet, that dial is illustration and the numbers will not follow it.
+
+Nothing about a moved dial survives a reload, so settle the values before you leave. If those dials belong to a recommendation, approving it records the values you have on screen, and **Save** in the bottom bar turns that into the plan's next version. For anything bigger than a dial, ask Hazel: **Edit** in the top bar when you are reading the plan in chat, or **Open chat** in the top bar on the household's **Financial Planning** tab. Both open the same conversation. See [Levers and scenarios](/guides/financial-planning/the-plan/levers-and-scenarios).
+
+## Ask for substance, edit for polish
+
+| Situation | Do this |
+| --- | --- |
+| A sentence is nearly right | Hover the text, click the pencil, fix it in place |
+| A section is framed wrong | Ask Hazel to rewrite it, through **Edit** in chat or **Open chat** on the household tab |
+| A figure is wrong | Open it, edit the assumption underneath and **Queue change**, or correct the fact it came from in the profile |
+| Every plan has this problem | Change your firm's settings |
+
+You cannot type over a number in the prose. A figure inside a sentence is held in sync with the plan, so change the assumption or the data behind it and let the sentence follow.
+
+The last row is the one firms miss. If you are asking Hazel for the same change on every plan, that is a settings change you have not made yet.
+
+## Review your settings on a schedule
+
+- **Market assumptions**, once a year, with whoever owns your firm's market view. There is one live set and the screen saves as you type, so the moment a number changes, every plan built after it uses the new one. The **Publish to firm** button only confirms what has already saved, so a change takes hold whether or not you press it. Agree the numbers first, enter them, then regenerate one plan you know well and read it before you tell the team. Plans you have already published keep the assumptions they were built with until you rebuild them.
+- **Personas**, once or twice a year. Check which ones you have customized, whether those changes still match how you plan, and whether any two now describe the same household.
+- **Instructions and guardrails**, whenever you notice yourself giving the same correction twice.
+
+<Tip>
+  Keep a short note of why each setting is what it is. What a setting says is easy to read a year later. Why you chose it is not.
+</Tip>
+
+## Team habits
+
+- **One owner per design at a time.** Saving writes only the design you are in, so you cannot overwrite a colleague's work on a different persona. A save from a stale copy is caught too: in **Settings → Planning** that arrives as a banner offering **Reload**, which picks up your colleague's version and drops what you have done since. What is not protected is two people editing the _same_ design at once, where the later save wins. Agree who has a design before a run of edits.
+- **In the layout designer, nothing is saved until you press Save.** Close the tab and the session is gone. Leaving through the **Planning settings** back link offers **Keep editing**, **Discard and leave** and **Save and leave**.
+- **Learn on the sample plan, and train new hires on it.** It is a complete, interactive plan with no client data in it, opened by **See financial plan example** on the **Financial Planning** page, which is what a new advisor lands on before they have plans of their own. It is a fixed example, so it will not reflect a settings change. To test one of those, regenerate a plan you know well and read that instead.
+- **Use the thumbs when you read a plan in chat.** They sit in the plan's top bar there, and not on the household's **Financial Planning** tab. Thumbs down opens a short form that asks what kind of problem it was and lets you describe it in a sentence, and it records the plan version you were looking at.
+
+## Where to go next
+
+- [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief): the habit that saves the most rework.
+- [Prompt library: Financial Planning](/resources/prompt-library/financial-planning): the requests to learn first.
+- [Troubleshooting and FAQ](/guides/financial-planning/troubleshooting-and-faq): when something is not behaving.

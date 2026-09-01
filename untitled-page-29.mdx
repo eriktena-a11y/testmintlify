@@ -1,0 +1,94 @@
+---
+title: "Plan design"
+sidebarTitle: "Overview"
+description: "The blueprint behind every plan: the sections, tabs and blocks that decide what a plan contains before Hazel writes a word. How to read it, and the two ways to change it."
+---
+
+**Plan design** is where your firm decides what a plan is. It says a plan has these sections, in this order, with these tabs, holding these pieces. Hazel then fills that shape with this household's analysis.
+
+<Note>
+  Nothing here touches a plan you have already delivered. A plan design shapes the plans Hazel builds from now on, and an existing plan stays as it is until someone rebuilds it. Hazel repeats that note on the card, so you can experiment without worrying about a client's current plan.
+</Note>
+
+You will find it in **Settings → Planning**: on the **Base template**, which every plan the firm builds starts from, and on each persona listed under **Client persona**. Planning settings belong to the firm owner, so if the section is not there, ask whoever owns your firm's Hazel account.
+
+## Reading the blueprint
+
+The card headed **Plan layout** draws your whole design at once.
+
+| What you see | What it is |
+| --- | --- |
+| **Bands** | Top-level sections. These become the plan's main navigation. |
+| **Indented sub-bands** | Child sections. These become tabs inside the parent, whose row says "Shown as tabs". |
+| **Chips** | Blocks. One chip is one piece of the plan: a paragraph of writing, a chart, a table, a row of key figures, a set of levers to try. |
+
+A legend sits above the drawing and explains the marker every band and chip wears, under the heading **When it appears**. A solid check means **Always**, in every plan you build. A dashed circle means **When it applies**, only if it fits the household. The layout editor uses the same two markers. Hovering a chip names what it is and when it appears.
+
+A section holding no pieces reads "Hazel composes this section freely," which means Hazel decides what goes there household by household, rather than a hole in your design. A section without tabs shows how many modules it holds at the end of its row.
+
+Under the drawing, Hazel counts what you have: how many sections, how many of Hazel's nineteen planning modules are in play, and how many pieces are set to Always. **See what's left out** opens the module library on everything you are not using yet.
+
+A chip that carries a module shows that module's name. Some chips also carry a small badge. One reading "2 levers" means the design already names the what-if controls that piece offers. One starting with "Calc" names the calculation behind its figures. Hazel sets both on the default shape, and leaving them alone is a fine answer.
+
+### Strictness, and whose design this is
+
+The card's header carries a control labeled **Strictness**: how closely Hazel has to follow the blueprint. It shows the current mode and what that mode means, and opens three choices.
+
+- **Exact**: plans must match this layout exactly, and Hazel cannot add or leave out blocks.
+- **Guided**: Hazel follows this layout, adapting where a household's facts call for it.
+- **Flexible**: your design is a starting point, and Hazel composes each plan freely.
+
+The same panel holds one switch, **Allow additions** ("Hazel may add sections or blocks you didn't design"), which Exact locks off. New firms start on **Flexible**. [Strictness](/guides/financial-planning/settings/personas/strictness) covers how the three modes play against each piece's own setting.
+
+Before anyone changes it, the base template's design wears a **Hazel default** badge. A persona that has never been changed wears **Follows base**, its drawing is faded, and it tracks the base template live. Your first edit on that persona gives it a copy of its own, and Hazel says so in a message. **Re-sync from base** hands it back to the base template.
+
+<Note>
+  Nothing in a design is fixed. Every chip can be moved, removed or reworded, including the ones Hazel put there. Only two limits apply when you start pulling pieces out: a design has to keep at least one section, and removing a section or a tab takes everything inside it. Whenever something goes, Hazel names it in a message with an **Undo** you can click.
+</Note>
+
+## The two ways to change it
+
+<CardGroup cols="2">
+  <Card title="Select a chip" icon="hand-pointer">
+    A panel opens on that chip with three settings: **When it appears**, **Instructions to Hazel** for that piece alone, and **Leave out when**, the one condition it may be dropped. Press **Done** when you are finished. A quick change without leaving the settings page.
+  </Card>
+
+  <Card title="Select Design layout" icon="table-columns" href="/guides/financial-planning/plan-design/using-the-editor">
+    Opens the full editor: add and remove modules, reorder blocks, restructure sections and tabs, pin exact headings, and preview the shape filled in with a made-up household.
+  </Card>
+</CardGroup>
+
+Reach for the chip panel to shape how something is written. Open the editor to change what is there.
+
+<Tip>
+  Planning settings have no Save button. What you type saves on its own a moment after you click away, and a quiet **Saved** appears at the top of the page. The full editor works the other way: it has its own save button, and your changes there wait until you press it.
+</Tip>
+
+## Design, instructions and assumptions
+
+Three settings, three jobs. Confusing them is the most common source of "why didn't Hazel do what I told it."
+
+| Setting | Governs | How firmly it binds |
+| --- | --- | --- |
+| **Plan design** | What a plan contains, and where | As tightly as your strictness setting |
+| **Instructions** | How it is written, and what to emphasize | Guidance Hazel weighs |
+| **Assumptions** | The numbers behind every figure | Used as given. A persona can override a firm value, and one plan can override both |
+
+If a topic must appear in every plan, the design is where you say so, and it takes two settings. Set that piece to **Always**, and set strictness to **Guided** or **Exact**. On **Flexible**, where a new firm starts, **Always** reads as a strong preference rather than a rule. A module you add starts on **When it applies** unless you use the add option that always includes it. An instruction saying "always include an insurance section" only ever asks.
+
+## Where the default shape comes from
+
+Out of the box a plan navigates **Summary** (the section's own heading reads "Executive summary"), **Today**, **Goals**, **Getting there** and **Decisions**, and Getting there opens on Your priorities, followed by three tabs your modules put there: Cash flow, Retirement and Insurance. Investments and Estate plan are waiting in the module library.
+
+That shape comes from Hazel's default design, built from eight modules: Net worth & balance sheet, Emergency fund, Goal funding, Insurance, Cash flow, Debt paydown, Retirement, and Monte Carlo success.
+
+It is a starting point. Most firms change it in two or three places rather than rebuilding it.
+
+## Where to go next
+
+- [Using the editor](/guides/financial-planning/plan-design/using-the-editor): the designer, end to end.
+- [Sections and tabs](/guides/financial-planning/plan-design/sections-and-tabs): building the spine.
+- [Modules](/guides/financial-planning/plan-design/modules): adding and removing topics.
+- [Block settings](/guides/financial-planning/plan-design/block-settings): the per-block controls, in detail.
+- [Module reference](/guides/financial-planning/plan-design/module-reference): every module Hazel ships, and what each one needs.
+- [Glossary](/guides/financial-planning/glossary): plain definitions for blocks, levers, personas and the rest.

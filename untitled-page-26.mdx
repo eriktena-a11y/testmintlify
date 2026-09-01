@@ -1,0 +1,118 @@
+---
+title: "Instructions"
+sidebarTitle: "Instructions"
+description: "Hazel instructions are your house guidance as an ordered list. What belongs in them, which list Hazel follows when a persona matches, how to write ones Hazel can act on, and how the editor behaves."
+---
+
+**Hazel instructions** are where you tell Hazel how your firm writes plans. The field carries that name on two panes in **Settings**, then **Planning**: on **Base template**, and on every persona.
+
+Each entry is one short statement in plain English. The rows are numbered, and the field says how Hazel treats them: "Hazel follows the list in order, top to bottom." So put what matters most first. There is no Save button on these panes, so a row you add or delete is live from that moment.
+
+## What instructions are for
+
+<CardGroup cols="2">
+  <Card title="What to lead with" icon="arrow-up">
+    "Lead the retirement section with the answer, then the reasoning."
+  </Card>
+
+  <Card title="What to always call out" icon="flag">
+    "Call out concentrated single-stock risk whenever one position exceeds a tenth of investable assets."
+  </Card>
+
+  <Card title="How to frame a topic" icon="quote-left">
+    "Frame longevity as a spending question rather than a portfolio question."
+  </Card>
+
+  <Card title="Voice and length" icon="pen-nib">
+    "Write for a client who wants the trade-off stated plainly. No section longer than one page."
+  </Card>
+</CardGroup>
+
+## What instructions cannot do
+
+Instructions shape content and voice. They do not set planning inputs. Where a sentence and a structured value disagree about a figure, the structured value is what Hazel computes with.
+
+| Do not write this in instructions | Set it here instead |
+| --- | --- |
+| "Assume 4% real returns" | [Market assumptions](/guides/financial-planning/assumptions/market-assumptions) |
+| "Use a 90% success threshold" | [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions) |
+| "Hold five years of cash" | Solver assumptions, as the default reserve length |
+| "Never recommend annuities" | [Guardrails](/guides/financial-planning/assumptions/guardrails) |
+| "Always include an insurance section" | [Plan design](/guides/financial-planning/plan-design/overview) |
+
+The last two rows catch people out. An instruction is guidance Hazel weighs, a guardrail is a rule Hazel cannot break, and a layout is structure Hazel has to produce. If something must happen on every plan, write it as a guardrail or build it into the layout.
+
+<Warning>
+  If an instruction states one number and **Solver assumptions** or **Market assumptions** state another, the assumption wins. Hazel does not read the instruction as your newer decision. Change the assumption if that is what you meant.
+</Warning>
+
+To use a different number for one household rather than the whole firm, leave the firm settings alone and change the assumption on that plan, then recalculate. See [Editing a plan directly](/guides/financial-planning/the-plan/editing-a-plan-directly).
+
+## Which list Hazel follows
+
+Every build starts with a match. Hazel picks the persona closest to the household, and that match decides which instruction list runs. Only one list runs.
+
+- **A persona matched.** Hazel follows that persona's instructions, and not the base template's.
+- **Nothing matched.** Hazel follows the base template's instructions.
+
+A persona's list is its own. It is never added on top of your firm's list.
+
+Your firm starts with three personas, and each of them ships with its own instructions, so most households will match one. Anything you want on every plan has to be written on the base template and on each persona. The base list is what Hazel falls back to for a household that fits none of them.
+
+Creating a persona does part of that work for you. With **Starting template** left on **Base template**, the new persona opens with a copy of your base list, which you then trim to what this client type needs. That copy is taken once, at creation, and the two lists never sync again, so a base instruction you write next month has to be added to each persona by hand. Choosing **Copy from** an existing persona copies that persona's list instead.
+
+Plan design does not work this way, so do not expect instructions to behave like it. A persona with no design of its own follows your base design as it stands today and forks its own copy the first time you edit it. Instructions get copied once. The design is followed live.
+
+Two things on the **Base template** pane hold on every plan whichever persona matched. Guardrails are firm-wide, and no persona can loosen one, so a rule that must hold no matter what belongs there and not here. **Planning assumptions** rows are firm-wide too, and there is no persona-level copy of them.
+
+## Writing instructions Hazel can act on
+
+**Be specific enough to act on.**
+
+| Vague | Actionable |
+| --- | --- |
+| "Be concise" | "No section longer than one page. Cut adjectives." |
+| "Focus on taxes" | "Show the bracket each conversion year fills, and name the marginal rate." |
+| "Make it client-friendly" | "Explain every figure in one sentence before showing it. No jargon without a gloss." |
+| "Consider risk" | "Name the single largest risk to this plan in the summary, in plain language." |
+
+**Say it once.** Repeating an instruction in different words does not strengthen it, and it doubles what you have to maintain.
+
+**Keep the list short.** Nothing caps how many you add. Three to eight per list is a good target, because past that they start diluting each other.
+
+**Resolve contradictions yourself.** Two entries that pull in different directions leave Hazel guessing. Rewrite them as one.
+
+**Keep each entry to a sentence or two.** A row that runs long is usually two instructions.
+
+## Using the editor
+
+**Adding.** Select **Add instruction** and type into the row that appears. Enter commits the row and leaves the next one open for another. Clicking away commits what you typed and closes the row. Escape closes the row and discards it. One row holds one instruction, so Enter never starts a second line, and line breaks in pasted text become spaces.
+
+**Editing.** Select any row and type. Leaving the row saves it, and Enter does the same. Clear a row's text and click away and the row disappears, because an instruction with no text is not kept.
+
+**Order.** There are no drag handles, and a new instruction lands at the bottom of the list. Decide the order as you write. To change it later, retype the rows into the order you want.
+
+**Deleting.** The X at the end of a row removes it straight away, and a message headed "Instruction removed" offers **Undo**. Undo puts the row back as long as you have not changed the list since. If you have, the message says to add it back yourself.
+
+**Length.** One instruction can run to 400 characters. A counter appears while you are typing in a row, stays visible on any row close to the limit, and typing stops at the limit. A paste that would push a row over is refused rather than trimmed, with a note under the field: "Over the 400-character limit for one instruction, so it wasn't pasted. Split it into separate instructions." Your text is still on the clipboard, so split it and paste it in pieces.
+
+**Saving.** These panes have no Save button. **Saving…** and then **Saved** appears beside the **Plan templates** heading as each edit lands. If your planning settings were changed in another tab or by a colleague while your tab was open, a banner asks you to reload, and the edits you made after that point are discarded rather than saved over theirs.
+
+## If an instruction did not land
+
+- **Check which list ran.** Open the plan, open **Appendix** from the footer of the **Plan sections** rail, and read the **Persona** row in **Applied settings**. If it names a persona, that persona's instructions are the ones Hazel followed, and your base list was not used.
+- **Check you have not written a number.** An instruction that tries to set a planning input loses to the structured value. Set it in Solver assumptions or Market assumptions instead.
+- **Check whether you asked for structure.** An instruction asking for a section your plan design does not include only lands if the design's strictness lets Hazel add to it. Under **Exact** it cannot. See [Strictness](/guides/financial-planning/settings/personas/strictness).
+- **Check it is specific.** "Be thorough" gives Hazel nothing to do. Say what to include, where it goes, and in what order.
+
+<Tip>
+  The quickest way to a good list is to read a finished plan and note every place you would have written it differently. Each note is a candidate instruction.
+</Tip>
+
+## Where to go next
+
+- [Base template](/guides/financial-planning/settings/base-template): where your firm's list lives, next to guardrails and planning assumptions.
+- [Creating a persona](/guides/financial-planning/settings/personas/creating-a-persona): how a new persona's starting list is chosen.
+- [Inheritance](/guides/financial-planning/settings/personas/inheritance): what a persona takes from the base template and what it does not.
+- [Block settings](/guides/financial-planning/plan-design/block-settings): the **Instructions to Hazel** field, scoped to one part of the plan.
+- [Guardrails](/guides/financial-planning/assumptions/guardrails): rules, not guidance.

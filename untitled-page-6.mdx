@@ -1,0 +1,84 @@
+---
+title: "Planning philosophy"
+sidebarTitle: "Planning Philosophy"
+description: "The six commitments behind every plan Hazel builds: one plan with many versions, evidence over invention, your firm's plans rather than generic ones, math through named methods, levers over rebuilds, and the advisor as author."
+---
+
+Hazel's planning rests on a small set of commitments. They explain most of what you will notice about how a plan behaves, including the places where Hazel stops and asks you instead of deciding.
+
+## One plan, many versions
+
+A plan is a living document, not a file you replace. Each plan lives on its own planning conversation, and when Hazel publishes a change it lands as the next version of that same plan. Older versions stay readable: the version control in the plan's top bar reads something like V3 (2 of 4), with a chevron on each side to page back and forth.
+
+A plan changes when you ask it to. A published version stays as it was built, so a statement that arrives next month or a firm setting you change tomorrow does not quietly move the numbers in a plan you already have. When you want a plan brought up to date, **Regenerate** in the household's **Financial Planning** tab tells Hazel to reread the household's current information, keep the analysis and the edits that still hold, and publish a refreshed version on the same plan.
+
+A household can hold more than one plan. Starting a fresh plan for a household you have already planned for creates a separate plan with its own history beginning at V1, and the household's Financial Planning tab shows whichever plan was published most recently. The **Financial Planning** page lists every plan you have built, one row each, so an earlier plan is never lost. Working the plan you have, though, keeps a household's planning history in one place.
+
+## Evidence over invention
+
+Hazel builds from facts it can point to. When a needed fact is missing, Hazel does one of two things: asks you for it, or says in the plan that the figure is unavailable. Where Hazel has to assume something, the assumption is labeled and you can see what it rests on.
+
+Asking is a real surface, not a figure of speech. The second of the three build steps, "A few questions before I draft", stops and asks instead of pressing on. A finished plan can also carry up to three short questions, each with Hazel's best answer already filled in, a line saying where that answer came from, and a line saying what it does to the numbers. Leave the answer and press **Looks right**, or change it and press **Use this**.
+
+A plan built from a thin household therefore reads thinner than one built from a well-documented household.
+
+<Note>
+  The most common reason a plan feels vague is that the underlying data is vague. Adding a statement or a recent tax return usually does more for plan quality than any amount of rephrasing.
+</Note>
+
+## Your firm's plans, not generic ones
+
+Two firms with identical client data should produce recognizably different plans, because they are different practices. Four things make that happen, and all four live in Settings, then Planning, which firm owners maintain.
+
+- **Base template.** Its **Plan design** card holds the layout: what a plan contains and in what order. **Design layout** opens that layout for editing.
+- **Client persona.** Each persona adjusts the layout, the instructions and some of the numbers for one type of client. Hazel matches the household to the closest persona and records the match, and builds on the base template alone when none of them fits.
+- **Instructions.** Written guidance that steers content, emphasis and voice.
+- **Assumptions.** The numbers every projection runs on.
+
+How closely Hazel follows your layout is your choice, set on the same **Plan design** card. **Exact** means Hazel can neither add a block nor leave one out. **Guided** means Hazel follows the layout and adapts where a household's facts call for it. **Flexible** means your design is a starting point and Hazel composes each plan freely. A firm that has not chosen yet starts on Flexible, which is worth knowing the first time a plan does not match the layout you drew.
+
+If a plan does not look like your firm's work, the fix is usually in Planning settings rather than in the chat.
+
+## Math through named methods, never free-hand
+
+Every figure a client might rely on comes from a defined calculation method with named inputs, never from arithmetic Hazel works out while writing. That is what makes a figure auditable: there is a calculation to display, a set of assumptions to attribute, and a source to trace back to.
+
+You can see it on the plan. Selecting a figure that carries provenance opens **Provenance and calculations**, headed "How this was calculated", with the sources behind the figure, the method that produced it and the assumptions it used. Some figures are a stated fact with a source and no math to show, and those open on the source alone. A figure with nothing behind it is not selectable at all, which is worth noticing before you quote it to a client.
+
+The same discipline sets an order of precedence. Highest first:
+
+- **Guardrails.** Your never-do-this rules are absolute. No instruction, persona or request crosses one, and a persona can add a guardrail but never remove one.
+- **A number you set for this plan.** The **Plan settings** panel opens from the top bar of a plan you have open in Ask Hazel, and shows each planning number alongside the layer that set it. Change one and press **Apply and replan**, and Hazel rebuilds the plan on your value. Three numbers stay firm-wide and do not appear in that panel at all: the advisory fee, the terminal heir tax rate, and the Monte Carlo simulation count.
+- **The persona, then the firm.** Where a plan sets nothing, the matched persona's overrides apply. Where the persona sets nothing, your firm's settings do.
+- **Instructions.** Instructions govern content, emphasis and voice. They do not set planning inputs, so a number you want honored belongs in an assumption field, not in a sentence of guidance.
+
+Every plan carries the result in its **Appendix**, where the **Applied settings** block lists the settings the plan was built on and marks each one Firm, Persona or This plan.
+
+<Note>
+  New to these names? **Solver assumptions** are the planning inputs the math runs on, such as the success threshold, the advisory fee, and how retirement withdrawals are taken. **Market assumptions** are the return, volatility, inflation and tax figures every projection is built against. The [glossary](/guides/financial-planning/glossary) holds the rest of the vocabulary in one place.
+</Note>
+
+## Levers over rebuilds
+
+A plan is not a snapshot of one scenario. Hazel fits each plan with the dials that matter for this household: money coming in, money going out, when things happen, and the targets the plan is measured against.
+
+The dials that appear as sliders, switches and menus recompute the figures in front of you as you move them, which is what makes a plan usable while a client is watching. That movement is exploration, held in your browser, so it changes what you are looking at rather than the saved plan. Reordering a ranked list is treated as a decision instead of exploration, so that one stages a change for you to save.
+
+When a plan does not carry the dial you want, ask Hazel in the plan's conversation to model the change, and Hazel publishes it as a new version. Planning conversations are iterative. If every what-if needed a rebuild, none of them could happen while the client is still in the room.
+
+## The advisor is the author
+
+Hazel drafts. You are the author. Hover a line of prose in the plan and a pencil appears; type your change, then commit it with Cmd or Ctrl plus Enter, or drop it with Escape. There is no global editing mode to switch on, and the **Edit** button in the top bar does something different: it opens your conversation with Hazel about the plan.
+
+Figures are not hand-editable. A figure sitting inside a sentence is a single chip that stays in sync with the plan, so you can rewrite the sentence around it but not retype the number. To move a number, change the assumption behind it or the data underneath it.
+
+Your edits collect in the bar at the bottom of the plan, which counts what is unsaved and what still needs recalculating, and offers **Save**, **Recalculate** and **Discard**. Saving commits your edits as a new version of the plan.
+
+Nothing leaves Hazel on its own. A plan reaches a client two ways, both of them yours: the PDF you export, and the plan on your screen in the meeting. Export stays unavailable until you save or discard whatever is staged, so what you hand over always matches a saved version.
+
+## Where to go next
+
+- [What it can and can't do](/guides/financial-planning/overview/what-it-can-and-cant-do): where these commitments turn into hard limits.
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): how a plan moves forward without losing its history.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): how to audit a figure.
+- [Planning settings](/guides/financial-planning/settings/overview): how to set what your firm's plans contain.

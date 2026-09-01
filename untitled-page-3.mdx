@@ -1,0 +1,135 @@
+---
+title: "Glossary"
+sidebarTitle: "Glossary"
+---
+
+Plain-English definitions for the vocabulary the Financial Planning Agent uses: plans and versions, sections, tabs, blocks and levers, Plan templates and personas, strictness, assumptions, and the words a plan puts on its own figures.
+
+Each definition below says what the term means and where in Hazel you meet it.
+
+## The plan
+
+**Plan.** The financial planning document Hazel builds for a household. You click through its sections, open its figures to see where they came from, and edit its words in place. A household can hold as many plans as you need, and each plan keeps its own version history.
+
+**Section.** A top-level part of a plan, listed under Plan sections in the left navigation. By default: Summary, Today, Goals, Getting there and Decisions, with Appendix at the foot of the list.
+
+**Tab.** A section that sits inside another one and shows up as a tab. Getting there is the section that holds them: Cash flow, Retirement and Insurance with the shipped default, plus a Your priorities tab on plans that rank priorities.
+
+**Block.** One thing on the page: a paragraph, a row of key numbers, a chart, a table, a panel of levers, a recommendation. Sections are built out of blocks. Every block Hazel can use is named and described in [Visual reference](/guides/financial-planning/the-plan/visual-reference).
+
+**Chip.** One block drawn as a small labeled tile. Blocks appear as chips on the Plan design card and in the layout editor. Select a chip to open that block's settings.
+
+**Plan orientation.** A short brief on what this plan concludes and why, written for the minute before a client meeting. Open it with the information button in the plan's top bar. The button appears only when the version on screen has a brief.
+
+**Figure.** A number in a plan. Figures stay in sync with the plan's math, so you cannot type over one, and hovering a figure inside a sentence says as much. You can rewrite the sentence around it. To change the number, change the assumption behind it or the underlying data.
+
+**Detail panel.** The panel that opens when you select a figure. It carries a Source, Confidence and Value table, the steps behind the number under Methodology, and the Assumptions it rests on. View full breakdown opens the same material for the whole plan, in the Appendix. A figure with nothing recorded behind it is plain text and does not open.
+
+**Confidence.** A column in the detail panel, one word per source. **Verified** means someone confirmed the fact, or it arrived from a source Hazel already trusts, such as a document. **Unverified** means nobody has confirmed it yet; Hazel still uses it, and confirming it in the household's [review queue](/guides/intelligent-client-profiles/managing-client-data/reviewing-and-verifying) settles it. **Modeled** means the planning math produced the number rather than reading it anywhere, which is what you should expect on anything about the future.
+
+**Lever.** A dial in a plan, such as a retirement age or a monthly savings figure. Moving one recalculates the figures that depend on it in your browser straight away and changes nothing else: nothing is saved and no version is created. Not every change comes as a dial. Where a change needs Hazel to re-solve the plan there is no control for it anywhere in the plan, so ask for that one in the plan's chat.
+
+**Edit.** The button in the top bar of a plan open in a chat. It does not switch on an editing mode. It opens the conversation with Hazel about this plan, and its tooltip says so. A plan open on the household's Financial Planning tab carries no Edit button, so go to the plan's own chat when you want that conversation. Rewriting wording yourself works in both views: hover the text and use the pencil that appears.
+
+**Staged changes.** Edits you have made but not saved. They collect in a bar at the bottom of the plan, which counts them and lists what they are.
+
+**Save.** Commits your staged edits as one new version.
+
+**Recalculate.** Sends the staged changes that need the math run again, such as an edited assumption, and comes back as a new version.
+
+**Discard.** Throws the staged changes away. If Hazel published a newer version while you were editing, discarding is the only option offered, because your edits were made against an older version.
+
+**Version.** A saved state of the plan. Saving or recalculating stacks a new one. Older versions stay readable and you can export whichever version is on screen. While an older one is showing, the plan is read only, the top bar says so, and Back to latest returns you to the current version.
+
+**Regenerate.** The button in the top bar of the household's Financial Planning tab that rebuilds the plan from the household's latest information. Reach for it when the inputs changed. It is not in the plan view inside a chat.
+
+**Chime.** The sound Hazel plays when a draft is ready, so you can leave the page while a plan builds. It is on by default, and the speaker button on the household's Financial Planning tab mutes it.
+
+**Sample plan.** A complete example plan built on a made-up household, opened from the Financial Planning page with See financial plan example. It is read only, so you can take a plan apart without changing anything.
+
+**Status.** The word beside a plan in the list on the Financial Planning page. **Ready to review** means the plan has published a version you can open. **Draft in progress** means the plan has published no version yet, usually because Hazel is still building it, and sometimes because a build stopped part way. Open the row to see which. The list holds the plans you built, so a colleague's plans are not in it.
+
+## Firm configuration
+
+**Plan templates.** The section of **Settings → Planning** holding your firm's plan shapes: the base template and your Client personas.
+
+**Base template.** Your firm's default plan. What a plan contains, in what order, in your firm's voice. Every Client persona is built on it.
+
+**Client persona.** A kind of client your firm serves, with its own description, age band hint, instructions, layout and solver overrides. Hazel matches each household to the closest one. A persona carries no planning assumptions; those live on the base template only.
+
+**Persona match.** Hazel's choice of which persona to build a household's plan from, recorded on the plan. Age band is a hint, not a rule. If nothing fits, Hazel builds on the base template alone.
+
+**Plan design.** The card in **Settings → Planning** that shows a template's shape at full size: every section, tab and block. Select a chip to change that block's settings without leaving the card.
+
+**Design layout.** The button on the Plan design card that opens the full layout editor.
+
+**Layout.** The blueprint itself: the sections, tabs and blocks that decide what a plan contains before Hazel writes a word.
+
+**Module.** A named piece of planning, such as Roth conversion or Education funding. Nineteen ship, in four groups. Five of them bring a whole tab of Getting there; the other fourteen add blocks to a section already in the plan, and each card names where it will land before you press it. A module missing from a layout means no dedicated treatment of that topic, never a banned topic, because broader sections still fold it in.
+
+**Custom module.** A module your firm defined, either from scratch through New module or by saving one you had customized. Hazel offers that second path when you remove a customized module from a design: the confirm dialog asks whether to save it to your module library first, so you can add it back to any plan later.
+
+**Instructions.** Your firm's guidance in plain English, kept as an ordered list. The base template and each Client persona both call the list Hazel instructions. On a single block or module, the field is Instructions to Hazel. Guidance about content and voice, never numbers.
+
+**Strictness.** How tightly a layout binds Hazel. **Exact** means plans must match the layout and Hazel can neither add nor leave out blocks. **Guided** means Hazel follows the layout, adapting where a household's facts call for it. **Flexible** means your design is a starting point and Hazel composes each plan freely. A firm that has not chosen starts on Flexible.
+
+**When it appears.** A block's own setting on the Plan design card. **Always** keeps the block in every plan. **When it applies** puts it in when the household's facts call for it. The layout editor calls the same setting When it shows up. An older block may still offer a third choice marked as legacy, which Hazel may skip freely; move it to one of the other two when you meet one.
+
+**Leave out when.** The one named condition under which a block may be dropped. In the layout editor the field goes away once a block is set to Always.
+
+**Sample data.** The switch in the layout editor that fills your design in with a made-up example household, never a real client. Turn it off and the canvas shows the design's structure instead.
+
+**Customized.** What a persona reads once you change its layout. It stops following the base template and keeps its own copy, and Hazel tells you so the first time it happens.
+
+**Re-sync from base.** The button that discards a persona's own layout so it follows the current base template again, including future changes to it. A discard, not a merge.
+
+## Assumptions
+
+**Solver assumptions.** The inputs the planning math runs on, in three groups: probability and simulation, fees and taxes, and the decumulation strategy, meaning the order accounts are drawn down in retirement.
+
+**Probability of success.** How often a plan works when Hazel runs the household's numbers many times over against different market outcomes. Ninety runs in a hundred ending with the plan funded reads as ninety percent.
+
+**Monte Carlo simulations.** How many of those runs Hazel makes. One thousand by default. More runs give a steadier figure and take longer to compute. This one is set for the whole firm and cannot be changed on a single plan.
+
+**Success threshold.** The probability of success a plan is judged against. Below it, the plan is flagged. Ninety percent by default.
+
+**Market assumptions.** The return, volatility, inflation and tax figures every plan is built against. Your firm edits one live set, and every edit saves itself as you make it.
+
+**Scenario.** The name your firm gives that live set. There is one at a time, and the name field sits at the top of the Market assumptions page.
+
+**Reset to source.** The control on a market assumption row you have hand-edited, which puts the row back to the value Hazel ships. Reset all to source does it for every edited row at once.
+
+**Planning assumptions.** Extra firm numbers, entered as a label and a value, for figures the standard panels do not model. They live on the base template, and none ship, so the list is empty until your firm adds one. The Label field offers Longevity age as an example of the kind of number that belongs there.
+
+**Guardrails.** Your firm's absolute rules about what Hazel must never write, such as never naming a specific security. Nothing overrides a guardrail, and a persona can add one but never remove one.
+
+**Withdrawal guardrails.** A different thing that happens to share the word: a solver assumption about moving a household's spending up or down as the portfolio moves. Your firm writes it in plain English under Retirement withdrawal guardrails, and a plan lists it as Withdrawal guardrails. Firm guardrails are rules about what Hazel writes. Withdrawal guardrails are a spending rule inside the math.
+
+**Applied settings.** A plan's effective settings, each labeled with the layer that set it: **Firm**, **Persona** or **This plan**. It lives in the plan's Appendix, the last entry in the plan's navigation.
+
+**Plan settings.** The panel behind the sliders button in the top bar of a plan open in a chat, where you can override a value for this plan alone. Each field shows the range Hazel accepts, Reset to inherited puts a field back to what it came in with, and nothing reaches the plan until you apply. The household's Financial Planning tab does not carry this panel.
+
+**Apply and replan.** The button that commits those per-plan overrides. It recalculates the plan and stacks a new version.
+
+**Display ceiling.** The highest success figure a plan will show, so a plan never prints a flat one hundred percent, which a client reads as a promise. It is ninety-nine percent unless your firm has a different ceiling in place. A projection above the ceiling prints as "\>99%" with a short note underneath explaining the cap.
+
+**Disclaimer.** Your firm's client-facing footer. It renders under every plan exactly as written and carries into the PDF. It ships empty, so nothing appears until your firm writes one.
+
+## Data
+
+**Intelligent Client Profile.** Hazel's living record of a household's lasting facts, each traced back to where it came from. The Financial Planning Agent reads it before building. It fills from four kinds of source: emails, meeting recordings, notes and documents. A custodian or CRM connection on its own puts no facts into it. See [Intelligent Client Profiles](/guides/intelligent-client-profiles/overview/introduction).
+
+**Readiness.** The eight checks on a household's Financial Planning tab that say whether there is enough to build on: Accounts & Holdings, Calendar, Tax documents, Uploaded documents, Meetings & transcripts, CRM, Email, and Business valuation. Seven of them decide whether the tab reads Ready to build or offers to begin right away with what it has. Business valuation never does, so it can read Missing on a household the tab calls ready. You can draft a plan either way.
+
+**Prepare data.** The button and window on the household's Financial Planning tab. Step one uploads whatever documents you already hold. Step two turns the rows that are still missing into a document request email for the client.
+
+**Clarifying questions.** The questions Hazel asks partway through a build, at step two of three, when the answer would change the plan. On the household's Financial Planning tab each question runs a thirty second countdown and Hazel makes a reasonable assumption when it expires, so a build nobody is watching still finishes; touching the card pauses the countdown. Asked inside a chat, the questions wait for you.
+
+**Front-loading.** Saying what you want before Hazel starts, rather than correcting it afterwards. The habit that saves the most rework.
+
+## Where to go next
+
+- [Introduction](/guides/financial-planning/overview/introduction): start at the top.
+- [Visual reference](/guides/financial-planning/the-plan/visual-reference): every block by name, and what each one is for.
+- [Assumptions reference](/guides/financial-planning/assumptions/reference): the shipped defaults, in one table.
+- [Troubleshooting and FAQ](/guides/financial-planning/troubleshooting-and-faq): what to do when something looks wrong.

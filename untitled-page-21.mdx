@@ -1,0 +1,106 @@
+---
+title: "Planning settings"
+sidebarTitle: "Overview"
+description: "How firm settings shape every plan: Plan templates, Client personas, and the two assumption editors. Set once in Settings → Planning, and applied to every plan your firm builds."
+---
+
+**Settings → Planning** is where you tell Hazel how your firm builds plans: what a plan contains, in what order, in your words, and against which numbers. Set it once and every plan anyone at your firm builds starts from it.
+
+<Note>
+  Only firm owners can open this tab. Every plan your advisors build follows what you set here, and each plan shows which layer set each value. For a single household an advisor can still move most numbers in the plan's own settings panel, within ranges you set. See [Access and availability](/guides/financial-planning/overview/access-and-availability).
+</Note>
+
+## The four panes
+
+The left rail has three groups: **Plan templates**, **Client persona**, and **Assumptions**. Four kinds of pane sit under them.
+
+<CardGroup cols="2">
+  <Card title="Base template" icon="table" href="/guides/financial-planning/settings/base-template">
+    Your firm's default plan: what it contains, in what order, in your words. Every Client persona is built on it.
+  </Card>
+
+  <Card title="Client personas" icon="users" href="/guides/financial-planning/settings/personas/overview">
+    Your client archetypes. Your firm already has three, installed the first time anyone opens Planning settings. Hazel matches each household to the closest one and builds from its instructions, its plan design and its planning values.
+  </Card>
+
+  <Card title="Solver assumptions" icon="calculator" href="/guides/financial-planning/assumptions/solver-assumptions">
+    The planning inputs behind every figure, in three cards: **Probability & simulation**, **Fees & taxes**, and **Decumulation strategy**.
+  </Card>
+
+  <Card title="Market assumptions" icon="chart-line" href="/guides/financial-planning/assumptions/market-assumptions">
+    The return, volatility, inflation, and tax figures every plan is built against, under **Returns**, **Volatility**, **Inflation** and **Taxes**.
+  </Card>
+</CardGroup>
+
+Two more settings sit on the **Base template** pane, below the instructions list.
+
+**Guardrails.** The rules your firm will not break, however a request is phrased. A persona can add a guardrail, never remove one, and nothing at the plan level or asked for in chat can lift one. See [Guardrails](/guides/financial-planning/assumptions/guardrails).
+
+**Client disclaimer.** The footer added to every plan, on your own screen as well as in the PDF you hand over. The box opens showing wording Hazel has drafted for you, but that wording is not in force until you edit and save it, so a firm that never opens the card publishes plans with no footer at all. Once you have edited it, **Restore Hazel default** puts the drafted wording back.
+
+## Which layer wins
+
+A plan tags every planning value with the layer that set it: **Firm**, **Persona**, or **This plan**. Hazel ships a default for every one of them, and those defaults are your firm's starting point, so anything you have not changed reads as **Firm**. To see the tags on a finished plan, open **Appendix** from the footer of the **Plan sections** rail and read the **Applied settings** block.
+
+<Steps>
+  <Step title="Your firm">
+    The base template, your **Hazel instructions**, your guardrails, and the two assumption editors. This is the floor under every plan your firm produces.
+  </Step>
+  <Step title="The matched persona">
+    Hazel matches the household to the closest Client persona and builds from it. A persona carries its own instruction list, its own plan design if you give it one, and any planning values it wants different from your firm's.
+  </Step>
+  <Step title="This plan">
+    An advisor's adjustment for one plan, staged in that plan's **Plan settings** panel and committed with **Apply and replan**. It belongs to that one plan, so a second plan for the same household still inherits your firm and persona values. A few values never vary below the firm, and those are left out of that panel rather than shown grayed out. [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions) says which.
+  </Step>
+</Steps>
+
+The word override does different work depending on what is being overridden. Numbers merge one value at a time: a persona that changes the success threshold inherits every other value from your firm, and goes on inheriting them after you change them. Shape and wording do not merge. A persona given its own plan design stops following the base design, and a matched persona's instruction list stands in for the base list rather than adding to it. [Inheritance and re-syncing](/guides/financial-planning/settings/personas/inheritance) has the full picture before you invest heavily in either.
+
+Two rules sit outside the stack:
+
+**A guardrail cannot be overridden.** Personas add to the list. Nothing subtracts from it.
+
+**A number beats a sentence.** Where an instruction and an assumption disagree about a figure, the value set in **Solver assumptions** or **Market assumptions** wins.
+
+## Where to change what
+
+| You want | Change this |
+| --- | --- |
+| A section or module in every plan | **Plan design** on the base template |
+| A different shape for retirees than for accumulators | A **Client persona** with its own plan design |
+| Hazel to follow your design more or less closely | **Strictness**, on the Plan design card |
+| Every plan to lead with the answer | **Hazel instructions** |
+| A different success threshold or reserve length | **Solver assumptions** |
+| Different return or inflation figures | **Market assumptions** |
+| A rule that can never be broken | **Guardrails** |
+| The footer your clients read | **Client disclaimer** |
+| A change for one plan only | That plan's **Plan settings** panel, or ask Hazel in the plan's chat |
+
+<Tip>
+  If you find yourself asking Hazel for the same change on every plan, that change belongs in settings. Chat is for this household. Settings are for your firm.
+</Tip>
+
+## How saving works
+
+There is no Save button on the Planning settings panes. An edit saves when you leave the field, so click or tab out of a box before you close the tab, and watch for the quiet "Saving…" then "Saved" beside the **Plan templates** heading. With nothing to press, that is your confirmation the edit landed.
+
+Two places work differently:
+
+- The **New persona** dialog writes nothing until you select **Create**.
+- The layout designer, which opens from **Design layout**, has its own **Save changes** button and asks before you leave with work unsaved.
+
+If your planning settings changed somewhere else since your screen loaded, in a second tab, in the designer, or by a colleague, Hazel stops saving and shows a red notice asking you to reload, rather than writing over the other change. Anything you typed after that point is discarded, so note it down, reload, and re-enter it. Working in one tab at a time avoids it.
+
+## When a change takes effect
+
+A settings change shapes the next plan Hazel builds, and the next change to a plan that already exists. Plans you have already delivered stay exactly as they are.
+
+To move an existing household onto a new shape, open that household's **Financial Planning** tab and select **Regenerate**, which refreshes the plan from the household's latest information. That adds a version rather than replacing what your client has already seen, and the earlier versions stay readable. See [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating).
+
+The **Client disclaimer** is the exception. Hazel reads it fresh each time a plan is opened, so editing it also changes the footer on plans you published earlier.
+
+## Where to go next
+
+- [Base template](/guides/financial-planning/settings/base-template): the place to start.
+- [Client personas](/guides/financial-planning/settings/personas/overview): differentiating by client type.
+- [Plan design](/guides/financial-planning/plan-design/overview): the layout, in full.

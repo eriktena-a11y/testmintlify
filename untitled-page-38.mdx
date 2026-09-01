@@ -1,0 +1,167 @@
+---
+title: "Assumptions reference"
+sidebarTitle: "Reference"
+description: "Hazel's shipped value for every planning assumption, what each one drives, and which layer can change it. A lookup table for the firm owner setting up Planning settings."
+---
+
+The values below are what a firm gets before it configures anything.
+
+**Scope** says which layer can change a value.
+
+**Firm.** Set on the Solver assumptions or Market assumptions screen in Planning settings, which is a firm owner's surface. Applies to every plan the firm builds.
+
+**Persona.** A Client persona can carry its own value, which replaces the firm's for households that match that persona.
+
+**Plan.** An advisor can change it for one plan, in the Plan settings panel described further down this page.
+
+Every plan's Appendix carries an **Applied settings** block with a **Set by** column reading **Firm**, **Persona** with the persona's name, or **This plan**, so you can always check which layer won for a given plan.
+
+## Probability and simulation
+
+| Setting | Default | What it drives | Scope |
+| --- | --- | --- | --- |
+| Success threshold | 90% | The lowest probability of success that counts as on track. Below it, the plan is flagged. | Firm, Persona, Plan |
+| Monte Carlo simulations | 1,000 | How many market paths each projection runs. More paths are more precise and slower to compute. | Firm |
+| Success-figure display ceiling | 99% | The highest probability of success a plan will print. | Firm-wide, no slider |
+
+Ranges on the two sliders: Success threshold 50% to 100% in steps of 1. Monte Carlo simulations 100 to 5,000 in steps of 100.
+
+<Note>
+  The display ceiling is firm-wide, and it is the one value in this section without a slider on the Solver assumptions screen. Hazel's 99% is what applies unless your firm has a different ceiling in place. Where a projection models a higher figure, the plan prints `>99%` with a short note under the figure saying a cap applied.
+
+  Do not confuse it with Success threshold. One is the bar a plan has to clear. The other is the most a plan will ever show.
+</Note>
+
+## Fees and taxes
+
+| Setting | Default | What it drives | Scope |
+| --- | --- | --- | --- |
+| Advisory fee | 1.00% | Annual fee drag applied to assets under management in every projection. | Firm |
+| Terminal heir tax rate | 24% | The rate heirs are assumed to pay on inherited pre-tax balances, used to value the after-tax estate. | Firm |
+
+Ranges: Advisory fee 0% to 3% in steps of 0.05. Terminal heir tax rate 0% to 50% in steps of 1.
+
+## Decumulation strategy
+
+| Setting | Default | What it drives | Scope |
+| --- | --- | --- | --- |
+| Default reserve length | 3 yrs | Years of retirement spending carved into safe assets so the client never sells equities into a down market. | Firm, Persona, Plan |
+| Reserve refill policy, the box under Default reserve length | See the quoted text below | How the reserve is held and replenished. | Firm, Persona |
+| Retirement withdrawal guardrails | See the quoted text below | How spending flexes as markets move. | Firm, Persona |
+| Default Roth conversion strategy | Stop under first IRMAA tier | The ceiling Hazel uses when it recommends annual Roth conversions. | Firm, Persona, Plan |
+| Conversion elaboration, the box under the Roth strategy choices | See the quoted text below | Plain-language nuance that refines the chosen strategy. | Firm, Persona |
+
+Range: Default reserve length 0 to 10 years in steps of 1.
+
+All three free-text boxes ship with wording already in them, and only one of them carries a heading on the screen. Here is where each box sits, and what it says word for word, so you can tell Hazel's text from something a colleague wrote:
+
+**Reserve refill policy.** The box directly under the Default reserve length slider. "Hold the reserve in cash, T-bills, and short-duration bonds. Refill it from equities in years the portfolio finished up."
+
+**Retirement withdrawal guardrails.** The one box with its own heading. "Use Guyton-Klinger guardrails: trim spending 10% when the withdrawal rate drifts 20% above its initial target, and raise it 10% when it falls 20% below. Skip the inflation raise in any year the portfolio finished down." Guyton-Klinger is a named rule set for flexing retirement spending, and the sentence spells out the whole of what Hazel applies, so you can rewrite it in your own terms without losing anything.
+
+**Conversion elaboration.** The box under the row of Roth strategy choices. "Convert each year up to just under the first IRMAA tier, so the client avoids a higher Medicare Part B/D premium." IRMAA is the income-related surcharge that raises Medicare Part B and Part D premiums once income crosses a threshold.
+
+The other five Roth strategy options are Cap at ACA-subsidy MAGI, Drive off the heir's bracket, Fill to top of 24% bracket, Low-income years only, and No default.
+
+## What an advisor can change on one plan
+
+Open a plan in Ask Hazel and the **Plan settings** control in the plan's top bar opens a panel with two groups. That control belongs to the chat plan view. Reading the same plan on the household Financial Planning tab you will not find it, so use **Open chat** in that tab's top bar first.
+
+**Solver assumptions.** Success threshold and Reserve length are editable. Roth conversion strategy is a menu of the six options. Withdrawal guardrails is displayed so you can read what applies to this plan, and is not editable there. A field you have already changed for this plan gains a small reset control that hands it back to the firm or persona value.
+
+**Market assumptions.** A read-only row naming the assumption set this plan drew on, plus one editable row for each market row the firm has hand-edited. That naming row reads as Hazel's default set rather than the name anyone typed on the Market assumptions screen, so do not read it as a sign your firm's edits were ignored. A firm that has hand-edited nothing gets no editable market rows here, which is the usual case at the start.
+
+Everything else on this page is a firm or persona decision. Reserve refill policy, the conversion elaboration, the advisory fee, the heir tax rate and the simulation count have no per-plan control at all.
+
+A value has to stay inside the firm's range. An entry outside it is refused with the range named rather than quietly rounded. The panel's footer offers **Apply and replan** and **Discard changes**, and nothing reaches the plan until you apply, which asks Hazel to rebuild the plan with your new settings.
+
+## Market assumptions
+
+What the firm chooses:
+
+| Setting | Default | Scope |
+| --- | --- | --- |
+| Assumption set | One live set, its name field arriving filled with the words "Name this assumption" until you replace them | Firm |
+| Returns detail | Simple: Equity, Fixed income, Cash & equivalents | Firm |
+| Volatility detail | By sub-asset class | Firm |
+| Inflation detail | Simple | Firm |
+| Taxes detail | Simple: one Effective tax rates row | Firm |
+| Monte Carlo | On | Firm |
+| Hand-edited rows | None | Firm, then Plan for the rows the firm edited |
+
+The set is fully populated from the moment you open it. Nothing is hand-edited yet, which is not the same as empty. At the shipped granularity the screen reads:
+
+| Row | Shipped value |
+| --- | --- |
+| Returns, Equity | 7.2% |
+| Returns, Fixed income | 4.8% |
+| Returns, Cash & equivalents | 3.1% |
+| Inflation | 2.4% |
+| Taxes, Effective tax rates | 24.0% |
+
+Switch Returns to by-sub-asset-class and nine rows appear instead, four equity classes, four fixed-income classes and cash. The shipped Equity and Fixed income figures above are the equal-weight average of the four shipped rows in their group, which is how Hazel arrived at them. They are not recalculated as you work, though: every row is edited on its own, so changing a sub-asset-class row leaves the Simple figure where it was.
+
+Volatility opens at by-sub-asset-class detail, so it lists all nine rows out of the box, from cash at 0.7% up to US small cap at 21.1%.
+
+Switch Taxes to by-sub-asset-class and the single blended row splits into Ordinary income at 24%, Long-term capital gains at 15% and Qualified dividends at 15%. The Taxes card is badged with the statutory bracket year it draws on. Statutory brackets themselves are applied as written and are not a firm setting.
+
+Row ranges: returns 0% to 15%, volatility 0% to 30%, inflation 0% to 10%, tax rates 0% to 50%. An edited row gains a **Reset to source** control that puts Hazel's figure back.
+
+## Guardrails
+
+Two hard rules ship, in the card for things Hazel must never do:
+
+| Default rule | Scope |
+| --- | --- |
+| "Never recommend a specific named security or ticker." | Firm, plus persona additions |
+| "Never propose a Roth conversion that pushes the client into the next IRMAA tier." | Firm, plus persona additions |
+
+A persona can add its own guardrails on top, and no persona, plan or chat request can lift one. A firm owner can remove either shipped rule from the base template's list.
+
+## Layout and shape
+
+| Setting | Default |
+| --- | --- |
+| Plan sections | Summary, Today, Goals, Getting there, Decisions, plus an Appendix reached from the bottom of the plan's nav |
+| Tabs inside Getting there | Your priorities, then Cash flow, Retirement, Insurance |
+| Enabled modules | Eight: Net worth & balance sheet, Emergency fund, Goal funding, Insurance, Cash flow, Debt paydown, Retirement, Monte Carlo success |
+| Strictness | Flexible |
+| Allow additions | On |
+
+Every module outside those eight is off until you add it, and a module being off means the topic gets no dedicated treatment, never that Hazel avoids the subject.
+
+**Flexible** means your design is a starting point and Hazel composes each plan freely. The other two modes are **Guided**, where Hazel follows your layout and adapts where a household's facts call for it, and **Exact**, where a plan has to match your layout with nothing added or left out. **Allow additions** is the one switch beside the mode, and Exact locks it off. Whether an individual block may be left out is that block's own setting, not a firm-wide switch.
+
+Of the three Client personas that come pre-installed, Retiree / Decumulator ships on Guided. HENRY and Pre-Retiree ship on Flexible, like the base template.
+
+## Client disclaimer
+
+Nothing ships. The **Client disclaimer** card opens with a paragraph Hazel drafted, so you can see the shape of one, but that text is only a preview: until you edit it, plans and PDFs carry no footer at all. Type your own wording, or edit the draft, and it renders word for word under every plan and in the exported PDF. Once you have edited it, a **Restore Hazel default** button appears if you want the drafted paragraph back.
+
+## Persona overrides
+
+The three pre-installed Client personas deliberately differ from the firm defaults above:
+
+| Persona | What it changes |
+| --- | --- |
+| HENRY, ages 28 to 44 | Success threshold 85% |
+| Pre-Retiree, ages 55 to 67 | Reserve length 5 yrs; Roth strategy Fill to top of 24% bracket, with an elaboration naming the 22% bracket for ages 60 through 72 |
+| Retiree / Decumulator, 65 and over | Reserve length 7 yrs; its own Guyton-Klinger wording, with a ceiling in goal years |
+
+They are yours to review, rename, edit or delete. Anything a persona leaves alone inherits the firm value.
+
+## Also shipping empty
+
+| Setting | Default |
+| --- | --- |
+| Hazel instructions on the base template | None, until you add one |
+| Planning assumptions on the base template | None, until you add a label and value row |
+
+## Where to go next
+
+- [Solver assumptions](/guides/financial-planning/assumptions/solver-assumptions): setting the values in the first three tables.
+- [Market assumptions](/guides/financial-planning/assumptions/market-assumptions): working the returns, volatility, inflation and tax rows.
+- [Guardrails](/guides/financial-planning/assumptions/guardrails): writing rules Hazel must never break.
+- [Default templates](/guides/financial-planning/settings/personas/default-templates): what each pre-installed persona changes and why.
+- [Planning settings](/guides/financial-planning/settings/overview): how the firm, persona and plan layers interact.
+- [Sharing and delivering](/guides/financial-planning/the-plan/sharing-and-delivering): where the disclaimer shows up.

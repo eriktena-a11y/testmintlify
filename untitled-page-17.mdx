@@ -1,0 +1,116 @@
+---
+title: "Editing a plan directly"
+sidebarTitle: "Editing a Plan Directly"
+description: "The pencil path: which passages you can rewrite by hand, how to keep an edit and how to drop one, why a figure cannot be typed over, and how your wording survives what Hazel does next."
+---
+
+You are the author of the plan, so you can rewrite what it says. There is no editing mode to switch on and nothing to unlock. Hover an editable passage and a small pencil appears at its top right. Click it, or tab to it and press it, and that passage becomes a plain text box. Which passages those are is the second section below.
+
+<Note>
+  The **Edit** button in the top bar is a different tool. It opens your conversation with Hazel about the plan, which is how you ask for a rewrite instead of doing it yourself. That button only appears when you open the plan from its chat. Reading the plan on a household's **Financial Planning** tab, use **Open chat** to get to the same conversation. The pencils are on both surfaces.
+</Note>
+
+## Keeping an edit, and dropping one
+
+Learn these four before you type in front of a client, because one of them destroys your text.
+
+| What you press | What happens |
+| --- | --- |
+| Click anywhere outside the box | Your text is kept and joins the staging bar |
+| Cmd or Ctrl plus Enter | The same, without reaching for the mouse |
+| Enter, on a one-line field such as a goal name | The same. In a multi-line passage, Enter is just a new line |
+| Escape | Your text is thrown away and the passage goes back to what it said |
+
+Keeping an edit is not the same as saving it. Everything you keep waits in the bar at the bottom of the plan until you press **Save**.
+
+Two edits never reach the count: an empty box, because a heading or a paragraph cannot be blank, and a passage you opened without changing. Hazel drops both rather than staging a change that says nothing.
+
+Some cards carry one pencil for the whole card instead of one per line, a highlight card and a recommendation among them. That pencil opens every passage on the card at once and you can move between them freely. Leaving the card keeps all of them; Escape drops all of them.
+
+## What carries a pencil
+
+Hazel offers the pencil on the prose it wrote for you, not on the plan's structure or its arithmetic.
+
+- **The executive summary.** The narrative opening of the **Summary** section. Narratives elsewhere in the plan do not carry a pencil, so if you want a paragraph in **Retirement** reworded, that is a request to Hazel.
+- **Goal cards** in **Goals**: the goal's name, its description, the label beside its progress bar, and its footnote.
+- **Highlight cards**, wherever they appear: the card's title, its caption, and its body.
+- **Recommendations**: the headline and the reasoning underneath it.
+
+No pencil anywhere else. Section and tab names, chart titles, axis labels and legends, table cells, the tiles in a key-numbers row and every figure are all Hazel's to write. Ask in the plan's chat for those.
+
+<Note>
+  If the pencils have vanished, nothing is broken. They step aside while Hazel is saving or recalculating and come back when that finishes. They are also absent on an older version, which is read-only throughout. Check the top bar: if it says you are viewing an earlier version, press **Back to latest**.
+</Note>
+
+## Why you cannot type over a number
+
+A figure sitting inside a sentence is locked to the plan's own math so it stays in step with the charts and tables around it. Hover one and it says as much: kept in sync with the plan.
+
+Rewrite the sentence around it and the number comes along. In the executive summary's editor the figure shows as a small tag inside your text. Leave the tag where it belongs and the number keeps tracking the plan; delete it and the number leaves the sentence.
+
+Typing in a number you prefer would put your sentence at odds with the chart beside it, and that mismatch is exactly what a client spots. To move a number, change what produced it.
+
+- **The data was wrong or out of date.** Upload the current document, or fix the household's profile, then regenerate. See [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from).
+- **The assumption was wrong.** Change it from the figure's own panel, below.
+
+### Changing an assumption behind a figure
+
+Select the figure and **Provenance and calculations** opens, with an **Assumptions** list near the bottom. Where an assumption is yours to change it carries an **Edit** button: press it, rewrite the sentence, then press **Queue change**.
+
+Nothing recalculates yet. The button now reads **Pending recalculation** until you press **Recalculate** in the bar at the bottom of the plan, then reads **Recalculating** while Hazel works. The same list appears in the **Appendix**, so you can do this from there instead of opening figures one at a time.
+
+An assumption with no **Edit** button is fixed for this plan. A button that will not open tells you why on hover, and the usual reason is that you are reading a past version, which is read-only. Press **Back to latest** and try again.
+
+Expect one side effect. A figure resting on an assumption you rewrote now rests on your judgment rather than on a document, so its sources read **Modeled** where they used to read **Verified**. That is the panel staying honest about where the number came from, not a drop in quality.
+
+## Getting your work saved
+
+Nothing saves as you type. Kept edits collect in a bar at the bottom of the plan, which counts both kinds of staged work on one line, for example three unsaved changes and two changes needing recalculation, and prints the labels of what is queued beneath.
+
+- **Save** commits your written edits together as a single new version. Hazel confirms with "Saved as V5".
+- **Recalculate** sends the queued changes to Hazel as one turn. If you still have unsaved text edits when you press it, Hazel saves those first as their own version, so a recalculation that fails cannot take your writing with it.
+- **Discard** clears everything, both kinds at once. It reads **Discard all** while something is queued.
+
+Staged work lives on the page and nowhere else, so it does not survive a reload or navigating away. The **N unsaved** badge next to the version number is your reminder. If a save fails, your edits stay on screen and stay in the count, so read the message and press **Save** again.
+
+<Warning>
+  If Hazel publishes a new version while your edits are still staged, **Save** is withdrawn and the bar offers only **Discard my changes**, naming the version that landed. Folding your edits onto a version they were not written against could quietly lose one, which is why saving is blocked.
+
+  Your text is still on screen, so copy anything you want to keep before you discard. Discarding also moves you onto the version Hazel published, ready to redo the edit there.
+
+  This nearly always means you asked Hazel for something, or pressed **Regenerate**, with edits still unsaved. Press **Save** before you do either.
+</Warning>
+
+## Edit by hand, or ask Hazel
+
+| Situation | What to do |
+| --- | --- |
+| A sentence is nearly right | Edit it. Thirty seconds and no new analysis |
+| The framing of a whole section is wrong | Ask Hazel. A rewrite brings the surrounding argument with it |
+| The plan is missing an analysis you expected | Ask Hazel |
+| A figure is wrong and you know the right number | Fix the data behind it, or change its assumption and recalculate. There is no way to type over a figure |
+| A chart is the wrong chart for the point | Ask Hazel |
+| Every plan your firm produces has this problem | Change your base template, or the persona's instructions |
+
+Edit for polish, ask for substance. An edit changes what the plan says. A request to Hazel reconsiders what the plan should say, and can bring the surrounding analysis with it.
+
+<Note>
+  Rewording a passage fixes this plan and nothing else. If the real problem is the data underneath, upload the document or update the household's profile as well, or the next plan for that household starts in the same place.
+</Note>
+
+## What happens to your wording later
+
+Your edit becomes part of the version it was saved into, and that version stays readable, presentable and exportable. Nothing that happens afterwards erases it.
+
+- **A recalculation** is the strictest with your prose. Hazel is asked to keep every sentence exactly as you wrote it, to update a number inside your wording rather than the wording itself, and to tell you when something you wrote no longer matches the plan instead of quietly rewriting it.
+- **A regenerate** rereads the household's current information and folds it into the plan you already have, preserving still-valid analysis and the content you wrote. Wording the new information has made untrue can still change, and that is the point of running it.
+- **Asking Hazel for a change** revises what you asked about and leaves the rest of the plan alone.
+
+If a wording preference matters on every plan rather than only this one, put it in your firm's instructions and Hazel writes it that way from the start.
+
+## Where to go next
+
+- [Changing a plan with chat](/guides/financial-planning/the-plan/changing-a-plan-with-chat): the other edit path, and how to ask so it lands first time.
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): which of your actions create a version, and how the history works.
+- [Where numbers come from](/guides/financial-planning/your-data/where-numbers-come-from): the figure detail panel in full.
+- [Instructions](/guides/financial-planning/settings/personas/instructions): making a wording preference permanent.

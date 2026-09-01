@@ -1,0 +1,119 @@
+---
+title: "Documents and CRM data"
+sidebarTitle: "Documents & CRM Data"
+description: "Where a plan's raw material comes from: what your connected systems keep current, which documents earn their place, what Hazel can read, and how to tell when a household has enough."
+---
+
+Every plan is built from what Hazel already holds for the household plus anything you add. The two sources do different jobs.
+
+## What your connected systems keep current
+
+| Source | What it brings |
+| --- | --- |
+| **CRM** (Salesforce, HubSpot, Wealthbox, Redtail) | Household structure, contacts, relationships, and the notes your team writes. |
+| **Email** | The client emails that carry planning facts |
+| **Calendar** | Lets Hazel join and record your meetings, which is how a client's own words reach the profile |
+| **Altruist** | Accounts, balances, holdings and cost basis, when your firm's Altruist connection is in place |
+
+Syncing keeps your records current with no effort from you: who is in the household, how the people are related, and the notes your team writes. What syncing does not do is keep the money current. No sync writes a balance or a holding into a household's profile, so accounts held anywhere other than Altruist reach a plan through a statement you upload. [Integrations](/guides/integrations/overview) shows what connects today.
+
+<Note>
+  Hazel builds a household's profile from four kinds of material: a document, a recorded meeting, a client email, or a note. Notes count whether your team wrote them in Hazel or in the CRM Hazel syncs from. So a household that syncs cleanly but has never been met with and holds no documents has nothing financial in its profile yet, and a plan built on it runs on labeled assumptions rather than this family's numbers. One recent statement per account changes that more than anything else you can do.
+</Note>
+
+## What you upload
+
+There are two places to put a document, and the difference is worth knowing.
+
+**The household's Documents tab.** Hazel reads the file into the household's profile, where every plan for that household can use it, including plans you build months from now. Use this for anything you will need more than once.
+
+**The plan's own chat.** Attach a file to the conversation and Hazel reads it for that plan. Handy when a statement arrives an hour before the meeting. It stays with that conversation rather than becoming a profile fact, so the next plan will not know about it.
+
+### Worth uploading, in priority order
+
+Hazel's own upload step asks for two things: recent statements and a recent tax return. The document-request email Hazel drafts for a client adds estate, insurance and employer benefits documents, plus a business valuation. In order of how much each one changes a plan:
+
+<AccordionGroup>
+  <Accordion title="Recent account statements">
+    Balances, positions, cost basis, account registration and contribution activity. The single most useful thing you can upload. Send the most recent statement for every account not held at Altruist.
+  </Accordion>
+
+  <Accordion title="The most recent tax return">
+    Income by type, brackets, deductions, capital gains activity, and what is already going into retirement accounts. A return turns a guessed tax picture into a sourced one, which is what conversion and claiming work rests on.
+  </Accordion>
+
+  <Accordion title="Employer benefits and retirement plan statements">
+    Workplace plan balances, contribution rates, match formulas and the investment menu, plus equity compensation grants with their vesting schedule and strike prices. Often the largest asset in the household, and the one no custodian connection can see.
+  </Accordion>
+
+  <Accordion title="Insurance policies">
+    Coverage amounts, policy type, premiums, riders and beneficiaries. Without these, the coverage conversation rests on what the household remembers.
+  </Accordion>
+
+  <Accordion title="Estate documents">
+    Wills, trusts and beneficiary designations. These drive the estate review and the titling check.
+  </Accordion>
+
+  <Accordion title="A business valuation or recent K-1s">
+    For a business-owning household, this is what lets a plan treat the business as an asset instead of leaving it out.
+  </Accordion>
+</AccordionGroup>
+
+### What Hazel can read
+
+Hazel reads PDFs, Word and Excel files, and images, then pulls out the facts a plan needs. Every fact carries the document it came from and the words it rests on, so a figure in the finished plan traces back to a source you can open. Multi-account statements, multi-year returns and long policy documents are all handled.
+
+Scans and photographs are read too, because Hazel reads the text inside the image. There is no need to hunt down a copy whose text you can select.
+
+Three limits cover almost every upload that will not go through:
+
+- **50 MB a file.** A very large or complex scan can also run out of time, and the message on the row asks you to split it and upload the parts.
+- **PDF, Word (DOCX), Excel (XLSX) and images.** An older .doc or .xls needs saving as .docx or .xlsx first, and a spreadsheet needs exporting as .xlsx rather than CSV.
+- **A password-protected PDF is fine.** Hazel asks you for the password as the file uploads and unlocks it in your browser.
+
+You can drag files, or whole folders, anywhere onto the Documents tab.
+
+### After you upload
+
+A document is not available to a plan until Hazel has finished reading it. The pill on each row tells you which stage it has reached:
+
+- **Queued.** Waiting its turn to start.
+- **Reading.** Hazel is pulling the text out, and the pill counts the pages.
+- **Waiting for profile.** Hazel adds documents to a household one at a time to keep the profile consistent, and this one is next in line.
+- **Adding to profile.** Hazel is writing the facts in.
+- **In profile.** Done, and available to every plan for this household from now on. Select the pill to see what Hazel learned.
+- **Failed.** Nothing usable came out, and the row says why.
+
+Most documents take a few minutes. A build reads the household's facts at the moment it starts, so if you upload a stack and begin straight away, anything still reading will not be in that plan. Wait for **In profile** first.
+
+### When two sources disagree
+
+A household can end up holding two versions of the same fact: a CRM note from March, a statement from last week. Hazel does not average them. The newer source wins. Many figures in a finished plan open a panel naming the source behind them, so you can check which one was used. [Where the numbers come from](/guides/financial-planning/your-data/where-numbers-come-from) goes through this in detail.
+
+## How much data is enough
+
+The household's **Financial Planning** tab answers that before you build. A card headed **Financial Plan document readiness** lists eight sources, each marked with a tick, **Incomplete** or **Missing**, and each carrying a line underneath saying why. That line is the useful part: "3 documents, none read yet" and "No tax documents" are diagnoses rather than scores.
+
+The eight are Accounts & Holdings, Calendar, Tax documents, Uploaded documents, Meetings & transcripts, CRM, Email and Business valuation.
+
+Two things explain most of the confusing rows:
+
+- **A tick needs the source to be current as well as present.** Accounts count when they were updated in the last 90 days, and tax documents when the latest filing is inside 18 months. That is why a row can read **Incomplete** on a household you know has accounts.
+- **Accounts & Holdings reads the household's profile.** An Altruist connection on its own does not tick it. Accounts arrive in the profile from a statement, a meeting, an email or a note. A tax return counts for both Tax documents and Uploaded documents, so one upload can move two rows.
+
+Seven of the eight decide which card appears below the list. With all seven complete it reads **Ready to build**. Where something is short it reads **Begin right away** and names the gaps in a sentence. Business valuation is the eighth and never holds a build up, so it can read Missing on a household the tab calls ready, which is the right answer for a family that owns no business.
+
+Either card gives you the button to start, and building from an incomplete household is often the right call. Where Hazel has no household figure, one of two things happens and both are labeled in the plan: a dated standard assumption is used, or the figure is marked Unknown. What an early plan will not do is name the document that would have filled the gap. That is what the readiness list is for.
+
+<Tip>
+  The order that saves the most time: read the eight checks first. Where one shows a gap, open **Prepare data** on the same tab. Step one is a drop zone for the documents you already hold. Step two drafts an email to the household asking for the rest, with the missing items already listed and your next meeting date in the subject, ready to send from your own mailbox. Then build from what you have. When the documents arrive, upload them and press **Regenerate** in the plan's top bar on this tab. Hazel rereads the household, folds in what is new, keeps the analysis and any wording you edited, and publishes the result as a new version.
+</Tip>
+
+Once a plan on this household is ready, the tab shows that plan in place of the readiness card, so the checks are worth a look before your first build.
+
+## Where to go next
+
+- [How Hazel uses the profile](/guides/financial-planning/your-data/how-hazel-uses-the-profile): what the profile adds on top of documents.
+- [Front-loading the brief](/guides/financial-planning/your-data/front-loading-the-brief): the context no document carries.
+- [Versions and regenerating](/guides/financial-planning/the-plan/versions-and-regenerating): what Regenerate refreshes and what it keeps.
+- [Adding client data](/guides/intelligent-client-profiles/managing-client-data/adding-client-data): how an upload becomes a profile fact.
