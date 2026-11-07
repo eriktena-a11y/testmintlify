@@ -2,4 +2,65 @@
 title: Account
 ---
 
-# Account (temp)
+Manage your personal information, firm details, security, and the compliance language that appears on PDFs Hazel generates for your firm. To open these settings, go to **Settings → Account Settings**.
+
+## PDF disclaimer
+
+The PDF disclaimer is firm-wide compliance language that Hazel automatically appends to every PDF report it generates (for example, exported dashboards and reports from Ask Hazel). It is added in addition to the document-specific disclosure Hazel already includes.
+
+Use it to keep required disclosures consistent across everything your firm produces with Hazel, without having to remember to paste it into individual chats or reports.
+
+### Who can edit it
+
+- **Firm owners** can edit and save the disclaimer.
+- **Advisors and other members** see the current disclaimer in read-only form so they know what language will appear on the PDFs they generate. If no disclaimer is set, they see "No firm-wide disclaimer has been set."
+
+Owner-only editing is enforced on the server, so non-owners cannot change the disclaimer even by calling the API directly.
+
+### Fields
+
+The disclaimer has two fields, both optional:
+
+| Field | Limit | Notes |
+| --- | --- | --- |
+| **Heading** | 255 characters | Shown in bold above the disclaimer text. Use it for a short label like `Important Disclosures`. |
+| **Disclaimer** | 4,000 characters | The body of the disclosure. Plain text; line breaks are preserved. |
+
+Leading and trailing whitespace is trimmed when you save. Clearing both fields removes the disclaimer from new PDFs — existing PDFs are not changed.
+
+### Setting the disclaimer
+
+<Steps>
+  <Step>
+    Sign in as the firm owner and go to **Settings → Account Settings**.
+  </Step>
+  <Step>
+    Scroll to **PDF Disclaimer**.
+  </Step>
+  <Step>
+    Enter an optional **Heading** (for example, `Important Disclosures`).
+  </Step>
+  <Step>
+    Enter the **Disclaimer** body. The counter shows characters remaining out of 4,000.
+  </Step>
+  <Step>
+    Click **Save**. The disclaimer is applied to PDFs generated from that point on.
+  </Step>
+</Steps>
+
+To remove the disclaimer, clear both fields and click **Save**.
+
+### Example
+
+```text Heading
+Important Disclosures
+```
+
+```text Disclaimer
+Acme Advisors LLC is a registered investment adviser. Registration does
+not imply a certain level of skill or training. This material is for
+informational purposes only and does not constitute investment, legal,
+or tax advice. Past performance is not indicative of future results.
+```
+
+When this is saved, every PDF Hazel generates for your firm ends with the heading in bold followed by the disclaimer body.
