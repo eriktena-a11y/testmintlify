@@ -49,7 +49,8 @@
             "group": "Ask Hazel (Chat)",
             "pages": [
               "guides/ask-hazel-chat/overview",
-              "guides/ask-hazel-chat/best-practices"
+              "guides/ask-hazel-chat/best-practices",
+              "guides/ask-hazel-chat/organizing-chats"
             ]
           },
           {
