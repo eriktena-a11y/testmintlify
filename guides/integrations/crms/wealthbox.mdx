@@ -12,9 +12,21 @@ Connect your Wealthbox account to give Hazel access to your contacts, households
 
 | **Integration** | **Backfill (History Pulled In)** | **Sync Speed**                   | **Filters Applied**                                                                                       | **Can Resync?** |
 | :-------------- | :------------------------------- | :------------------------------- | :-------------------------------------------------------------------------------------------------------- | :-------------- |
-| **Wealthbox**   | Full history                     | Every hour (incremental updates) | Must have: Type = **Person** or **Household,Active = true**, andContact Type = **Prospect** or **Client** | ✅ Yes           |
+| **Wealthbox** | Full history | Every hour (incremental updates) | Active contacts only; your firm's sync selection and rules apply (see below) | ✅ Yes |
 
-The Wealthbox integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Wealthbox, and Wealthbox syncs data every 60 minutes to Hazel. Upon the initial sync, Hazel aims to provide a complete backfill of historical data based on Wealtbox sync guidelines and imports all contacts based on the following filters: Type = **Person** or **Household,Active = true**, andContact Type = **Prospect** or **Client.**
+The Wealthbox integration provides a bi-directional sync for: Tasks, Notes, Contacts, and Households. Hazel instantaneously syncs data to Wealthbox, and Wealthbox syncs data every 60 minutes to Hazel. Upon the initial sync, Hazel aims to provide a complete backfill of historical data.
+
+### Which contacts come into Hazel
+
+Active contacts are eligible by default, whatever their Contact Type or Tags. Hazel doesn't import only Clients and Prospects.
+
+When you set up the connection, you choose which existing contacts to sync. For contacts created in Wealthbox after setup, a firm owner can set rules by **Contact Type** and **Tag**:
+
+- Each rule layer can include or exclude values. Values within a layer match if any of them apply, and every layer must match.
+- "No contact type" covers contacts with a blank Contact Type.
+- These rules only decide which new contacts are imported automatically. They never remove existing contacts you selected.
+
+To review or change your firm's selection and rules, go to **Settings → Integrations**, open the menu on the Wealthbox card, and choose **Edit sync selection**.
 
 ### What doesn't sync
 
