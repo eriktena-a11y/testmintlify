@@ -15,6 +15,26 @@ title: "FAQ"
     ![Faqideasnotworking](/images/faqideasnotworking.png)
   </Accordion>
 
+  <Accordion title="I tagged a chat to the wrong contact. Can I change the tag?">
+    No. A chat's tag is final once applied, and each chat can carry one tag. To fix it, copy anything you need from the chat, delete it, and start a new chat tagged to the correct contact or household.
+  </Accordion>
+
+  <Accordion title="Can Hazel produce Word documents with my preferred font and colors by default?">
+    Yes. Put the standing instruction (for example, "produce all documents as Word files, minimum 12-point font, using our brand colors") in a [custom Mode](/guides/modes/custom-modes), or in **Settings → Personalization** to apply it everywhere. Word output does not apply to Hazel's built-in PDF reports.
+  </Accordion>
+
+  <Accordion title="Can I brand the PDFs Hazel generates?">
+    Partly. Set your logo in **Settings → Account**, under the Ask Hazel PDFs section. For colors, give Hazel your firm's color scheme and hex codes as instructions in chat or in a Mode's instructions. A single firm-wide brand template that applies to every PDF isn't available today. For financial plans, firm owners also control layout and the client disclaimer in [Planning settings](/guides/financial-planning/settings/overview).
+  </Accordion>
+
+  <Accordion title="Can Hazel read files in Google Drive, SharePoint, or our CRM's document storage?">
+    Not today. Hazel has no direct document-storage integration, so it can't see files kept in Google Drive, SharePoint, or documents attached inside your CRM. Upload the files to a household's **Documents** tab, or attach them to a chat, so Hazel can use them.
+  </Accordion>
+
+  <Accordion title="Is there a Hazel browser or desktop extension?">
+    No. Hazel runs in the web app and the iOS app. For questions about Altruist's own products, contact Altruist support.
+  </Accordion>
+
   <Accordion title="Can I make changes to my Altruist data within Hazel?">
     No, you cannot edit your Altruist data within Hazel. Hazel has read-only access to your custodial data in Altruist.
   </Accordion>
@@ -41,13 +61,39 @@ title: "FAQ"
   3. Click Save
 </Accordion>
 
+<AccordionGroup>
+  <Accordion title="Can Hazel automatically ignore certain meetings, like a daily calendar reminder?">
+    Yes. Create a meeting type named **Ignored** in **Settings → Meeting Settings** and add key phrases that appear in the titles of the events you want skipped. Hazel matches new calendar events against those key phrases, the same way it [matches other meeting types](/guides/meeting-assistant/meeting-types/adding-meeting-types). To stop the notetaker joining any calendar event, turn off **Auto-schedule Notetakers** instead.
+  </Accordion>
+
+  <Accordion title="Can I receive the full meeting notes by email instead of the summary?">
+    Not today. The post-meeting email contains the summary, and there is no setting to send the full notes. Open the meeting in Hazel to read or copy the full notes.
+  </Accordion>
+
+  <Accordion title="Why does my notetaker's name show 'AI' on Microsoft Teams calls?">
+    Microsoft Teams requires recording bots to identify as AI, so Teams adds the suffix to whatever [notetaker name](/guides/settings/meeting-settings) you set. It can't be removed. Zoom and Google Meet show the name exactly as you set it.
+  </Accordion>
+</AccordionGroup>
+
 ### Email FAQ
 
 <AccordionGroup>
   <Accordion title="Does Hazel match my writing style? Is there a way to set rules where I have a certain tonality and certain words and language I use?">
     On the follow up emails, you can tweak the prompt and give Hazel instructions and example quotes of things you'd likely say. By instructing Hazel in the prompt, you can set rules for tones to follow.
 
-    On the the email assistant that auto drafts inbound emails, you cannot set rules or give Hazel instructions on how to formulate emails.
+    For replies to client emails, ask Hazel in chat and include any tone or wording instructions in your request.
+  </Accordion>
+
+  <Accordion title="Where did the Inbox go?">
+    The Inbox has been retired. Client emails now live on each household's **Emails** tab, and you draft replies by asking Hazel in chat.
+  </Accordion>
+
+  <Accordion title="Can Hazel draft replies directly in my Gmail or Outlook account?">
+    No. Hazel creates drafts in Hazel Chat, not in your email provider's drafts folder. Ask Hazel to draft the reply, review it, then send it.
+  </Accordion>
+
+  <Accordion title="Can I connect more than one email account?">
+    No. Each user can connect one email account. If you're moving to a new email domain, finish the migration first, then disconnect the old account and connect the new one in **Settings → Integrations**. Forwarding one account to the other can create duplicate emails or mismatches with your CRM contacts, so avoid it.
   </Accordion>
 
   <Accordion title="Can you filter or screen emails that come in through the Email Assistant">
@@ -66,6 +112,10 @@ title: "FAQ"
     In chat, no. Chat only relies on individual account data, meaning you have to connect to your Altruist account to view any custodial data.
 
     In meeting agendas, perhaps. Meeting prep and agendas rely on the calendar event owner's altruist connection, so your Altruist account data could be shared if other Hazel team members in your firm have access to the same meeting via the household participant permission. [More on household permissions here.](/guides/settings/members/roles-and-permissions)
+  </Accordion>
+
+  <Accordion title="Does data from other custodians held in Altruist, such as Schwab, come through to Hazel?">
+    Yes. The Altruist connection syncs the custodial data available in your Altruist account, including accounts held at external custodians.
   </Accordion>
 
   <Accordion title="I connected Hazel to Altruist but it is not populating my Altruist contacts. Why?">
@@ -116,6 +166,38 @@ title: "FAQ"
 
   <Accordion title="Can I set up automatic invoices for future charges?">
     Yes. Reach out to [support@hazel.ai](mailto:support@hazel.ai) to enroll in automatic invoices.
+  </Accordion>
+
+  <Accordion title="What does Financial Planning cost, and does it include my other subscriptions?">
+    Financial Planning includes everything in Admin AI and Tax Planning, so you don't pay for those separately on top of it. See current rates on the [pricing page](https://hazel.ai/pricing).
+
+    If you upgrade mid-term, you're charged a prorated amount through your existing renewal date, so your renewal date doesn't change. **Settings → Subscriptions** shows the exact charge for your selections before you confirm.
+  </Accordion>
+
+  <Accordion title="Is there an Assistant or admin-only seat?">
+    No. Assistant seats have been retired. Everyone at your firm is invited as an **Advisor** or an **Owner** and billed per user. To let someone manage the team and billing without seeing more client data, invite them as an Advisor and give them the **Firm Admin** permission. See [Roles and permissions](/guides/settings/members/roles-and-permissions) and [Managing teams](/guides/settings/members/managing-teams).
+  </Accordion>
+</AccordionGroup>
+
+### Households and contacts FAQ
+
+<AccordionGroup>
+  <Accordion title="Can I merge duplicate households?">
+    Not automatically; there is no merge option today. To consolidate without losing anything:
+
+    1. Decide which household to keep.
+    2. Move each meeting from the duplicate onto the household you're keeping by changing the meeting's attendees.
+    3. Delete the duplicate household in your CRM (if connected) and in Hazel.
+
+    Move every meeting before deleting, because anything still attached to the duplicate goes with it.
+  </Accordion>
+</AccordionGroup>
+
+### Security FAQ
+
+<AccordionGroup>
+  <Accordion title="Where can I get Hazel's SOC 2 report for vendor due diligence?">
+    Go to the [Hazel Trust Center](https://trust.hazel.ai/) and select **Request Access** to view the SOC 2 report, penetration test summary, and other security documents.
   </Accordion>
 </AccordionGroup>
 
