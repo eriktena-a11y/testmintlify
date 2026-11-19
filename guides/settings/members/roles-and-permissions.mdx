@@ -2,45 +2,41 @@
 title: "Roles and Permissions"
 ---
 
-Hazel supports three distinct roles within a firm: **Owner, Admin, Advisor.** Each role determines which firm-admin controls and features a member can use. Access to specific client records (Households & Contacts) is controlled separately, per record, by sharing, not by role. Owners see every record; everyone else sees only the records shared with them.
+Every member of your firm has a role: **Owner** or **Advisor**. On top of the role, an Owner can give an Advisor the **Firm Admin** permission. The role and Firm Admin decide what someone can manage. Which clients someone can see is controlled separately, per household or contact, by sharing. Owners see every record; everyone else sees only the records shared with them.
 
-<Note>
-  Assistant seats have been retired. When you invite someone, you choose **Advisor** or **Owner**. For a support or operations teammate, invite them as an Advisor and share only the households they work on. To let them manage the team and billing too, give them the Firm Admin permission. See [Managing teams](/guides/settings/members/managing-teams).
-</Note>
+Manage roles in **Settings → Roles & permissions**, under **Your firm**. Owners and Firm Admins can open this page.
 
-## Role Comparison
+![The Roles & permissions page showing the People tab with each person's role, groups and client access](/images/settings-roles-permissions.png)
 
-| Role | Admin Access (Firm Settings) | Access to All Members Meetings | Record Meetings | Full Feature Access | Chat Access | Use Case |
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| **Owner** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes | Manage firm \+ full Hazel access |
-| **Admin** | ✅ Yes | ❌ No - based on permissions | ✅ Yes | ✅ Yes | ✅ Yes | Manage firm \+ advisor level access |
-| **Advisor** | ❌ No | ❌ No - based on permissions | ✅ Yes | ✅ Yes | ✅ Yes | Use Hazel for client management |
+## Role comparison
+
+|  | Owner | Advisor with Firm Admin | Advisor |
+| :-- | :-- | :-- | :-- |
+| Sees every household, contact and meeting | ✅ Yes | ❌ Only what's shared with them | ❌ Only what's shared with them |
+| Manages members, billing, firm branding, meeting types and financial planning settings | ✅ Yes | ✅ Yes | ❌ No |
+| Changes firm recording defaults (notetaker name and logo, saving, default meeting visibility) | ✅ Yes | ❌ No | ❌ No |
+| Records meetings, uses Ask Hazel, syncs notes and tasks to the CRM | ✅ Yes | ✅ Yes | ✅ Yes |
 
 ## Owner
 
+Owners run the firm in Hazel, with <u>full visibility</u>. They can see every household, contact and meeting, manage every firm setting, and are always Firm Admins. Only an Owner can transfer ownership.
+
 <Info>
-  Hazel does not import existing roles and permissions from external data sources. It is up to the Owner to edit household permissions for the organization. [Learn more about editing household permissions.](/guides/settings/members/owner-capabilties)
+  Hazel does not import roles and permissions from your CRM. After you connect it, decide who should see which clients. See [Managing teams](/guides/settings/members/managing-teams).
 </Info>
-
-The **Owner** seat is designed to manage the Hazel account and control firm-wide permissions, with <u>full visibility</u>.
-
-- **Admin capabilities:** Invite and remove members, manage firm settings, and control who can see which Households and Contacts.
-- **Feature access:** Full access to all Hazel features, including meeting recording. The owner role has access to view all meetings associated to the firm account.
-- **Use case:** Owners can use Hazel’s chat to instantly access any client data, prepare and debrief meetings, record meetings, send emails, and sync notes and tasks back to the CRM — while also administering the team’s overall Hazel setup.
-
-## Admin
-
-The **Admin** seat is designed to manage the Hazel account and control firm-wide permissions, with <u>limited visibility</u>.
-
-- **Admin capabilities:** Invite and remove members, manage firm settings, and control who can see which Households and Contacts.
-- **Feature access:** Full access to all Hazel features, including meeting recording. The admin role has access to view meetings they have permission to view within the firm account.
-- **Use case:** Admins can use Hazel’s chat to instantly access any client data, prepare and debrief meetings, record meetings, send emails, and sync notes and tasks back to the CRM — while also administering the team’s overall Hazel setup.
 
 ## Advisor
 
-The **Advisor** seat gives individual advisors full access to Hazel’s productivity tools without administrative controls.
+The **Advisor** seat gives full access to Hazel's productivity tools: record, prepare and debrief meetings, use Ask Hazel, send client emails, and sync notes and tasks to the CRM.
 
-- **Admin capabilities:** None — advisors cannot manage members or firm settings.
-- **Feature access:** Full access to Hazel features, including recording meetings.
-- **Use case:** Advisors can record meetings, prepare and debrief meetings, access client data in seconds using Hazel’s chat, send client emails directly, and ensure notes and follow-up tasks sync back to the CRM.
-- **Other advisors' meetings:** An Advisor can review and sync notes and tasks for any meeting they can see. Which meetings that is depends on your firm's [meeting visibility](/guides/settings/meeting-settings#meeting-visibility) setting and the households shared with them, so it doesn't require firm-wide access.
+An Advisor can review and sync notes and tasks for any meeting they can see, including another advisor's. Which meetings that is depends on your firm's [meeting visibility](/guides/settings/meeting-settings#meeting-visibility) setting and the clients shared with them, so it doesn't require firm-wide access. Syncing uses your firm's CRM connection, so your CRM's own permissions still apply.
+
+## Firm Admin
+
+**Firm Admin** is a permission, not a separate role. It lets an Advisor manage members, billing, firm branding, meeting types, and financial planning settings. It does not give them access to any more client data. Owners turn it on from the person's page in **Settings → Roles & permissions**.
+
+## Assistant seats
+
+Assistant seats are no longer sold, and new teammates are invited as an Advisor or an Owner. If your firm already has Assistant seats, those teammates keep them, and an unused Assistant seat can be reassigned from a member's settings.
+
+For a support or operations teammate, invite them as an Advisor and share only the clients they work on. Add Firm Admin if they also need to manage the team or billing.

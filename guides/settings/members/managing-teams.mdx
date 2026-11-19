@@ -2,7 +2,7 @@
 title: "Managing Teams"
 ---
 
-The **Team** tab in Settings is where you manage everyone in your firm: who's on the team, what each person can do, and—most importantly—**which clients each person can see**.
+**Settings → Roles & permissions** is where you manage everyone in your firm: who's on the team, what each person can do, and—most importantly—**which clients each person can see**.
 
 There are two separate ideas to keep in mind:
 
@@ -10,17 +10,17 @@ There are two separate ideas to keep in mind:
 - **Access** decides which **Households** and **Contacts** someone can _see_. Access is controlled per client—by sharing records with a person directly, or with a **Group** they belong to.
 
 <Info>
-  **Who can manage the Team tab?** Only **Owners** and **Firm Admins** see the Team tab. A few actions—assigning the Owner role and creating automatic rules—are limited to **Owners**.
+  **Who can manage this page?** Only **Owners** and **Firm Admins** see **Roles & permissions**. A few actions—assigning the Owner role and creating automatic rules—are limited to **Owners**.
 </Info>
 
-## How the Team tab is organized
+## How Roles & permissions is organized
 
-Open **Settings → Team**. Across the top you'll find four views:
+Open **Settings → Roles & permissions**, under **Your firm**. Across the top you'll find two tabs:
 
-- **Members** — everyone in your firm (and anyone you've invited)
-- **Groups** — reusable sets of people you can share clients with all at once
-- **Households** — browse every household and manage who can see each one
-- **Standalone contacts** — same, for contacts who aren't part of a household
+- **People**: everyone in your firm, with each person's role, groups, and client access
+- **Groups**: reusable sets of people you can share clients with all at once
+
+![The Roles & permissions page showing the People tab](/images/settings-roles-permissions.png)
 
 ## Roles
 
@@ -31,7 +31,7 @@ Every member has one role:
 | **Owner** | Runs the firm in Hazel. Can see **every** household and contact, manage all settings, and manage the team. Owners are always Firm Admins. |
 | **Advisor** | The standard seat. Works with the clients shared with them and uses Hazel's full feature set. |
 
-**Firm Admin** is a separate permission you can give an Advisor or Assistant so they can manage the team and billing—_without_ giving them access to any additional client data. Owners are always Firm Admins.
+**Firm Admin** is a separate permission you can give an Advisor so they can manage members, billing, firm branding, meeting types and financial planning settings, _without_ giving them access to any additional client data. Owners are always Firm Admins.
 
 <Info>
   Giving someone access to settings (Firm Admin) and giving them access to clients are two different things. Making someone a Firm Admin never changes which clients they can see.
@@ -41,13 +41,13 @@ Every member has one role:
 
 ### Invite a teammate
 
-1. Go to **Settings → Team → Members**.
-2. Click **Invite** (top-right).
-3. Enter their **Email address**—or pick someone under **Suggested from your CRM** to fill it in.
-4. Choose a **Role**: **Advisor** (default) or **Owner**.
+1. Go to **Settings → Seats & billing**.
+2. Click **Invite** above the members table.
+3. Enter their **Email address**.
+4. Choose a **Role**: **Advisor** (default) or **Owner**, and a **Plan**.
 5. Click **Send invite**.
 
-The person appears in the list as **Invited** until they accept.
+The person appears in the list as **Invited** until they accept. See [Billing](/guides/settings/billing).
 
 <Note>
   You can invite people as **Advisor** or **Owner**. Invited members get access to all CRM-imported data (contacts, notes, tasks), so set their client access after they join.
@@ -55,9 +55,8 @@ The person appears in the list as **Invited** until they accept.
 
 ### Change a member's role or settings
 
-1. On the **Members** view, click a person's row to open their panel.
-2. The panel opens on a hub showing the member's avatar, role, status, **Member settings**, and a **Permissions** summary.
-3. Under **Member settings**, change their **Role**, toggle **Tax Planning**, or toggle **Firm Admin**.
+1. On the **People** tab, click a person's row to open their page.
+2. Under **Firm permissions**, change their **Role**, toggle **Tax Planning**, or toggle **Firm Admin**.
 4. Click **Save**, then confirm in **Apply changes?**.
 
 If a role needs a paid seat and none is free, you'll see a note that a paid seat will be billed before you confirm.
@@ -102,7 +101,7 @@ There are three ways to share a client:
 
 The member panel opens on a **hub** with three rows under **Permissions**: **Households**, **Standalone contacts**, and **Groups**. Each row summarizes how much the member can reach today—e.g. _"42 total · 30 direct, 12 via groups"_ for a resource type, or _"3 groups · 18 contacts, 27 households"_ for groups. Click a row to drill in.
 
-1. **Settings → Team → Members**, click the person's row.
+1. **Settings → Roles & permissions → People**, click the person's row.
 2. Under **Permissions**, open **Households** or **Standalone contacts**.
 3. Use the **filter chips** above the list to focus by source: **All**, **Manual** (added by hand), **CRM-synced** (granted by your CRM), or **Via group** (inherited from a group). Each chip shows its count.
 4. To **add** clients, click **Add households** / **Add contacts**, search, and check the clients to share. Set the **Access level for new grants** (defaults to **Read**) — changing it after you've checked rows updates everything you've selected so far.
@@ -138,7 +137,7 @@ A **Group** is a named set of people. Share a household or contact with a Group,
 
 ### Create a group
 
-1. **Settings → Team → Groups**.
+1. **Settings → Roles & permissions → Groups**.
 2. Click **New Group**, enter a **Group name**, and click **Create**.
 
 ### Add people to a group
