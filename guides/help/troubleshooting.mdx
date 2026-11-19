@@ -212,7 +212,7 @@ title: "Troubleshooting"
   <Accordion title="I can't find the Inbox or the email tab in the left sidebar">
     The Inbox has been retired. Client emails now live on each household: open the household and select the **Emails** tab.
 
-    To have Hazel summarize an email or draft a reply, ask in Ask Hazel. For example: "Draft a reply to the Smith household's latest email." Drafts are created in Hazel Chat for you to review and send; they are not placed in your Gmail or Outlook drafts folder.
+    To have Hazel summarize an email or draft a reply, ask in Ask Hazel. For example: "Draft a reply to the Smith household's latest email." Review the draft, then send it or choose **Save to drafts** to put it in your Gmail or Outlook drafts folder.
   </Accordion>
 
   <Accordion title="My signature is not HTML.">
@@ -222,7 +222,7 @@ title: "Troubleshooting"
 
     1. Copying your email signature into a word document
     2. Attach the document \+ the following prompt into Ask Hazel `Hazel, turn the email signature in the document attached into HTML text`
-    3. Copy the HTML text into Settings → HTML Email Signature
+    3. Paste the HTML text into **Settings → Profile → HTML email signature**
   </Accordion>
 
   <Accordion title="My logo is not loading in the signature.">
@@ -240,7 +240,7 @@ title: "Troubleshooting"
 
     ![Image (9)](/images/image\(9\).png)
 
-    If you don't have a publicly stored email, you can upload a logo in Settings → Account → Firm Information, right click on the logo once its loaded, and ‘Copy Image Address’.
+    If you don't have a publicly stored email, you can upload a logo in **Settings → Branding**, right click on the logo once its loaded, and ‘Copy Image Address’.
   </Accordion>
 
   <Accordion title="Hazel did not sync historical emails. Why?">
@@ -249,21 +249,21 @@ title: "Troubleshooting"
     **If you have NOT connected a CRM (or you have no contacts in Hazel)**
 
     - Hazel can’t backfill historical emails because there are no contacts/households to match emails to.
-    - You _should_ still see new inbound screened emails going forward on the **Emails** tab of the matching household.
+    - You _should_ still see new inbound emails going forward on the **Emails** tab of the matching household.
       - Hazel only brings in emails from people who match a contact in Hazel, so emails from people who aren't contacts won't appear.
 
     <Tip>
-      Connecting your CRM or adding contacts to Hazel will maximize Hazel's functionality, especially with the Email Assistant.
+      Connecting your CRM or adding contacts to Hazel will maximize Hazel's functionality, especially with email.
     </Tip>
 
     **If you HAVE connected a CRM (and contacts exist in Hazel)**
 
     Try re-triggering the email sync:
 
-    1. Go to **Settings → Integrations**
-    2. Disconnect your Email integration
+    1. Go to **Settings → Profile** and find **Email and Calendar**
+    2. Disconnect your Google or Outlook account
     3. Refresh the page
-    4. Reconnect your Email integration to trigger a resync
+    4. Reconnect the same account to trigger a resync
 
     <Info>
       Email resyncs typically take 5–15 minutes to ingest emails.
@@ -275,10 +275,10 @@ title: "Troubleshooting"
   <Accordion title="My email sync is broken and I am no longer receiving emails in Hazel.">
     Try re-triggering the email sync:
 
-    1. Go to **Settings → Integrations**
-    2. Disconnect your Email integration
+    1. Go to **Settings → Profile** and find **Email and Calendar**
+    2. Disconnect your Google or Outlook account
     3. Refresh the page
-    4. Reconnect your Email integration to trigger a resync
+    4. Reconnect the same account to trigger a resync
 
     <Info>
       Email resyncs typically take 5–15 minutes to ingest emails.
@@ -304,13 +304,13 @@ title: "Troubleshooting"
   <Accordion title="My team member and I are on different firm accounts. How do we get on the same account?">
     If you and a team member are in _two different firm accounts_, you won’t be able to collaborate or see each other’s meetings. Hazel can’t “merge” two firm accounts. To get you on the same firm, Support must deactivate one user’s account, then the remaining firm owner/admin invites that user into the correct firm.
 
-    **Example**<br />John and Henry are on separate firm accounts. If Henry’s firm is the one you’re keeping, Hazel Support deactivates John. John won’t be able to log in again until Henry invites him (Settings → Members) and John accepts the invite email.
+    **Example**<br />John and Henry are on separate firm accounts. If Henry’s firm is the one you’re keeping, Hazel Support deactivates John. John won’t be able to log in again until Henry invites him (**Settings → Seats & billing**) and John accepts the invite email.
 
     **How to fix it**
 
     1. Decide which firm account you want to keep.
     2. Hazel Support deactivates the user who will be moving.
-    3. The admin of the firm you’re keeping goes to Settings → Members and sends an invite.
+    3. The admin of the firm you’re keeping goes to **Settings → Seats & billing** and sends an invite.
     4. The deactivated user must accept the invite from the email to regain access.
 
     <Info>
