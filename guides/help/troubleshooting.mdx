@@ -174,13 +174,23 @@ title: "Troubleshooting"
 
     Still not working? Email [support@hazel.ai](mailto:support@hazel.ai) with the meeting title and meeting date/time so we can investigate.
   </Accordion>
+
+  <Accordion title="A meeting on my calendar isn't showing up in Hazel yet">
+    Hazel shows calendar meetings for roughly the next four weeks. A meeting scheduled further out than that appears automatically once it comes within that window, so nothing is wrong with your calendar connection. New and changed events usually appear within minutes.
+
+    If a meeting within the next four weeks is missing, check that your calendar is still connected in **Settings → Profile** under **Email and Calendar**, then email [support@hazel.ai](mailto:support@hazel.ai) with the meeting title and date.
+  </Accordion>
+
+  <Accordion title="My transcript or notes came out in the wrong language">
+    Ask Hazel to translate it. Open Ask Hazel, reference the meeting, and ask for the transcript or summary in English (or the language you need).
+  </Accordion>
 </AccordionGroup>
 
 ### Phone Call Recording Troubleshooting
 
 <AccordionGroup>
   <Accordion title="I called my Hazel line but no meeting appeared">
-    The most common cause is calling from a number that isn't on your **Allowed callers** list. Check **Settings → Meeting Settings**. Also check that **Record Phone Calls** is still on, that your caller ID isn't blocked or withheld, and that the call lasted more than about 15 seconds. Very short calls are discarded rather than turned into meetings.
+    The most common cause is calling from a number that isn't on your **Allowed callers** list. Check **Settings → Meetings** under **Record Phone Calls**. Also check that phone recording is still set up, that your caller ID isn't blocked or withheld, and that the call lasted more than about 15 seconds. Very short calls are discarded rather than turned into meetings.
   </Accordion>
 
   <Accordion title="Only my voice is in the transcript">
@@ -194,15 +204,17 @@ title: "Troubleshooting"
   <Accordion title="Hazel couldn't reach my number with Join My Call">
     Check the number, including the country code (`+1` for US numbers), and try again. If your phone declined the call or it went to voicemail, Hazel reports that and you can retry.
   </Accordion>
-
-  <Accordion title="I don't see Record Phone Calls in my settings">
-    Phone call recording isn't turned on for every account yet. Reach out to your Hazel contact if you'd like access.
-  </Accordion>
 </AccordionGroup>
 
 ### Email Troubleshooting
 
 <AccordionGroup>
+  <Accordion title="I can't find the Inbox or the email tab in the left sidebar">
+    The Inbox has been retired. Client emails now live on each household: open the household and select the **Emails** tab.
+
+    To have Hazel summarize an email or draft a reply, ask in Ask Hazel. For example: "Draft a reply to the Smith household's latest email." Review the draft, then send it or choose **Save to drafts** to put it in your Gmail or Outlook drafts folder.
+  </Accordion>
+
   <Accordion title="My signature is not HTML.">
     ![ET.signaturenothtml](/images/image\(8\)-1.png)
 
@@ -210,7 +222,7 @@ title: "Troubleshooting"
 
     1. Copying your email signature into a word document
     2. Attach the document \+ the following prompt into Ask Hazel `Hazel, turn the email signature in the document attached into HTML text`
-    3. Copy the HTML text into Settings → HTML Email Signature
+    3. Paste the HTML text into **Settings → Profile → HTML email signature**
   </Accordion>
 
   <Accordion title="My logo is not loading in the signature.">
@@ -228,7 +240,7 @@ title: "Troubleshooting"
 
     ![Image (9)](/images/image\(9\).png)
 
-    If you don't have a publicly stored email, you can upload a logo in Settings → Account → Firm Information, right click on the logo once its loaded, and ‘Copy Image Address’.
+    If you don't have a publicly stored email, you can upload a logo in **Settings → Branding**, right click on the logo once its loaded, and ‘Copy Image Address’.
   </Accordion>
 
   <Accordion title="Hazel did not sync historical emails. Why?">
@@ -237,21 +249,21 @@ title: "Troubleshooting"
     **If you have NOT connected a CRM (or you have no contacts in Hazel)**
 
     - Hazel can’t backfill historical emails because there are no contacts/households to match emails to.
-    - You _should_ still see new inbound screened emails going forward in the Inbox (left sidebar).
-      - If you’re not seeing new emails either, check **Settings → Account → Email Preferences**. Emails that aren’t associated with a contact/household may be filtered out based on your screening preferences.
+    - You _should_ still see new inbound emails going forward on the **Emails** tab of the matching household.
+      - Hazel only brings in emails from people who match a contact in Hazel, so emails from people who aren't contacts won't appear.
 
     <Tip>
-      Connecting your CRM or adding contacts to Hazel will maximize Hazel's functionality, especially with the Email Assistant.
+      Connecting your CRM or adding contacts to Hazel will maximize Hazel's functionality, especially with email.
     </Tip>
 
     **If you HAVE connected a CRM (and contacts exist in Hazel)**
 
     Try re-triggering the email sync:
 
-    1. Go to **Settings → Integrations**
-    2. Disconnect your Email integration
+    1. Go to **Settings → Profile** and find **Email and Calendar**
+    2. Disconnect your Google or Outlook account
     3. Refresh the page
-    4. Reconnect your Email integration to trigger a resync
+    4. Reconnect the same account to trigger a resync
 
     <Info>
       Email resyncs typically take 5–15 minutes to ingest emails.
@@ -263,10 +275,10 @@ title: "Troubleshooting"
   <Accordion title="My email sync is broken and I am no longer receiving emails in Hazel.">
     Try re-triggering the email sync:
 
-    1. Go to **Settings → Integrations**
-    2. Disconnect your Email integration
+    1. Go to **Settings → Profile** and find **Email and Calendar**
+    2. Disconnect your Google or Outlook account
     3. Refresh the page
-    4. Reconnect your Email integration to trigger a resync
+    4. Reconnect the same account to trigger a resync
 
     <Info>
       Email resyncs typically take 5–15 minutes to ingest emails.
@@ -279,6 +291,12 @@ title: "Troubleshooting"
 ### Account Troubleshooting
 
 <AccordionGroup>
+  <Accordion title="I get a '400 Bad Request: Request Header Or Cookie Too Large' error">
+    This is usually caused by browser cookies and cache that have built up for Hazel. Clear the cookies and cached data for Hazel in your browser settings, then sign in again. To confirm that's the cause, try signing in from an incognito or private window first.
+
+    Still seeing it? Email [support@hazel.ai](mailto:support@hazel.ai).
+  </Accordion>
+
   <Accordion title="My account is still suspended after updating my credit card details.">
     Email [support@hazel.ai](mailto:support@hazel.ai) so we can investigate.
   </Accordion>
@@ -286,13 +304,13 @@ title: "Troubleshooting"
   <Accordion title="My team member and I are on different firm accounts. How do we get on the same account?">
     If you and a team member are in _two different firm accounts_, you won’t be able to collaborate or see each other’s meetings. Hazel can’t “merge” two firm accounts. To get you on the same firm, Support must deactivate one user’s account, then the remaining firm owner/admin invites that user into the correct firm.
 
-    **Example**<br />John and Henry are on separate firm accounts. If Henry’s firm is the one you’re keeping, Hazel Support deactivates John. John won’t be able to log in again until Henry invites him (Settings → Members) and John accepts the invite email.
+    **Example**<br />John and Henry are on separate firm accounts. If Henry’s firm is the one you’re keeping, Hazel Support deactivates John. John won’t be able to log in again until Henry invites him (**Settings → Seats & billing**) and John accepts the invite email.
 
     **How to fix it**
 
     1. Decide which firm account you want to keep.
     2. Hazel Support deactivates the user who will be moving.
-    3. The admin of the firm you’re keeping goes to Settings → Members and sends an invite.
+    3. The admin of the firm you’re keeping goes to **Settings → Seats & billing** and sends an invite.
     4. The deactivated user must accept the invite from the email to regain access.
 
     <Info>

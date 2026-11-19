@@ -15,6 +15,32 @@ title: "FAQ"
     ![Faqideasnotworking](/images/faqideasnotworking.png)
   </Accordion>
 
+  <Accordion title="I tagged a chat to the wrong contact. Can I change the tag?">
+    No. A chat can be tagged to only one household or person, and the tag is final once applied, so the client's information doesn't mix into another client's record. To fix a wrong tag, copy anything you need from the chat, delete it, and start a new chat tagged to the correct household or person.
+  </Accordion>
+
+  <Accordion title="Can I give Hazel standing instructions, or get reports as Word files in my firm's style?">
+    For standing instructions, use **Settings → Ask Hazel → Personalization**. Hazel follows them in your Ask Hazel chats, including Tax Mode and your Modes. To use an instruction only sometimes, put it in a [custom Mode](/guides/modes/custom-modes) instead. Personalization applies only to you, not your whole firm, and holds up to 1,500 characters.
+
+    Formatting works differently. Hazel creates reports as PDFs, and you can't set their font size with an instruction. Reports pick up your firm's colors, fonts, and logo from **Settings → Branding**. To get a Word file, select **Export as Word** on a report Hazel created, including tax plans, and edit it there.
+
+    ![The Ask Hazel settings page with the Personalization box for standing instructions](/images/settings-ask-hazel-personalization.png)
+  </Accordion>
+
+  <Accordion title="Can I brand the PDFs Hazel generates?">
+    Yes. Owners and Firm Admins set your firm's logos, colors, and fonts once in **Settings → Branding**, under **Firm branding**, and Hazel applies them to the PDF and Word reports it creates. The report logo and firm disclaimer for tax plans are set in **Settings → Tax Mode**. For financial plans, layout and the client disclaimer are in [Planning settings](/guides/financial-planning/settings/overview).
+
+    ![The Branding settings page with logos, colours and fonts](/images/settings-branding.png)
+  </Accordion>
+
+  <Accordion title="Can Hazel read files in Google Drive, SharePoint, or our CRM's document storage?">
+    Not for most firms yet. Cloud storage connections are rolling out gradually; if you don't see **Cloud storage** in **Settings → Integrations**, it isn't available for your firm yet. Hazel also can't see documents attached inside your CRM. Upload the files to a household's **Documents** tab, or attach them to a chat, so Hazel can use them.
+  </Accordion>
+
+  <Accordion title="Is there a Hazel browser or desktop extension?">
+    No. Hazel works in your web browser. The Hazel mobile app for iPhone and Android lets you sign in, see your meetings, and record in-person meetings. There is no browser extension or desktop app. For questions about Altruist's own products, contact Altruist support.
+  </Accordion>
+
   <Accordion title="Can I make changes to my Altruist data within Hazel?">
     No, you cannot edit your Altruist data within Hazel. Hazel has read-only access to your custodial data in Altruist.
   </Accordion>
@@ -41,17 +67,45 @@ title: "FAQ"
   3. Click Save
 </Accordion>
 
+<AccordionGroup>
+  <Accordion title="Can Hazel automatically ignore certain meetings, like a daily calendar reminder?">
+    Yes. Create or edit a meeting type, turn on **Ignore Meeting Type**, and add phrases from the events' titles under **Match on Phrases**. Any calendar meeting whose title contains one of those phrases gets no notetaker and moves out of your main meetings list. Use **Settings → Meetings** for a personal type, or **Settings → Recording** for a firm-wide one (Owners and Firm Admins). See [Adding meeting types](/guides/meeting-assistant/meeting-types/adding-meeting-types#ignore-meetings-automatically).
+
+    To skip a single meeting, use **Ignore** on that meeting. To stop the notetaker joining any calendar event, turn off **Auto-schedule Notetakers** in **Settings → Meetings**.
+  </Accordion>
+
+  <Accordion title="Can I receive the full meeting notes by email instead of the summary?">
+    Not today. The post-meeting email contains a short recap and your action items, with a **View meeting notes** link to the full notes in Hazel. There is no setting to send the full notes by email.
+  </Accordion>
+
+  <Accordion title="Why does my notetaker's name include '(AI)'? Can I remove it?">
+    Hazel adds "(AI)" to the [notetaker name](/guides/settings/meeting-settings) on every platform, including Zoom, Google Meet and Microsoft Teams, and it can't be removed. If your name already includes "(AI)", Hazel doesn't add it again. On Teams, the name also ends with ". Recording". Only firm Owners can change the notetaker name, in **Settings → Recording**.
+  </Accordion>
+</AccordionGroup>
+
 ### Email FAQ
 
 <AccordionGroup>
   <Accordion title="Does Hazel match my writing style? Is there a way to set rules where I have a certain tonality and certain words and language I use?">
     On the follow up emails, you can tweak the prompt and give Hazel instructions and example quotes of things you'd likely say. By instructing Hazel in the prompt, you can set rules for tones to follow.
 
-    On the the email assistant that auto drafts inbound emails, you cannot set rules or give Hazel instructions on how to formulate emails.
+    For replies to client emails, ask Hazel in chat and include any tone or wording instructions in your request.
   </Accordion>
 
-  <Accordion title="Can you filter or screen emails that come in through the Email Assistant">
-    Yes, you can edit the screening criteria and adjust the prompt Hazel uses to filter inbound emails within Settings / Account / Email Preferences.
+  <Accordion title="Where did the Inbox go?">
+    The Inbox has been retired. Client emails now live on each household's **Emails** tab, and you draft replies by asking Hazel in chat.
+  </Accordion>
+
+  <Accordion title="Can Hazel draft replies to client emails automatically?">
+    Hazel doesn't draft replies to incoming emails on its own. Ask Hazel in chat to draft a reply. When you write an email in Hazel, you can send it or choose **Save to drafts** to put it in your Gmail or Outlook drafts folder. If you turn on **Auto-save Follow-up Email Drafts** in **Settings → Meetings**, Hazel also saves meeting follow-up emails to your drafts folder for you.
+  </Accordion>
+
+  <Accordion title="Can I connect more than one email account?">
+    You can connect one Google account and one Microsoft account, in **Settings → Profile** under **Email and Calendar**. Connecting a different account from the same provider replaces the one you had. If you're moving to a new email domain, finish the migration first, then connect the new account. Forwarding one account to the other can create duplicate emails or mismatches with your CRM contacts, so avoid it.
+  </Accordion>
+
+  <Accordion title="Which emails does Hazel bring in?">
+    Hazel brings in emails from people who match a contact in Hazel and shows them on that contact's household **Emails** tab. Email screening settings are no longer available.
   </Accordion>
 </AccordionGroup>
 
@@ -95,7 +149,7 @@ title: "FAQ"
   </Accordion>
 
   <Accordion title="How do I update my payment method?">
-    You can update your payment method in by editing the existing Hazel subscription in Settings → Subscriptions.
+    Go to **Settings → Seats & billing**, scroll to **Billing**, and select **Manage billing**.
 
     <Info>
       Only Owners can invite new members and manage roles.
@@ -107,7 +161,7 @@ title: "FAQ"
   </Accordion>
 
   <Accordion title="Where can I download past invoices and receipts?">
-    To unsubscribe manage billing, go to Settings -→ Subscriptions \> Manage Billing.
+    Go to **Settings → Seats & billing**, scroll to **Billing**, and select **Manage billing** to download past invoices and receipts.
 
     <Info>
       Only Owners can invite new members and manage roles.
@@ -116,6 +170,32 @@ title: "FAQ"
 
   <Accordion title="Can I set up automatic invoices for future charges?">
     Yes. Reach out to [support@hazel.ai](mailto:support@hazel.ai) to enroll in automatic invoices.
+  </Accordion>
+
+  <Accordion title="What does Financial Planning cost, and does it include my other subscriptions?">
+    A Financial Planning Agent seat includes everything in Platform AI and the Tax Planning Agent for one per-seat price, so you aren't billed separately for them. See current rates on the [pricing page](https://hazel.ai/pricing).
+
+    When you upgrade mid-term, you're charged today for the rest of your current billing period, and your renewal date stays the same. **Settings → Seats & billing** shows the exact amount before you confirm. If you're in a Financial Planning trial, the prorated charge is billed when the trial ends. Annual billing costs 10 percent less than paying monthly for 12 months. See [Billing](/guides/settings/billing).
+  </Accordion>
+
+  <Accordion title="Can I add someone who only manages the team or billing?">
+    Everyone at your firm is invited as an **Advisor** or an **Owner** and billed per seat. To let someone manage members, billing, branding, meeting types and planning settings without seeing more client data, invite them as an Advisor and give them the **Firm Admin** permission. See [Roles and permissions](/guides/settings/members/roles-and-permissions) and [Managing teams](/guides/settings/members/managing-teams).
+  </Accordion>
+</AccordionGroup>
+
+### Households and contacts FAQ
+
+<AccordionGroup>
+  <Accordion title="Can I merge duplicate households?">
+    Yes. In your Households list, select the two households and choose **Merge**. Hazel shows a preview of the people and records that will move, and what will be sent to your CRM, before you confirm. Links to the merged household redirect to the one you kept.
+  </Accordion>
+</AccordionGroup>
+
+### Security FAQ
+
+<AccordionGroup>
+  <Accordion title="Where can I get Hazel's SOC 2 report for vendor due diligence?">
+    Go to the [Hazel Trust Center](https://trust.hazel.ai/) and select **Request Access** to view the SOC 2 report, penetration test summary, and other security documents.
   </Accordion>
 </AccordionGroup>
 
